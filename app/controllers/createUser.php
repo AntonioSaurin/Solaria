@@ -1,6 +1,6 @@
 <?php
 
-require_once '../models/User.php';
+use app\models\User;
 
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 $birthDate = filter_input(INPUT_POST, 'birthDate', FILTER_SANITIZE_STRING);

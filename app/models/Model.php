@@ -1,10 +1,11 @@
 <?php
 
-require_once 'Connection.php';
-require_once '../traits/PersistDb.php';
+namespace app\models;
+use app\traits\PersistDb;
 
 abstract class Model{
 
+    use PersistDb;
     protected $connection;
 
     public function __construct(){
