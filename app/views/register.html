@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../style/style_cadastro.css">
+        <link rel="stylesheet" href="../style/css/register.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
         <title>Document</title>
@@ -18,27 +18,27 @@
                 <h2>Cadastrar</h2><br>
                 <form action="#" method="post" name="Cadastro">
                     <h3>Nome Completo:</h3>
-                    <input type="text" name="Name" placeholder="Nome"><br>
+                    <input type="text" name="name" id="name" placeholder="Nome"><br>
 
                     <h3>Data de Nascimento:</h3>
-                    <input type="text" name="Nasc" placeholder="Data de Nascimento" id="Nasc" maxlength="8"><br>
+                    <input type="text" name="birthDate" id="birthDate" placeholder="Data de Nascimento" maxlength="8"><br>
 
                     <h3>CPF:</h3>
-                    <input type="text" name="CPF" placeholder="CPF" id="CPF" maxlength="9"><br>
+                    <input type="text" name="CPF" id="CPF" placeholder="CPF" maxlength="9"><br>
 
                     <h3>Telefone:</h3>
-                    <input type="text" name="Tel" placeholder="Telefone" id="Tel" maxlength="12"><br>
+                    <input type="text" name="phone" id="phone" placeholder="Telefone" maxlength="12"><br>
 
                     <h3>Email:</h3>
-                    <input type="text" name="Email" placeholder="Email" id="Email"><br>
+                    <input type="text" name="email" id="email" placeholder="Email"><br>
 
                     <h3>Senha:</h3>
-                    <input type="text" name="Password" placeholder="Senha" id="Password"><br>
+                    <input type="text" name="password" id="password" placeholder="Senha"><br>
                     
                     <h3>Confirmar Senha:</h3>
-                    <input type="text" name="ConPassword" placeholder="Confirmar Senha" id="ConPassword"><br>
+                    <input type="text" name="conPassword" id="conPassword" placeholder="Confirmar Senha"><br>
 
-                    <input type="submit" name="Submit" value="Cadastrar">
+                    <input type="submit" name="submit" id="submit" value="Cadastrar">
                 </form>
                 <script>
                     $("#Tel").mask("(00) 00000-0000");
