@@ -16,11 +16,11 @@
             </section>
             <section class="form">
                 <h2>Cadastrar</h2><br>
-                <form action="#" method="post" name="Cadastro">
+                <form action="../controllers/createUser.php" method="post" name="Cadastro">
                     <h3>Nome Completo:</h3>
                     <input type="text" name="name" id="name" placeholder="Nome"><br>
 
-                    <h3>Data de Nascimento:</h3>
+                    <h3>Data de Nascimento:</h3>    
                     <input type="text" name="birthDate" id="birthDate" placeholder="Data de Nascimento" maxlength="8"><br>
 
                     <h3>CPF:</h3>
@@ -33,17 +33,17 @@
                     <input type="text" name="email" id="email" placeholder="Email"><br>
 
                     <h3>Senha:</h3>
-                    <input type="text" name="password" id="password" placeholder="Senha"><br>
+                    <input type="password" name="password" id="password" placeholder="Senha"><br>
                     
                     <h3>Confirmar Senha:</h3>
-                    <input type="text" name="conPassword" id="conPassword" placeholder="Confirmar Senha"><br>
+                    <input type="password" name="conPassword" id="conPassword" placeholder="Confirmar Senha"><br>
 
                     <input type="submit" name="submit" id="submit" value="Cadastrar">
                 </form>
                 <script>
-                    $("#Tel").mask("(00) 00000-0000");
-                    $("#CPF").mask("00.000.000-0");
-                    $("#Nasc").mask("00/00/0000");
+                    $("#phone").mask("(00) 00000-0000");
+                    $("#CPF").mask("000.000.000-00");
+                    $("#birthDate").mask("00/00/0000");
                 </script>
             </section>
         </main>

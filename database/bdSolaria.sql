@@ -43,10 +43,11 @@ primary key (ID));
 
 create table userAccount(
 ID int auto_increment,
-userEmail varchar(100),
+userName varchar(100),
+userEmail varchar(100) unique,
 userPassword varchar(255),
 userPhone int,
-userPhoto int,
+userPhoto int unique,
 userAdress int,
 primary key(ID),
 foreign key (userPhone) references phone(ID),
