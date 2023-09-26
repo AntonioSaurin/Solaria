@@ -1,9 +1,9 @@
 <?php
     return [
-        'host' => 'localhost:3306',
-        'dbname' => 'dbSolaria',
+        'host' => 'localhost',
+        'dbname' => 'dbsolaria',
         'username' => 'root',
-        'password' => 'aluno',
+        'password' => '',
         'charset' => 'utf8'
     ];
 ?>

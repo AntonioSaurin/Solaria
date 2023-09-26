@@ -1,13 +1,13 @@
 <?php
 
-namespace app\models;
+namespace App\Models;
 use PDO;
 
 class Connection
 { 
     public static function connect()
     {
-        $credentials = require 'app\config\database.php';
+        $credentials = require '..\config\database.php';
         try {
             $pdo = new PDO("mysql:host={$credentials['host']}; bdname={$credentials['dbname']}; {$credentials['charset']}", $credentials['username'], $credentials['password']);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

@@ -1,13 +1,16 @@
 <?php
 
 namespace app\traits;
+use app\models\queryBuilder\Insert;
 
 trait PersistDb{
     
     function insert($attributes) {
         
-        $sql = "insert into {$this->table}";
-        var_dump($sql);
+        $sql = (new Insert)->sql($this->table, $attributes);
+        $insert = $this->connection->prepare($sql);
+        
+        return $insert->execute($attributes);
 
     }
 
