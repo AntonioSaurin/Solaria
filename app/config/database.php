@@ -1,6 +1,6 @@
 <?php
     return [
-        'host' => 'localhost',
+        'host' => 'localhost:3307',
         'dbname' => 'dbsolaria',
         'username' => 'root',
         'password' => '',
