@@ -113,7 +113,7 @@ if ($logged != 1) {
 
 <body>
 	<header id="header">
-		<p> um novo amanhecer</p>
+		<p>O amanhecer novo</p>
 	</header>
 
 	<section id="contentHome" class="flex-container">
