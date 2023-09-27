@@ -5,13 +5,20 @@ use app\models\Donator;
 use app\models\Phone;
 use app\models\User;
 
+if($_POST['password'] != $_POST['conPassword']) {
+    echo '<script> window.alert("As senhas não coincidem);
+    window.location.href = "../views/register.html"';
+    header('Locatio: ../views/register.html');
+    die;
+}
+
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 $birthDateExplode = explode('/', filter_input(INPUT_POST, 'birthDate', FILTER_SANITIZE_STRING));
 $birthDate = $birthDateExplode[2].'-'.$birthDateExplode[1].'-'.$birthDateExplode[0];
 $cpf = filter_input(INPUT_POST, 'CPF', FILTER_SANITIZE_STRING);
 $userPhone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-$password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+$password = password_hash(filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING), PASSWORD_BCRYPT);
 $conPassword = filter_input(INPUT_POST, 'conPassword', FILTER_SANITIZE_STRING);
 
 $phone = new Phone;
