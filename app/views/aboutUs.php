@@ -9,7 +9,7 @@
 <body>
     
     <section class="position_img_aboutUs">
-      
+      <img src="app/style/img/imgAboutUs.png">
     </section>
       <h1 class="h1_aboutUs">Sobre nós</h1>
       <h2 class="h2_aboutUS">Escrito por Gabriel de Campos Silva em 08.06.2023</h2>
