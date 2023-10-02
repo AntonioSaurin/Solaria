@@ -7,6 +7,7 @@ use app\classes\Uri;
 $routes = [
     '/' => 'views/home.php',
     '/login' => 'views/login.html',
+    '/cadastro' => 'views/register.html',
     '/sobre-nos' => 'views/aboutUs.php'
 ];
 
