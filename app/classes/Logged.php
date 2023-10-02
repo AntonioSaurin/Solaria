@@ -8,7 +8,7 @@ class Logged {
             return 0;
         }
 
-        if($session['ID']){
+        if(isset($session['ID'])){
             return 1;
         }
     }
