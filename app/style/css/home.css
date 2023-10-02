@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% auto 6%;
+    grid-template-areas:
+        "header"
+        "contentHome"
+        "footer";
+}
+
+#header {
+
+    background-color: #2778AD;
+    text-align: center;
+    grid-area: header;
+
+
+}
+
+#contentHome {
+    height: 100%;
+    align-self: center;
+    text-align: center;
+    grid-area: contentHome;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "main-home"
+        "about-us"
+        "how-to-adopt"
+        "sign-up-institution";
+
+}
+
+#main-home {
+    grid-area: main-home;
+    background-color: lightgrey;
+}
+
+#about-us {
+    grid-area: about-us;
+}
+
+#how-to-adopt {
+    grid-area: how-to-adopt;
+
+    background-color: #E3286A;
+}
+
+#sign-up-institution {
+    background-color: #FFA12D;
+    grid-area: sign-up-institution;
+
+}
+
+#header p {
+    margin-top: 17px;
+    text-align: center;
+
+}
+
+
+
+#footer {
+
+    background-color: black;
+    text-align: center;
+    grid-area: footer;
+
+}
