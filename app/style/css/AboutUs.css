@@ -4,15 +4,14 @@
   box-sizing: border-box;
 }
 
-body {
+body{
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #E3286A;
-  background-image: linear-gradient(to bottom right, rgb(255, 145, 0), #faac45);
+  background-color: #fff;
 }
 
-.blog_header {
+.blog_header{
   position: relative;
   text-align: center;
 }
@@ -50,9 +49,9 @@ body {
 */
 .blog_content {
   justify-content: center;
-  max-width: 800px;
+  max-width: 600px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 50px;
   background-color: #fff;
   text-align: justify;
 }
@@ -61,6 +60,3 @@ p{
   font-family: 'REM';
 }
 
-.blog_body{
-  background-color: #FFF;
-}
