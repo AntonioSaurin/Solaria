@@ -10,8 +10,13 @@ trait PersistDb{
         $sql = (new Insert)->sql($this->table, $attributes);
         $insert = $this->connection->prepare($sql);
         
-        return $insert->execute($attributes);
-
+        try {
+            $action = $insert->execute($attributes);
+            return $action;
+        } catch (\PDOException $error) {
+            return $error;
+        }
+        
     }
 
     function update() {

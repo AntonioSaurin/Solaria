@@ -27,16 +27,23 @@ $phoneExplode = explode(')', $userPhone);
 $phoneNumber = trim($phoneExplode[1]);
 $ddd = explode('(', $phoneExplode[0]);
 
-$phone->insert([
+$phoneAction = $phone->insert([
     'phoneNumber' => $phoneNumber,
     'DDD' => $ddd[1]
 ]);
+
+if($phoneAction != 1){
+    echo '<script> 
+    alert("Incapaz de efetuar o cadastro!";
+    window.location.href = "../views/register.html"; 
+    </script>';
+}
 
 $phoneData = $phone->find('phoneNumber', $phoneNumber);
 
 $user = new User;
 
-$user->insert([
+$userAction = $user->insert([
     'userName' => $name,
     'userEmail' => $email,
     'userPassword' => $password,
@@ -45,12 +52,26 @@ $user->insert([
     'userAdress' => null,
 ]);
 
+if($userAction != 1){
+    echo '<script> 
+    alert("Incapaz de efetuar o cadastro!";
+    window.location.href = "../views/register.html"; 
+    </script>';
+}
+
 $userData = $user->find('userEmail', $email);
 
 $donator = new Donator;
 
-$donator->insert([
+$donatorAction = $donator->insert([
     'accountID' => $userData->ID,
     'CPF' => $cpf,
     'birthDate' => $birthDate
 ]);
+
+if($donatorAction != 1){
+    echo '<script> 
+    alert("Incapaz de efetuar o cadastro!";
+    window.location.href = "../views/register.html"; 
+    </script>';
+}
