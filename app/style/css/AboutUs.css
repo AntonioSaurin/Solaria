@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,12 +12,12 @@ body {
   background-image: linear-gradient(to bottom right, rgb(255, 145, 0), #faac45);
 }
 
-.blog-header {
+.blog_header {
   position: relative;
   text-align: center;
 }
 
-.blog-title {
+.blog_title {
   font-family: 'REM';
   position: absolute;
   top: 50%;
@@ -42,7 +48,7 @@ body {
   object-fit: cover;
 }
 */
-.blog-content {
+.blog_content {
   justify-content: center;
   max-width: 800px;
   margin: 20px auto;
@@ -53,4 +59,8 @@ body {
 
 p{
   font-family: 'REM';
+}
+
+.blog_body{
+  background-color: #FFF;
 }

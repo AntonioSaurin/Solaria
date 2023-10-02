@@ -9,13 +9,13 @@
 <body>
     
     <section class="position_img_aboutUs">
-
+      
     </section>
-
       <h1 class="h1_aboutUs">Sobre nós</h1>
       <h2 class="h2_aboutUS">Escrito por Gabriel de Campos Silva em 08.06.2023</h2>
-        <section class="blog-content">
+      <section class="blog_body">
 
+        <section class="blog_content">
             <p>O projeto Solaria é uma iniciativa criada por estudantes atentos as realidades das instituições de acolhimento,
             com o propósito de trazer luz e esperança aos corações que mais precisam.</p>
 
@@ -35,7 +35,9 @@
                 
             <p>Atenciosamente,</p>
             <p>Equipe Solaria.</p>
-        
-            </section>
+        </section>
+          </section>
+            <?php
+            ?>
 </body>
 </html>
