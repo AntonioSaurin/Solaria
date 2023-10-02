@@ -6,7 +6,8 @@ use app\classes\Uri;
 
 $routes = [
     '/' => 'views/home.php',
-    '/login' => 'views/aboutUs.php'
+    '/login' => 'views/login.html',
+    '/sobre-nos' => 'views/aboutUs.php'
 ];
 
 $uri = Uri::load();
