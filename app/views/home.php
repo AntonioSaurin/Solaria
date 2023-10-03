@@ -6,7 +6,7 @@ use app\classes\Logged;
 
 session_start();
 
-$logged = (new Logged)->verify($_SESSION);
+$logged = (new Logged)->verify();
 
 // if ($logged != 1) {
 // 	header('Location: app/views/login.html');

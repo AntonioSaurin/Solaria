@@ -12,7 +12,7 @@ trait PersistDb{
         
         try {
             $action = $insert->execute($attributes);
-            return $action;
+            return true;
         } catch (\PDOException $error) {
             return $error;
         }

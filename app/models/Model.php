@@ -24,7 +24,7 @@ abstract class Model{
 
     public function find($field, $value){
         
-        $credentials = require '..\config\database.php';
+        $credentials = require 'app\config\database.php';
 
         $sql = "select * from {$credentials['dbname']}.{$this->table} where {$field} = :value";
         $list = $this->connection->prepare($sql);

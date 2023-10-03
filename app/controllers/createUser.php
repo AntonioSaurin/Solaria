@@ -1,5 +1,5 @@
 <?php
-require_once '../../vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 use app\models\Donator;
 use app\models\Phone;
@@ -47,12 +47,12 @@ $userAction = $user->insert([
     'userName' => $name,
     'userEmail' => $email,
     'userPassword' => $password,
-    'userPhone' => $phoneData->ID,
+    'userPhone' => $phoneData['ID'],
     'userPhoto' => null,
     'userAdress' => null,
 ]);
 
-if($userAction != 1){
+if($userAction != true){
     echo '<script> 
     alert("Incapaz de efetuar o cadastro!";
     window.location.href = "../views/register.html"; 
@@ -64,7 +64,7 @@ $userData = $user->find('userEmail', $email);
 $donator = new Donator;
 
 $donatorAction = $donator->insert([
-    'accountID' => $userData->ID,
+    'accountID' => $userData['ID'],
     'CPF' => $cpf,
     'birthDate' => $birthDate
 ]);

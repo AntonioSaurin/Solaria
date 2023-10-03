@@ -8,7 +8,9 @@ $routes = [
     '/' => 'views/home.php',
     '/login' => 'views/login.html',
     '/cadastro' => 'views/register.html',
-    '/sobre-nos' => 'views/aboutUs.php'
+    '/sobre-nos' => 'views/aboutUs.php',
+    '/cadastro/efetuar' => 'controllers/createUser.php',
+    '/login/efetuar' => 'controllers/login.php'
 ];
 
 $uri = Uri::load();
