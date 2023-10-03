@@ -1,39 +1,126 @@
-@font-face{
+@font-face {
     font-family: "Nunito";
     src: url('../style/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
 
     font-family: "Sniglet";
     src: url('../style/fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: transparent;
+    overflow: hidden;
 }
 
-.logo{
-
-    font-family: "Sniglet", sans-serif;
-    color: #fff;
-    font-size: 55px;
+.img {
+    transform: scaleX(-1);
+    height: 90rem;
+    display: flex;
+    position: absolute;
+    left: 40rem;
+    top: -18rem;
 }
 
-
-.form{
+.form {
+    font-family: "Nunito", "sans-serif";
     border: 3px solid #fff;
     color: #fff;
     border-radius: 12px;
-    padding: 200px 150px;
-    font-size: 27px;
-    font-family: "Nunito", "sans-serif";
+    padding: 40px 70px;
+    font-size: 20px;
+    position: absolute;
+    left: 16rem;
+    display: block;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
 }
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.loginBox button {
+    background-color: #CD5151;
+    color: #fff;
+    padding: 10px 2px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: center;
+    left: 35px;
+    width: 70%;
+}
+
+.loginBox button:hover {
+    background-color: #a73c3c;
+}
+
+.loginButton {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #ffa500 0, #ff8c00 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(255, 159, 0, .4) 0 2px 4px, rgba(255, 159, 0, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.loginButton:focus {
+    box-shadow: #fe5a1d 0 0 0 1.5px inset, rgba(255, 103, 0, .4) 0 2px 4px, rgba(255, 103, 0, .3) 0 7px 13px -3px, #fe5a1d 0 -3px 0 inset;
+}
+
+.loginButton:hover {
+    box-shadow: rgba(255, 103, 0, .4) 0 4px 8px, rgba(255, 103, 0, .3) 0 7px 13px -3px, #fe5a1d 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.loginButton:active {
+    box-shadow: #fe5a1d 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
 
 .gradient{
     display: flex;
     background: linear-gradient(135deg, #2778ad, #00b8a9, #ffa22d);
     background-size: 300% 300%;
     animation: colors 10s ease infinite;
+    height: 100rem;
     padding: 1rem;
 }
 

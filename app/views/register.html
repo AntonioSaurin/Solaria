@@ -7,46 +7,46 @@
         <link rel="stylesheet" href="app/style/css/register.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-        <title>Document</title>
+        <title>Cadastrar</title>
     </head>
-    <body id="gradient">
-        <main class="container">
-            <section class="logo">
-                <h1>Solaria</h1>
-            </section>
-            <section class="form">
-                <h2>Cadastrar</h2><br>
-                <form action="cadastro/efetuar" method="post" name="Cadastro">
-                    <h3>Nome Completo:</h3>
-                    <input type="text" name="name" id="name" placeholder="Nome"><br>
+    <body>
+        <span id="gradient">
+            <main class="container">
+                <section class="form signupBox">
+                    <h1>Cadastrar</h1><br>
+                    <form action="cadastro/efetuar" method="post" name="Cadastro">
 
-                    <h3>Data de Nascimento:</h3>    
-                    <input type="text" name="birthDate" id="birthDate" placeholder="Data de Nascimento" maxlength="8"><br>
+                        <p>Nome Completo:</p>
+                        <input type="text" class="signupBox" name="name" id="name" placeholder="Nome"><br>
 
-                    <h3>CPF:</h3>
-                    <input type="text" name="CPF" id="CPF" placeholder="CPF" maxlength="9"><br>
+                        <p>Data de Nascimento:</p>    
+                        <input type="text" class="signupBox" name="birthDate" id="birthDate" placeholder="Data de Nascimento" maxlength="8"><br>
 
-                    <h3>Telefone:</h3>
-                    <input type="text" name="phone" id="phone" placeholder="Telefone" maxlength="12"><br>
+                        <p>CPF:</p>
+                        <input type="text" class="signupBox" name="CPF" id="CPF" placeholder="CPF" maxlength="9"><br>
 
-                    <h3>Email:</h3>
-                    <input type="text" name="email" id="email" placeholder="Email"><br>
+                        <p>Telefone:</p>
+                        <input type="text" class="signupBox" name="phone" id="phone" placeholder="Telefone" maxlength="12"><br>
 
-                    <h3>Senha:</h3>
-                    <input type="password" name="password" id="password" placeholder="Senha"><br>
-                    
-                    <h3>Confirmar Senha:</h3>
-                    <input type="password" name="conPassword" id="conPassword" placeholder="Confirmar Senha"><br>
+                        <p>Email:</p>
+                        <input type="text" class="signupBox" name="email" id="email" placeholder="Email"><br>
 
-                    <input type="submit" name="submit" id="submit" value="Cadastrar">
-                </form>
-                <script>
-                    $("#phone").mask("(00) 00000-0000");
-                    $("#CPF").mask("000.000.000-00");
-                    $("#birthDate").mask("00/00/0000");
-                </script>
-            </section>
-        </main>
-        <img class="img" src="app/style/img/117 Sem Título4_20231003133421.png">
+                        <p>Senha:</p>
+                        <input type="password" class="signupBox" name="password" id="password" placeholder="Senha"><br>
+                        
+                        <p>Confirmar Senha:</p>
+                        <input type="password" class="signupBox" name="conPassword" id="conPassword" placeholder="Confirmar Senha"><br>
+                        
+                        <button type="submit" name="submit" class="registerButton">Cadastrar</button>
+                    </form>
+                    <script>
+                        $("#phone").mask("(00) 00000-0000");
+                        $("#CPF").mask("000.000.000-00");
+                        $("#birthDate").mask("00/00/0000");
+                    </script>
+                </section>
+            </main>
+        <img class="img" src="app/style/img/brandWithoutBG.png">
+    </span>
     </body>
 </html>
