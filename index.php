@@ -10,7 +10,8 @@ $routes = [
     '/cadastro' => 'views/register.html',
     '/sobre-nos' => 'views/aboutUs.php',
     '/cadastro/efetuar' => 'controllers/createUser.php',
-    '/login/efetuar' => 'controllers/login.php'
+    '/login/efetuar' => 'controllers/login.php',
+    '/teste' => 'views/teste.php'
 ];
 
 $uri = Uri::load();
