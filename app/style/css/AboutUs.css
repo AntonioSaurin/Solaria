@@ -59,6 +59,7 @@ body{
   color: white;
   font-family: "Sniglet", sans-serif;
   text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 20px;
 }
 
 .h3_aboutUs{
@@ -104,6 +105,15 @@ body{
   justify-content: center;
 }
 
+.blog_aboutUs{
+  display: flex;
+  background-color: #FFF;
+}
+
+.label_space_aboutUs{
+  margin-left: 3%;
+}
+
 p{
   font-family: "REM";
 }
@@ -112,8 +122,6 @@ p{
   display: flex;
   justify-content: center;
   width: 100%;
-  position: absolute;
-  top: -10rem;
   height: 120%;
 }
 
@@ -122,11 +130,6 @@ p{
   margin-top: -1%;
   margin-left: -2%;
   margin-bottom: 2%;
-}
-
-.blog_aboutUs{
-  display: flex;
-  background-color: #FFF;
 }
 
 #blog_p_content{
