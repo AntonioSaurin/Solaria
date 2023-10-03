@@ -43,6 +43,7 @@ primary key (ID));
 
 create table userAccount(
 ID int auto_increment,
+uniqueID int(255) NOT NULL,
 userName varchar(100),
 userEmail varchar(100) unique,
 userPassword varchar(255),
@@ -80,4 +81,10 @@ primary key(ID),
 foreign key (donator) references donator(ID),
 foreign key (institution) references institution(ID));
 
-
+create table messages (
+msgId int(11) NOT NULL AUTO_INCREMENT,
+incomingMsgID int(255) NOT NULL,
+outgoingMsgID int(255) NOT NULL,
+msg varchar(1000) NOT NULL,
+PRIMARY KEY (`msgId`)
+)
