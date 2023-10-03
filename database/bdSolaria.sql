@@ -43,6 +43,7 @@ primary key (ID));
 
 create table userAccount(
 ID int auto_increment,
+uniqueID int(255) NOT NULL,
 userName varchar(100),
 userEmail varchar(100) unique,
 userPassword varchar(255),
