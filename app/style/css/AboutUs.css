@@ -1,3 +1,11 @@
+@font-face{
+  font-family: "Nunito";
+  src: url('../style/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+
+  font-family: "Sniglet";
+  src: url('../style/fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -22,7 +30,6 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* background-color: rgba(255, 255, 255, 0.8); */
   padding: 10px 20px;
   border-radius: 5px;
   color: #FFF;
@@ -38,16 +45,30 @@ body{
   margin-top: 10%;
   position: absolute;
   justify-content: center;
-  font-family: 'REM';
+  font-family: "Sniglet", sans-serif;
   color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 30px;
 }
 
 .h2_aboutUS{
   display: flex;
-  margin-top: 12%;
+  margin-top: 13%;
   position: absolute;
   justify-content: center;
   color: white;
+  font-family: "Sniglet", sans-serif;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 20px;
+}
+
+.h3_aboutUs{
+  display: flex;
+  justify-content: center;
+  margin-top: -1%;
+  margin-bottom: 1%;
+  font-family: "Sniglet", sans-serif;
+  font-size: 200%;
 }
 
 .position_img_aboutUs{
@@ -55,26 +76,31 @@ body{
   justify-content: center;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 110%;
   object-fit: cover;
 }
 
 .blog_content{
+  display: flex;
   position: relative;
   justify-content: center;
-  max-width: 600px;
-  margin: 20px auto;
-  margin-top: 300px;
-  padding: 50px;
-  background-color: #fff;
+  align-items: center;
+  margin: 12px auto;
+  margin-top: 20%;
+  padding-bottom: 12%;
+  background-color: #FFF; 
+}
+
+.blog_content_p{
+  justify-content: center;
   text-align: justify;
+  max-width: 40%;
+  font-size: 18px;
+  padding-right: 15px;
+  margin-top: 5%;
 }
 
-p{
-  font-family: 'REM';
-}
-
-#img_aboutUs{
+.blog_content_img{
   display: flex;
   justify-content: center;
 }
@@ -82,4 +108,31 @@ p{
 .blog_aboutUs{
   display: flex;
   background-color: #FFF;
+}
+
+.label_space_aboutUs{
+  margin-left: 3%;
+}
+
+p{
+  font-family: "REM";
+}
+
+#img_aboutUs{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 120%;
+}
+
+#img_brand_aboutUs{
+  width: 40%;
+  margin-top: -1%;
+  margin-left: -2%;
+  margin-bottom: 2%;
+}
+
+#blog_p_content{
+  margin-top: 12px;
+  margin-bottom: 10px;
 }
