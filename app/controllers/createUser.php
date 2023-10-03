@@ -75,3 +75,5 @@ if($donatorAction != 1){
     window.location.href = "../views/register.html"; 
     </script>';
 }
+
+header('Location: /login');

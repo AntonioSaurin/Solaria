@@ -8,10 +8,10 @@ session_start();
 
 $logged = (new Logged)->verify();
 
-// if ($logged != 1) {
-// 	header('Location: app/views/login.html');
-// 	die;
-// }
+if ($logged != 1) {
+	header('Location: /login');
+	die;
+}
 ?>
 <html lang="pt-br">
 

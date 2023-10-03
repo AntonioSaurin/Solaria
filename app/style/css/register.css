@@ -9,7 +9,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: transparent;
+    overflow: hidden;
+}
+
+.img{
+    transform: scaleX(-1);
+    height: 90rem;
+    display: flex;
+    position: absolute;
+    left: 50rem;
+    top: -15rem;
+    
 }
 
 .logo{
@@ -23,14 +33,14 @@
     border: 3px solid #fff;
     color: #fff;
     border-radius: 12px;
-    padding: 30px 150px;
+    padding: 20px 150px;
     font-size: 27px;
     
 }
 
 #gradient{
     display: flex;
-    background: linear-gradient(135deg, #dd923d, #ffa22d,#e3286a);
+    background: linear-gradient(135deg, #ffa22d, #dd8b26, #ff5691,#e3286a);
     background-size: 300% 300%;
     animation: colors 10s ease infinite;
     padding: 1rem;
