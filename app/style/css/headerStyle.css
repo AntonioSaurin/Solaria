@@ -5,3 +5,12 @@ body{
     background-color:rgba(48, 230, 24, 0);
     
 }
+@font-face{
+    font-family: "Sniglet";
+  src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+}
+
+
+  p{
+    font-family: "Sniglet";
+  }
