@@ -1,18 +1,5 @@
 <!DOCTYPE html>
-<?php
-require_once 'vendor/autoload.php';
 
-use app\classes\Logged;
-
-session_start();
-
-$logged = (new Logged)->verify();
-
-if ($logged != 1) {
-	header('Location: /login');
-	die;
-}
-?>
 <html lang="pt-br">
 
 <head>
@@ -21,14 +8,15 @@ if ($logged != 1) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="app/style/css/bootstrap.css">
 	<link rel="stylesheet" href="app/style/css/home.css">
 </head>
 
 <body>
 	<header id="header">
-		<p>O amanhecer novo</p>
+		<?php
+			include('header.html');
+		?>
 	</header>
 
 	<section id="contentHome" class="flex-container">

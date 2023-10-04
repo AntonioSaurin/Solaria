@@ -10,7 +10,10 @@ body{
   src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
 }
 
-
-  p{
+p{
     font-family: "Sniglet";
-  }
+}
+#headerMenu{
+    
+    border-radius: 8px;
+}
