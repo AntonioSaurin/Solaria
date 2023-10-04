@@ -4,3 +4,17 @@
     box-sizing: border-box;
 }
 
+h1{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+#img_account{
+    display: flex;
+    width: 10%;
+    height: 25%;
+    border-radius: 100%;
+    margin-left: 3%;
+    margin-top: 1%;
+}

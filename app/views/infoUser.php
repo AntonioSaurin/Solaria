@@ -7,12 +7,14 @@
     <title> Conta </title>
 </head>
 <body>
-    <?php
-        include_once("header.html");
-    ?>
-
-        
-
-
+    <main class="">    
+        <?php
+            //include_once("header.html");
+        ?>
+        <h1> Conta </h1>
+            <section class="space_account">
+                <img src="app/style/img/images.jpg" id="img_account">
+            </section>
+    </main>
 </body>
 </html>
