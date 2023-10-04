@@ -1,6 +1,31 @@
+@font-face{
+    font-family: "Nunito";
+    src: url('../style/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+  
+    font-family: "Sniglet";
+    src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+  }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+#img_account{
+    display: flex;
+    position: relative;
+    width: 10%;
+    height: 25%;
+    border-radius: 100%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.info_name_account{
+    display: flex;
+    position: absolute;
+    font-family: "Sniglet", sans-serif;
+    margin-left: 15%;
+    margin-top: -8%;
+}

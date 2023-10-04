@@ -3,7 +3,7 @@
   src: url('../style/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
 
   font-family: "Sniglet";
-  src: url('../style/fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+  src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
 }
 
 *{
@@ -15,7 +15,6 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
   background-color: #fff;
 }
 
@@ -69,7 +68,7 @@ body{
   margin-bottom: 1%;
   font-family: "Sniglet", sans-serif;
   font-size: 200%;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 .position_img_aboutUs{
@@ -117,7 +116,7 @@ body{
 }
 
 p{
-  font-family: "REM";
+  font-family:'Times New Roman', Times, serif;
 }
 
 #img_aboutUs{

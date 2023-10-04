@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Nunito";
-    src: url('../style/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+    src: url('app/style/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
 
     font-family: "Sniglet";
-    src: url('../style/fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+    src: url('app/style/fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
 }
 
 * {
@@ -27,24 +27,30 @@
     border: 3px solid #fff;
     color: #fff;
     border-radius: 12px;
-    padding: 20px 70px;
-    font-size: 20px;
     position: absolute;
-    left: 16rem;
-    display: block;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
+    padding: 15rem 20rem;
+    top: 13rem;
+    left: 8rem;
+    font-size: 20px;
+}
+
+.table1{
+    top: 264px;
+    position: fixed;
+    left: 10rem;
+}
+
+.table2{
+    top: 20rem;
+    position: fixed;
+    left: 30rem;
+    
 }
 
 .signupBox input[type="text"],
 .signupBox input[type="password"] {
     width: 100%;
+    width: 15rem;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -56,12 +62,12 @@
 .signupBox button {
     background-color: #CD5151;
     color: #fff;
-    padding: 10px 2px;
+    padding: 15px 2px;
     border: none;
-    border-radius: 20px;
+    border-radius: 4px;
     cursor: pointer;
     align-self: center;
-    left: 35px;
+    left: 71px;
     width: 70%;
 }
 
@@ -75,7 +81,6 @@
     background-image: radial-gradient(100% 100% at 100% 0, #ffa500 0, #ff8c00 100%);
     border: 0;
     border-radius: 6px;
-    box-shadow: rgba(255, 159, 0, .4) 0 2px 4px, rgba(255, 159, 0, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
@@ -98,6 +103,7 @@
     white-space: nowrap;
     will-change: box-shadow, transform;
     font-size: 18px;
+    margin-top: 23px;
 }
 
 .registerButton:focus {
