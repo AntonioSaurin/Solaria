@@ -2,6 +2,7 @@
 
 namespace app\traits;
 use app\models\queryBuilder\Insert;
+use app\models\queryBuilder\Update;
 
 trait PersistDb{
     
@@ -19,7 +20,15 @@ trait PersistDb{
         
     }
 
-    function update() {
-        
+    function update($attributes, $where) {
+        $sql = (new Update)->setWhere($where)->sql($this->table, $attributes);
+        $update = $this->connection->prepare($sql);
+
+        try {
+            $action = $update->execute($attributes);
+            return true;
+        } catch (\PDOException $error) {
+            return $error;
+        }
     }
 }

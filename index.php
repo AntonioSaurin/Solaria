@@ -12,7 +12,8 @@ $routes = [
     '/cadastro/efetuar' => 'controllers/createUser.php',
     '/login/efetuar' => 'controllers/login.php',
     '/teste' => 'views/teste.php',
-    '/header' => 'views/header.html'
+    '/header' => 'views/header.html',
+    '/usuario/editar' => 'controllers/updateUser.php'
 ];
 
 $uri = Uri::load();
