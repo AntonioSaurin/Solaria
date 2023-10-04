@@ -34,17 +34,17 @@
     font-size: 20px;
 }
 
-.table1{
-    top: 264px;
+.table1 {
+    top: 253px;
     position: fixed;
-    left: 10rem;
+    left: 11rem;
 }
 
-.table2{
+.table2 {
     top: 20rem;
     position: fixed;
     left: 30rem;
-    
+
 }
 
 .signupBox input[type="text"],
@@ -70,6 +70,12 @@
     left: 71px;
     width: 70%;
 }
+
+.signupBox:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
 
 .signupBox button:hover {
     background-color: #a73c3c;
@@ -123,7 +129,7 @@
 
 #gradient {
     display: flex;
-    background: linear-gradient(135deg, #e6719a, #d31658);
+    background: linear-gradient(135deg, #ff6699, #ff3366, #ff0066);
     background-size: 300% 300%;
     height: 100rem;
     animation: colors 15s ease infinite;
