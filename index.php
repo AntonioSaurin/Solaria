@@ -13,11 +13,7 @@ $routes = [
     '/login/efetuar' => 'controllers/login.php',
     '/teste' => 'views/teste.php',
     '/header' => 'views/header.html',
-<<<<<<< HEAD
     '/usuario/editar' => 'controllers/updateUser.php'
-=======
-    '/info' => 'views/infoUser.php'
->>>>>>> e97e75ce61912d92750ffa0a274d257813bdd89d
 ];
 
 $uri = Uri::load();
