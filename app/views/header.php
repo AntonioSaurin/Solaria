@@ -18,12 +18,11 @@
     <section id="navBar">
         <nav class="navbar navbar-expand-sm navbar-light">
             <section class="container">
-
-                <section>
-                    <a href="#">
+                <section id="brandImg">
+                    <a href="/">
                         <img src="app/style/img/Brand.png" width="60px">
                     </a>
-                    <p id="brandText"class="d-inline ml-3">Solaria</p>
+                    <p id="brandText" class="d-inline ml-3">Solaria</p>
                 </section>
 
                 <button class="navbar-toggler" data-togle="collapse" data-target="#nav-pricipal">
@@ -32,7 +31,9 @@
 
                 <section>
                     <ul class="navbar-nav ml-auto">
-
+                        <li class="nav-item mr-4">
+                            <a href="#" class="nav-link">Instituições</a>
+                        </li>
                         <li class="nav-item mr-4">
                             <a href="#" class="nav-link">Como adotar</a>
                         </li>
@@ -47,13 +48,14 @@
                                 <?php
                                     if(isset($_SESSION['name'])){
                                         echo('<a class="dropdown-item" href="#">Configuracoes de conta</a>');
+                                        echo('<a class="dropdown-item" href="#">Sair</a>');
                                     }
                                 ?>
                             </section>    
                         </li>
-
                     </ul>
                 </section>
+            </section>
         </nav>
     </section>
 

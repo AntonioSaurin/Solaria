@@ -9,7 +9,7 @@
 <body>
     <main class="info_account">    
         <?php
-            //include_once("header.html");
+            //include_once("header.php");
         ?>
             <section class="info_account">
                 <section class="space_img_account">
