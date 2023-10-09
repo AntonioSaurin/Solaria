@@ -19,14 +19,18 @@
                         </section>
                 </section>
 
-                <section class="info_account_top_color">
-                            <label id="label_account_top"> Geral </label>
-                        </section>
-                <section class="info_account_space">    
+                <section class="info_account_top">
+                    <label id="label_account_geral"> Geral </label>
+                    <label id="label_account_endereco"> Endereço </label>
+                </section>
+
+                <section class="info_account_space">
                     <section class="info_account_color_test">
-                        <label class="info_label_account"> Email </label>
+                        <label id="label_account_email"> Email </label>
                     </section>
                 </section>
+
+                <section class="">
     </main>
 </body>
 </html>
