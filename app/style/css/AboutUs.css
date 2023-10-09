@@ -52,13 +52,13 @@ body{
 
 .h2_aboutUS{
   display: flex;
-  margin-top: 13%;
+  margin-top: 12.3%;
   position: absolute;
   justify-content: center;
   color: white;
   font-family: "Sniglet", sans-serif;
   text-shadow: black 0.1em 0.1em 0.2em;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .h3_aboutUs{
