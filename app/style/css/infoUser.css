@@ -4,7 +4,7 @@
   
     font-family: "Sniglet";
     src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
-  }
+}
 
 *{
     margin: 0;
@@ -12,18 +12,7 @@
     box-sizing: border-box;
 }
 
-#img_account{
-    display: flex;
-    position: relative;
-    width: 10%;
-    height: 25%;
-    border-radius: 100%;
-    margin-left: 3%;
-    margin-top: 5%;
-}
-
-
-
+/* Class */
 .info_name_account{
     display: flex;
     position: absolute;
@@ -38,10 +27,57 @@
 }
 
 .info_account_color_test{
+    display: flex;
     justify-content: center;
-    margin-top: 4%;
     padding: 10%;
     width: 10%;
     background-color: aquamarine;
 }
 
+.info_account_cep_test{
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    width: 10%;
+    background-color: rgb(117, 60, 250);
+}
+
+.info_account_top{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ID */
+#label_account_test{
+    justify-content: center;
+    padding: 10%;
+    width: 10%;
+    background-color: rgb(255, 14, 86);
+}
+
+#label_account_endereco{
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    width: 20%;
+    padding: 2rex;
+}
+
+#label_account_geral{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(118, 118, 255);
+    width: 20%;
+    padding: 2rex;
+}
+
+#img_account{
+    display: flex;
+    position: relative;
+    width: 10%;
+    height: 25%;
+    border-radius: 100%;
+    margin-left: 3%;
+    margin-top: 5%;
+}

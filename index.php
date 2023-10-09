@@ -16,7 +16,7 @@ $routes = [
     '/teste' => 'views/teste.php',
     '/header' => 'views/header.html',
     '/usuario/editar' => 'controllers/updateUser.php',
-    '/infoUser' => 'views/userPage.html'
+    '/infoUser' => 'views/infoUser.php'
 ];
 
 $uri = Uri::load();
