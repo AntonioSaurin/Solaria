@@ -15,7 +15,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #e25285;
 }
 
 .blog_header{
@@ -45,7 +45,7 @@ body{
   position: absolute;
   justify-content: center;
   font-family: "Sniglet", sans-serif;
-  color: white;
+  color: #fff;
   text-shadow: black 0.1em 0.1em 0.2em;
   font-size: 30px;
 }
@@ -88,7 +88,7 @@ body{
   margin: 12px auto;
   margin-top: 20%;
   padding-bottom: 12%;
-  background-color: #FFF; 
+  background-color: #fff; 
 }
 
 .blog_content_p{
