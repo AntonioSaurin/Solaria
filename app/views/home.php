@@ -15,7 +15,7 @@
 <body>
 	<header id="header">
 		<?php
-			include('header.html');
+			include('header.php');
 		?>
 	</header>
 

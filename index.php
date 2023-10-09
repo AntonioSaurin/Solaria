@@ -4,6 +4,8 @@ require_once 'vendor/autoload.php';
 use app\classes\Routes;
 use app\classes\Uri;
 
+session_start();
+
 $routes = [
     '/' => 'views/home.php',
     '/login' => 'views/login.html',

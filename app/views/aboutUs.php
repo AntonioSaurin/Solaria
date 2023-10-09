@@ -10,7 +10,7 @@
 
 <body>
   <?php
-  include_once("header.html");
+  include_once("header.php");
   ?>
   <section class="position_img_aboutUs">
     <img src="app/style/img/imgAboutUs.jpg" id="img_aboutUs">
