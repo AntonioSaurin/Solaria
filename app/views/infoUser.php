@@ -28,9 +28,13 @@
                     <section class="info_account_color_test">
                         <label id="label_account_email"> Email </label>
                     </section>
+
+                    <section class="info_account_cep_test">
+                        <label class="info_account"> kjmn </label>
+                    </section>
                 </section>
 
-                <section class="">
+
     </main>
 </body>
 </html>
