@@ -44,7 +44,7 @@
                         <li class="nav-item dropdown ml-3 mr-5">
                             <a href="#" class="fa-regular fa-user fa-xl  nav-link  mt-2" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #5a5a5ac2; "></a>
                             <section id="headerMenu"class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Conta</a>
+                                <a class="dropdown-item" href="/infoUser">Conta</a>
                                 <?php
                                     if(isset($_SESSION['name'])){
                                         echo('<a class="dropdown-item" href="#">Configuracoes de conta</a>');
