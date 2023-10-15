@@ -26,7 +26,8 @@
 
                 <section class="info_account_space">
                     <section class="info_account_color_test">
-                        <label id="label_account_email"> Email </label>
+                        <label id="label_account_email"> Email: </label>
+                        <label id="box_email">  </label>
                     </section>
 
                     <section class="info_account_cep_test">
@@ -34,7 +35,7 @@
                     </section>
                 </section>
 
-
+                
     </main>
 </body>
 </html>
