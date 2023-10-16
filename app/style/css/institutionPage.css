@@ -18,6 +18,9 @@ body {
     padding: 20px;
 }
 
+
+
+
 .filterArea{
     border-style: solid;
     border-color: #000;
@@ -26,7 +29,13 @@ body {
     background-color: #fff;
     padding: 5px;
     margin-bottom: 10px;
-    
+    width: 20%;
+    display: flex;
+}
+
+.filterImage{
+    width: 30px;
+    height: 30px;
 }
 
 /* Caixas de doação */
@@ -39,6 +48,7 @@ body {
     display: flex;
     cursor: pointer;
     justify-content: space-evenly;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .caixa:hover {
@@ -71,8 +81,7 @@ body {
 }
 
 .buttonArea{
-    align-items: flex-end;
-    
+    justify-items: flex-end;
 }
 
 /* Botão "Doar" */
@@ -85,6 +94,10 @@ body {
     cursor: pointer;
     max-height: 30px;
     max-width: 100%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: translateY(280%);
+    
 }
 
 .doar-button:hover {

@@ -7,12 +7,10 @@
     <title>Solaria/Instituições</title>
 </head>
 <body>
-    <div class="container">
+    <section class="container">
         <!-- Botões de filtro -->
-        <div class="filterArea">
-            <label for="filtroNome">Filtrar por Nome:</label>
-            <input type="text" id="filtroNome">
-            <label for="filtroTipo">Filtrar por Tipo:</label>
+        <section class="filterArea">
+            <label for="filtroTipo"><img class="filterImage" src="app/style/img/filterImage.png">Filtrar:</label>
             <select id="filtroTipo">
                 <option value="">Todos</option>
                 <option value="dinheiro">Dinheiro</option>
@@ -20,26 +18,39 @@
                 <option value="alimentos">Alimentos</option>
                 <option value="brinquedos">Brinquedos</option>
             </select>
-        </div>
+        </section>
 
         <!-- Caixas de doação -->
-        <div class="caixa" onclick="mostrarModal(1)" color: #FFA12D>
+        <section class="caixa" onclick="mostrarModal(1)" color: #FFA12D>
             <img src="app/style/img/imgInstitutionPageTest.png" alt="Imagem 1">
-            <div class="caixa-info">
+            <section class="caixa-info">
                 <h2>Instituição Adotar</h2>
                 <p class="institutionDescription">A Adotar é uma instituição de adoção dedicada a encontrar lares amorosos e seguros para crianças vulneráveis. Nossa equipe oferece cuidados de qualidade, apoio emocional e recursos para famílias adotivas. </p>
                 <p><b>Necessita:</b> Brinquedos, Roupas e Dinheiro.</p>
-            </div>
+            </section>
             <section class="buttonArea">
             <button class="doar-button">Doar ></button>
             </section>
-        </div>
+        </section>
+
+        <!-- Caixas de doação -->
+        <section class="caixa" onclick="mostrarModal(1)" color: #FFA12D>
+            <img src="app/style/img/imgInstitutionPageTest.png" alt="Imagem 1">
+            <section class="caixa-info">
+                <h2>Instituição Adotar</h2>
+                <p class="institutionDescription">A Adotar é uma instituição de adoção dedicada a encontrar lares amorosos e seguros para crianças vulneráveis. Nossa equipe oferece cuidados de qualidade, apoio emocional e recursos para famílias adotivas. </p>
+                <p><b>Necessita:</b> Brinquedos, Roupas e Dinheiro.</p>
+            </section>
+            <section class="buttonArea">
+            <button class="doar-button">Doar ></button>
+            </section>
+        </section>
 
         
 
         <!-- Modal de detalhes da causa -->
-        <div id="modal1" class="modal">
-            <div class="modal-content">
+        <section id="modal1" class="modal">
+            <section class="modal-content">
                 <span class="close-button" onclick="fecharModal(1)">&times;</span>
                 <img src="app/style/img/imgInstitutionPageTest.png" alt="Imagem 1">
                 <h2>Nome da Causa 1</h2>
@@ -49,15 +60,15 @@
                 <button onclick="abrirFaleConosco()">Fale Conosco</button>
 
                 <!-- Botões de doação -->
-                <div class="doacao-buttons">
+                <section class="doacao-buttons">
                     <button class="doacao-button">Dinheiro</button>
                     <button class="doacao-button">Roupas</button>
                     <button class="doacao-button">Alimentos</button>
                     <button class="doacao-button">Brinquedos</button>
-                </div>
+                </section>
 
                 <!-- Opções de doação em dinheiro -->
-                <div>
+                <section>
                     <label for="valorDinheiro">Escolha o valor:</label>
                     <select id="valorDinheiro">
                         <option value="10">R$ 10,00</option>
@@ -67,15 +78,15 @@
                         <option value="personalizado">Outro Valor</option>
                     </select>
                     <input type="text" id="custom-valor" class="custom-valor" placeholder="Digite o valor personalizado">
-                </div>
+                </section>
 
                 <button onclick="prosseguir()">Prosseguir</button>
-            </div>
-        </div>
+            </section>
+        </section>
 
         <!-- Adicione mais caixas conforme necessário -->
 
-    </div>
+    </section>
 
     <script>
         function mostrarModal(id) {
