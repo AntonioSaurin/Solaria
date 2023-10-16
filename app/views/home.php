@@ -19,33 +19,33 @@
 		?>
 	</header>
 
-	<section id="contentHome" class="flex-container">
-		<section id="main-home">
-			<p>Doe para um Futuro melhor</p>
-			<button type="button" class="btn btn-info">Olhar instituicoes</button>
-
+	<section id="contentHome" class="flexContainer">
+		<section id="mainHome">
+			<section class="contentTextHome">
+				<h1> Sua ajuda pode fazer a diferença! </h1>
+				<h3> A cada doação um futuro prospero é construído </h3>
+				<button type="button"  id="btnFirst" class="btn btn-info">Faça parte disso ></button>
+			</section>
+			
 		</section>
-		<section id="about-us">
-			<h2>Sobre nos</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-				deserunt mollit anim id est laborum</p>
-
+		<section id="howToAdopt">
+			<section class="contentTextHome">
+				<h2>Como adotar?</h2>
+				<h4>Veja informações sobre o assunto</h6>
+			</section>
+			<section class="btnSecond">
+				<button type="button" id="btnSecond" class="btn btn-info">Descubra aqui ></button>
+			</section>
 		</section>
-		<section id="how-to-adopt">
-			<h2>Como adotar</h2>
-			<h6>clique aqui para saber como adotar uma criança</h6>
-			<button type="button" class="btn btn-info">Como Adotar</button>
-
+		<section id="signUpInstitution">
+			<section class="contentTextHome">
+				<h2>É uma instituição?</h2>
+				<h4>Adicione-a em nossa plataforma</h6>
+			</section>
+			<section class="btnThird">
+				<button type="button" id="btnThird" class="btn btn-info">Cadastre-se ></button>
+			</section>
 		</section>
-		<section id="sign-up-institution">
-			<h2>É uma istituição?</h2>
-			<h6>clique aqui para adicionar sua instituicao ao nosso site</h6>
-			<button type="button" class="btn btn-info">Adicionar</button>
-		</section>
-
 	</section>
 	<footer id="footer">
 
