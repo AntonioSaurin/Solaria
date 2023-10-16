@@ -41,17 +41,26 @@
                             <a href="/sobre-nos" class="nav-link">Sobre nós</a>
                         </li>
                         
-                        <li class="nav-item dropdown ml-3 mr-5">
-                            <a href="#" class="fa-regular fa-user fa-xl  nav-link  mt-2" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #5a5a5ac2; "></a>
-                            <section id="headerMenu"class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="/infoUser">Conta</a>
-                                <?php
-                                    if(isset($_SESSION['name'])){
-                                        echo('<a class="dropdown-item" href="#">Configuracoes de conta</a>');
-                                        echo('<a class="dropdown-item" href="#">Sair</a>');
-                                    }
-                                ?>
-                            </section>    
+                        <li class="nav-item dropdown ml-4" id="accountIcon">
+                            <?php
+                                
+                                if(isset($name)){  
+                                    echo('
+                                        <a href="#" class="fa-regular fa-user fa-xl  nav-link  mt-2" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #5a5a5ac2; "></a>
+
+                                        <section id="headerMenu"class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="/infoUser">Conta</a>
+                                        </section>  
+                                    ');
+                                } 
+                               if(!isset($name)){
+                                    echo('
+                                        <a href="\login" class="nav-link">Login</a>
+                                    ');
+                               }    
+                            
+                            ?>
+                               
                         </li>
                     </ul>
                 </section>
