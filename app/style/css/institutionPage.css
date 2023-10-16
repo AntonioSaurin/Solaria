@@ -19,14 +19,10 @@ body {
 }
 
 .filterArea{
-    border-style: solid;
-    border-color: #000;
-    border-width: 1px;
-    border-radius: 11px;
     background-color: #fff;
-    padding: 5px;
+    /* padding: 5px; */
     margin-bottom: 10px;
-    width: 30%;
+    width: 50%;
     font-size: 20px;
     display: inline-block;
     vertical-align: middle;   
@@ -34,13 +30,22 @@ body {
 
 .filterText{
     text-align: center;
-    vertical-align: middle;
+    justify-self: center;
+    padding-right: 10px;
+}
+
+.selectFilter{
+    
+    justify-self: center;
+    padding-right: 10px;
 }
 
 .filterImage{
-    width: 20px;
-    height: 20px;
-    margin: 5px;
+    width: 17px;
+    height: 17px;
+    margin-top: 4px;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 /* Caixas de doação */
