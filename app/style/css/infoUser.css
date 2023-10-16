@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+header{
+    position: absolute;
+}
+
 /* Class */
 .info_name_account{
     display: flex;
@@ -109,6 +113,19 @@
     margin-top: 3%;
     margin-right: 18%;
 }
+
+.box_confsenha{
+    position: absolute;
+    border: 1%;
+    width: 20%;
+    border-radius: 3%;
+    border-color: rgb(206, 206, 206);
+    border-style: solid;
+    background-color: rgb(206, 206, 206);
+    margin-top: 3%;
+    margin-right: 18%;
+}
+
 
 .label_account_test{
     justify-content: center;

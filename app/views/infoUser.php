@@ -9,10 +9,15 @@
 </head>
 
 <body>
-    <main class="info_account">
+    <header>
         <?php
-        include_once("header.php");
+           // include_once("header.php");
         ?>
+    </header>
+
+
+    <main class="info_account">
+        
         <section class="info_account">
             <section class="space_img_account">
                 <img src="app/style/img/images.jpg" id="img_account">
@@ -40,8 +45,8 @@
                     <label id="label_account_senha"> Senha: </label>
                     <label class="box_senha"> THESENHA </label>
 
-                    <label id="label_account_">
-
+                    <label id="label_account_confsenha"> Confirma: </label>
+                    <label class="box_confsenha"> THESENHA </label>
                 </section>
 
                 <section class="info_account_cep_test">
