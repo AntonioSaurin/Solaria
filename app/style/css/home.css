@@ -1,82 +1,90 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-html {
-    height: 100vh;
+html, body {
+    height: 100%;
 }
 
 body {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 12% auto 6%;
-    grid-template-areas:
-        "header"
-        "contentHome"
-        "footer";
+    display: flex;
+    flex-direction: column;
 }
 
 #header {
-   
-
     text-align: center;
-    grid-area: header;
-
-
+    position: absolute;
 }
 
 #contentHome {
-    height: 100%;
-    align-self: center;
-    text-align: center;
-    grid-area: contentHome;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "main-home"
-        "about-us"
-        "how-to-adopt"
-        "sign-up-institution";
-
+    flex: 1.5; 
+    display: flex;
+    flex-direction: column;
 }
 
-#main-home {
-    grid-area: main-home;
-    background-color: lightgrey;
+#mainHome {
+    background-color: rgb(5, 184, 170);
+    color: rgb(255, 255, 255);
+    height: 97vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-#about-us {
-    grid-area: about-us;
+
+.contentTextHome {
+    margin-left: 5rem;
 }
 
-#how-to-adopt {
-    grid-area: how-to-adopt;
-
-    background-color: #E3286A;
+.contentTextHome p {
+    display: inline-block; 
+    margin-right: 10px; 
 }
 
-#sign-up-institution {
-    background-color: #FFA12D;
-    grid-area: sign-up-institution;
-
+#howToAdopt {
+    background-color: rgb(254, 160, 45); 
+    display: flex;
 }
 
 #header p {
     margin-top: 17px;
     text-align: center;
-
 }
 
-
+#signUpInstitution {
+    background-color: rgb(41, 119, 172);
+    color: rgb(255, 255, 255);
+}
 
 #footer {
-
     background-color: black;
     text-align: center;
-    grid-area: footer;
+}
 
+#btnFirst, #btnSecond, #btnThird {
+    color: rgb(255, 255, 255);
+    background-color: #E12A69;
+    padding: 10px 20px; 
+    display: inline-block; 
+    margin-left: 10px; 
+}
+
+#btnFirst:hover, #btnSecond:hover, #btnThird:hover {
+    background-color: #fff;
+    color: #E12A69;
+}
+
+#btnSecond {
+    background-color: #2778AD;
+    margin-left: 40rem;
+    margin-top: 1.2rem;
+}
+
+#btnThird {
+    background-color: #E12A69;
+    margin-left: 40rem;
+    margin-top: 1.2rem;
 }
