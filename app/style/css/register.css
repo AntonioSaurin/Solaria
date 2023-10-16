@@ -13,13 +13,18 @@
     overflow: hidden;
 }
 
+header {
+    position: absolute;
+}
+
 .img {
     transform: scaleX(-1);
-    height: 90rem;
-    display: flex;
-    position: absolute;
-    left: 40rem;
-    top: -18rem;
+    height: 60rem;
+    display: grid;
+    position: relative;
+    left: 68rem;
+    top: -7rem;
+    z-index: 0;
 }
 
 .form {
@@ -28,20 +33,20 @@
     color: #fff;
     border-radius: 12px;
     position: absolute;
-    padding: 15rem 20rem;
-    top: 13rem;
+    padding: 18rem 20rem;
+    top: 9rem;
     left: 8rem;
     font-size: 20px;
 }
 
 .table1 {
-    top: 253px;
+    top: 170px;
     position: fixed;
     left: 11rem;
 }
 
 .table2 {
-    top: 20rem;
+    top: 16rem;
     position: fixed;
     left: 30rem;
 
@@ -67,15 +72,17 @@
     border-radius: 4px;
     cursor: pointer;
     align-self: center;
-    left: 71px;
+    left: 35px;
     width: 70%;
 }
 
-.signupBox:focus, input:focus, select:focus {
+.signupBox:focus,
+input:focus,
+select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
-} 
+}
 
 .signupBox button:hover {
     background-color: #a73c3c;
@@ -91,7 +98,7 @@
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    display: inline-flex;
+    display: inline-grid;
     font-family: "JetBrains Mono", monospace;
     height: 48px;
     justify-content: center;
@@ -110,7 +117,7 @@
     white-space: nowrap;
     will-change: box-shadow, transform;
     font-size: 18px;
-    margin-top: 23px;
+    margin-top: 10px;
 }
 
 .registerButton:focus {
@@ -128,7 +135,7 @@
 }
 
 #gradient {
-    display: flex;
+    display: grid;
     background: linear-gradient(135deg, #ff6699, #ff3366, #ff0066);
     background-size: 300% 300%;
     height: 100rem;

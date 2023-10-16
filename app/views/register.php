@@ -12,8 +12,13 @@
 </head>
 
 <body>
-    <span id="gradient">
-        <main class="container">
+    <header>
+        <?php
+        include('header.php');
+        ?>
+    </header>
+    <main>
+        <span id="gradient">
             <section class="signupBox form">
                 <form action="cadastro/efetuar" method="post" name="Cadastro">
                     <span class="table1">
@@ -47,6 +52,8 @@
                             placeholder="Confirmar Senha"><br>
 
                         <button type="submit" name="submit" class="registerButton">Cadastrar</button>
+
+                        <p>Você já tem uma conta? <a href="/login">Login</a></p>
                     </span>
                 </form>
                 <script>
@@ -55,9 +62,10 @@
                     $("#birthDate").mask("00/00/0000");
                 </script>
             </section>
-        </main>
-        <img class="img" src="app/style/img/brandWithoutBG.png">
-    </span>
+            <img class="img" src="app/style/img/brandWithout.png">
+        </span>
+    </main>
+
 </body>
 
 </html>

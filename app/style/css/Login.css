@@ -13,13 +13,18 @@
     overflow: hidden;
 }
 
+header{
+    position: absolute;
+}
+
 .img {
     transform: scaleX(-1);
-    height: 90rem;
-    display: flex;
-    position: absolute;
-    left: 40rem;
-    top: -18rem;
+    height: 60rem;
+    display: grid;
+    position: relative;
+    left: 68rem;
+    top: -7rem;
+    z-index: 0;
 }
 
 .form {
@@ -31,7 +36,7 @@
     font-size: 20px;
     position: absolute;
     left: 16rem;
-    top: 12rem;
+    top: 9rem;
     display: block;
     margin-top: 80px;
     margin-left: auto;
@@ -62,7 +67,7 @@
     border-radius: 4px;
     cursor: pointer;
     align-self: center;
-    left: 74px;
+    left: 34px;
     width: 70%;
 }
 
@@ -80,7 +85,7 @@
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    display: inline-flex;
+    display: inline-grid;
     font-family: "JetBrains Mono", monospace;
     height: 48px;
     justify-content: center;
@@ -117,7 +122,7 @@
 
 
 .gradient{
-    display: flex;
+    display: grid;
     background: linear-gradient(135deg, #2778ad, #00b8a9, #ffa22d);
     background-size: 300% 300%;
     animation: colors 10s ease infinite;
