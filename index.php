@@ -15,6 +15,7 @@ $routes = [
     '/login/efetuar' => 'controllers/login.php',
     '/teste' => 'views/teste.php',
     '/header' => 'views/header.html',
+    '/instituicoes' => 'views/institutionPage.php',
     '/usuario/editar' => 'controllers/updateUser.php',
     '/infoUser' => 'views/infoUser.php'
 ];
