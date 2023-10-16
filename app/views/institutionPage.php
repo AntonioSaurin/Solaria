@@ -10,7 +10,7 @@
     <section class="container">
         <!-- Botões de filtro -->
         <section class="filterArea">
-            <label for="filtroTipo"><img class="filterImage" src="app/style/img/filterImage.png">Filtrar:</label>
+            <label for="filtroTipo" class="filterText"><img class="filterImage" src="app/style/img/filterImage.png">Filtrar:</label>
             <select id="filtroTipo">
                 <option value="">Todos</option>
                 <option value="dinheiro">Dinheiro</option>
