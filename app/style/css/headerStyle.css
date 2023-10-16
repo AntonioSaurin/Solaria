@@ -33,3 +33,13 @@ p {
     display: flex;
     align-content: space-between;
 }
+#accountIcon{
+    margin-right: -160px;
+    
+}
+ li:hover{
+    color:#2778ad;
+}
+#accountIcon a{
+    font-weight: bold;
+}
