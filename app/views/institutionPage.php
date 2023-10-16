@@ -30,7 +30,9 @@
                 <p class="institutionDescription">A Adotar é uma instituição de adoção dedicada a encontrar lares amorosos e seguros para crianças vulneráveis. Nossa equipe oferece cuidados de qualidade, apoio emocional e recursos para famílias adotivas. </p>
                 <p><b>Necessita:</b> Brinquedos, Roupas e Dinheiro.</p>
             </div>
+            <section class="buttonArea">
             <button class="doar-button">Doar ></button>
+            </section>
         </div>
 
         

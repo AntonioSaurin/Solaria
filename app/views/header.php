@@ -32,7 +32,7 @@
                 <section>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mr-4">
-                            <a href="#" class="nav-link">Instituições</a>
+                            <a href="/instituicoes" class="nav-link">Instituições</a>
                         </li>
                         <li class="nav-item mr-4">
                             <a href="#" class="nav-link">Como adotar</a>
