@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -25,7 +25,7 @@
         <h3 class="h3_aboutUs">Solaria</h3>
         <!-- <section class="blog_content_img">
                   <img id="img_brand_aboutUs" src="app/style/img/Brand.png">
-                </section> -->
+             </section> -->
         <br>
         <p>
           <label class="label_space_aboutUs"> O </label> projeto Solaria é uma iniciativa criada por estudantes atentos

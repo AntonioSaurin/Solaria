@@ -7,8 +7,13 @@
     <title>Solaria/Instituições</title>
 </head>
 <body>
+    <header id="header">
+		<?php
+			include('header.php');
+		?>
+	</header>
+
     <section class="container">
-        <!-- Botões de filtro -->
         <section class="filterArea">
             <label for="filtroTipo" class="filterText"><img class="filterImage" src="app/style/img/filterImage.png">Filtrar:</label>
             <select class="selectFilter" id="filtroTipo">
@@ -20,7 +25,6 @@
             </select>
         </section>
 
-        <!-- Caixas de doação -->
         <section class="caixa" onclick="mostrarModal(1)" color: #FFA12D>
             <img src="app/style/img/imgInstitutionPageTest.png" alt="Imagem 1">
             <section class="caixa-info">
@@ -33,7 +37,6 @@
             </section>
         </section>
 
-        <!-- Caixas de doação -->
         <section class="caixa" onclick="mostrarModal(1)" color: #FFA12D>
             <img src="app/style/img/imgInstitutionPageTest.png" alt="Imagem 1">
             <section class="caixa-info">
@@ -46,9 +49,6 @@
             </section>
         </section>
 
-        
-
-        <!-- Modal de detalhes da causa -->
         <section id="modal1" class="modal">
             <section class="modal-content">
                 <span class="close-button" onclick="fecharModal(1)">&times;</span>
@@ -59,7 +59,6 @@
                 <button class="doar-button">Doar ➡</button>
                 <button onclick="abrirFaleConosco()">Fale Conosco</button>
 
-                <!-- Botões de doação -->
                 <section class="doacao-buttons">
                     <button class="doacao-button">Dinheiro</button>
                     <button class="doacao-button">Roupas</button>
@@ -67,7 +66,6 @@
                     <button class="doacao-button">Brinquedos</button>
                 </section>
 
-                <!-- Opções de doação em dinheiro -->
                 <section>
                     <label for="valorDinheiro">Escolha o valor:</label>
                     <select id="valorDinheiro">
@@ -83,9 +81,6 @@
                 <button onclick="prosseguir()">Prosseguir</button>
             </section>
         </section>
-
-        <!-- Adicione mais caixas conforme necessário -->
-
     </section>
 
     <script>
@@ -100,11 +95,11 @@
         }
 
         function abrirFaleConosco() {
-            // Implemente a lógica para abrir a página de "Fale Conosco" aqui
+            
         }
 
         function prosseguir() {
-            // Implemente a lógica para prosseguir após a doação aqui
+            
         }
     </script>
 </body>
