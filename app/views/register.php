@@ -56,16 +56,16 @@
                         <p>Você já tem uma conta? <a href="/login">Login</a></p>
                     </span>
                 </form>
-                <script>
-                    $("#phone").mask("(00) 00000-0000");
-                    $("#CPF").mask("000.000.000-00");
-                    $("#birthDate").mask("00/00/0000");
-                </script>
+
             </section>
             <img class="img" src="app/style/img/brandWithout.png">
         </span>
     </main>
-
+    <script>
+        $("#phone").mask("(00) 00000-0000");
+        $("#CPF").mask("000.000.000-00");
+        $("#birthDate").mask("00/00/0000");
+    </script>
 </body>
 
 </html>
