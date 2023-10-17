@@ -34,6 +34,19 @@ abstract class Model{
         return $list->fetch();
     }
 
+    public function findTwoFields($field1, $field2, $value1, $value2){
+        
+        $credentials = require 'app\config\database.php';
+
+        $sql = "select * from {$credentials['dbname']}.{$this->table} where {$field1} = :value1 and {$field2} = :value2;";
+        $list = $this->connection->prepare($sql);
+        $list->bindValue(':value1', $value1);
+        $list->bindValue(':value2', $value2);
+        $list->execute();
+
+        return $list->fetch();
+    }
+
     public function delete($field, $value){
         $credentials = require 'app\config\database.php';
 

@@ -18,7 +18,8 @@ $routes = [
     '/header' => 'views/header.php',
     '/usuario/editar' => 'controllers/updateUser.php',
     '/instituicoes' => 'views/institutionPage.php',
-    '/infoUser' => 'views/infoUser.php'
+    '/infoUser' => 'views/infoUser.php',
+    '/doacao' => 'views/institutionPage.php'
 ];
 
 $uri = Uri::load();
