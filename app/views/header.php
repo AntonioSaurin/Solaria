@@ -35,7 +35,7 @@
                             <a href="/instituicoes" class="nav-link">Instituições</a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a href="/howToAdopt" class="nav-link">Como adotar</a>
+                            <a href="/como-adotar" class="nav-link">Como adotar</a>
                         </li>
                         <li class="nav-item">
                             <a href="/sobre-nos" class="nav-link">Sobre nós</a>
