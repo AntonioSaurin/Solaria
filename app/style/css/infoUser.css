@@ -1,6 +1,6 @@
 @font-face{
     font-family: "Nunito";
-    src: url('../style/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
   
     font-family: "Sniglet";
     src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
@@ -17,17 +17,16 @@ header{
 }
 
 /* Class */
-.info_name_account{
+.infoNameAccount{
     display: flex;
     position: absolute;
     font-size: 150%;
     font-family: "Sniglet", sans-serif;
     margin-left: 15%;
     margin-top: -8%;
-    
 }
 
-.Cpf_account{
+.CpfAccount{
     display: flex;
     position: absolute;
     margin-left: 15%;
@@ -36,7 +35,7 @@ header{
     font-size: 140%;
 }
 
-.Dtnasc_account{
+.DtNascAccount{
     display: flex;
     position: absolute;
     margin-left: 15%;
@@ -45,31 +44,35 @@ header{
     font-size: 120%;
 }
 
-.info_account_space{
+.space{
     display: flex;
     justify-content: center;
 }
 
-.info_account_color_test{
+.infoAccountTableGeral{
     display: flex;
     justify-content: center;
     padding: 10%;
     width: 10%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2%;
+    font-family: "Nunito", sans-serif;
 }
 
-.info_account_cep_test{
+.infoAccountTableEndereco{
     display: flex;
     justify-content: center;
     padding: 10%;
     width: 10%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
-.info_account_top{
+.infoAccountTop{
     display: flex;
+    font-family: "Nunito", sans-serif;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 4%;
+    font-size: 115%;
 }
 
 .border{
@@ -78,66 +81,79 @@ header{
     border-width: 12px;
 }
 
-.box_email{
+.boxEmail{
     position: absolute;
+    font-size: 125%;
     border: 1%;
     width: 25%;
+    height: 4%;
     border-radius: 3%;
     border-color: rgb(206, 206, 206);
     border-style: solid;
     background-color: rgb(206, 206, 206);
     margin-top: -7%;
-    margin-right: 13%;
+    margin-right: 14%;
+    
 }
 
-.box_telefone{
+.boxTelefone{
     position: absolute;
+    font-size: 125%;
     border: 1%;
-    width: 18%;
+    width: 15%;
+    height: 4%;
     border-radius: 3%;
     border-color: rgb(206, 206, 206);
     border-style: solid;
     background-color: rgb(206, 206, 206);
     margin-top: -2%;
-    margin-right: 20%;
+    margin-right: 24%;
 }
 
-.box_senha{
+.boxSenha{
     position: absolute;
+    font-size: 125%;
     border: 1%;
     width: 20%;
+    height: 4%;
     border-radius: 3%;
     border-color: rgb(206, 206, 206);
     border-style: solid;
     background-color: rgb(206, 206, 206);
     margin-top: 3%;
-    margin-right: 18%;
+    margin-right: 19%;
 }
 
-.box_confsenha{
+.boxConfSenha{
     position: absolute;
+    font-size: 125%;
     border: 1%;
     width: 20%;
     border-radius: 3%;
-    border-color: rgb(206, 206, 206);
+    /*border-color: rgb(206, 206, 206);
     border-style: solid;
-    background-color: rgb(206, 206, 206);
-    margin-top: 3%;
-    margin-right: 18%;
+    background-color: rgb(206, 206, 206);*/
+    margin-top: 8%;
+    margin-right: 19%;
 }
 
+.labelTitleTop{
+    color: white;
+}
 
-.label_account_test{
-    justify-content: center;
-    padding: 10%;
-    width: 10%;
-    background-color: rgb(255, 14, 86);
+.AccountSenha{
+    background-color: rgb(206, 206, 206);
+    width: 50%;
+    border: 1%;
+    border-style: solid;
+    border-width: 20%;
+    border-color: rgb(206, 206, 206);
 }
 
 
 /* ID */
 
-#label_account_endereco{
+#labelAccountEndereco{
     display: flex;
     justify-content: center;
     border-style: solid;
@@ -148,7 +164,7 @@ header{
     border-radius: 2%;
 }
 
-#label_account_geral{
+#labelAccountGeral{
     display: flex;
     border-style: solid;
     border-width: 1px;
@@ -159,7 +175,7 @@ header{
     border-radius: 2%;
 }
 
-#img_account{
+#imgAccount{
     display: flex;
     position: relative;
     width: 10%;
@@ -169,38 +185,33 @@ header{
     margin-top: 5%;
 }
 
-#label_account_email{
-    position: absolute;
-    margin-top: -9%;
-    margin-right: 14%;
-}
-
-#label_account_email{
-    position: absolute;
-    margin-top: -9%;
-    margin-right: 14%;
-}
-
-#label_account_email{
-    position: absolute;
-    margin-top: -9%;
-    margin-right: 14%;
-}
-
-#label_account_email{
+#labelAccountEmail{
     position: absolute;
     margin-top: -9%;
     margin-right: 35%;
+    font-size: 125%;
+    
 }
 
-#label_account_telefone{
+#labelAccounTelefone{
     position: absolute;
     margin-top: -4%;
     margin-right: 34%;
+    font-size: 125%;
+    
 }
 
-#label_account_senha{
+#labelAccountSenha{
     position: absolute;
     margin-top: 1%;
     margin-right: 35%;
+    font-size: 125%;
+    
+}
+
+#labelAccountConfsenha{
+    position: absolute;
+    margin-top: 6%;
+    margin-right: 33%;
+    font-size: 125%;
 }
