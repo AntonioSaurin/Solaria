@@ -21,6 +21,9 @@
 
 	<section id="contentHome" class="flexContainer">
 		<section id="mainHome">
+			<figure id="imgHome">
+				<img src="app/style/img/homeChildren.png" alt="Crianças sorrindo" title="Bem vindo(a) a solaria!">
+			</figure>
 			<section class="contentTextHome">
 				<h1> Sua ajuda pode fazer a diferença! </h1>
 				<h3> A cada doação um futuro prospero é construído </h3>
