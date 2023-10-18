@@ -5,7 +5,7 @@
   
   include_once "php/chatConfig.php";
   if(!isset($_SESSION['uniqueID'])){
-    header("location: chatLogin.php");
+    header("location: /chat/login");
   }
 ?>
 <?php include_once "chatHeader.php"; ?>

@@ -15,7 +15,7 @@
         ($row['userStatus'] == "Indisponível") ? $offline = "offline" : $offline = "";
         ($outgoing_id == $row['uniqueID']) ? $hid_me = "hide" : $hid_me = "";
 
-        $output .= '<a href="../app/views/chat/chatMain.php?user_id='. $row['uniqueID'] .'">
+        $output .= '<a href="/chat/conversar?user_id='. $row['uniqueID'] .'">
                     <div class="content">
                     <img src="../app/style/img/defaultProfile.png" alt="">
                     <div class="details">
