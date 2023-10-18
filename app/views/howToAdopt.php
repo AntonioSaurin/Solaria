@@ -14,6 +14,14 @@
 			include('header.php');
 		?>
 	</header>
-    
+    <main>
+        <section class="banner">
+            <section class="bannerContent">
+                <h1>Adoção: Um Novo Amanhecer</h1>
+                <p>Dê a uma criança o amor, a segurança e o carinho que ela merece. Saiba mais sobre o processo de adoção.</p>
+                <a href="#saiba-mais" class="button">Saiba Mais</a>
+            </section>
+        </section>
+    </main>
 </body>
 </html>
