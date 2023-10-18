@@ -1,5 +1,7 @@
 <?php 
-    //session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
     if(isset($_SESSION['uniqueID'])){
         include_once "chatConfig.php";
         $outgoing_id = $_SESSION['uniqueID'];
@@ -41,7 +43,7 @@
         }
         echo $output;
     }else{
-        header("location: ../app/views/chat/chatLogin.php");
+        header("location: /chat/login");
     }
 
 ?>
