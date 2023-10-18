@@ -8,13 +8,13 @@ form.onsubmit = (e)=>{
 
 continueBtn.onclick = ()=>{
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "php/chatLogin.php", true);
+    xhr.open("POST", "../app/views/chat/php/chatLogin.php", true);
     xhr.onload = ()=>{
       if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.status === 200){
               let data = xhr.response;
               if(data === "success"){
-                location.href = "chatUsers.php";
+                location.href = "/chat";
               }else{
                 errorText.style.display = "block";
                 errorText.textContent = data;

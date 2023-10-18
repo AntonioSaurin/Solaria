@@ -1,5 +1,7 @@
 <?php
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
     include_once "chatConfig.php";
     $outgoing_id = $_SESSION['uniqueID'];
     $sql = "SELECT * FROM userAccount WHERE NOT uniqueID = {$outgoing_id} ORDER BY ID DESC";

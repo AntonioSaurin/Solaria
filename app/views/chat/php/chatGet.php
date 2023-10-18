@@ -1,5 +1,7 @@
 <?php 
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
     if(isset($_SESSION['uniqueID'])){
         include_once "chatConfig.php";
         $outgoing_id = $_SESSION['uniqueID'];
@@ -28,7 +30,7 @@
                 }else{
                     $msgExplode = explode(":", $row['msgTime']);
                     $output .= '<section class="chat incoming">
-                                 <img src="" alt="">
+                                 <img src="../app/style/img/defaultProfile.png" alt="">
                                 <section class="details">
                                     <p>'. $row['msg'] .'</p>
                                     <h1 class="msgTime">'. $msgExplode[0].':'. $msgExplode[1] .'</h1>
@@ -41,7 +43,7 @@
         }
         echo $output;
     }else{
-        header("location: ../chatLogin.php");
+        header("location: /chat/login");
     }
 
 ?>

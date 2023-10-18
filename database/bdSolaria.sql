@@ -87,5 +87,6 @@ msgId int(11) NOT NULL AUTO_INCREMENT,
 incomingMsgID int(255) NOT NULL,
 outgoingMsgID int(255) NOT NULL,
 msg varchar(1000) NOT NULL,
+msgTime TIME DEFAULT CURRENT_TIME,
 PRIMARY KEY (`msgId`)
 )

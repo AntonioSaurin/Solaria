@@ -1,5 +1,7 @@
 <?php
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
     if(isset($_SESSION['uniqueID'])){
         include_once "chatConfig.php";
         $logout_id = mysqli_real_escape_string($conn, $_GET['logout_id']);
@@ -16,12 +18,12 @@
             if($sql){
                 session_unset();
                 session_destroy();
-                header("location: ../chatLogin.php");
+                header("location: /chat/login");
             }
         }else{
-            header("location: ../chatUsers.php");
+            header("location: /chat.php");
         }
     }else{  
-        header("location: ../chatLogin.php");
+        header("location: /chat/login.php");
     }
 ?>

@@ -1,5 +1,7 @@
 <?php 
-  session_start();
+  if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
   if(isset($_SESSION['uniqueID'])){
     header("location: chatUsers.php");
   }
@@ -7,44 +9,44 @@
 
 <?php include_once "chatHeader.php"; ?>
 <body>
-  <div class="wrapper">
+  <section class="wrapper">
     <section class="form signup">
       <header>Chat</header>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
-        <div class="error-text"></div>
-        <div class="name-details">
-          <div class="field input">
+        <section class="error-text"></section>
+        <section class="name-details">
+          <section class="field input">
             <label>Nome</label>
             <input type="text" name="fname" placeholder="Nome" required>
-          </div>
-          <div class="field input">
+          </section>
+          <section class="field input">
             <label>Sobrenome</label>
             <input type="text" name="lname" placeholder="Sobrenome" required>
-          </div>
-        </div>
-        <div class="field input">
+          </section>
+        </section>
+        <section class="field input">
           <label>Endereço de E-mail</label>
           <input type="text" name="email" placeholder="Insira seu E-mail" required>
-        </div>
-        <div class="field input">
+        </section>
+        <section class="field input">
           <label>Senha</label>
           <input type="password" name="password" placeholder="Insira sua senha" required>
           <i class="fas fa-eye"></i>
-        </div>
-        <div class="field image">
+        </section>
+        <section class="field image">
           <label>Selecione uma imagem</label>
           <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
-        </div>
-        <div class="field button">
+        </section>
+        <section class="field button">
           <input type="submit" name="submit" value="Cadastrar">
-        </div>
+        </section>
       </form>
-      <div class="link">Já possui conta? <a href="chatLogin.php">Entrar</a></div>
+      <section class="link">Já possui conta? <a href="/chat/login">Entrar</a></section>
     </section>
-  </div>
+  </section>
 
-  <script src="javascript/chatShowPassword.js"></script>
-  <script src="javascript/chatSignup.js"></script>
+  <script src="../app/javaScript/chatShowPassword.js"></script>
+  <script src="../app/javaScript/chatSignup.js"></script>
 
 </body>
 </html>

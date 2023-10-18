@@ -16,6 +16,12 @@ $routes = [
     '/login/efetuar' => 'controllers/login.php',
     '/teste' => 'views/teste.php',
     '/header' => 'views/header.php',
+
+    '/chat' => 'views/chat/chatUsers.php',
+    '/chat/login' => 'views/chat/chatLogin.php',
+    '/chat/registrar' => 'views/chat/chatSignup.php',
+    '/chat/conversar' => 'views/chat/chatMain.php',
+
     '/usuario/editar' => 'controllers/updateUser.php',
     '/instituicoes' => 'views/institutionPage.php',
     '/infoUser' => 'views/infoUser.php',
