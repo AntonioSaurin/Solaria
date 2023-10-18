@@ -1,5 +1,5 @@
 <?php 
-  session_start();
+  //session_start();
   if(isset($_SESSION['uniqueID'])){
     header("location: chatUsers.php");
   }
@@ -25,12 +25,12 @@
           <input type="submit" name="submit" value="Entrar">
         </div>
       </form>
-      <div class="link">Não possui conta? <a href="index.php">Cadastrar</a></div>
+      <div class="link">Não possui conta? <a href="/chat/registrar">Cadastrar</a></div>
     </section>
   </div>
   
-  <script src="javascript/chatShowPassword.js"></script>
-  <script src="javascript/chatLogin.js"></script>
+  <script src="../app/javaScript/chatShowPassword.js"></script>
+  <script src="../app/javaScript/chatLogin.js"></script>
 
 </body>
 </html>

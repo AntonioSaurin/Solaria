@@ -1,5 +1,5 @@
 <?php 
-  session_start();
+  //session_start();
   include_once "php/chatConfig.php";
   if(!isset($_SESSION['uniqueID'])){
     header("location: chatLogin.php");
@@ -18,13 +18,13 @@
             }
           ?>
            <!-- <img src="php/images/<php /*echo $row['img']*/ ?>" alt=""> -->
-          <img src="php/images/default.png" alt="">
+          <img src="../app/style/img/defaultProfile.png" alt="">
           <div class="details">
             <span><?php echo $row['userName']; ?></span>
             <p><?php echo $row['userStatus']; ?></p>
           </div>
         </div>
-        <a href="php/chatLogout.php?logout_id=<?php echo $row['uniqueID']; ?>" class="logout">Sair</a>
+        <a href="../app/views/chat/php/chatLogout.php?logout_id=<?php echo $row['uniqueID']; ?>" class="logout">Sair</a>
       </header>
       <div class="search">
         <span class="text">Selecione um usuário</span>
@@ -37,7 +37,7 @@
     </section>
   </div>
 
-  <script src="javascript/chatUsers.js"></script>
+  <script src="../app/javaScript/chatUsers.js"></script>
 
 </body>
 </html>
