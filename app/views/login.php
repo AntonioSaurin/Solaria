@@ -27,7 +27,7 @@
                     <input type="password" class="loginBox" name="password" id="password" placeholder="Senha"><br>
 
                     <button type="submit" name="login" class="loginButton">Login</button>
-                    <p>Ainda não tem uma conta? <a href="/cadastro">Cadastrar</p>
+                    <p>Ainda não tem uma conta? <a href="/cadastro">Cadastrar</a></p>
                 </span>
             </form>
         </section>

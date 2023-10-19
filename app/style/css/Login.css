@@ -6,15 +6,17 @@
     src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+html {
     overflow: hidden;
+    background-color: #f9f2d0;
 }
 
 header{
     position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .img {
@@ -27,21 +29,27 @@ header{
     z-index: 0;
 }
 
+p{
+    position: relative;
+    left: 1rem;
+}
+
 .form {
     font-family: "Nunito", "sans-serif";
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid #000;
+    color: #000;
     border-radius: 12px;
     padding: 40px 70px;
     font-size: 20px;
     position: absolute;
-    left: 16rem;
-    top: 9rem;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
     display: block;
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 500px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     justify-content: center;
@@ -61,13 +69,13 @@ header{
 
 .loginBox button {
     background-color: #CD5151;
-    color: #fff;
+    color: #000;
     padding: 10px 2px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     align-self: center;
-    left: 34px;
+    left: 55px;
     width: 70%;
 }
 
@@ -83,7 +91,7 @@ header{
     border: 0;
     border-radius: 6px;
     box-sizing: border-box;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     display: inline-grid;
     font-family: "JetBrains Mono", monospace;
@@ -121,7 +129,7 @@ header{
 }
 
 
-.gradient{
+/* .gradient{
     display: grid;
     background: linear-gradient(135deg, #2778ad, #00b8a9, #ffa22d);
     background-size: 300% 300%;
@@ -142,4 +150,4 @@ header{
     100%{
         background-position: 0% 50%;
     }
-}
+} */
