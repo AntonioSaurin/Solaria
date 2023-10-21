@@ -76,6 +76,7 @@ create table institution(
     accountID int,
     CNPJ varchar(18),
     description varchar(255),
+    state enum('waiting', 'approved'),
     primary key(ID),
     foreign key (accountID) references userAccount(ID)
 );
