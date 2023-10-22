@@ -16,6 +16,7 @@ header{
     position: absolute;
 }
 
+
 /* Class */
 .infoNameAccount{
     display: flex;
@@ -44,27 +45,29 @@ header{
     font-size: 120%;
 }
 
-.space{
+.tablesFlex{
     display: flex;
-    justify-content: center;
 }
 
-.infoAccountTableGeral{
+.spaceTableGeral{
     display: flex;
-    justify-content: center;
-    padding: 10%;
-    width: 10%;
-    background-color: rgb(255, 255, 255);
-    margin-top: 2%;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    width: 30%;
+    height: 25rem;
+    margin-left: 20%;
     font-family: "Nunito", sans-serif;
 }
 
-.infoAccountTableEndereco{
+.spaceTableEndereco{
     display: flex;
-    justify-content: center;
-    padding: 10%;
-    width: 10%;
-    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    width: 30%;
+    height: 25rem;
+    font-family: "Nunito", sans-serif;
 }
 
 .infoAccountTop{
@@ -81,75 +84,122 @@ header{
     border-width: 12px;
 }
 
-.boxEmail{
-    position: absolute;
-    font-size: 125%;
+.boxLimit{
+    width: 100%;
+    border-style: solid;
     border: 1%;
-    width: 25%;
-    height: 4%;
     border-radius: 3%;
     border-color: rgb(206, 206, 206);
-    border-style: solid;
     background-color: rgb(206, 206, 206);
-    margin-top: -7%;
-    margin-right: 14%;
+    margin-left: 5%;
+}
+
+.boxLimitador{
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     
 }
 
-.boxTelefone{
-    position: absolute;
+.boxEmail{
+    display: flex;
     font-size: 125%;
-    border: 1%;
-    width: 15%;
-    height: 4%;
+    text-overflow: ellipsis;    
+}
+
+.boxTelefone{
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+    font-size: 125%;
+    padding-top: 1%;
     border-radius: 3%;
     border-color: rgb(206, 206, 206);
-    border-style: solid;
     background-color: rgb(206, 206, 206);
-    margin-top: -2%;
-    margin-right: 24%;
+    margin-top: 1%;
+    margin-left: 5%;
 }
 
 .boxSenha{
-    position: absolute;
+    display: flex;
     font-size: 125%;
     border: 1%;
-    width: 20%;
-    height: 4%;
+    max-width: 60%;
     border-radius: 3%;
     border-color: rgb(206, 206, 206);
     border-style: solid;
     background-color: rgb(206, 206, 206);
-    margin-top: 3%;
-    margin-right: 19%;
+    margin-top: 1%;
+    margin-left: 5%;
 }
 
 .boxConfSenha{
-    position: absolute;
+    display: flex;
     font-size: 125%;
     border: 1%;
-    width: 20%;
+    max-width: 60%;
     border-radius: 3%;
-    /*border-color: rgb(206, 206, 206);
+    border-color: rgb(206, 206, 206);
     border-style: solid;
-    background-color: rgb(206, 206, 206);*/
-    margin-top: 8%;
-    margin-right: 19%;
+    background-color: rgb(206, 206, 206);
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+.boxCEP{
+    display: flex;
+    width: 100%;
+    font-size: 125%;
+    border-style: solid;
+    border-radius: 3%;
+    border-color: rgb(206, 206, 206);
+    background-color: rgb(206, 206, 206);
+    margin-top: 1%;
+    margin-left: 10%;
+}
+
+.boxEstado{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    font-size: 125%;
+    border-style: solid;
+    border-radius: 3%;
+    border-color: rgb(206, 206, 206);
+    background-color: rgb(206, 206, 206);
+    margin-top: 3%;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.boxCidade{
+    display: flex;
+    width: 100%;
+    font-size: 125%;
+    border-style: solid;
+    border-radius: 3%;
+    border-color: rgb(206, 206, 206);
+    background-color: rgb(206, 206, 206);
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.boxBairro{
+    display: flex;
+    width: 100%;
+    font-size: 125%;
+    border-style: solid;
+    border-radius: 3%;
+    border-color: rgb(206, 206, 206);
+    background-color: rgb(206, 206, 206);
+    margin-top: 1%;
+    margin-left: 10%;
 }
 
 .labelTitleTop{
     color: white;
 }
-
-.AccountSenha{
-    background-color: rgb(206, 206, 206);
-    width: 50%;
-    border: 1%;
-    border-style: solid;
-    border-width: 20%;
-    border-color: rgb(206, 206, 206);
-}
-
 
 /* ID */
 
@@ -185,33 +235,70 @@ header{
     margin-top: 5%;
 }
 
+
+#btnExcluir{
+    background-color: #E3286A;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5%;
+    margin-top: 10%;
+    padding: 4%;
+    cursor: pointer;
+}
+
 #labelAccountEmail{
-    position: absolute;
-    margin-top: -9%;
-    margin-right: 35%;
+    display: flex;
+    margin-left: 5%;
+    margin-top: 10%;
     font-size: 125%;
-    
 }
 
 #labelAccounTelefone{
-    position: absolute;
-    margin-top: -4%;
-    margin-right: 34%;
+    display: flex;
+    margin-top: 4%;
+    margin-left: 5%;
     font-size: 125%;
-    
 }
 
 #labelAccountSenha{
-    position: absolute;
-    margin-top: 1%;
-    margin-right: 35%;
+    display: flex;
+    margin-top: 4%;
+    margin-left: 5%;
     font-size: 125%;
-    
 }
 
 #labelAccountConfsenha{
-    position: absolute;
+    display: flex;
+    margin-top: 4%;
+    margin-left: 5%;
+    font-size: 125%;
+}
+
+#labelAccountCEP{
+    display: flex;
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 125%;
+}
+
+#labelAccountEstado{
+    display: flex;
     margin-top: 6%;
-    margin-right: 33%;
+    margin-left: 10%;
+    font-size: 125%;
+}
+
+#labelAccountCidade{
+    display: flex;
+    margin-top: 6%;
+    margin-left: 10%;
+    font-size: 125%;
+}
+
+#labelAccountBairro{
+    display: flex;
+    margin-top: 6%;
+    margin-left: 10%;
     font-size: 125%;
 }
