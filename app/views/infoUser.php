@@ -11,7 +11,7 @@
 <body>
     <header>
         <?php
-           // include_once("header.php");
+            //include_once("header.php");
         ?>
     </header>
 
@@ -40,16 +40,16 @@
                         <label id="labelAccountEmail"> E-mail: </label>
                         <section class="boxLimit"> <section class="boxLimitador"> <label class="boxEmail"> Andre_varnascimento@gmail.com </label></section></section>
                         
-                        <label id="labelAccounTelefone"> Telefone: </label>
+                        <label class="labelAccountGeral"> Telefone: </label>
                         <label class="boxTelefone"> +55 (11) 93212-9875 </label>
                         
-                        <label id="labelAccountSenha"> Senha: </label>
+                        <label class="labelAccountGeral"> Senha: </label>
                         <section class="boxSenha"> <label class="AccountSenha"> THESENHA </label> </section>
 
-                        <label id="labelAccountConfsenha"> Confirma: </label>
+                        <label class="labelAccountGeral"> Confirma: </label>
                         <label class="boxConfSenha"> THESENHA </label>
 
-                        <button id="btnExcluir"> Excluir Conta</button>
+                        <button id="btnExcluir"> EXCLUIR CONTA</button>
                     </section>
                 </section>
                 <section class="spaceTableEndereco">
@@ -58,14 +58,22 @@
                         <label id="labelAccountCEP"> CEP: </label>
                         <label class="boxCEP"> 07500-000</label>
 
-                        <label id="labelAccountEstado"> Estado: </label>
+                        <label class="labelAccountEndereco"> Estado: </label>
                         <button class="boxEstado"> SP </button>
 
-                        <label id="labelAccountCidade"> Cidade: </label>
+                        <label class="labelAccountEndereco"> Cidade: </label>
                         <label class="boxCidade"> Santa Isabel </label>
 
-                        <label id="labelAccountBairro"> Bairro: </label>
+                        <label class="labelAccountEndereco"> Bairro: </label>
                         <label class="boxBairro"> Parque São Benedito </label>
+
+                        <label class="labelAccountEndereco"> Número: </label>
+                        <label class="boxNum"> 509 </label>
+
+                        <label class="labelAccountEndereco"> Logradouro: </label>
+                        <label class="boxLogradouro"> R. Ver. Luiz Benedito </label>
+
+                        <button id="btnSalvar"> SALVAR </button>
                     </section>
                 </section>
             </section>

@@ -55,7 +55,7 @@ header{
     border-color: rgb(0, 0, 0);
     border-width: 1px;
     width: 30%;
-    height: 25rem;
+    height: 32rem;
     margin-left: 20%;
     font-family: "Nunito", sans-serif;
 }
@@ -66,7 +66,7 @@ header{
     border-color: rgb(0, 0, 0);
     border-width: 1px;
     width: 30%;
-    height: 25rem;
+    height: 32rem;
     font-family: "Nunito", sans-serif;
 }
 
@@ -197,6 +197,44 @@ header{
     margin-left: 10%;
 }
 
+.boxNum{
+    display: flex;
+    width: 100%;
+    font-size: 125%;
+    border-style: solid;
+    border-radius: 3%;
+    border-color: rgb(206, 206, 206);
+    background-color: rgb(206, 206, 206);
+    margin-top: 1%;
+    margin-left: 10%;
+}
+
+.boxLogradouro{
+    display: flex;
+    width: 100%;
+    font-size: 125%;
+    border-style: solid;
+    border-radius: 3%;
+    border-color: rgb(206, 206, 206);
+    background-color: rgb(206, 206, 206);
+    margin-top: 1%;
+    margin-left: 10%;
+}
+
+.labelAccountGeral{
+    display: flex;
+    margin-top: 6%;
+    margin-left: 5%;
+    font-size: 125%;
+}
+
+.labelAccountEndereco{
+    display: flex;
+    margin-top: 6%;
+    margin-left: 10%;
+    font-size: 125%;
+}
+
 .labelTitleTop{
     color: white;
 }
@@ -242,8 +280,21 @@ header{
     border: none;
     border-radius: 3px;
     margin-left: 5%;
+    margin-top: 30%;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    cursor: pointer;
+}
+
+#btnSalvar{
+    background-color: #E3286A;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-left: 150%;
     margin-top: 10%;
-    padding: 4%;
+    padding: 7%;
     cursor: pointer;
 }
 
@@ -254,51 +305,9 @@ header{
     font-size: 125%;
 }
 
-#labelAccounTelefone{
-    display: flex;
-    margin-top: 4%;
-    margin-left: 5%;
-    font-size: 125%;
-}
-
-#labelAccountSenha{
-    display: flex;
-    margin-top: 4%;
-    margin-left: 5%;
-    font-size: 125%;
-}
-
-#labelAccountConfsenha{
-    display: flex;
-    margin-top: 4%;
-    margin-left: 5%;
-    font-size: 125%;
-}
-
 #labelAccountCEP{
     display: flex;
-    margin-top: 20%;
     margin-left: 10%;
-    font-size: 125%;
-}
-
-#labelAccountEstado{
-    display: flex;
-    margin-top: 6%;
-    margin-left: 10%;
-    font-size: 125%;
-}
-
-#labelAccountCidade{
-    display: flex;
-    margin-top: 6%;
-    margin-left: 10%;
-    font-size: 125%;
-}
-
-#labelAccountBairro{
-    display: flex;
-    margin-top: 6%;
-    margin-left: 10%;
+    margin-top: 15%;
     font-size: 125%;
 }
