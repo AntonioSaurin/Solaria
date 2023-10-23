@@ -1,0 +1,206 @@
+*{
+    padding:0px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+  }
+
+  #admin{
+    margin-top: 20px;
+  }
+  
+  #bemvenido { 
+    margin-left: 0px;
+    text-align: center;
+    color: #333;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  .admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .admin-card {
+    width: 500px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+  
+  .admin-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .admin-card .img_icon {
+    width: 64px;
+    height: 64px;
+    color: #333;
+    margin-right: 10px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+    float: left;
+  }
+  
+  .admin-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .admin-card .subtitle {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    transform: rotate(45deg);
+  }
+
+
+  /*Modal do usuário*/
+
+
+  /* Estilos do modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Estilos do conteúdo do modal */
+.modal-content {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 600px;
+}
+
+/* Estilos do botão de fechar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Estilos da caixa de pesquisa de usuários */
+.search-box {
+  position: relative;
+  margin-top: 10px;
+}
+
+#searchUser {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  color: #aaa;
+  font-size: 20px;
+}
+
+/* Estilos da caixa de usuário */
+.user-box {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.user-info h3 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.user-info p {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+  padding: 0;
+}
+
+.make-admin, .ban-user {
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.make-admin:hover, .ban-user:hover {
+  color: #333;
+}
+
+/* Estilos do segundo modal de confirmação */
+.confirmation-content {
+  width: 300px;
+  padding: 20px;
+}
+
+.confirmAction {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.confirmAction:hover {
+  background-color: #0056b3;
+}
