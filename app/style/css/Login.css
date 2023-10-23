@@ -9,6 +9,8 @@
 html {
     overflow: hidden;
     background-color: #f9f2d0;
+    background: linear-gradient(180deg, #2778ad, transparent);
+
 }
 
 header{
