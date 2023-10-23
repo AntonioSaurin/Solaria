@@ -45,7 +45,7 @@
 				<h2>É uma instituição?</h2>
 				<h4>Adicione-a em nossa plataforma</h6>
 			</section>
-			<section class="btnThird">
+			<section class="btnThird d-flex flex-row-reverse">
 				<button type="button" id="btnThird" class="btn btn-info">Cadastre-se ></button>
 			</section>
 		</section>
