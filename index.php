@@ -18,6 +18,8 @@ $routes = [
     '/teste' => 'views/teste.php',
     '/header' => 'views/header.php',
 
+    '/admin' => 'views/adminMenu.php',
+
     '/chat' => 'views/chat/chatUsers.php',
     '/chat/login' => 'views/chat/chatLogin.php',
     '/chat/registrar' => 'views/chat/chatSignup.php',
