@@ -41,7 +41,7 @@
                         <section class="boxLimit"> <section class="boxLimitador"> <label class="boxEmail"> Andre_varnascimento@gmail.com </label></section></section>
                         
                         <label class="labelAccountGeral"> Telefone: </label>
-                        <label class="boxTelefone"> +55 (11) 93212-9875 </label>
+                        <label class="boxTelefone">+55 (11) 93212-9875 </label>
                         
                         <label class="labelAccountGeral"> Senha: </label>
                         <section class="boxSenha"> <label class="AccountSenha"> THESENHA </label> </section>
@@ -49,7 +49,7 @@
                         <label class="labelAccountGeral"> Confirma: </label>
                         <label class="boxConfSenha"> THESENHA </label>
 
-                        <button id="btnExcluir"> EXCLUIR CONTA</button>
+                        <section class="spaceBtn"> <button id="btnExcluir"> EXCLUIR CONTA </button> </section>
                     </section>
                 </section>
                 <section class="spaceTableEndereco">
@@ -59,7 +59,34 @@
                         <label class="boxCEP"> 07500-000</label>
 
                         <label class="labelAccountEndereco"> Estado: </label>
-                        <button class="boxEstado"> SP </button>
+                        <select id="optionStates">
+                            <option value="1"> AC </option>
+                            <option value="2"> Al </option>
+                            <option value="3"> AP </option>
+                            <option value="4"> AM </option>
+                            <option value="5"> BA </option>
+                            <option value="6"> CE </option>
+                            <option value="7"> DF </option>
+                            <option value="8"> ES </option>
+                            <option value="9"> GO </option>
+                            <option value="10"> MA </option>
+                            <option value="11"> MT </option>
+                            <option value="12"> MS </option>
+                            <option value="13"> MG </option>
+                            <option value="14"> PA </option>
+                            <option value="15"> PB </option>
+                            <option value="16"> PE </option>
+                            <option value="17"> PI </option>
+                            <option value="18"> RJ </option>
+                            <option value="19"> RN </option>
+                            <option value="20"> RS </option>
+                            <option value="21"> RO </option>
+                            <option value="22"> RR </option>
+                            <option value="23"> SC </option>
+                            <option value="24"> SP </option>
+                            <option value="25"> SE </option>
+                            <option value="26"> TO </option>
+                        </select>
 
                         <label class="labelAccountEndereco"> Cidade: </label>
                         <label class="boxCidade"> Santa Isabel </label>
@@ -73,7 +100,7 @@
                         <label class="labelAccountEndereco"> Logradouro: </label>
                         <label class="boxLogradouro"> R. Ver. Luiz Benedito </label>
 
-                        <button id="btnSalvar"> SALVAR </button>
+                        <section class="spaceBtnSave"> <button id="btnSalvar"> SALVAR </button> </section>
                     </section>
                 </section>
             </section>

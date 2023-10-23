@@ -85,7 +85,7 @@ header{
 }
 
 .boxLimit{
-    width: 100%;
+    width: 120%;
     border-style: solid;
     border: 1%;
     border-radius: 3%;
@@ -95,11 +95,10 @@ header{
 }
 
 .boxLimitador{
-    max-width: 300px;
+    max-width: 400px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    
 }
 
 .boxEmail{
@@ -110,8 +109,7 @@ header{
 
 .boxTelefone{
     display: flex;
-    justify-content: center;
-    max-width: 60%;
+    max-width: 62%;
     font-size: 125%;
     padding-top: 1%;
     border-radius: 3%;
@@ -239,6 +237,18 @@ header{
     color: white;
 }
 
+.spaceBtn{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.spaceBtnSave{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+}
+
 /* ID */
 
 #labelAccountEndereco{
@@ -248,8 +258,7 @@ header{
     border-width: 1px;
     background-color: #E3286A;
     width: 30%;
-    padding: 2rex;
-    border-radius: 2%;
+    padding: 2rem;
 }
 
 #labelAccountGeral{
@@ -259,8 +268,7 @@ header{
     justify-content: center;
     background-color: #E3286A;
     width: 30%;
-    padding: 2rex;
-    border-radius: 2%;
+    padding: 2rem;
 }
 
 #imgAccount{
@@ -273,17 +281,29 @@ header{
     margin-top: 5%;
 }
 
+#optionStates{
+    display: flex;
+    width: 100%;
+    height: 5%;
+    margin-left: 10%;
+    margin-top: 1%;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    border-radius: 3px;
+}
 
 #btnExcluir{
+    display: flex;
     background-color: #E3286A;
     color: white;
     border: none;
     border-radius: 3px;
-    margin-left: 5%;
-    margin-top: 30%;
+    margin-top: 25%;
+    margin-left: 50%;
     padding: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     cursor: pointer;
 }
 
@@ -292,7 +312,6 @@ header{
     color: white;
     border: none;
     border-radius: 3px;
-    margin-left: 150%;
     margin-top: 10%;
     padding: 7%;
     cursor: pointer;
