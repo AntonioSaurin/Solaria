@@ -9,6 +9,10 @@
   
 </head>
 <body>
+  <?php
+    include_once("header.php");
+  ?>
+
 
   <section id="admin">
 
@@ -16,16 +20,16 @@
 
     date_default_timezone_set('America/Sao_Paulo');
 
-    // 24-hour format of an hour without leading zeros (0 through 23)
-      $Hour = date('G');
+    //Formato de 24 horas
+      $hourGet = date('G');
       $msgDay = "";
 
-      if ( $Hour >= 5 && $Hour <= 11 ) {
+      if ( $hourGet >= 5 && $hourGet <= 11 ) {
         $msgDay = "Bom-dia";
           
-      } else if ( $Hour >= 12 && $Hour <= 18 ) {
+      } else if ( $hourGet >= 12 && $hourGet <= 18 ) {
         $msgDay = "Boa-tarde";
-      } else if ( $Hour >= 19 || $Hour <= 4 ) {
+      } else if ( $hourGet >= 19 || $hourGet <= 4 ) {
         $msgDay = "Boa-noite";
       }
 
