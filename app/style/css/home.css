@@ -80,6 +80,8 @@ body {
 }
 
 #footer {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 2px;
     background-color: black;
     text-align: center;
 }
