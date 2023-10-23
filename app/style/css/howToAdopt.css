@@ -12,28 +12,43 @@
     box-sizing: border-box;
 }
 
-main .banner{
-    width: 100%;
-    height: 50vh;
-    background: linear-gradient(to right, #05b8a9, #05b8a900);
-    background-size: cover;
-    background-position: center;
+#header{
+    position: absolute;
+}
+
+#mainHowToAdopt{
+    color: #ffffff;
+    height: 97vh; 
     display: flex;
-    justify-content: center; 
-    align-items: center;
-    font-family: "Sniglet", sans-serif;
-    padding: 100px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: linear-gradient(to right,
+    #05b8a9,
+    #05b8a9,
+    #05b8a986,
+    #72e7de00
+    );
 }
 
-.banner h1{
-    color: #f1f0f0;
-    font-size: 36px;
+#imgHowToAdopt{
+    width: 600vh;
+    height: 300vh;
+    display: flex;
+    z-index: -1;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    position: absolute;
+    left: 2rem;
 }
 
-main .bannerContent {
-    max-width: 500px;
-    margin: 0 auto;
+.contentTextHowToAdopt{
     margin-left: 5rem;
+}
+
+.contentTextHowToAdoptp {
+    display: inline-block; 
+    margin-right: 10px; 
 }
 
 .button {
@@ -48,4 +63,29 @@ main .bannerContent {
 .button:hover{
     background-color: #fff;
     color: #E12A69;
+}
+
+#imgHowToAdopt{
+    width: 200vh;
+    height: 100vh;
+    display: flex;
+    justify-self: center;
+    z-index: -1;
+    position: fixed;
+    background-size: cover;
+}
+
+.containerOrganizer{
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 40vh;
+}
+
+.containerInfo{
+    background-color: #E12A69;
+    height: 40vh;
+    width: 20vw;
 }

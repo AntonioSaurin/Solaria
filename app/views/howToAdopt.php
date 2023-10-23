@@ -9,17 +9,33 @@
     <title>Como Adotar</title>
 </head>
 <body>
-    <header>
+    <header id="header">
 		<?php
 			include('header.php');
 		?>
 	</header>
     <main>
-        <section class="banner">
-            <section class="bannerContent">
-                <h1>Adoção: Um Novo Amanhecer</h1>
-                <p>Dê a uma criança o amor, a segurança e o carinho que ela merece. Saiba mais sobre o processo de adoção.</p>
-                <a href="#saiba-mais" class="button">Saiba Mais</a>
+        <section id="contentHowToAdopt" class="flexContainer">
+		    <section id="mainHowToAdopt">
+                <figure id="imgHowToAdopt">
+                    <img src="app/style/img/headerHowToAdopt.png" alt="Mãe com criança" title="Header Adoção">
+                </figure>
+                <section class="contentTextHowToAdopt">
+                    <h1>Adoção: Um Novo Amanhecer</h1>
+                    <p>Dê a uma criança o amor, a segurança e o carinho que ela merece. Saiba mais sobre o processo de adoção.</p>
+                    <a href="#saiba-mais" class="button">Saiba Mais</a>
+                </section>
+            </section>
+            <section class="containerOrganizer">
+                <section class="containerInfo">
+                    aa
+                </section>
+                <section class="containerInfo">
+                    aa
+                </section>
+                <section class="containerInfo">
+                    aa
+                </section>
             </section>
         </section>
     </main>
