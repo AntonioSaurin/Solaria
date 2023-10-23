@@ -37,17 +37,17 @@
   ?>
 
   <a href="#">
-  <section class="admin-container">
-      <section class="admin-card">
-      <img class="img_icon" src="app/style/img/imgUsers.png">
-      <h2>Gerenciar Usuários</h2>
-      <p class="subtitle">Adicionar cargo ou banir usuários.</p>
-      <span class="arrow">&#x2197;</span>
-  </section>
+    <section class="admin-container">
+        <section class="admin-card">
+        <img class="img_icon" src="app/style/img/imgUsers.png">
+        <h2>Gerenciar Usuários</h2>
+        <p class="subtitle">Adicionar cargo ou banir usuários.</p>
+        <span class="arrow">&#x2197;</span>
+    </section>
   </a>
   
   <a href="#">
-    <section class="admin-card">
+    <section class="admin-card" id="openModalButton">
       <img class="img_icon" src="app/style/img/imgInstitution.png">
       <h2>Gerenciar Instituições</h2>
       <p class="subtitle">Editar instituições disponiveis.</p>

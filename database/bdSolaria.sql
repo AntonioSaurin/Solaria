@@ -75,6 +75,10 @@ create table institution(
     ID int auto_increment,
     accountID int,
     CNPJ varchar(18),
+    legalGuardian varchar(50),
+    legalGuardianCPF varchar(14),
+    instagram varchar (30),
+    facebook varchar (30),
     description varchar(255),
     state enum('waiting', 'approved'),
     primary key(ID),
@@ -83,7 +87,7 @@ create table institution(
 
 create table donation(
     ID int auto_increment,
-    donationType enum ('money', 'toys', 'clothes', 'products'),
+    donationType enum('money', 'toys', 'clothes', 'products'),
     donationDate date,
     donator int,
     institution int,

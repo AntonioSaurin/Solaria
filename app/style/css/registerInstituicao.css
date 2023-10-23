@@ -8,7 +8,7 @@
 
 html { 
     overflow: hidden;
-    background-color: #f9f2d0;
+    background: linear-gradient(180deg, #cf0045, transparent);
 }
 
 header {
@@ -53,7 +53,11 @@ header {
     top: 7.5rem;
     position: fixed;
     left: 22rem;
+}
 
+.link{
+    position: relative;
+    right: 9.5rem;
 }
 
 .signupBox input[type="text"],
@@ -76,8 +80,8 @@ header {
     border-radius: 4px;
     cursor: pointer;
     align-self: center;
-    left: 29px;
     width: 70%;
+    right: 7.5rem;
 }
 
 .signupBox:focus,

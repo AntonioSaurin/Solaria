@@ -56,8 +56,11 @@ body {
 }
 
 #howToAdopt {
+    height: 200px;
     background-color: #fea02d; 
     display: flex;
+    color:#000000;
+    padding-top: 65px;
 }
 
 #header p {
@@ -66,11 +69,18 @@ body {
 }
 
 #signUpInstitution {
-    background-color: rgb(41, 119, 172);
+    padding-top:65px;
+    background-color: rgba(41, 120, 172, 0.979);
     color: rgb(255, 255, 255);
+    height: 250px;
+
+   
+  
 }
 
 #footer {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 2px;
     background-color: black;
     text-align: center;
 }
@@ -95,7 +105,8 @@ body {
 }
 
 #btnThird {
+    margin-right: 350px;
+    margin-bottom: 10px;
     background-color: #E12A69;
-    margin-left: 40rem;
-    margin-top: 1.2rem;
+    
 }
