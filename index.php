@@ -10,6 +10,7 @@ $routes = [
     '/' => 'views/home.php',
     '/login' => 'views/login.php',
     '/cadastro' => 'views/register.php',
+    '/cadastroInstituicao' => 'views/registerInstituicao.php',
     '/sobre-nos' => 'views/aboutUs.php',
     '/como-adotar' => 'views/howToAdopt.php',
     '/cadastro/efetuar' => 'controllers/createUser.php',
