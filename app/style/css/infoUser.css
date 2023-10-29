@@ -84,8 +84,9 @@ header{
     border-width: 12px;
 }
 
+/*E-mail*/
 .boxLimit{
-    width: 120%;
+    width: 130%;
     border-style: solid;
     border: 1%;
     border-radius: 3%;
@@ -95,7 +96,7 @@ header{
 }
 
 .boxLimitador{
-    max-width: 400px;
+    max-width: 500px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -103,27 +104,43 @@ header{
 
 .boxEmail{
     display: flex;
+    width: 100%;
     font-size: 125%;
-    text-overflow: ellipsis;    
+    text-overflow: ellipsis;
+    background-color: rgb(206, 206, 206);
+    border: none;
+        
 }
 
+/*Telefone*/
 .boxTelefone{
     display: flex;
-    max-width: 62%;
+    max-width: 100%;
+    height: 5%;
     font-size: 125%;
-    padding-top: 1%;
+    border: none;
     border-radius: 3%;
     border-color: rgb(206, 206, 206);
     background-color: rgb(206, 206, 206);
     margin-top: 1%;
+}
+
+.accountTel{
+    border: none;
+    width: 100%;
+    background-color: rgb(206, 206, 206);
     margin-left: 5%;
 }
 
+/*Senha*/
 .boxSenha{
     display: flex;
     font-size: 125%;
-    border: 1%;
-    max-width: 60%;
+    border: none;
+    width: 100%;
+    max-width: 100%;
+    height: 5%;
+    padding-top: 1%;
     border-radius: 3%;
     border-color: rgb(206, 206, 206);
     border-style: solid;
@@ -132,6 +149,14 @@ header{
     margin-left: 5%;
 }
 
+.accountSenha{
+    border: none;
+    font-size: 100%;
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+}
+
+/*Confirmar Senha*/
 .boxConfSenha{
     display: flex;
     font-size: 125%;
@@ -145,6 +170,7 @@ header{
     margin-left: 5%;
 }
 
+/*CEP*/
 .boxCEP{
     display: flex;
     width: 100%;
@@ -157,6 +183,7 @@ header{
     margin-left: 10%;
 }
 
+/*Estado*/
 .boxEstado{
     display: flex;
     justify-content: center;
@@ -171,6 +198,7 @@ header{
     cursor: pointer;
 }
 
+/*Cidade*/
 .boxCidade{
     display: flex;
     width: 100%;
@@ -183,6 +211,7 @@ header{
     margin-left: 10%;
 }
 
+/*Bairro*/
 .boxBairro{
     display: flex;
     width: 100%;
@@ -195,6 +224,7 @@ header{
     margin-left: 10%;
 }
 
+/*Número de Resid*/
 .boxNum{
     display: flex;
     width: 100%;

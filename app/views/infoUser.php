@@ -38,15 +38,15 @@
                     <section class="infoAccountTableGeral">
 
                         <label id="labelAccountEmail"> E-mail: </label>
-                        <section class="boxLimit"> <section class="boxLimitador"> <label class="boxEmail"> Andre_varnascimento@gmail.com </label></section></section>
+                        <section class="boxLimit"> <section class="boxLimitador"> <input type="text"class="boxEmail" placeholder=" Andre_varnascimento@gmail.com "></label></section></section>
                         
                         <label class="labelAccountGeral"> Telefone: </label>
-                        <label class="boxTelefone">+55 (11) 93212-9875 </label>
+                        <section class="accountTel"> <input class="boxTelefone" placeholder="+55 (11) 93212-9875"> </input> </section>
                         
                         <label class="labelAccountGeral"> Senha: </label>
-                        <section class="boxSenha"> <label class="AccountSenha"> THESENHA </label> </section>
+                        <section class="boxSenha"> <input type="password" class="accountSenha" placeholder="THESENHA"> </input> </section>
 
-                        <label class="labelAccountGeral"> Confirma: </label>
+                        <label class="labelAccountGeral"> Confirma Senha: </label>
                         <label class="boxConfSenha"> THESENHA </label>
 
                         <section class="spaceBtn"> <button id="btnExcluir"> EXCLUIR CONTA </button> </section>
