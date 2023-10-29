@@ -38,28 +38,28 @@
                     <section class="infoAccountTableGeral">
 
                         <label id="labelAccountEmail"> E-mail: </label>
-                        <section class="boxLimit"> <section class="boxLimitador"> <input type="text"class="boxEmail" placeholder=" Andre_varnascimento@gmail.com "></label></section></section>
+                        <input type="text"class="boxEmail" placeholder=" Andre_varnascimento@gmail.com "></label>
                         
                         <label class="labelAccountGeral"> Telefone: </label>
-                        <section class="accountTel"> <input class="boxTelefone" placeholder="+55 (11) 93212-9875"> </input> </section>
+                        <input class="boxTelefone" placeholder="+55 (11) 93212-9875" name="phone"> </input>
                         
                         <label class="labelAccountGeral"> Senha: </label>
-                        <section class="boxSenha"> <input type="password" class="accountSenha" placeholder="THESENHA"> </input> </section>
+                        <input type="password" class="boxSenha" placeholder="THESENHA"> </input>
 
                         <label class="labelAccountGeral"> Confirma Senha: </label>
-                        <label class="boxConfSenha"> THESENHA </label>
+                        <input type="password" class="boxConfSenha" placeholder="THESENHA"> </input>
 
-                        <section class="spaceBtn"> <button id="btnExcluir"> EXCLUIR CONTA </button> </section>
+                        <section id="spaceBtnExcluir"> <button id="btnExcluir"> Excluir Conta </button> </section>
                     </section>
                 </section>
                 <section class="spaceTableEndereco">
                     <section class="infoAccountTableEndereco">
-                    
+                        
                         <label id="labelAccountCEP"> CEP: </label>
-                        <label class="boxCEP"> 07500-000</label>
+                        <input type="text" class="boxCEP" placeholder="07500-000" maxlength="9"></input>
 
                         <label class="labelAccountEndereco"> Estado: </label>
-                        <select id="optionStates">
+                        <select class="optionStates">
                             <option value="1"> AC </option>
                             <option value="2"> Al </option>
                             <option value="3"> AP </option>
@@ -89,22 +89,21 @@
                         </select>
 
                         <label class="labelAccountEndereco"> Cidade: </label>
-                        <label class="boxCidade"> Santa Isabel </label>
+                        <input type="text" class="boxCidade" placeholder="Santa Isabel"> </input>
 
                         <label class="labelAccountEndereco"> Bairro: </label>
-                        <label class="boxBairro"> Parque São Benedito </label>
+                        <input type="text" class="boxBairro" placeholder="Parque São Benedito"> </input>
 
                         <label class="labelAccountEndereco"> Número: </label>
-                        <label class="boxNum"> 509 </label>
+                        <input type="text" class="boxNum" placeholder="509" maxlength="4"> </input>
 
                         <label class="labelAccountEndereco"> Logradouro: </label>
-                        <label class="boxLogradouro"> R. Ver. Luiz Benedito </label>
+                        <input type="text" class="boxLogradouro" placeholder="R. Ver. Luiz Benedito"> </input>
 
-                        <section class="spaceBtnSave"> <button id="btnSalvar"> SALVAR </button> </section>
+                        <section class="spaceBtnSave"> <button id="btnSalvar"> Salvar </button> </section>
                     </section>
                 </section>
             </section>
-
     </main>
 </body>
 

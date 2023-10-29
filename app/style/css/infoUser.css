@@ -16,7 +16,6 @@ header{
     position: absolute;
 }
 
-
 /* Class */
 .infoNameAccount{
     display: flex;
@@ -85,168 +84,134 @@ header{
 }
 
 /*E-mail*/
-.boxLimit{
-    width: 130%;
-    border-style: solid;
-    border: 1%;
-    border-radius: 3%;
-    border-color: rgb(206, 206, 206);
-    background-color: rgb(206, 206, 206);
-    margin-left: 5%;
-}
-
-.boxLimitador{
-    max-width: 500px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .boxEmail{
     display: flex;
-    width: 100%;
+    padding: 2%;
+    width: 150%;
     font-size: 125%;
     text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
     border: none;
-        
+    margin-left: 5%;
+    border-radius: 2%;
 }
 
 /*Telefone*/
 .boxTelefone{
     display: flex;
-    max-width: 100%;
-    height: 5%;
+    padding: 2%;
+    width: 85%;
     font-size: 125%;
-    border: none;
-    border-radius: 3%;
-    border-color: rgb(206, 206, 206);
+    text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
-    margin-top: 1%;
-}
-
-.accountTel{
     border: none;
-    width: 100%;
-    background-color: rgb(206, 206, 206);
     margin-left: 5%;
+    border-radius: 2%;
 }
 
 /*Senha*/
 .boxSenha{
     display: flex;
+    padding: 2%;
+    width: 100%;
     font-size: 125%;
-    border: none;
-    width: 100%;
-    max-width: 100%;
-    height: 5%;
-    padding-top: 1%;
-    border-radius: 3%;
-    border-color: rgb(206, 206, 206);
-    border-style: solid;
+    text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
-    margin-top: 1%;
+    border: none;
     margin-left: 5%;
-}
-
-.accountSenha{
-    border: none;
-    font-size: 100%;
-    width: 100%;
-    background-color: rgb(206, 206, 206);
+    border-radius: 2%;
 }
 
 /*Confirmar Senha*/
 .boxConfSenha{
     display: flex;
+    padding: 2%;
+    width: 100%;
     font-size: 125%;
-    border: 1%;
-    max-width: 60%;
-    border-radius: 3%;
-    border-color: rgb(206, 206, 206);
-    border-style: solid;
+    text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
-    margin-top: 1%;
+    border: none;
     margin-left: 5%;
+    border-radius: 2%;
 }
 
 /*CEP*/
 .boxCEP{
     display: flex;
-    width: 100%;
+    padding: 2%;
+    width: 45%;
     font-size: 125%;
-    border-style: solid;
-    border-radius: 3%;
-    border-color: rgb(206, 206, 206);
+    text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
-    margin-top: 1%;
-    margin-left: 10%;
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
 }
 
 /*Estado*/
-.boxEstado{
+.optionStates{
     display: flex;
-    justify-content: center;
-    width: 50%;
-    font-size: 125%;
-    border-style: solid;
-    border-radius: 3%;
-    border-color: rgb(206, 206, 206);
+    padding: 1%;
+    width: 40%;
+    font-size: 100%;
+    text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
-    margin-top: 3%;
-    margin-left: 10%;
-    cursor: pointer;
+    border: none;
+    color: #000000;
+    margin-left: 5%;
+    border-radius: 2%;
 }
 
 /*Cidade*/
 .boxCidade{
     display: flex;
+    padding: 2%;
     width: 100%;
     font-size: 125%;
-    border-style: solid;
-    border-radius: 3%;
-    border-color: rgb(206, 206, 206);
+    text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
-    margin-top: 2%;
-    margin-left: 10%;
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
 }
 
 /*Bairro*/
 .boxBairro{
     display: flex;
+    padding: 2%;
     width: 100%;
     font-size: 125%;
-    border-style: solid;
-    border-radius: 3%;
-    border-color: rgb(206, 206, 206);
+    text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
-    margin-top: 1%;
-    margin-left: 10%;
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
 }
 
-/*Número de Resid*/
+/*Número de Residência*/
 .boxNum{
     display: flex;
-    width: 100%;
+    padding: 2%;
+    width: 40%;
     font-size: 125%;
-    border-style: solid;
-    border-radius: 3%;
-    border-color: rgb(206, 206, 206);
+    text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
-    margin-top: 1%;
-    margin-left: 10%;
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
 }
 
+/*Logradouro*/
 .boxLogradouro{
     display: flex;
+    padding: 2%;
     width: 100%;
     font-size: 125%;
-    border-style: solid;
-    border-radius: 3%;
-    border-color: rgb(206, 206, 206);
+    text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
-    margin-top: 1%;
-    margin-left: 10%;
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
 }
 
 .labelAccountGeral{
@@ -259,7 +224,7 @@ header{
 .labelAccountEndereco{
     display: flex;
     margin-top: 6%;
-    margin-left: 10%;
+    margin-left: 5%;
     font-size: 125%;
 }
 
@@ -267,20 +232,7 @@ header{
     color: white;
 }
 
-.spaceBtn{
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-}
-
-.spaceBtnSave{
-    display: flex;
-    justify-content: center;
-    border-style: solid;
-}
-
 /* ID */
-
 #labelAccountEndereco{
     display: flex;
     justify-content: center;
@@ -288,7 +240,7 @@ header{
     border-width: 1px;
     background-color: #E3286A;
     width: 30%;
-    padding: 2rem;
+    padding: 2%;
 }
 
 #labelAccountGeral{
@@ -298,7 +250,7 @@ header{
     justify-content: center;
     background-color: #E3286A;
     width: 30%;
-    padding: 2rem;
+    padding: 2%;
 }
 
 #imgAccount{
@@ -311,52 +263,57 @@ header{
     margin-top: 5%;
 }
 
-#optionStates{
+#spaceBtnExcluir{
     display: flex;
-    width: 100%;
-    height: 5%;
-    margin-left: 10%;
-    margin-top: 1%;
-    font-family: 'Nunito', sans-serif;
-    background-color: rgb(206, 206, 206);
-    border: none;
-    border-radius: 3px;
+    justify-content: center;
+    width: 170%;
 }
 
 #btnExcluir{
     display: flex;
     background-color: #E3286A;
     color: white;
-    border: none;
-    border-radius: 3px;
-    margin-top: 25%;
-    margin-left: 50%;
-    padding: 5%;
+    font-size: 100%;
+    border-radius: 3%;
+    margin-top: 15%;
+    padding: 2%;
     padding-left: 15%;
     padding-right: 15%;
     cursor: pointer;
+    border: none;
+}
+
+.spaceBtnSave{
+    display: flex;
+    justify-content: center;
+    width: 170%;
 }
 
 #btnSalvar{
+    display: flex;
+    justify-content: center;
     background-color: #E3286A;
     color: white;
     border: none;
+    font-size: 100%;
     border-radius: 3px;
-    margin-top: 10%;
-    padding: 7%;
+    margin-top: 5%;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
     cursor: pointer;
 }
 
 #labelAccountEmail{
     display: flex;
     margin-left: 5%;
-    margin-top: 10%;
+    margin-top: 15%;
     font-size: 125%;
 }
 
 #labelAccountCEP{
     display: flex;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 15%;
     font-size: 125%;
 }
