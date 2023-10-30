@@ -1,0 +1,313 @@
+@font-face{
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
+  
+    font-family: "Sniglet";
+    src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: absolute;
+}
+
+/* Class */
+.infoNameAccount{
+    display: flex;
+    position: absolute;
+    font-size: 150%;
+    font-family: "Sniglet", sans-serif;
+    margin-left: 15%;
+    margin-top: -8%;
+}
+
+.cnpjAccount{
+    display: flex;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -6%;
+    font-family: "Sniglet", sans-serif;
+    font-size: 140%;
+}
+
+.tablesFlex{
+    display: flex;
+}
+
+.spaceTableGeral{
+    display: flex;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    width: 30%;
+    height: 32rem;
+    margin-left: 20%;
+    font-family: "Nunito", sans-serif;
+}
+
+.spaceTableEndereco{
+    display: flex;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    width: 30%;
+    height: 32rem;
+    font-family: "Nunito", sans-serif;
+}
+
+.infoAccountTop{
+    display: flex;
+    font-family: "Nunito", sans-serif;
+    justify-content: center;
+    margin-top: 4%;
+    font-size: 115%;
+}
+
+.border{
+    border-style: solid;
+    border-color: black;
+    border-width: 12px;
+}
+
+/*E-mail*/
+.boxEmail{
+    display: flex;
+    padding: 2%;
+    width: 150%;
+    font-size: 125%;
+    text-overflow: ellipsis;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+/*Telefone*/
+.boxTelefone{
+    display: flex;
+    padding: 2%;
+    width: 85%;
+    font-size: 125%;
+    text-overflow: ellipsis;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+/*Senha*/
+.boxSenha{
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    font-size: 125%;
+    text-overflow: ellipsis;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+/*Confirmar Senha*/
+.boxConfSenha{
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    font-size: 125%;
+    text-overflow: ellipsis;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+/*CEP*/
+.boxCEP{
+    display: flex;
+    padding: 2%;
+    width: 45%;
+    font-size: 125%;
+    text-overflow: ellipsis;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+/*Estado*/
+.optionStates{
+    display: flex;
+    padding: 1%;
+    width: 40%;
+    font-size: 100%;
+    text-overflow: ellipsis;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    color: #000000;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+/*Cidade*/
+.boxCidade{
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    font-size: 125%;
+    text-overflow: ellipsis;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+/*Bairro*/
+.boxBairro{
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    font-size: 125%;
+    text-overflow: ellipsis;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+/*Número de Residência*/
+.boxNum{
+    display: flex;
+    padding: 2%;
+    width: 40%;
+    font-size: 125%;
+    text-overflow: ellipsis;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+/*Logradouro*/
+.boxLogradouro{
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    font-size: 125%;
+    text-overflow: ellipsis;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+.labelAccountGeral{
+    display: flex;
+    margin-top: 6%;
+    margin-left: 5%;
+    font-size: 125%;
+}
+
+.labelAccountEndereco{
+    display: flex;
+    margin-top: 6%;
+    margin-left: 5%;
+    font-size: 125%;
+}
+
+.labelTitleTop{
+    color: white;
+}
+
+/* ID */
+#labelAccountEndereco{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #E3286A;
+    width: 30%;
+    padding: 2%;
+}
+
+#labelAccountGeral{
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    justify-content: center;
+    background-color: #E3286A;
+    width: 30%;
+    padding: 2%;
+}
+
+#imgAccount{
+    display: flex;
+    position: relative;
+    width: 10%;
+    height: 25%;
+    border-radius: 100%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+#spaceBtnExcluir{
+    display: flex;
+    justify-content: center;
+    width: 170%;
+}
+
+#btnExcluir{
+    display: flex;
+    background-color: #ff3a3a;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+    border-radius: 3%;
+    margin-top: 15%;
+    padding: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    cursor: pointer;
+    border: none;
+    box-shadow: black 0.1em 0.1em 0.1em;
+}
+
+.spaceBtnSave{
+    display: flex;
+    justify-content: center;
+    width: 170%;
+}
+
+#btnSalvar{
+    display: flex;
+    justify-content: center;
+    background-color: #E3286A;
+    color: white;
+    border: none;
+    font-size: 100%;
+    border-radius: 3px;
+    margin-top: 5%;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    cursor: pointer;
+}
+
+#labelAccountEmail{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 15%;
+    font-size: 125%;
+}
+
+#labelAccountCEP{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 15%;
+    font-size: 125%;
+}

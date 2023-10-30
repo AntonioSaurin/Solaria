@@ -28,7 +28,8 @@ $routes = [
     '/usuario/editar' => 'controllers/updateUser.php',
     '/instituicoes' => 'views/institutionPage.php',
     '/infoUser' => 'views/infoUser.php',
-    '/doacao' => 'views/institutionPage.php'
+    '/doacao' => 'views/institutionPage.php',
+    '/infoInstituicoes' => 'views/infoInstitution.php'
 ];
 
 $uri = Uri::load();
