@@ -23,7 +23,7 @@
                 <section class="contentTextHowToAdopt">
                     <h1>Adoção: Um Novo Amanhecer</h1>
                     <p>Dê a uma criança o amor, a segurança e o carinho que ela merece. Saiba mais sobre o processo de adoção.</p>
-                    <a href="#saiba-mais" class="button">Saiba Mais</a>
+                    <a href="https://www.cnj.jus.br/programas-e-acoes/adocao/passo-a-passo-da-adocao/" target="blank" class="button">Saiba Mais</a>
                 </section>
             </section>
             <section class="containerOrganizer">
