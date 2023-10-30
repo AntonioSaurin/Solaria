@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <section id="navBar">
+    <header id="navBar">
         <nav class="navbar navbar-expand-sm navbar-light">
             <section class="container">
                 <section id="brandImg">
@@ -66,7 +66,7 @@
                 </section>
             </section>
         </nav>
-    </section>
+    </header>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
