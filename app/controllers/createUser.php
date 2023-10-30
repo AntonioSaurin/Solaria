@@ -7,8 +7,8 @@ use app\models\User;
 
 if($_POST['password'] != $_POST['conPassword']) {
     echo '<script> window.alert("As senhas não coincidem);
-    window.location.href = "../views/register.html"';
-    header('Locatio: ../views/register.html');
+    window.location.href = "../views/register.php"';
+    header('Location: ../views/register.php');
     die;
 }
 
@@ -35,7 +35,7 @@ $phoneAction = $phone->insert([
 if($phoneAction != 1){
     echo '<script> 
     alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "../views/register.html"; 
+    window.location.href = "../views/register.php"; 
     </script>';
 }
 
@@ -55,7 +55,7 @@ $userAction = $user->insert([
 if($userAction != true){
     echo '<script> 
     alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "../views/register.html"; 
+    window.location.href = "../views/register.php"; 
     </script>';
 }
 
@@ -72,7 +72,7 @@ $donatorAction = $donator->insert([
 if($donatorAction != 1){
     echo '<script> 
     alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "../views/register.html"; 
+    window.location.href = "../views/register.php"; 
     </script>';
 }
 
