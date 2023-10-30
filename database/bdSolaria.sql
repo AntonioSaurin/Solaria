@@ -55,6 +55,7 @@ create table userAccount(
     userPhone int,
     userPhoto int unique,
     userAdress int,
+    userAdressNumber varchar(5),    
     userStatus varchar(255) NOT NULL,
     primary key(ID),
     foreign key (userPhone) references phone(ID),
