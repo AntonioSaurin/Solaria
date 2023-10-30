@@ -1,7 +1,7 @@
 <?php
 namespace app\classes;
 
-session_start();
+//session_start();
 require_once 'vendor/autoload.php';
 
 class SendLogin {
@@ -11,6 +11,7 @@ class SendLogin {
             $_SESSION['name'] = $dbData['userName'];
             $_SESSION['email'] = $dbData['userEmail'];
             $_SESSION['photo'] = $dbData['userPhoto'];
+            $_SESSION['phone'] = $dbData['userPhone'];
             
             return true;
         }

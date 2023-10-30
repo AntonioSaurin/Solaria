@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<header id="header">
+	<header>
 		<?php
 			include('header.php');
 		?>
@@ -27,7 +27,9 @@
 			<section class="contentTextHome">
 				<h1> Sua ajuda pode fazer a diferença! </h1>
 				<h3> A cada doação um futuro prospero é construído </h3>
-				<button type="button"  id="btnFirst" class="btn btn-info">Faça parte disso ></button>
+				<a href="/cadastro">
+					<button type="button"  id="btnFirst" class="btn btn-info">Faça parte disso ></button>
+				</a>
 			</section>
 			
 		</section>
@@ -37,7 +39,9 @@
 				<h4>Veja informações sobre o assunto</h6>
 			</section>
 			<section class="btnSecond">
-				<button type="button" id="btnSecond" class="btn btn-info">Descubra aqui ></button>
+				<a href="/como-adotar">
+					<button type="button" id="btnSecond" class="btn btn-info">Descubra aqui ></button>
+				</a>
 			</section>
 		</section>
 		<section id="signUpInstitution">
@@ -46,7 +50,9 @@
 				<h4>Adicione-a em nossa plataforma</h6>
 			</section>
 			<section class="btnThird d-flex flex-row-reverse">
-				<button type="button" id="btnThird" class="btn btn-info">Cadastre-se ></button>
+				<a href="/cadastroInstituicao">
+					<button type="button" id="btnThird" class="btn btn-info">Cadastre-se ></button>
+				</a>
 			</section>
 		</section>
 	</section>
