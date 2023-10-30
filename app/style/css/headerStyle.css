@@ -4,7 +4,11 @@ ul {
 
 body {
     background-color: rgba(48, 230, 24, 0);
+    
 
+}
+a{
+    color: white;
 }
 
 @font-face {
@@ -15,7 +19,12 @@ body {
 p {
     font-family: "Sniglet";
 }
-
+a{
+    color: #fff;
+}
+a:hover{
+    color: gray;
+}
 #brandText {
     font-size: 20pt;
     position: absolute;

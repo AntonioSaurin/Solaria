@@ -10,7 +10,26 @@ body {
     background-color: #fff;
     margin: 0;
 }
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.modal1{
+    background-color: #fff;
+    width: 60%;
+    min-width: 300px    ;
+    padding: 40px;
+    border: solid black;
+}
 .filterArea{
     background-color: #fff;
     padding: 5px;  
@@ -106,7 +125,7 @@ body {
     margin: 0 auto;
 }
 
-/* Informações do Modal */
+
 
 
 

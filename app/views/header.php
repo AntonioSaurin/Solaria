@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header id="navBar">
+    <header id="navBar" >
         <nav class="navbar navbar-expand-sm navbar-light">
             <section class="container">
                 <section id="brandImg">

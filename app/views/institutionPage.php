@@ -9,7 +9,7 @@
 <body>
     <header id="header">
 		<?php
-			include('header.php');
+			
 		?>
 	</header>
 
@@ -46,6 +46,16 @@
         </section>
 
     </section>
-      
+   
+
+    <section id="modal" class="modal-container">
+        <section class="modal1">
+            <h1>teste<h1>
+            <form>
+                <input type="text">
+            </form>    
+        </section>
+        
+    </section>     
 </body>
 </html>
