@@ -15,6 +15,7 @@
 header{
     position: absolute;
     width: 100%;
+    width: 100em;
     top: 0;
     left: 0;
     z-index: 1;
@@ -23,7 +24,7 @@ header{
 
 #mainHowToAdopt{
     color: #ffffff;
-    height: 97vh; 
+    height: 40em; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -37,28 +38,28 @@ header{
 }
 
 #imgHowToAdopt{
-    width: 600vh;
-    height: 300vh;
+    width: 10em;
+    height: 30em;
     display: flex;
     z-index: -1;
     justify-content: flex-end;
     justify-self: flex-end;
     position: absolute;
-    left: 2rem;
+    left: 1em;
 }
 
 .contentTextHowToAdopt{
-    margin-left: 5rem;
+    margin-left: 5em;
 }
 
 .contentTextHowToAdoptp {
     display: inline-block; 
-    margin-right: 10px; 
+    margin-right: 10em; 
 }
 
 .button {
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 0.8em 1em;
+    border-radius: 1em;
     text-decoration: none;
     font-weight: bold;
     background-color: #E12A69;
@@ -68,11 +69,12 @@ header{
 .button:hover{
     background-color: #fff;
     color: #E12A69;
+    text-decoration: none;
 }
 
 #imgHowToAdopt{
-    width: 200vh;
-    height: 100vh;
+    width: 100em;
+    height: 50em;
     display: flex;
     justify-self: center;
     z-index: -1;
@@ -86,11 +88,12 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
-    height: 40vh;
+    height: 30em;
+    width: 99em;
 }
 
 .containerInfo{
     background-color: #E12A69;
-    height: 40vh;
-    width: 20vw;
+    height: 30em;
+    width: 30em;
 }
