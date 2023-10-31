@@ -1,4 +1,4 @@
-#footer {
+#footerArea {
     /* border-top-left-radius: 3px;
     border-top-right-radius: 2px; */
     background-color: black;
@@ -7,11 +7,10 @@
     margin-top: auto;
     margin-bottom: auto;
     align-content: center;
-    display:inline;
+    /* display:inline; */
     padding: 10px;
     background: rgb(209,21,103);
     background: linear-gradient(11deg, rgba(209,21,103,1) 0%, rgba(205,72,198,1) 100%);
- 
 }
 
 
@@ -26,6 +25,9 @@
     padding: -10px;
     filter: invert(100%);
     align-items: center;
-  
     margin: auto;
+}
+
+.navFooter{
+
 }

@@ -10,6 +10,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="app/style/css/bootstrap.css">
 	<link rel="stylesheet" href="app/style/css/home.css">
+	
 </head>
 
 <body>
@@ -57,15 +58,11 @@
 		</section>
 	</section>
 	
-	<footer id="footer">
+	<footer id="footerArea">
 		<?php
 			include_once("footer.php");
 		?>
 	</footer>
-
-
-
-
 
 	<!-- JavaScript (Opcional) -->
 	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
