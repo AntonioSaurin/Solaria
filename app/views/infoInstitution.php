@@ -11,7 +11,7 @@
 <body>
     <header>
         <?php
-            //include_once("header.php");
+                //include_once("header.php");
         ?>
     </header>
 
@@ -20,7 +20,7 @@
         
         <section class="infoAccount">
             <section class="spaceImgAccount">
-                <img src="app/style/img/imgInstitutionPageTest.png" id="imgAccount">
+                <img src="app/style/img/imgInstitutionAdotar.png" id="imgAccount">
                 <section class="infoNameAccount">
                     <label class="nameAccount"> Instituição Adotar</label>
                 </section>
@@ -57,7 +57,7 @@
                         <label id="labelAccountCEP"> CEP: </label>
                         <input type="text" class="boxCEP" placeholder="07500-000" maxlength="9"></input>
 
-                        <label class="labelAccountEndereco"> Estado: </label>
+                        <label id="labelState"> Estado: </label>
                         <select class="optionStates">
                             <option value="1"> AC </option>
                             <option value="2"> Al </option>
@@ -87,13 +87,13 @@
                             <option value="26"> TO </option>
                         </select>
 
-                        <label class="labelAccountEndereco"> Cidade: </label>
+                        <label id="labelCity"> Cidade: </label>
                         <input type="text" class="boxCidade" placeholder="Santa Isabel"> </input>
 
                         <label class="labelAccountEndereco"> Bairro: </label>
                         <input type="text" class="boxBairro" placeholder="Parque São Benedito"> </input>
 
-                        <label class="labelAccountEndereco"> Número: </label>
+                        <label id="labelNumber"> Número: </label>
                         <input type="text" class="boxNum" placeholder="509" maxlength="4"> </input>
 
                         <label class="labelAccountEndereco"> Logradouro: </label>
@@ -103,6 +103,7 @@
                     </section>
                 </section>
             </section>
+            <section class="spaceDown"> </section>
     </main>
 </body>
 

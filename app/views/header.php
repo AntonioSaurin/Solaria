@@ -2,9 +2,6 @@
   if (session_status() == PHP_SESSION_NONE) {
     session_start();
   }
-  
-  
-  
 ?>
 
 
@@ -32,7 +29,7 @@
                     <a href="/">
                         <img src="app/style/img/Brand.png" width="60px">
                     </a>
-                    <p id="brandText" class="d-inline ml-3">Solaria</p>
+                    <section id="color"><p id="brandText" class="d-inline ml-3">Solaria</p></section>
                 </section>
 
                 <button class="navbar-toggler" data-togle="collapse" data-target="#nav-pricipal">
@@ -42,19 +39,19 @@
                 <section>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mr-4">
-                            <a href="/instituicoes" class="nav-link">Instituições</a>
+                            <a href="/instituicoes" class="nav-link" id="color">Instituições</a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a href="/como-adotar" class="nav-link">Como adotar</a>
+                            <a href="/como-adotar" class="nav-link" id="color">Como adotar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/sobre-nos" class="nav-link">Sobre nós</a>
+                            <a href="/sobre-nos" class="nav-link" id="color">Sobre nós</a>
                         </li>
                         
                         <li class="nav-item dropdown ml-4" id="accountIcon">
                             <?php
                                 
-                                if(isset($name)){  
+                                if(isset($_SESSION['id'])){  
                                     echo('
                                         <a href="#" class="fa-regular fa-user fa-xl  nav-link  mt-2" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #5a5a5ac2; "></a>
 
@@ -62,10 +59,9 @@
                                             <a class="dropdown-item" href="/infoUser">Conta</a>
                                         </section>  
                                     ');
-                                } 
-                               if(!isset($name)){
+                                }else if(!isset($_SESSION['id'])){
                                     echo('
-                                        <a href="\login" class="nav-link">Login</a>
+                                        <a href="\login" class="nav-link" id="color">Login</a>
                                         
                                     ');
 
