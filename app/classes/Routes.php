@@ -8,9 +8,9 @@
             if(!array_key_exists($uri, $routes))
             {    
                 throw new \Exception ("Rota não existe {$uri}");   
+            }else{
+                return $_SERVER['DOCUMENT_ROOT']."/app/{$routes[$uri]}";
             }
-            
-            return $_SERVER['DOCUMENT_ROOT']."/app/{$routes[$uri]}";
         }
 
     }
