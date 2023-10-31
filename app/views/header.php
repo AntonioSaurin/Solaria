@@ -32,7 +32,7 @@
                     <a href="/">
                         <img src="app/style/img/Brand.png" width="60px">
                     </a>
-                    <p id="brandText" class="d-inline ml-3">Solaria</p>
+                    <section id="color"><p id="brandText" class="d-inline ml-3">Solaria</p></section>
                 </section>
 
                 <button class="navbar-toggler" data-togle="collapse" data-target="#nav-pricipal">
@@ -42,13 +42,13 @@
                 <section>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mr-4">
-                            <a href="/instituicoes" class="nav-link">Instituições</a>
+                            <a href="/instituicoes" class="nav-link" id="color">Instituições</a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a href="/como-adotar" class="nav-link">Como adotar</a>
+                            <a href="/como-adotar" class="nav-link" id="color">Como adotar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/sobre-nos" class="nav-link">Sobre nós</a>
+                            <a href="/sobre-nos" class="nav-link" id="color">Sobre nós</a>
                         </li>
                         
                         <li class="nav-item dropdown ml-4" id="accountIcon">
@@ -65,7 +65,7 @@
                                 } 
                                if(!isset($name)){
                                     echo('
-                                        <a href="\login" class="nav-link">Login</a>
+                                        <a href="\login" class="nav-link" id="color">Login</a>
                                         
                                     ');
 
