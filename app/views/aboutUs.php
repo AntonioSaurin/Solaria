@@ -55,9 +55,21 @@
 
         <p id="blog_p_content">Atenciosamente,</p>
         <p>Equipe Solaria.</p>
+
+        
       </section>
     </section>
+    
   </section>
+
+  
+  <footer id="footerArea">
+		<?php
+			include_once("footer.php");
+		?>
+	</footer>
+
+  
 </body>
 
 </html>

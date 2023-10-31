@@ -8,9 +8,10 @@
 
 html {
     overflow: hidden;
-    background-color: #f9f2d0;
-    background: linear-gradient(180deg, #2778ad, transparent);
+}
 
+body{
+    background-image: url(app\style\img\magicpattern-wave-generator-1698769840981.png);
 }
 
 header{
@@ -23,17 +24,17 @@ header{
 
 .img {
     transform: scaleX(-1);
-    height: 60rem;
+    height: 60em;
     display: grid;
     position: relative;
-    left: 68rem;
-    top: -7rem;
+    left: 68em;
+    top: -7em;
     z-index: 0;
 }
 
 p{
     position: relative;
-    left: 1rem;
+    left: 1em;
 }
 
 .form {
@@ -58,7 +59,7 @@ p{
     align-items: center;
 }
 
-.loginBox input[type="text"],
+.loginBox input[type="email"],
 .loginBox input[type="password"] {
     width: 100%;
     padding: 12px;
@@ -129,27 +130,3 @@ p{
     box-shadow: #fe5a1d 0 3px 7px inset;
     transform: translateY(2px);
 }
-
-
-/* .gradient{
-    display: grid;
-    background: linear-gradient(135deg, #2778ad, #00b8a9, #ffa22d);
-    background-size: 300% 300%;
-    animation: colors 10s ease infinite;
-    height: 100rem;
-    padding: 1rem;
-}
-
-@keyframes colors{
-    0%{
-        background-position: 0% 50%;
-    }
-
-    50%{
-        background-position: 100% 50%;
-    }
-
-    100%{
-        background-position: 0% 50%;
-    }
-} */
