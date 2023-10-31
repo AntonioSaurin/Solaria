@@ -56,9 +56,11 @@
 			</section>
 		</section>
 	</section>
+	
 	<footer id="footer">
-
-		<p>@solaria |</p>
+		<?php
+			include_once("footer.php");
+		?>
 	</footer>
 
 

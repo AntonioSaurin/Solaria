@@ -77,17 +77,8 @@ header {
     background-color: rgba(41, 120, 172, 0.979);
     color: rgb(255, 255, 255);
     height: 250px;
-
-   
-  
 }
 
-#footer {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 2px;
-    background-color: black;
-    text-align: center;
-}
 
 #btnFirst, #btnSecond, #btnThird {
     color: rgb(255, 255, 255);
@@ -111,6 +102,6 @@ header {
 #btnThird {
     margin-right: 350px;
     margin-bottom: 10px;
-    background-color: #E12A69;
-    
+    background-color: #E12A69;  
 }
+

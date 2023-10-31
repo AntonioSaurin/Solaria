@@ -1,0 +1,31 @@
+#footer {
+    /* border-top-left-radius: 3px;
+    border-top-right-radius: 2px; */
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-content: center;
+    display:inline;
+    padding: 10px;
+    background: rgb(209,21,103);
+    background: linear-gradient(11deg, rgba(209,21,103,1) 0%, rgba(205,72,198,1) 100%);
+ 
+}
+
+
+.footerText{
+    color: #fff;
+}
+
+.footerImg{
+    color: #fff;
+    height: 15px;
+    width: 15px;
+    padding: -10px;
+    filter: invert(100%);
+    align-items: center;
+  
+    margin: auto;
+}
