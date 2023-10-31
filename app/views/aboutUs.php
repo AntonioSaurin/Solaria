@@ -14,7 +14,7 @@
     include_once("header.php");
   ?>
 
-  <button onclick="topFunction()" id="goUpButton" title="Go to top"> <img class="goUpArrow" src="app/style/img/imgArrowRight.png"></button>
+  <button onclick="topFunction()" id="goUpButton" title="Voltar ao topo"> <img class="goUpArrow" src="app/style/img/imgArrowRight.png"></button>
 
   <section class="position_img_aboutUs">
     <img src="app/style/img/imgAboutUs.jpg" id="img_aboutUs">

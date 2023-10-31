@@ -1,19 +1,19 @@
-// Get the button
-let mybutton = document.getElementById("goUpButton");
+//Botão
+let scrollButton = document.getElementById("goUpButton");
 
-// When the user scrolls down 20px from the top of the document, show the button
+//Ao descer uma porcentagem x da página, o botão vai aparecer
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    scrollButton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    scrollButton.style.display = "none";
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+//Se clicar no botão, vai subir pra cima
 function topFunction() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
