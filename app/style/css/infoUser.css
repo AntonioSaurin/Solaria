@@ -322,12 +322,10 @@ header{
 }
 
 #btnExcluir:hover{
-    background-color: #E3286A;
     transition: 1s;
-    transform: scale(1.05);
-    color: #ff3a3a;
-    background-color: white;
-    border-style: solid;
+    transform: scale(1.01);
+    color: #000000;
+    background-color: #FFA22D;
 }
 
 

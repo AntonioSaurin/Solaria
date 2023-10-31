@@ -20,7 +20,7 @@ header{
 .infoNameAccount{
     display: flex;
     position: absolute;
-    font-size: 150%;
+    font-size: 170%;
     font-family: "Sniglet", sans-serif;
     margin-left: 15%;
     margin-top: -8%;
@@ -157,10 +157,23 @@ header{
     text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
     border: none;
-    color: #000000;
+    color: #696969;
     margin-left: 60%;
     margin-top: 0%;
     border-radius: 2%;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.optionStates:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.optionStates::-webkit-scrollbar{
+    
 }
 /*Cidade*/
 
@@ -310,10 +323,9 @@ header{
 
 #btnExcluir:hover{
     transition: 1s;
-    transform: scale(1.05);
-    color: #ff3a3a;
-    background-color: white;
-    border-style: solid;
+    transform: scale(1.01);
+    color: #000000;
+    background-color: #FFA22D;
 }
 
 
