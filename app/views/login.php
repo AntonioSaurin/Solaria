@@ -21,7 +21,7 @@
             <form action="/login/efetuar" method="post" name="login">
                 <span class="table">
                     <h3>Email:</h3>
-                    <input type="text" class="loginBox" name="email" id="email" placeholder="Email"><br>
+                    <input type="email" class="loginBox" name="email" id="email" placeholder="Email"><br>
 
                     <h3>Senha:</h3>
                     <input type="password" class="loginBox" name="password" id="password" placeholder="Senha"><br>

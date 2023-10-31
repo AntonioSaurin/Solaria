@@ -1,3 +1,13 @@
+<?php 
+  if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+  }
+  
+  
+  
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -56,7 +66,17 @@
                                if(!isset($name)){
                                     echo('
                                         <a href="\login" class="nav-link">Login</a>
+                                        
                                     ');
+
+                                      
+                                      if(isset($_SESSION['uniqueID'])){
+                                        echo($_SESSION['uniqueID']);
+                                      }else{
+                                        
+
+                                      }
+                                    
                                }    
                             
                             ?>
