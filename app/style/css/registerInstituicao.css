@@ -8,7 +8,7 @@
 
 html { 
     overflow: hidden;
-    background: linear-gradient(180deg, #cf0045, transparent);
+    background-image: url('../img/bgCadastro.png');
 }
 
 header {
@@ -19,13 +19,26 @@ header {
     z-index: 1;
 }
 
+#color{
+    color: #fff;
+}
+
+.text{
+    color: #0d4266;
+}
+
+#btnLogin{
+    color: #00857a;
+}
+
+
 .img {
     transform: scaleX(-1);
     height: 60rem;
     display: grid;
     position: relative;
     left: 68rem;
-    top: -7rem;
+    top: -5.5rem;
     z-index: 0;
 }
 
@@ -35,12 +48,12 @@ header {
     color: #000;
     border-radius: 12px;
     position: absolute;
-    padding: 18rem 20rem;
-    left: 50%;
+    padding: 13.5em 17em;
+    left: 27.5em;
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    
+    background-color: #ffffff56;
 }
 
 h1{
@@ -168,25 +181,3 @@ select:focus {
     transform: translateY(2px);
 }
 
-/* #gradient {
-    display: grid;
-    background: linear-gradient(135deg, #ff6699, #ff3366, #ff0066);
-    background-size: 300% 300%;
-    height: 100rem;
-    animation: colors 15s ease infinite;
-    padding: 1rem;
-}
-
-@keyframes colors {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-} */

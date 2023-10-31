@@ -85,7 +85,7 @@ h1{
 }
 
 .loginBox button {
-    background-color: #2777ad;
+    background-color: #2778ad;
     color: #fff;
     padding: 10px 2px;
     border: none;
@@ -97,14 +97,14 @@ h1{
 }
 
 .loginBox button:hover {
-    background-color: #2777ad6b;
+    background-color: #2778ad;
 }
 
 .loginButton {
     align-items: center;
     font-weight: bold;
     appearance: none;
-    background-color: #2778ad;
+    background-color: #2777ad6b;
     border: 0;
     border-radius: 6px;
     box-sizing: border-box;

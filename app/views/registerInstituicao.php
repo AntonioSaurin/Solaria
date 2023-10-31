@@ -48,9 +48,9 @@
                         <input type="password" class="signupBox" name="conPassword" id="conPassword"
                             placeholder="Confirmar Senha"><br>
 
-                        <span name="next" class="nextButton" onclick=changeVisibleAdress()>Próximo</span>
+                        <span name="next" class="nextButton" id="text" onclick=changeVisibleAdress()>Próximo</span>
 
-                        <p class="link">Você já tem uma conta? <a href="/login">Login</a></p>
+                        <p class="link">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
                     </span>
 
             </section>
@@ -68,7 +68,7 @@
                     <input type="text" class="signupBox" name="phone" id="phone" placeholder="Telefone"
                         maxlength="12"><br>
 
-                    <span class="backButton" onclick=changeVisibleInfos()>Voltar</span>
+                    <span class="backButton" id="text" onclick=changeVisibleInfos()>Voltar</span>
                 </span>
 
                 <span class="table2">
@@ -82,9 +82,9 @@
                     <input type="password" class="signupBox" name="conPassword" id="conPassword"
                         placeholder="Confirmar Senha"><br>
 
-                    <span class="nextButton" onclick=changeVisibleOthers()>Próximo</span>
+                    <span class="nextButton" id="text" onclick=changeVisibleOthers()>Próximo</span>
 
-                    <p class="link">Você já tem uma conta? <a href="/login">Login</a></p>
+                    <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
                 </span>
 
 
@@ -103,7 +103,7 @@
                     <input type="text" class="signupBox" name="phone" id="phone" placeholder="Telefone"
                         maxlength="12"><br>
 
-                    <span class="backButton" onclick=changeVisibleAdress()>Voltar</span>
+                    <span class="backButton" id="text" onclick=changeVisibleAdress()>Voltar</span>
                 </span>
 
                 <span class="table2">
@@ -117,9 +117,9 @@
                     <input type="password" class="signupBox" name="conPassword" id="conPassword"
                         placeholder="Confirmar Senha"><br>
 
-                    <button type="submit" name="submit" class="registerButton">Cadastrar</button>
+                    <button type="submit" name="submit" class="registerButton" id="text">Cadastrar</button>
 
-                    <p class="link">Você já tem uma conta? <a href="/login">Login</a></p>
+                    <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
                 </span>
                 </form>
 
