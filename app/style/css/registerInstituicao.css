@@ -43,10 +43,17 @@ header {
     
 }
 
-.table1 {
+h1{
     top: 37px;
     position: fixed;
     left: 4rem;
+}
+
+.table1 {
+    top: 7.5rem;
+    position: fixed;
+    left: 4rem;
+    width: 15rem;
 }
 
 .table2 {
@@ -72,7 +79,7 @@ header {
     font-size: 13px;
 }
 
-.signupBox button, span.nextButton {
+.signupBox button, .nextButton, .backButton {
     background-color: #CD5151;
     color: #000;
     padding: 15px 2px;
@@ -81,7 +88,14 @@ header {
     cursor: pointer;
     align-self: center;
     width: 70%;
-    right: 7.5rem;
+}
+
+.signupBox button, span.nextButton {
+    left: 1.6rem;
+}
+
+span.backButton {
+    left: 2rem;
 }
 
 .signupBox:focus,
@@ -92,7 +106,7 @@ select:focus {
     outline: 0;
 }
 
-.signupBox button:hover, span.nextButton:hover {
+.signupBox button:hover, span.nextButton:hover{
     background-color: #a73c3c;
 }
 
@@ -104,7 +118,11 @@ select:focus {
     display: none;
 }
 
-.registerButton, .nextButton {
+#pt3 {
+    display: none;
+}
+
+.registerButton, .nextButton, .backButton {
     align-items: center;
     font-weight: bold;
     appearance: none;
@@ -136,16 +154,16 @@ select:focus {
     margin-top: 10px;
 }
 
-.registerButton:focus,.nextButton:focus {
+.registerButton:focus, .nextButton:focus, .backButton:focus{
     box-shadow: #fe5a1d 0 0 0 1.5px inset, rgba(255, 103, 0, .4) 0 2px 4px, rgba(255, 103, 0, .3) 0 7px 13px -3px, #fe5a1d 0 -3px 0 inset;
 }
 
-.registerButton:hover, .nextButton:hover {
+.registerButton:hover, .nextButton:hover, .backButton:hover {
     box-shadow: rgba(255, 103, 0, .4) 0 4px 8px, rgba(255, 103, 0, .3) 0 7px 13px -3px, #fe5a1d 0 -3px 0 inset;
     transform: translateY(-2px);
 }
 
-.registerButton:active, .nextButton:active {
+.registerButton:active, .nextButton:active, .backButton:active {
     box-shadow: #fe5a1d 0 3px 7px inset;
     transform: translateY(2px);
 }
