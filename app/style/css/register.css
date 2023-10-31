@@ -8,7 +8,8 @@
 
 html { 
     overflow: hidden;
-    background-color: #f9f2d0;
+    background-color: #fff;
+    background: linear-gradient(180deg, #00b8a9, transparent);
 }
 
 header {
@@ -24,7 +25,7 @@ header {
     height: 60rem;
     display: grid;
     position: relative;
-    left: 68rem;
+    left: 70rem;
     top: -7rem;
     z-index: 0;
 }
@@ -137,26 +138,3 @@ select:focus {
     box-shadow: #fe5a1d 0 3px 7px inset;
     transform: translateY(2px);
 }
-
-/* #gradient {
-    display: grid;
-    background: linear-gradient(135deg, #ff6699, #ff3366, #ff0066);
-    background-size: 300% 300%;
-    height: 100rem;
-    animation: colors 15s ease infinite;
-    padding: 1rem;
-}
-
-@keyframes colors {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-} */
