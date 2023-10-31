@@ -20,7 +20,7 @@ header{
 .infoNameAccount{
     display: flex;
     position: absolute;
-    font-size: 150%;
+    font-size: 170%;
     font-family: "Sniglet", sans-serif;
     margin-left: 15%;
     margin-top: -8%;
@@ -78,7 +78,7 @@ header{
 .boxEmail{
     display: flex;
     padding: 2%;
-    width: 150%;
+    width: 170%;
     font-size: 125%;
     text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
@@ -91,7 +91,7 @@ header{
 .boxTelefone{
     display: flex;
     padding: 2%;
-    width: 85%;
+    width: 170%;
     font-size: 125%;
     text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
@@ -104,7 +104,7 @@ header{
 .boxSenha{
     display: flex;
     padding: 2%;
-    width: 100%;
+    width: 170%;
     font-size: 125%;
     text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
@@ -117,7 +117,7 @@ header{
 .boxConfSenha{
     display: flex;
     padding: 2%;
-    width: 100%;
+    width: 170%;
     font-size: 125%;
     text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
@@ -140,29 +140,60 @@ header{
 }
 
 /*Estado*/
+
+#labelState{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 125%;
+    margin-top: -23%;
+    margin-left: 60%;
+}
+
 .optionStates{
     display: flex;
-    padding: 1%;
-    width: 40%;
+    padding: 3%;
+    width: 30%;
     font-size: 100%;
     text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
     border: none;
-    color: #000000;
-    margin-left: 5%;
+    color: #696969;
+    margin-left: 60%;
+    margin-top: 0%;
     border-radius: 2%;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
 }
 
+.optionStates:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.optionStates::-webkit-scrollbar{
+    
+}
 /*Cidade*/
+
+#labelCity{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 125%;
+    margin-top: -23%;
+    margin-left: 100%;
+}
+
 .boxCidade{
     display: flex;
     padding: 2%;
-    width: 100%;
+    width: 88%;
     font-size: 125%;
     text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
     border: none;
-    margin-left: 5%;
+    margin-left: 100%;
     border-radius: 2%;
 }
 
@@ -170,7 +201,7 @@ header{
 .boxBairro{
     display: flex;
     padding: 2%;
-    width: 100%;
+    width: 125%;
     font-size: 125%;
     text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
@@ -178,17 +209,25 @@ header{
     margin-left: 5%;
     border-radius: 2%;
 }
-
 /*Número de Residência*/
+#labelNumber{
+    display: flex;
+    font-size: 125%;
+    font-family: 'Nunito', sans-serif;
+    margin-top: -23%;
+    margin-left: 140%;
+}
+
 .boxNum{
     display: flex;
     padding: 2%;
-    width: 40%;
+    width: 48%;
     font-size: 125%;
     text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
     border: none;
-    margin-left: 5%;
+    margin-top: 0%;
+    margin-left: 140%;
     border-radius: 2%;
 }
 
@@ -196,7 +235,7 @@ header{
 .boxLogradouro{
     display: flex;
     padding: 2%;
-    width: 100%;
+    width: 183%;
     font-size: 125%;
     text-overflow: ellipsis;
     background-color: rgb(206, 206, 206);
@@ -214,13 +253,17 @@ header{
 
 .labelAccountEndereco{
     display: flex;
-    margin-top: 6%;
+    margin-top: 10%;
     margin-left: 5%;
     font-size: 125%;
 }
 
 .labelTitleTop{
     color: white;
+}
+
+.spaceDown{
+    padding-top: 5%;
 }
 
 /* ID */
@@ -260,22 +303,31 @@ header{
     width: 170%;
 }
 
+/*Bot]ao de Excluir*/
 #btnExcluir{
     display: flex;
     background-color: #ff3a3a;
     color: white;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
     font-size: 100%;
     border-radius: 3%;
-    margin-top: 15%;
+    margin-top: 25%;
+    margin-right: 40%;
     padding: 2%;
     padding-left: 10%;
     padding-right: 10%;
     cursor: pointer;
     border: none;
     box-shadow: black 0.1em 0.1em 0.1em;
+    transition: 1s;
 }
+
+#btnExcluir:hover{
+    transition: 1s;
+    transform: scale(1.01);
+    color: #000000;
+    background-color: #FFA22D;
+}
+
 
 .spaceBtnSave{
     display: flex;
@@ -291,12 +343,14 @@ header{
     border: none;
     font-size: 100%;
     border-radius: 3px;
-    margin-top: 5%;
+    margin-top: 50%;
+    margin-left: 60%;
     padding: 2%;
     padding-left: 15%;
     padding-right: 15%;
     cursor: pointer;
 }
+
 
 #labelAccountEmail{
     display: flex;
