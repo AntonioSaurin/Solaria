@@ -14,6 +14,7 @@
 			include('header.php');
 		?>
 	</header>
+
     <main>
         <section id="contentHowToAdopt" class="flexContainer">
 		    <section id="mainHowToAdopt">
@@ -31,13 +32,48 @@
                 No Brasil, não há custo algum para adotar. Podem ser adotados crianças ou adolescentes com, no máximo, 18 anos de idade à data do pedido de adoção e que estejam com situação jurídica definida, ou seja, pais biológicos desconhecidos, falecidos ou quando os pais foram destituídos do poder familiar e esgotadas todas as alternativas de permanência na família de origem.Qualquer pessoa maior de 18 (dezoito) anos pode adotar, independentemente do estado civil, orientação sexual ou classe social. O pretendente deverá apresentar uma diferença mínima de 16 (dezesseis) anos em relação à idade da criança ou adolescente que for adotado.
                 O interessado em adotar deverá procurar a Vara de Infância e da Juventude do município/região em que reside, onde serão fornecidas todas as orientações necessárias.</p>
                
-                <section class="containerInfo" id="stepOne">
-                    <h2>Topico1</h2>
-                    <p>Teste</p>
-                </section>
-                <section class="containerInfo" id="stepTwo">
-                    <h2>Topico2</h2>
-
+                <section class="slides">
+                    <section class="containerInfo" id="stepOne">
+                        <h2>Passo a Passo</h2>
+                        <h3>1. Eu posso adotar?</h3>
+                        <p>Qualquer pessoa maior de 18 anos de idade pode adotar, independentemente de sexo, estado civil ou classe social.</p>
+                    </section>
+                    <section class="containerInfo" id="stepTwo">
+                        <h3>2. Por onde começo?</h3>
+                        <p>O primeiro passo é ir pessoalmente à Vara da Infância e da Juventude da sua região. Lá, você será orientado quanto à documentação que deve apresentar para dar entrada ao seu pedido.
+                        <p>Agora também é possível fazer um pré-cadastro, antes de comparecer à Vara da Infância. Após o preenchimento do pré cadastro e munido do número de protocolo e dos documentos necessários, procure a Vara da Infância e Juventude da sua região.</p>
+                        <button>Cadastro</button>
+                        <button>Documentos</button>
+                    </section>
+                    <section class="containerInfo" id="step">
+                        <h3>3. Depois de entregar a documentação, o que acontece?</h3>
+                        <P>Apresentada toda a documentação, seu pedido será registrado e receberá uma numeração. A partir daí, você precisa aguardar o cartório ou setor técnico entrar em contato para fornecer o número de seu processo de habilitação e agendar data para seu comparecimento à Vara para uma entrevista inicial</p>
+                    </section>
+                    <section class="containerInfo" id="step">
+                        <h3>4. O que acontece na entrevista?</h3>
+                        <p>A entrevista dará início as avaliações técnicas (estudo social e psicológico) e as orientações quanto ao curso preparatório obrigatório.</p>
+                    </section>
+                    <section class="containerInfo" id="step">
+                        <h3>5. Como funciona o curso preparatório obrigatório?</h3>
+                        <p>Esse curso objetiva esclarecer dúvidas sobre a adoção, a expectativa que ela pode gerar, entre outros assuntos. Vale lembrar que algumas Comarcas optam por realizar esse curso antes mesmo da apresentação da documentação, para que o pretendente possa amadurecer a ideia da adoção e certificar-se de que, de fato, deseja adotar. É possível que as Comarcas encaminhem o pretendente para realizar o curso em outra localidade, podendo, inclusive, haver mais de um encontro.<p>
+                    </section>
+                    <section class="containerInfo" id="step">
+                        <h3>6. O que acontece após?</h3>
+                        <p>Concluídos os estudos, seu processo será remetido ao Ministério Público para apreciação e, depois, para decisão do juiz, que irá proferir a sentença.<p>
+                    </section>
+                    <section class="containerInfo" id="step">
+                        <h3>7. Com a sentença favorável do juiz, já estarei apto a adotar?</h3>
+                        <p>Com essa sentença favorável, parabéns! Você já estará apto para adotar, em todo o território nacional.<p>
+                    </section><section class="containerInfo" id="step">
+                        <h3>8. Como será efetuada a busca para que eu possa adotar?</h3>
+                        <p>Não se preocupe como a criança/adolescente irá chegar até você, pois o SNA (Sistema Nacional de Adoção e Acolhimento) cruzará as informações lá inseridas (perfil dos pretendentes com o perfil das crianças) e a Vara da Infância e Juventude entrará em contato para informar sobre a possibilidade de aproximação com o adotando para iniciar o estágio de convivência.<p>
+                    </section><section class="containerInfo" id="step">
+                        <h3>9. O que é estágio de convivência?</h3>
+                        <p>O Estágio de Convivência é o período em que o pretendente assume a guarda provisória da criança/adolescente e finalmente pode levá-lo(a) para casa! Mas vale frisar que se trata de guarda provisória. O Estágio de Convivência terá duração até a decisão judicial (sentença) de adoção definitiva. Esse período é variável, sendo definido caso a caso pelo juiz.<p>
+                    </section><section class="containerInfo" id="step">
+                        <h3>10. Quando acaba o estágio de convivência, o que acontece?</h3>
+                        <p>Decorrido o período do estágio de convivência, o setor técnico apresentará relatório conclusivo que será apreciado pelo Ministério Público e irá ao juiz para a decisão final (sentença de adoção). Com a sentença de adoção proferida, após decorrer o prazo para o recurso, você já poderá providenciar a nova documentação e registrar seu filho. Lembrando que toda a documentação e o trâmite da adoção serão gratuitos. Oficialmente, uma família!<p>
+                    </section>
                 </section>
             </section>
         </section>

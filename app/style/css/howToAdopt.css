@@ -46,6 +46,7 @@ header{
 
 .contentTextHowToAdopt{
     margin-left: 5em;
+    font-family: "Sniglet";
 }
 
 .contentTextHowToAdoptp {
@@ -68,7 +69,7 @@ header{
 }
 
 .containerOrganizer{
-    height: 50em;
+    height: 30em;
     width: 99em;
     background-color: #fff;
     display: flex;
@@ -84,19 +85,50 @@ header{
     width: 90em;
 }
 
+.slides {
+    display: flex;
+    overflow: hidden;
+    width: 90em;
+    max-width: 100em; 
+    position: relative;
+}
+
 .containerInfo{
     height: 20em;
     width: 90em;
-    background-color: #E12A69;
-    margin-bottom: 2em;
+    background-color: rgb(5, 184, 169, 0.4);
+    margin-bottom: 1em;
     border-radius: 0.3em;
+    flex: 0 0 100em;
+    transition: transform 1s ease; 
+    animation: animateslides 60s infinite;
 }
 
-.containerInfo h2{
-    padding-top: 0.4em;
+.containerInfo h2, h3{
+    padding-top: 0.8em;
     padding-left: 0.8em;
+    color: #2778ad;
+    font-family: "Sniglet";
+}
+
+.containerInfo h3{
+    color: #E12A69;
 }
 
 .containerInfo p{
     padding-left: 5em;
+}
+
+@keyframes animateslides {
+    0%, 100% { transform: translateX(0); }
+    10% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    30% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    50% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    70% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    90% { transform: translateX(-400%); }
+    100% { transform: translateX(-500%); }
 }
