@@ -121,5 +121,5 @@ create table rejectedInstitution(
     banisher int,
     primary key(ID),
     foreign key (institution) references institution(ID),
-    foreign key banisher references administrator(ID)
+    foreign key (banisher) references administrator(ID)
 );
