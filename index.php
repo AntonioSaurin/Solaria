@@ -29,7 +29,8 @@ $routes = [
     '/instituicoes' => 'views/institutionPage.php',
     '/infoUser' => 'views/infoUser.php',
     '/doacao' => 'views/institutionPage.php',
-    '/infoInstituicoes' => 'views/infoInstitution.php'
+    '/infoInstituicoes' => 'views/infoInstitution.php',
+    '/historicoInst' => 'views/historicInstitution.php'
 ];
 
 $uri = Uri::load();
