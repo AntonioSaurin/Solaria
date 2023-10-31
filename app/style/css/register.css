@@ -8,8 +8,7 @@
 
 html { 
     overflow: hidden;
-    background-color: #fff;
-    background: linear-gradient(180deg, #00b8a9, transparent);
+    background-image: url('../img/bgCadastro.png');
 }
 
 header {
