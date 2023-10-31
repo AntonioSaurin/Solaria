@@ -2,9 +2,6 @@
   if (session_status() == PHP_SESSION_NONE) {
     session_start();
   }
-  
-  
-  
 ?>
 
 
@@ -54,7 +51,7 @@
                         <li class="nav-item dropdown ml-4" id="accountIcon">
                             <?php
                                 
-                                if(isset($name)){  
+                                if(isset($_SESSION['id'])){  
                                     echo('
                                         <a href="#" class="fa-regular fa-user fa-xl  nav-link  mt-2" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #5a5a5ac2; "></a>
 
@@ -62,8 +59,7 @@
                                             <a class="dropdown-item" href="/infoUser">Conta</a>
                                         </section>  
                                     ');
-                                } 
-                               if(!isset($name)){
+                                }else if(!isset($_SESSION['id'])){
                                     echo('
                                         <a href="\login" class="nav-link" id="color">Login</a>
                                         

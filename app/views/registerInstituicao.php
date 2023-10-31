@@ -19,7 +19,7 @@
     </header>
     <main>
         <span id="gradient">
-            <section class="signupBox form">
+            <section class="signupBox form" id="pt1">
                 <form action="cadastro/efetuar" method="post" name="Cadastro">
                     <span class="table1">
                         <h1>Cadastrar</h1><br>
@@ -42,8 +42,38 @@
                         <input type="password" class="signupBox" name="password" id="password" placeholder="Senha"><br>
 
                         <p>Confirmar Senha:</p>
-                        <input type="password" class="signupBox" name="conPassword" id="conPassword"
-                            placeholder="Confirmar Senha"><br>
+                        <input type="password" class="signupBox" name="conPassword" id="conPassword" placeholder="Confirmar Senha"><br>
+
+                        <span name="next" class="nextButton" onclick=changeVisibleAdress()>Proximo</span>
+
+                        <p class="link">Você já tem uma conta? <a href="/login">Login</a></p>
+                    </span>
+
+            </section>
+
+            <section class="signupBox form" id="pt2">
+                    <span class="table1">
+                        <h1>Cadastrar Endereço</h1><br>
+                        <p>CEP:</p>
+                        <input type="text" class="signupBox" name="CEP" id="CEP" placeholder="00000-000"><br>
+
+                        <p>CNPJ:</p>
+                        <input type="text" class="signupBox" name="CNPJ" id="CNPJ" placeholder="CNPJ" maxlength="14"><br>
+
+                        <p>Telefone:</p>
+                        <input type="text" class="signupBox" name="phone" id="phone" placeholder="Telefone"maxlength="12"><br>
+                      
+                    </span>
+
+                    <span class="table2">
+                        <p>CEP:</p>
+                        <input type="text" class="signupBox" name="CEP" id="CEP" placeholder="00000-000"><br>
+
+                        <p>Senha:</p>
+                        <input type="password" class="signupBox" name="password" id="password" placeholder="Senha"><br>
+
+                        <p>Confirmar Senha:</p>
+                        <input type="password" class="signupBox" name="conPassword" id="conPassword" placeholder="Confirmar Senha"><br>
 
                         <button type="submit" name="submit" class="registerButton">Cadastrar</button>
 
@@ -52,6 +82,7 @@
                 </form>
 
             </section>
+            
             <img class="img" src="app/style/img/brandWithout.png">
         </span>
     </main>
@@ -59,6 +90,14 @@
         $("#phone").mask("(00) 00000-0000");
         $("#CPF").mask("000.000.000-00");
         $("#CNPJ").mask("00.000.000/0000-00");
+
+        function changeVisibleAdress() {
+            var box1 = document.getElementById("pt1");
+            var box2 = document.getElementById("pt2");
+            
+            box1.style.display = "none";
+            box2.style.display = "inline";
+        }
     </script>
 </body>
 

@@ -108,10 +108,10 @@ create table messages (
 
 create table administrator (
     ID int auto_increment,
-    user int,
-    function enum('owner', 'admin'),
+    userAccount int,
+    office enum('owner', 'admin'),
     primary key(ID),
-    foreign key (user) references userAccount(ID)
+    foreign key (userAccount) references userAccount(ID)
 );
 
 create table rejectedInstitution(
