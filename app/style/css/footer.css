@@ -9,8 +9,9 @@
     align-content: center;
     /* display:inline; */
     padding: 10px;
-    background: rgb(209,21,103);
-    background: linear-gradient(11deg, rgba(209,21,103,1) 0%, rgba(205,72,198,1) 100%);
+    /* background: rgb(209,21,103);
+    background: linear-gradient(11deg, rgba(209,21,103,1) 0%, rgba(205,72,198,1) 100%); */
+    background: #000;
 }
 
 
