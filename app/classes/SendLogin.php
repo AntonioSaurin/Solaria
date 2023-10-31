@@ -12,6 +12,7 @@ class SendLogin {
             $_SESSION['email'] = $dbData['userEmail'];
             $_SESSION['photo'] = $dbData['userPhoto'];
             $_SESSION['phone'] = $dbData['userPhone'];
+            $_SESSION['uniqueID'] = $dbData['uniqueID'];
             
             return true;
         }

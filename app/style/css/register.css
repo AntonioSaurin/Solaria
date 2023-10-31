@@ -57,6 +57,9 @@ header {
 }
 
 .signupBox input[type="text"],
+.signupBox input[type="email"],
+.signupBox input[type="number"],
+.signupBox input[type="phone"],
 .signupBox input[type="password"] {
     width: 100%;
     width: 15rem;

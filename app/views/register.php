@@ -24,32 +24,31 @@
                     <span class="table1">
                         <h1>Cadastrar</h1><br>
                         <p>Nome Completo:</p>
-                        <input type="text" class="signupBox" name="name" id="name" placeholder="Nome"><br>
+                        <input type="text" class="signupBox" name="name" id="name" placeholder="Nome" required><br>
 
                         <p>Data de Nascimento:</p>
                         <input type="text" class="signupBox" name="birthDate" id="birthDate"
-                            placeholder="Data de Nascimento" maxlength="8"><br>
+                            placeholder="Data de Nascimento" maxlength="8" required><br>
 
                         <p>CPF:</p>
-                        <input type="text" class="signupBox" name="CPF" id="CPF" placeholder="CPF" maxlength="9"><br>
+                        <input type="text" class="signupBox" name="CPF" id="CPF" placeholder="CPF" maxlength="9" required><br>
 
                         <p>Telefone:</p>
-                        <input type="text" class="signupBox" name="phone" id="phone" placeholder="Telefone"
-                            maxlength="12"><br>
+                        <input type="phone" class="signupBox" name="phone" id="phone" placeholder="Telefone"  maxlength="12" required><br>
                     </span>
 
                     <span class="table2">
 
 
                         <p>Email:</p>
-                        <input type="text" class="signupBox" name="email" id="email" placeholder="Email"><br>
+                        <input type="email" class="signupBox" name="email" id="email" placeholder="Email" required><br>
 
                         <p>Senha:</p>
-                        <input type="password" class="signupBox" name="password" id="password" placeholder="Senha"><br>
+                        <input type="password" class="signupBox" name="password" id="password" placeholder="Senha" required><br>
 
                         <p>Confirmar Senha:</p>
                         <input type="password" class="signupBox" name="conPassword" id="conPassword"
-                            placeholder="Confirmar Senha"><br>
+                            placeholder="Confirmar Senha" required><br>
 
                         <button type="submit" name="submit" class="registerButton">Cadastrar</button>
 
