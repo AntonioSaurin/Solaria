@@ -10,6 +10,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="app/style/css/bootstrap.css">
 	<link rel="stylesheet" href="app/style/css/home.css">
+	
 </head>
 
 <body>
@@ -28,7 +29,7 @@
 				<h1> Sua ajuda pode fazer a diferença! </h1>
 				<h3> A cada doação um futuro prospero é construído </h3>
 				<a href="/cadastro">
-					<button type="button"  id="btnFirst" class="btn btn-info">Faça parte disso ></button>
+					<button type="button"  id="btnFirst" class="btn btn-info">Faça parte disso <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
 				</a>
 			</section>
 			
@@ -40,7 +41,7 @@
 			</section>
 			<section class="btnSecond">
 				<a href="/como-adotar">
-					<button type="button" id="btnSecond" class="btn btn-info">Descubra aqui ></button>
+					<button type="button" id="btnSecond" class="btn btn-info">Descubra aqui  <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
 				</a>
 			</section>
 		</section>
@@ -51,19 +52,17 @@
 			</section>
 			<section class="btnThird d-flex flex-row-reverse">
 				<a href="/cadastroInstituicao">
-					<button type="button" id="btnThird" class="btn btn-info">Cadastre-se ></button>
+					<button type="button" id="btnThird" class="btn btn-info">Cadastre-se  <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
 				</a>
 			</section>
 		</section>
 	</section>
-	<footer id="footer">
-
-		<p>@solaria |</p>
+	
+	<footer id="footerArea">
+		<?php
+			include_once("footer.php");
+		?>
 	</footer>
-
-
-
-
 
 	<!-- JavaScript (Opcional) -->
 	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

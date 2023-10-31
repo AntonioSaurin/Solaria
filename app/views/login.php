@@ -17,17 +17,17 @@
     </header>   
     <main class="gradient">
         <section class="form loginBox">
-            <h1>Login</h1><br>
+            <h1 class="text">Login</h1>
             <form action="/login/efetuar" method="post" name="login">
                 <span class="table">
-                    <h3>Email:</h3>
-                    <input type="text" class="loginBox" name="email" id="email" placeholder="Email"><br>
+                    <label for="email" class="text">Email:</label>
+                    <input type="email" class="loginBox" name="email" id="email" placeholder="Email">
 
-                    <h3>Senha:</h3>
-                    <input type="password" class="loginBox" name="password" id="password" placeholder="Senha"><br>
+                    <label for="password" class="text">Senha:</label>
+                    <input type="password" class="loginBox" name="password" id="password" placeholder="Senha">
 
                     <button type="submit" name="login" class="loginButton">Login</button>
-                    <p>Ainda não tem uma conta? <a href="/cadastro">Cadastrar</a></p>
+                    <p class="text">Ainda não tem uma conta? <a href="/cadastro" id="btnCadastro">Cadastrar</a></p>
                 </span>
             </form>
         </section>
