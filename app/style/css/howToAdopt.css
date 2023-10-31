@@ -14,17 +14,15 @@
 
 header{
     position: absolute;
-    width: 100%;
     width: 100em;
     top: 0;
     left: 0;
     z-index: 1;
-    color: #fff;
 }
 
 #mainHowToAdopt{
-    color: #ffffff;
-    height: 40em; 
+    color: #fff;
+    height: 35em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -57,43 +55,52 @@ header{
     margin-right: 10em; 
 }
 
-.button {
-    padding: 0.8em 1em;
-    border-radius: 1em;
+#button {
+    padding: 0.8em 1.5em;
     text-decoration: none;
     font-weight: bold;
     background-color: #E12A69;
     color: #fff;
 }
 
-.button:hover{
+#button:hover{
     background-color: #fff;
     color: #E12A69;
     text-decoration: none;
 }
 
-#imgHowToAdopt{
-    width: 100em;
-    height: 50em;
-    display: flex;
-    justify-self: center;
-    z-index: -1;
-    position: fixed;
-    background-size: cover;
-}
+
 
 .containerOrganizer{
+    height: 50em;
+    width: 99em;
+    background-color: #fff;
     display: flex;
-    flex: 2;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #fff;
-    height: 30em;
-    width: 99em;
+    text-align: justify;
+}
+
+.containerOrganizer p {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    width: 90em;
 }
 
 .containerInfo{
+    height: 20em;
+    width: 90em;
     background-color: #E12A69;
-    height: 30em;
-    width: 30em;
+    margin-bottom: 2em;
+    border-radius: 0.3em;
+}
+
+.containerInfo h2{
+    padding-top: 0.4em;
+    padding-left: 0.8em;
+}
+
+.containerInfo p{
+    padding-left: 5em;
 }
