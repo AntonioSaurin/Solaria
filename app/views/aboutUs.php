@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="app/style/css/aboutUs.css" rel="stylesheet">
   <title> Sobre nós </title>
+  
 </head>
 
 <body>
   <?php
-  include_once("header.php");
+    include_once("header.php");
   ?>
+
+  <button onclick="topFunction()" id="goUpButton" title="Voltar ao topo"> <img class="goUpArrow" src="app/style/img/imgArrowRight.png"></button>
+
   <section class="position_img_aboutUs">
     <img src="app/style/img/imgAboutUs.jpg" id="img_aboutUs">
   </section>
@@ -19,6 +23,7 @@
     <h1 class="h1_aboutUs">Sobre nós</h1>
     <h2 class="h2_aboutUS">Escrito pela equipe Solaria em 08.06.2023</h2>
   </section>
+
   <section class="blog_aboutUs">
     <section class="blog_content">
       <section class="blog_content_p">
@@ -62,14 +67,13 @@
     
   </section>
 
-  
   <footer id="footerArea">
 		<?php
 			include_once("footer.php");
 		?>
 	</footer>
 
-  
+  <script src="../app/javaScript/blogArrow.js"></script>
 </body>
 
 </html>
