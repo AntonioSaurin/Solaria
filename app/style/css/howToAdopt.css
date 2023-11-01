@@ -54,7 +54,11 @@ header{
     margin-right: 10em; 
 }
 
-#button {
+html::-webkit-scrollbar{
+    width: 0.1em;
+}
+
+#button{
     padding: 0.8em 1.5em;
     text-decoration: none;
     font-weight: bold;
@@ -62,15 +66,15 @@ header{
     color: #fff;
 }
 
-#button:hover{
+#button:hover, .link:hover{
     background-color: #fff;
     color: #E12A69;
     text-decoration: none;
 }
 
 .containerOrganizer{
-    height: 30em;
-    width: 99em;
+    height: 115em;
+    width: 100em;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -81,54 +85,43 @@ header{
 
 .containerOrganizer p {
     padding-top: 2em;
-    padding-bottom: 1em;
+    padding-bottom: 0em;
     width: 90em;
 }
 
-.slides {
-    display: flex;
-    overflow: hidden;
+hr{
     width: 90em;
-    max-width: 100em; 
-    position: relative;
+    background-color: #E12A69;
 }
 
 .containerInfo{
     height: 20em;
     width: 90em;
-    background-color: rgb(5, 184, 169, 0.4);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 1em;
-    border-radius: 0.3em;
     flex: 0 0 100em;
-    transition: transform 1s ease; 
-    animation: animateslides 60s infinite;
 }
 
-.containerInfo h2, h3{
-    padding-top: 0.8em;
-    padding-left: 0.8em;
-    color: #2778ad;
+.containerInfo h2{
+    padding-top: 0em;
+    padding-left: 0em;
+    color: #E12A69;
+    width: 7em;
     font-family: "Sniglet";
+    font-size: 2em;
 }
 
 .containerInfo h3{
-    color: #E12A69;
+    color: #05b8a9;
+    font-size: 1.5em;
+    padding-top: 1em;
 }
 
 .containerInfo p{
-    padding-left: 5em;
+    padding-left: 1.6em;
+    padding-top: 0.3em;
 }
 
-@keyframes animateslides {
-    0%, 100% { transform: translateX(0); }
-    10% { transform: translateX(0); }
-    20% { transform: translateX(-100%); }
-    30% { transform: translateX(-100%); }
-    40% { transform: translateX(-200%); }
-    50% { transform: translateX(-200%); }
-    60% { transform: translateX(-300%); }
-    70% { transform: translateX(-300%); }
-    80% { transform: translateX(-400%); }
-    90% { transform: translateX(-400%); }
-    100% { transform: translateX(-500%); }
+.link{
+    color: #2778ad;
 }
