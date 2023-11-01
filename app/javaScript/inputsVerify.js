@@ -1,37 +1,50 @@
+var nome = false;
+var cnpj = false;
+var phone = false;
+var email = false;
+var password = false;
+var conPassword = false;
+
 $(document).ready(function () {
     $('#CNPJ').blur('input', function () {
-        cnpj = $(this).val();
+        lCnpj = $(this).val();
 
-        cnpj = cnpj.replace(/[^\d]+/g, '');
+        lCnpj = lCnpj.replace(/[^\d]+/g, '');
 
-        if (cnpj == '') {
+        if (lCnpj == '') {
             $(this).css("border-color", "#ff0000");
 
+            cnpj = false;
             return false;
         }
 
-        if (cnpj.length != 14) {
+        if (lCnpj.length != 14) {
             $(this).css("border-color", "#ff0000");
 
+            cnpj = false;
             return false;
         }
-        // Elimina CNPJs invalidos conhecidos
-        if (cnpj == "00000000000000" ||
-            cnpj == "11111111111111" ||
-            cnpj == "22222222222222" ||
-            cnpj == "33333333333333" ||
-            cnpj == "44444444444444" ||
-            cnpj == "55555555555555" ||
-            cnpj == "66666666666666" ||
-            cnpj == "77777777777777" ||
-            cnpj == "88888888888888" ||
-            cnpj == "99999999999999") {
+        // Elimina lCnpjs invalidos conhecidos
+        if (lCnpj == "00000000000000" ||
+            lCnpj == "11111111111111" ||
+            lCnpj == "22222222222222" ||
+            lCnpj == "33333333333333" ||
+            lCnpj == "44444444444444" ||
+            lCnpj == "55555555555555" ||
+            lCnpj == "66666666666666" ||
+            lCnpj == "77777777777777" ||
+            lCnpj == "88888888888888" ||
+            lCnpj == "99999999999999") {
+                
             $(this).css("border-color", "#ff0000");
+
+            cnpj = false;
+            return false;
         }
         // Valida DVs
-        tamanho = cnpj.length - 2
-        numeros = cnpj.substring(0, tamanho);
-        digitos = cnpj.substring(tamanho);
+        tamanho = lCnpj.length - 2
+        numeros = lCnpj.substring(0, tamanho);
+        digitos = lCnpj.substring(tamanho);
         soma = 0;
         pos = tamanho - 7;
         for (i = tamanho; i >= 1; i--) {
@@ -42,12 +55,13 @@ $(document).ready(function () {
         resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
         if (resultado != digitos.charAt(0)) {
             $(this).css("border-color", "#ff0000");
-
+            
+            cnpj = false;
             return false;
         }
 
         tamanho = tamanho + 1;
-        numeros = cnpj.substring(0, tamanho);
+        numeros = lCnpj.substring(0, tamanho);
         soma = 0;
         pos = tamanho - 7;
         for (i = tamanho; i >= 1; i--) {
@@ -59,19 +73,24 @@ $(document).ready(function () {
         if (resultado != digitos.charAt(1)) {
             $(this).css("border-color", "#ff0000");
 
+            cnpj = false;
             return false;
         }
 
+        cnpj = true;
         $(this).css("border-color", "#ccc");
+        return true;
     });
 
     $('#name').blur('input', function () {
         if ($(this).val() == '') {
             $(this).css("border-color", "#ff0000");
-
+            
+            nome = false;
             return false;
         }
-
+        
+        nome = true;
         $(this).css("border-color", "#ccc");
     })
 
@@ -79,9 +98,11 @@ $(document).ready(function () {
         if ($(this).val() == '') {
             $(this).css("border-color", "#ff0000");
 
+            password = false;
             return false;
         }
 
+        password = true;
         $(this).css("border-color", "#ccc");
     })
 
@@ -89,9 +110,11 @@ $(document).ready(function () {
         if ($(this).val() == '') {
             $(this).css("border-color", "#ff0000");
 
+            conPassword = false;
             return false;
         }
 
+        conPassword = true;
         $(this).css("border-color", "#ccc");
     })
 
@@ -99,9 +122,11 @@ $(document).ready(function () {
         if ($(this).val() == '') {
             $(this).css("border-color", "#ff0000");
 
+            phone = false;
             return false;
         }
 
+        phone = true;
         $(this).css("border-color", "#ccc");
     })
 
@@ -109,9 +134,15 @@ $(document).ready(function () {
         if ($(this).val() == '') {
             $(this).css("border-color", "#ff0000");
 
+            email = false;
             return false;
         }
         
+        email = true;
         $(this).css("border-color", "#ccc");
     })
 });
+
+function verifyEmpty(name, cnpj, phone, email, password, conPassword) {
+    if(name == true && cnpj == true && phone == true && email == true && password == true && conPassword == true) return true
+}
