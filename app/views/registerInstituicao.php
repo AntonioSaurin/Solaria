@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="app\style\css\registerInstituicao.css">
     <script src="app/javaScript/jQuery.js"></script>
     <script src="app/javaScript/jMask.js"></script>
+    <script src="app/javaScript/inputsVerify.js"></script>
     <title>Cadastrar</title>
 </head>
 
