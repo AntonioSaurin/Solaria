@@ -35,7 +35,7 @@ $(document).ready(function () {
             lCnpj == "77777777777777" ||
             lCnpj == "88888888888888" ||
             lCnpj == "99999999999999") {
-                
+
             $(this).css("border-color", "#ff0000");
 
             cnpj = false;
@@ -55,7 +55,7 @@ $(document).ready(function () {
         resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
         if (resultado != digitos.charAt(0)) {
             $(this).css("border-color", "#ff0000");
-            
+
             cnpj = false;
             return false;
         }
@@ -85,11 +85,11 @@ $(document).ready(function () {
     $('#name').blur('input', function () {
         if ($(this).val() == '') {
             $(this).css("border-color", "#ff0000");
-            
+
             nome = false;
             return false;
         }
-        
+
         nome = true;
         $(this).css("border-color", "#ccc");
     })
@@ -108,6 +108,12 @@ $(document).ready(function () {
 
     $('#conPassword').blur('input', function () {
         if ($(this).val() == '') {
+            $(this).css("border-color", "#ff0000");
+
+            conPassword = false;
+            return false;
+        }
+        if ($(this).val() != $('#password').val()) {
             $(this).css("border-color", "#ff0000");
 
             conPassword = false;
@@ -137,12 +143,12 @@ $(document).ready(function () {
             email = false;
             return false;
         }
-        
+
         email = true;
         $(this).css("border-color", "#ccc");
     })
 });
 
 function verifyEmpty(name, cnpj, phone, email, password, conPassword) {
-    if(name == true && cnpj == true && phone == true && email == true && password == true && conPassword == true) return true
+    if (name == true && cnpj == true && phone == true && email == true && password == true && conPassword == true) return true
 }
