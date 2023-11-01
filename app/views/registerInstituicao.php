@@ -60,13 +60,13 @@
                 <h1>Cadastrar Endereço</h1><br>
                 <span class="table1">
                     <p>CEP:</p>
-                    <input type="text" class="signupBox" name="CEP" id="CEP" placeholder="00000-000"><br>
+                    <input type="text" class="signupBox" name="CEP1" id="CEP1" placeholder="00000-000"><br>
 
                     <p>CNPJ:</p>
-                    <input type="text" class="signupBox" name="CNPJ" id="CNPJ" placeholder="CNPJ" maxlength="14"><br>
+                    <input type="text" class="signupBox" name="CNPJ2" id="CNPJ2" placeholder="CNPJ" maxlength="14"><br>
 
                     <p>Telefone:</p>
-                    <input type="text" class="signupBox" name="phone" id="phone" placeholder="Telefone"
+                    <input type="text" class="signupBox" name="phone2" id="phone2" placeholder="Telefone"
                         maxlength="12"><br>
 
                     <span class="backButton" id="text" onclick=changeVisibleInfos()>Voltar</span>
@@ -74,13 +74,13 @@
 
                 <span class="table2">
                     <p>CEP:</p>
-                    <input type="text" class="signupBox" name="CEP" id="CEP" placeholder="00000-000"><br>
+                    <input type="text" class="signupBox" name="CEP2" id="CEP2" placeholder="00000-000"><br>
 
                     <p>Senha:</p>
-                    <input type="password" class="signupBox" name="password" id="password" placeholder="Senha"><br>
+                    <input type="password" class="signupBox" name="password2" id="password2" placeholder="Senha"><br>
 
                     <p>Confirmar Senha:</p>
-                    <input type="password" class="signupBox" name="conPassword" id="conPassword"
+                    <input type="password" class="signupBox" name="conPassword2" id="conPassword2"
                         placeholder="Confirmar Senha"><br>
 
                     <span class="nextButton" id="text" onclick=changeVisibleOthers()>Próximo</span>
@@ -95,13 +95,13 @@
                 <h1>Outras Informações</h1><br>
                 <span class="table1">
                     <p>CEP:</p>
-                    <input type="text" class="signupBox" name="CEP" id="CEP" placeholder="00000-000"><br>
+                    <input type="text" class="signupBox" name="CEP3" id="CEP3" placeholder="00000-000"><br>
 
                     <p>CNPJ:</p>
-                    <input type="text" class="signupBox" name="CNPJ" id="CNPJ" placeholder="CNPJ" maxlength="14"><br>
+                    <input type="text" class="signupBox" name="CNPJ3" id="CNPJ3" placeholder="CNPJ" maxlength="14"><br>
 
                     <p>Telefone:</p>
-                    <input type="text" class="signupBox" name="phone" id="phone" placeholder="Telefone"
+                    <input type="text" class="signupBox" name="phone3" id="phone3" placeholder="Telefone"
                         maxlength="12"><br>
 
                     <span class="backButton" id="text" onclick=changeVisibleAdress()>Voltar</span>
@@ -109,13 +109,13 @@
 
                 <span class="table2">
                     <p>CEP:</p>
-                    <input type="text" class="signupBox" name="CEP" id="CEP" placeholder="00000-000"><br>
+                    <input type="text" class="signupBox" name="CEP4" id="CEP4" placeholder="00000-000"><br>
 
                     <p>Senha:</p>
-                    <input type="password" class="signupBox" name="password" id="password" placeholder="Senha"><br>
+                    <input type="password" class="signupBox" name="password3" id="password3" placeholder="Senha"><br>
 
                     <p>Confirmar Senha:</p>
-                    <input type="password" class="signupBox" name="conPassword" id="conPassword"
+                    <input type="password" class="signupBox" name="conPassword3" id="conPassword3"
                         placeholder="Confirmar Senha"><br>
 
                     <button type="submit" name="submit" class="registerButton" id="text">Cadastrar</button>
@@ -135,6 +135,7 @@
         $("#CNPJ").mask("00.000.000/0000-00");
 
         function changeVisibleInfos() {
+
             var box1 = document.getElementById("pt1");
             var box2 = document.getElementById("pt2");
             var box3 = document.getElementById("pt3");
@@ -142,16 +143,21 @@
             box1.style.display = "inline";
             box2.style.display = "none";
             box3.style.display = "none";
+
         }
 
         function changeVisibleAdress() {
-            var box1 = document.getElementById("pt1");
-            var box2 = document.getElementById("pt2");
-            var box3 = document.getElementById("pt3");
+            var empty = verifyEmpty(nome, cnpj, phone, email, password, conPassword);
 
-            box1.style.display = "none";
-            box2.style.display = "inline";
-            box3.style.display = "none";
+            if (empty == true) {
+                var box1 = document.getElementById("pt1");
+                var box2 = document.getElementById("pt2");
+                var box3 = document.getElementById("pt3");
+
+                box1.style.display = "none";
+                box2.style.display = "inline";
+                box3.style.display = "none";
+            }
         }
 
         function changeVisibleOthers() {

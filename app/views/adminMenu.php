@@ -27,7 +27,7 @@
           <img class="img_icon" src="app/style/img/imgUsers.png">
           <h2>Gerenciar Usuários</h2>
           <p class="subtitle">Adicionar cargo ou banir usuários.</p>
-          <span class="arrow">&#x2197;</span>
+          <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
         </section>
     </a>
 
@@ -36,7 +36,7 @@
         <img class="img_icon" src="app/style/img/imgInstitution.png">
         <h2>Gerenciar Instituições</h2>
         <p class="subtitle">Editar instituições disponiveis.</p>
-        <span class="arrow">&#x2197;</span>
+        <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
       </section>
     </a>
 
@@ -45,7 +45,7 @@
         <img class="img_icon" src="app/style/img/imgAprove.png">
         <h2>Aprovar Instituições</h2>
         <p class="subtitle">Aprovar ou negar a criação de instituições.</p>
-        <span class="arrow">&#x2197;</span>
+        <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
       </section>
     </a>
   </section>
