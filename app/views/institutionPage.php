@@ -51,11 +51,40 @@
     <section id="modal" class="modal-container">
         <section class="modal1">
             <h1>teste<h1>
+            <button type="button" class="btnExit">Sair</button>
+            <button type="button" class="btnExit">X</button>
             <form>
                 <input type="text">
             </form>    
         </section>
         
-    </section>     
+    </section> 
+    <script>
+        function openModal(modalId){
+            const modal =  document.getElementById(modalId);
+            modal.classList.add('mostrar');   
+        }
+        const btnOpen = document.querySelectorAll('.donateButton');
+        for (let index = 0; index < btnOpen.length; index++) {
+            btnOpen[index].addEventListener('click', ()=> openModal('modal'));   
+        }
+
+
+
+
+
+        
+        function closeModal(idModal){
+            const modalClose = document.getElementById(idModal);
+            modal.classList.remove('mostrar');   
+        }
+        const btnClose = document.querySelectorAll('.btnExit');
+        for (let index = 0; index < btnClose.length; index++) {
+            btnClose[index].addEventListener('click',()=>closeModal('modal'));   
+            
+        }
+       
+        
+    </script>    
 </body>
 </html>
