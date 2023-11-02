@@ -5,7 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('input').blur('input', function () {
+            $('#cnpj').blur('input', function () {
                 cnpj = $(this).val();
 
                 cnpj = cnpj.replace(/[^\d]+/g, '');
@@ -82,7 +82,7 @@
 
 <body>
 
-    Name: <input type="text" name="fullname"><br>
+    Name: <input type="text" name="cnpj" id="cnpj"><br>
     Email: <input type="text" name="email">
 
 </body>
