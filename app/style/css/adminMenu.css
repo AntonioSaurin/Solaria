@@ -70,11 +70,16 @@
   
   .arrow {
     position: absolute;
-    top: 10px;
+    top: 30px;
     right: 10px;
     font-size: 24px;
     color: #333;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
+  }
+
+  .arrowImage{
+    height: 24px;
+    width: 24px;
   }
 
 
