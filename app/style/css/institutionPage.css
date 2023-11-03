@@ -34,8 +34,8 @@ body {
 }
 
 .filterImage{
-    width: 17px;
-    height: 17px;
+    width:10px;
+    height:10px;
     margin-top: 4px;
     margin-left: 5px;
     margin-right: 10px;
@@ -120,12 +120,93 @@ body {
 
 }
 .modal1{
-    background-color: #fff;
-    width: 60%;
-    min-width: 300px    ;
-    padding: 40px;
-    border: solid black;
+    width: 50%;
+  height: 65%;
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+ 
 }
+#btnExitIncon{
+    position: absolute;
+    top: 18px;
+    right: 10px;
+   
+}
+#modalContent{
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    flex: 3;
+    background-color: #fff; /* Cor da parte inferior (Branca) */
+    color: #000; /* Cor do texto */
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    
+
+}
+#modalTop{
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    flex: 0.3;
+    background-color: #006DB7;
+    text-align: center;
+   
+
+}
+#donationAmount{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between; 
+    margin-right: 200px;
+    margin-left: 200px;
+    align-items: center;
+    justify-content: center;
+}
+#custimizeAmount h4{
+    
+    margin-bottom: 20px;
+}
+#btnNext{
+    margin-top: 20px;
+    height: 35px;
+    width: 140px;
+    margin-left:550px;
+   
+    
+}
+
+#custimizeAmount input{
+    padding-left:90px;
+    margin-left: 35%;
+    height: 40px;
+    width: 30%;
+    align-items: center;
+    
+}
+#custimizeAmount{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+#institutionAreaModal{
+    border-bottom: solid 1px gray;
+    flex: 1;
+}
+h4{
+    display: inline;
+}
+#donationArea{
+    margin-top: 15px;
+    flex: 2;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
 .modal-container.mostrar{
     display: flex;
 }

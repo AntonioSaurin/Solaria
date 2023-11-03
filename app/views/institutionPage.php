@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="app/style/css/institutionPage.css" rel="stylesheet">
+    <script src="app/javaScript/fontAwesome.js" crossorigin="anonymous"></script>
     <title>Solaria/Instituições</title>
 </head>
 <body>
@@ -47,15 +48,47 @@
 
     </section>
    
-
+    
     <section id="modal" class="modal-container">
         <section class="modal1">
-            <h1>teste<h1>
-            <button type="button" class="btnExit">Sair</button>
-            <button type="button" class="btnExit">X</button>
-            <form>
-                <input type="text">
-            </form>    
+            <section id="modalTop"> 
+                <i id="btnExitIncon"class="btnExit fa-solid fa-rectangle-xmark   fa-xl" style="color: #c7c7c7;"></i>
+                <h1>teste<h1>
+            </section>
+            
+            <section id="modalContent">
+                <section id="institutionAreaModal">
+                    informacoes instituicao 
+                </section>
+
+                <section id="donationArea">
+                    <form>
+                        <div id="donationType">
+                            <h4>o que deseja doar?</h4>
+                            <input type="radio" id="dinheiro" name="donationType" value="dinheiro">Dinheiro</input>
+                            <input type="radio" id="roupa" name="donationType" value="roupa">Roupa</input>
+                            <input type="radio" id="brinquedo" name="donationType" value="brinquedo">Brinquedo</input>
+                            <input type="radio" id="alimento" name="donationType" value="alimento">alimento</input>
+                        </div>
+                        <div id="donationAmount">
+                            <input type="radio" id="qnt1" name="donationAmount" value="2">R$2,00</input>
+                            <input type="radio" id="qnt2" name="donationAmount" value="10">R$10,00</input>
+                            <input type="radio" id="qnt3" name="donationAmount" value="25">R$25,00</input>
+                            <input type="radio" id="qnt4" name="donationAmount" value="50">R$50,00</input>
+                        </div>
+                        <div id="custimizeAmount">
+                            <h4>Quantidade Personalizada</h4>
+                            <input type="number" name="dntCustimizeAmount" placeholder="R$250,000" >
+                           
+                        </div>
+                        
+                        <input id="btnNext"type="submit" name="avancar" value="avancar"></input>
+                        
+                        
+                    </form>    
+
+                </section>
+            </section>   
         </section>
         
     </section> 
