@@ -10,7 +10,7 @@
 <body>
     <header id="header">
 		<?php
-			
+			include_once("header.php");
 		?>
 	</header>
 
@@ -95,7 +95,7 @@
     <script>
         function openModal(modalId){
             const modal =  document.getElementById(modalId);
-            modal.classList.add('mostrar');   
+            modal.classList.add('mostrar');
         }
         const btnOpen = document.querySelectorAll('.donateButton');
         for (let index = 0; index < btnOpen.length; index++) {

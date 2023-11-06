@@ -19,13 +19,17 @@ header {
     z-index: 1;
 }
 
+#color{
+    color: #fff;
+}
+
 .img {
     transform: scaleX(-1);
-    height: 60rem;
+    height: 60em;
     display: grid;
     position: relative;
-    left: 70rem;
-    top: -7rem;
+    left: 68em;
+    top: -6em;
     z-index: 0;
 }
 
@@ -36,11 +40,16 @@ header {
     border-radius: 12px;
     position: absolute;
     padding: 18rem 20rem;
-    left: 50%;
-    top: 50%;
+    left: 27.5em;
+    top: 20em;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    
+    background: rgba(255, 255, 255, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .table1 {
@@ -139,4 +148,9 @@ select:focus {
 .registerButton:active {
     box-shadow: #fe5a1d 0 3px 7px inset;
     transform: translateY(2px);
+}
+
+#btnLogin:hover, #btnLogin:active {
+    color:  #437292;
+    text-decoration: none;
 }

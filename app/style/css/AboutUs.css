@@ -18,6 +18,20 @@ body{
   background-color: #e25285;
 }
 
+header{
+  position: absolute;
+  width: 100em;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: fixed;
+  background-color: #fff;
+} 
+
+html::-webkit-scrollbar{
+  width: 0.1em;
+}
+
 .blog_header{
   position: relative;
   text-align: center;

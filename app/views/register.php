@@ -52,7 +52,7 @@
 
                         <button type="submit" name="submit" class="registerButton">Cadastrar</button>
 
-                        <p>Você já tem uma conta? <a href="/login">Login</a></p>
+                        <p>Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
                     </span>
                 </form>
 

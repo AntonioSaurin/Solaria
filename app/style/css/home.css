@@ -8,6 +8,10 @@ html, body {
     height: 100%;
 }
 
+html::-webkit-scrollbar{
+    width: 0.1em;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,7 +23,8 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-    color: #FFF;
+    position: fixed;
+    background-color: #FFF;
 }
 
 #contentHome {
