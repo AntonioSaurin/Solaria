@@ -30,7 +30,8 @@ $routes = [
     '/infoUser' => 'views/infoUser.php',
     '/doacao' => 'views/institutionPage.php',
     '/infoInstituicoes' => 'views/infoInstitution.php',
-    '/historicoInst' => 'views/historicInstitution.php'
+    '/historicoInst' => 'views/historicInstitution.php',
+    '/historicoUser' => 'views/historicUser.php'
 ];
 
 $uri = Uri::load();

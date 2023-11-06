@@ -28,6 +28,10 @@
                 <label class="DtNascAccount"> Data de Nascimento: 05/06/1995 </label>
             </section>
 
+            <?php
+                include_once("historicUser.php");
+            ?>
+
             <section class="infoAccountTop">
                 <section id="labelAccountGeral"> <label class="labelTitleTop"> Geral </label> </section>
                 <section id="labelAccountEndereco"> <label class="labelTitleTop"> Endereço </label>  </section>
