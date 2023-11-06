@@ -15,6 +15,8 @@
 		?>
 	</header>
 
+    <button onclick="topFunction()" id="goUpButton" title="Voltar ao topo"> <img class="goUpArrow" src="app/style/img/imgArrowRight.png"></button>
+
     <main>
         <section id="contentHowToAdopt" class="flexContainer">
 		    <section id="mainHowToAdopt">
@@ -66,6 +68,15 @@
                 </section>
             </section>
         </section>
+
     </main>
+
+    <footer id="footerArea">
+        <?php
+            include_once("footer.php");
+        ?>
+	</footer>
+
+    <script src="../app/javaScript/blogArrow.js"></script>
 </body>
 </html>

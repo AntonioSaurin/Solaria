@@ -21,7 +21,7 @@
 
     <?='<h1 id="bemvenido">' . Hour::getHour() . ', Moderador</h1>'?>
 
-    <a href="#">
+    <a href="#modalUsers">
       <section class="admin-container">
         <section class="admin-card">
           <img class="img_icon" src="app/style/img/imgUsers.png">
@@ -30,6 +30,20 @@
           <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
         </section>
     </a>
+
+    <section id="modalUsers" class="modal-container">
+      <section class="modal1">
+        <section id="modalTop"> 
+          <i id="btnExitIncon"class="btnExit fa-solid fa-rectangle-xmark   fa-xl" style="color: #c7c7c7;"></i>
+          <h1>teste<h1>
+        </section>
+
+        <section id="modalContent">
+          <section id="institutionAreaModal">
+            Informacoes instituicao 
+        </section>
+      </section>
+    </section>
 
     <a href="#">
       <section class="admin-card" id="openModalButton">

@@ -10,7 +10,7 @@
 <body>
     <header id="header">
 		<?php
-			
+			include_once("header.php");
 		?>
 	</header>
 
