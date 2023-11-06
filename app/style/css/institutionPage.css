@@ -3,22 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    overflow: hidden;
+    background-color: #f9f2d0;
+    background-image: url('../img/bgInstituition.png');
+    width: 100%;
+}
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    /* background-color: #fff; */
     margin: 0;
 }
 
 .filterArea{
-    background-color: #fff;
-    padding: 5px;  
+    /* background-color: #fff; */
+    padding: 5px;
+    padding-left: 30px;
     margin-bottom: 10px;
     width: 50%;
     font-size: 20px;
     display: inline-block;
-    vertical-align: middle;   
+    vertical-align: middle;
+
 }
 
 .filterText{
@@ -43,7 +50,7 @@ body {
 
 /*Área da Instituição*/
 .institutionArea{
-    background-color: #fff;
+    /* background-color: #fff; */
     /* border-color: #000;
     border-style: solid;
     border-width: 2px; */
@@ -60,6 +67,13 @@ body {
     padding: 10px;
     display: flex;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    /* From https://css.glass */
+    background: rgba(206, 206, 206, 0.42);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .institutionBox img {
@@ -118,6 +132,15 @@ body {
     justify-content: center;
     align-items: center;
 
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.32);
+    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
 }
 .modal1{
     width: 50%;
@@ -163,7 +186,7 @@ body {
     justify-content: space-between; 
     margin-right: 200px;
     margin-left: 200px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 #custimizeAmount h4{
@@ -194,8 +217,15 @@ body {
 }
 #institutionAreaModal{
     border-bottom: solid 1px gray;
-    flex: 1;
+    display: flex;
 }
+
+.modalImageInstitution{
+    height: 7rem;
+    width:  7rem;
+    margin: 5px;
+}
+
 h4{
     display: inline;
 }
