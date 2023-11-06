@@ -34,11 +34,11 @@ header {
 
 .img {
     transform: scaleX(-1);
-    height: 60rem;
+    height: 60em;
     display: grid;
     position: relative;
-    left: 68rem;
-    top: -5.5rem;
+    left: 68em;
+    top: -6em;
     z-index: 0;
 }
 
@@ -53,7 +53,12 @@ header {
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    background-color: #ffffff56;
+    background: rgba(255, 255, 255, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 h1{
@@ -81,7 +86,8 @@ h1{
 }
 
 .signupBox input[type="text"],
-.signupBox input[type="password"] {
+.signupBox input[type="password"],
+select {
     width: 100%;
     width: 15rem;
     padding: 12px;

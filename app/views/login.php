@@ -1,4 +1,5 @@
-'<!DOCTYPE html>
+'
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,8 +15,8 @@
         <?php
         include('header.php');
         ?>
-    </header>   
-    <main class="gradient">
+    </header>
+    <main>
         <section class="form loginBox">
             <h1 class="text">Login</h1>
             <form action="/login/efetuar" method="post" name="login">
@@ -27,7 +28,8 @@
                     <input type="password" class="loginBox" name="password" id="password" placeholder="Senha">
 
                     <button type="submit" name="login" class="loginButton">Login</button>
-                    <p class="text">Ainda não tem uma conta? <a href="/cadastro" id="btnCadastro">Cadastrar</a></p>
+                    <p class="text">Ainda não tem uma conta? <a href="/cadastro" class="btnCadastro"
+                            id="btnCadastro">Cadastrar</a></p>
                 </span>
             </form>
         </section>
