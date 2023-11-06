@@ -26,7 +26,7 @@
     </section>
 
     <section class="institutionArea">
-        <section class="institutionBox" style="background-color:#FFA12D;">
+        <section class="institutionBox">
             <img src="app/style/img/imgInstitutionAdotar.png" alt="Instituição Adotar">
                 <section class="institutionInfo">
                     <h2>Instituição Adotar</h2>
@@ -36,8 +36,8 @@
                 <button class="donateButton"><b>Doar ></b></button>
         </section>
 
-        <section class="institutionBox" style="background-color:#129BAB;">
-            <img src="app/style/img/imgInstitutionCoracao.png" alt="Instituição Adotar">
+        <section class="institutionBox" >
+            <img src="app/style/img/imgInstitutionCoracao.png" alt="Instituição Coração">
                 <section class="institutionInfo">
                     <h2>Instituição Coração</h2>
                     <p>Nossa instituição de adoção comprometida em encontrar lares amorosos para crianças vulneráveis. Nossa equipe qualificada oferece cuidados dedicados e apoio emocional para famílias adotivas.</p>
@@ -53,36 +53,39 @@
         <section class="modal1">
             <section id="modalTop"> 
                 <i id="btnExitIncon"class="btnExit fa-solid fa-rectangle-xmark   fa-xl" style="color: #c7c7c7;"></i>
-                <h1>teste<h1>
+                <h1>Nome da Instituição<h1>
             </section>
             
             <section id="modalContent">
+                
                 <section id="institutionAreaModal">
-                    informacoes instituicao 
+                    <img class="modalImageInstitution" src="app/style/img/imgInstitutionAdotar.png" alt="Instituição Adotar">
+                    Descrição da Instituição
                 </section>
 
                 <section id="donationArea">
                     <form>
-                        <div id="donationType">
-                            <h4>o que deseja doar?</h4>
+                        <section id="donationType">
+                            <h4>O que deseja doar?</h4><br>
                             <input type="radio" id="dinheiro" name="donationType" value="dinheiro">Dinheiro</input>
-                            <input type="radio" id="roupa" name="donationType" value="roupa">Roupa</input>
-                            <input type="radio" id="brinquedo" name="donationType" value="brinquedo">Brinquedo</input>
-                            <input type="radio" id="alimento" name="donationType" value="alimento">alimento</input>
-                        </div>
-                        <div id="donationAmount">
+                            <input type="radio" id="roupa" name="donationType" value="roupa">Roupas</input>
+                            <input type="radio" id="brinquedo" name="donationType" value="brinquedo">Brinquedos</input>
+                            <input type="radio" id="alimento" name="donationType" value="alimento">Alimentos</input>
+                        </section>
+                        <section id="donationAmount">
                             <input type="radio" id="qnt1" name="donationAmount" value="2">R$2,00</input>
                             <input type="radio" id="qnt2" name="donationAmount" value="10">R$10,00</input>
                             <input type="radio" id="qnt3" name="donationAmount" value="25">R$25,00</input>
                             <input type="radio" id="qnt4" name="donationAmount" value="50">R$50,00</input>
-                        </div>
-                        <div id="custimizeAmount">
-                            <h4>Quantidade Personalizada</h4>
-                            <input type="number" name="dntCustimizeAmount" placeholder="R$250,000" >
+                            
+                        </section>
+                        <section id="custimizeAmount">
+                            <h4>Quantia personalizada</h4>
+                            <input type="number" name="dntCustimizeAmount" placeholder="R$100" min="0" step="0.01">
                            
-                        </div>
+                        </section>
                         
-                        <input id="btnNext"type="submit" name="avancar" value="avancar"></input>
+                        <input id="btnNext"type="submit" name="avancar" value="Prosseguir"></input>
                         
                         
                     </form>    

@@ -39,6 +39,9 @@
                 <section>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mr-4">
+                            <a href="/admin" class="nav-link" id="color">Admin</a>
+                        </li>
+                        <li class="nav-item mr-4">
                             <a href="/instituicoes" class="nav-link" id="color">Instituições</a>
                         </li>
                         <li class="nav-item mr-4">

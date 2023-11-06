@@ -27,6 +27,11 @@
                 <label class="cnpjAccount"> CNPJ: 12.345.678/0001-00 </label>
             </section>
 
+            
+            <?php
+                include_once("historicInstitution.php");
+            ?>
+
             <section class="infoAccountTop">
                 <section id="labelAccountGeral"> <label class="labelTitleTop"> Geral </label> </section>
                 <section id="labelAccountEndereco"> <label class="labelTitleTop"> Endereço </label>  </section>
@@ -104,6 +109,7 @@
                 </section>
             </section>
             <section class="spaceDown"> </section>
+            
     </main>
 </body>
 
