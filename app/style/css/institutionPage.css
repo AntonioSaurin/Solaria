@@ -15,6 +15,15 @@ body {
     /* background-color: #fff; */
     margin: 0;
 }
+#color{
+    color: #fff;
+}
+#color:hover {
+    text-decoration: overline;
+    color: rgba(255, 255, 255, 0.459)
+    
+    
+}
 
 .filterArea{
     /* background-color: #fff; */
