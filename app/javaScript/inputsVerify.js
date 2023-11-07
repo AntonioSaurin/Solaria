@@ -4,6 +4,8 @@ var phone = false;
 var email = false;
 var password = false;
 var conPassword = false;
+var director = false;
+var directorCPF = false
 
 $(document).ready(function () {
     $('#CNPJ').blur('input', function () {
@@ -94,35 +96,7 @@ $(document).ready(function () {
         $(this).css("border-color", "#ccc");
     })
 
-    $('#password').blur('input', function () {
-        if ($(this).val() == '') {
-            $(this).css("border-color", "#ff0000");
 
-            password = false;
-            return false;
-        }
-
-        password = true;
-        $(this).css("border-color", "#ccc");
-    })
-
-    $('#conPassword').blur('input', function () {
-        if ($(this).val() == '') {
-            $(this).css("border-color", "#ff0000");
-
-            conPassword = false;
-            return false;
-        }
-        if ($(this).val() != $('#password').val()) {
-            $(this).css("border-color", "#ff0000");
-
-            conPassword = false;
-            return false;
-        }
-
-        conPassword = true;
-        $(this).css("border-color", "#ccc");
-    })
 
     $('#phone').blur('input', function () {
         if ($(this).val() == '') {
@@ -147,8 +121,148 @@ $(document).ready(function () {
         email = true;
         $(this).css("border-color", "#ccc");
     })
+
+    $('#director').blur('input', function () {
+        if ($(this).val() == '') {
+            $(this).css("border-color", "#ff0000");
+
+            director = false;
+            return false;
+        }
+
+        director = true;
+        $(this).css("border-color", "#ccc");
+    })
+
+    $('#directorCPF').blur('input', function () {
+        if ($(this).val() == '') {
+            $(this).css("border-color", "#ff0000");
+
+            directorCPF = false;
+            return false;
+        }
+
+        directorCPF = true;
+        $(this).css("border-color", "#ccc");
+    })
 });
 
-function verifyEmpty(name, cnpj, phone, email, password, conPassword) {
-    if (name == true && cnpj == true && phone == true && email == true && password == true && conPassword == true) return true
+function verifyEmptyInfos(name, cnpj, phone, email, director, directorCPF) {
+    if (name == true && cnpj == true && phone == true && email == true && director == true && directorCPF == true) return true
 }
+
+var cep = false;
+var state = false;
+var city = false;
+var district = false;
+var number = false;
+var street = false;
+
+$(document).ready(function () {
+    $('#CEP').blur('input', function () {
+        if ($(this).val() == '') {
+            $(this).css("border-color", "#ff0000");
+
+            cep = false;
+            return false;
+        }
+
+        cep = true;
+        $(this).css("border-color", "#ccc");
+    })
+
+    $('#state').blur('input', function () {
+        if ($(this).val() == '') {
+            $(this).css("border-color", "#ff0000");
+
+            state = false;
+            return false;
+        }
+
+        state = true;
+        $(this).css("border-color", "#ccc");
+    })
+
+    $('#city').blur('input', function () {
+        if ($(this).val() == '') {
+            $(this).css("border-color", "#ff0000");
+
+            city = false;
+            return false;
+        }
+
+        city = true;
+        $(this).css("border-color", "#ccc");
+    })
+
+    $('#district').blur('input', function () {
+        if ($(this).val() == '') {
+            $(this).css("border-color", "#ff0000");
+
+            district = false;
+            return false;
+        }
+
+        district = true;
+        $(this).css("border-color", "#ccc");
+    })
+
+    $('#number').blur('input', function () {
+        if ($(this).val() == '') {
+            $(this).css("border-color", "#ff0000");
+
+            number = false;
+            return false;
+        }
+
+        number = true;
+        $(this).css("border-color", "#ccc");
+    })
+
+    $('#street').blur('input', function () {
+        if ($(this).val() == '') {
+            $(this).css("border-color", "#ff0000");
+
+            street = false;
+            return false;
+        }
+
+        street = true;
+        $(this).css("border-color", "#ccc");
+    })
+})
+
+function verifyEmptyAddres(cep, state, city, district, street, number) {
+    if (cep == true && state == true && city == true && district == true && street == true && number == true) return true
+}
+
+
+$('#password').blur('input', function () {
+    if ($(this).val() == '') {
+        $(this).css("border-color", "#ff0000");
+
+        password = false;
+        return false;
+    }
+
+    password = true;
+    $(this).css("border-color", "#ccc");
+})
+
+$('#conPassword').blur('input', function () {
+    if ($(this).val() == '') {
+        $(this).css("border-color", "#ff0000");
+
+        conPassword = false;
+        return false;
+    }
+    if ($(this).val() != $('#password').val()) {
+        $(this).css("border-color", "#ff0000");
+
+        conPassword = false;
+        return false;
+    }
+
+    conPassword = true;
+    $(this).css("border-color", "#ccc");
+})

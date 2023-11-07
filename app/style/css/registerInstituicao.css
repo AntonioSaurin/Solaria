@@ -27,10 +27,10 @@ header {
     color: #0d4266;
 }
 
-#btnLogin{
-    color: #00857a;
+#btnLogin, #btnLogin:hover, #btnLogin:active {
+    color:  #4b001a;
+    text-decoration: none;
 }
-
 
 .img {
     transform: scaleX(-1);
@@ -78,6 +78,20 @@ h1{
     top: 7.5rem;
     position: fixed;
     left: 22rem;
+}
+
+.align{
+    top: 17.39em;
+}
+
+.align2{
+    top: 16em;
+}
+
+.table3 {
+    top: 8em;
+    position: fixed;
+    left: 11em;
 }
 
 .link{

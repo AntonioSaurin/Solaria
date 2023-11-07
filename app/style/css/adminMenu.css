@@ -44,12 +44,7 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
     position: relative;
-  }
-  
-  .admin-card:hover {
-    transform: scale(1.05);
   }
   
   .admin-card .img_icon {
@@ -90,56 +85,82 @@
 
 
   /*Modal do usuário*/
-
-  .modalContainer{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 2000;
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  /* Estilos do modal */
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/*modal*/
+.modal-container{
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.32);
+    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.modal1{
+  width: 50%;
+  height: 65%;
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-/* Estilos do conteúdo do modal */
-.modal-content {
-  background-color: #fff;
+#btnExitIncon{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  width: 600px;
-}
-
-/* Estilos do botão de fechar */
-.close {
-  position: absolute;
-  top: 10px;
+  top: 18px;
   right: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  color: #555;
 }
+
+#modalUsersContent{
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  flex: 3;
+  background-color: #fff;
+  color: #000; 
+  text-align: center;
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+}
+
+#modalTop{
+  border-top-right-radius:10px;
+  border-top-left-radius:10px;
+  flex: 0.3;
+  background-color: #006DB7;
+  text-align: center;
+}
+
+.modal-container.mostrar{
+  display: flex;
+}
+
+@keyframes modal{
+  from{
+      opacity: 0;
+      transform: translate3d(0,-60px,0);
+  }
+  to{
+      opacity: 1;
+      transform: translate3d(0,0,0);
+
+  }
+}
+.mostrar .modal1{
+  animation: modal .4s;
+}
+
+/*end modal*/
 
 /* Estilos da caixa de pesquisa de usuários */
 .search-box {
