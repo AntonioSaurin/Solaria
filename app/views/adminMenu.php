@@ -20,30 +20,13 @@
   <section id="admin">
 
     <?='<h1 id="bemvenido">' . Hour::getHour() . ', Moderador</h1>'?>
-
-    <a href="#modalUsers">
-      <section class="admin-container">
-        <section class="admin-card">
-          <img class="img_icon" src="app/style/img/imgUsers.png">
-          <h2>Gerenciar Usuários</h2>
-          <p class="subtitle">Adicionar cargo ou banir usuários.</p>
-          <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
-        </section>
-    </a>
-
-    <section id="modalUsers" class="modal-container">
-      <section class="modal1">
-        <section id="modalTop"> 
-          <i id="btnExitIncon"class="btnExit fa-solid fa-rectangle-xmark   fa-xl" style="color: #c7c7c7;"></i>
-          <h1>teste<h1>
-        </section>
-
-        <section id="modalContent">
-          <section id="institutionAreaModal">
-            Informacoes instituicao 
-        </section>
+    <section class="admin-container">
+      <section class="admin-card">
+        <img class="img_icon" src="app/style/img/imgUsers.png">
+        <h2>Gerenciar Usuários</h2>
+        <p class="subtitle">Adicionar cargo ou banir usuários.</p>
+        <button class="usersButton"><b> Hur hur hur hur hur ></b></button>
       </section>
-    </section>
 
     <a href="#">
       <section class="admin-card" id="openModalButton">
@@ -62,8 +45,40 @@
         <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
       </section>
     </a>
+    </section>
   </section>
+  
   </section>
+<section id="modalUsers" class="modal-container">
+    <section class="modal1">
+      <section id="modalTop"> 
+        <i id="btnExitIcon"class="btnExit fa-solid fa-rectangle-xmark   fa-xl" style="color: #c7c7c7;"></i>
+        <h4>teste</h4>
+    </section>
+
+    <section id="modalUsersContent">
+      <section id="institutionAreaModal">
+          AaAaAaaAaAaAaA
+        </section>
+      </section>
+    <script>
+        function openModalUsers(modalUsersId){
+            const modalUsers =  document.getElementById(modalUsersId);
+            modalUsers.classList.add('mostrar');
+        }
+
+        const btnOpen = document.querySelectorAll('.usersButton');
+        btnOpen[index].addEventListener('click', ()=> openModalUsers('modalUsers'));   
+
+        function closeModalUsers(modalUsersId){
+            const modalUsers =  document.getElementById(modalUsersId);
+            modalUsers.classList.remove('mostrar');
+        }
+
+        const btnClose = document.querySelectorAll('.btnExit');
+        btnClose[index].addEventListener('click',()=>closeModalUsers('modalUsers'));   
+       
+
 
 </body>
 
