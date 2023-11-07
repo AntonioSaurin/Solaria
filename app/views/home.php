@@ -18,9 +18,11 @@
 		<?php
 			include('header.php');
 		?>
+		
 	</header>
-
+	
 	<section id="contentHome" class="flexContainer">
+	
 		<section id="mainHome">
 			<figure id="imgHome">
 				<img src="app/style/img/homeChildren.png" alt="Crianças sorrindo" title="Bem vindo(a) a solaria!">

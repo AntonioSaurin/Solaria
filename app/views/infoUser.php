@@ -11,12 +11,21 @@
 <body>
     <header>
         <?php
-            //include_once("header.php");
+            include_once("header.php");
         ?>
     </header>
 
-
-    <main class="infoAccountUser">
+    <div class="infoAccount">
+        <div class="userImg">
+            <img src="app/style/img/images.jpg" id="userImg">
+            <h3 id="infoUsername">NOme de usuario</h3>
+        </div>
+        <div class="userInfo">
+            <p>aahdjkhadshkja</p>
+        </div>
+         
+    </div>
+    <!--<main class="infoAccountUser">
         
         <section class="infoAccount">
             <section class="spaceImgAccount">
@@ -109,7 +118,7 @@
                 </section>
             </section>
             <section class="spaceDown"> </section>
-    </main>
+    </main>-->
 </body>
 
 </html>

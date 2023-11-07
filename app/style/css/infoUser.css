@@ -1,366 +1,404 @@
-@font-face{
-    font-family: "Nunito";
-    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
-  
-    font-family: "Sniglet";
-    src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
-}
+    @font-face{
+        font-family: "Nunito";
+        src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
+    
+        font-family: "Sniglet";
+        src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+    }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-header{
-    position: absolute;
-}
-
-/* Class */
-.infoNameAccount{
-    display: flex;
-    position: absolute;
-    font-size: 150%;
-    font-family: "Sniglet", sans-serif;
-    margin-left: 15%;
-    margin-top: -8%;
-}
-
-.CpfAccount{
-    display: flex;
-    position: absolute;
-    margin-left: 15%;
-    margin-top: -6%;
-    font-family: "Sniglet", sans-serif;
-    font-size: 140%;
-}
-
-.DtNascAccount{
-    display: flex;
-    position: absolute;
-    margin-left: 15%;
-    margin-top: -4%;
-    font-family: "Sniglet", sans-serif;
-    font-size: 120%;
-}
-
-.tablesFlex{
-    display: flex;
-}
-
-.spaceTableGeral{
-    display: flex;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
-    border-width: 1px;
-    width: 30%;
-    height: 32rem;
-    margin-left: 20%;
-    font-family: "Nunito", sans-serif;
-}
-
-.spaceTableEndereco{
-    display: flex;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
-    border-width: 1px;
-    width: 30%;
-    height: 32rem;
-    font-family: "Nunito", sans-serif;
-}
-
-.infoAccountTop{
-    display: flex;
-    font-family: "Nunito", sans-serif;
-    justify-content: center;
-    margin-top: 4%;
-    font-size: 115%;
-}
-
-.border{
-    border-style: solid;
-    border-color: black;
-    border-width: 12px;
-}
-
-/*E-mail*/
-.boxEmail{
-    display: flex;
-    padding: 2%;
-    width: 170%;
-    font-size: 125%;
-    text-overflow: ellipsis;
-    background-color: rgb(206, 206, 206);
-    border: none;
-    margin-left: 5%;
-    border-radius: 2%;
-}
-
-/*Telefone*/
-.boxTelefone{
-    display: flex;
-    padding: 2%;
-    width: 170%;
-    font-size: 125%;
-    text-overflow: ellipsis;
-    background-color: rgb(206, 206, 206);
-    border: none;
-    margin-left: 5%;
-    border-radius: 2%;
-}
-
-/*Senha*/
-.boxSenha{
-    display: flex;
-    padding: 2%;
-    width: 170%;
-    font-size: 125%;
-    text-overflow: ellipsis;
-    background-color: rgb(206, 206, 206);
-    border: none;
-    margin-left: 5%;
-    border-radius: 2%;
-}
-
-/*Confirmar Senha*/
-.boxConfSenha{
-    display: flex;
-    padding: 2%;
-    width: 170%;
-    font-size: 125%;
-    text-overflow: ellipsis;
-    background-color: rgb(206, 206, 206);
-    border: none;
-    margin-left: 5%;
-    border-radius: 2%;
-}
-
-/*CEP*/
-.boxCEP{
-    display: flex;
-    padding: 2%;
-    width: 45%;
-    font-size: 125%;
-    text-overflow: ellipsis;
-    background-color: rgb(206, 206, 206);
-    border: none;
-    margin-left: 5%;
-    border-radius: 2%;
-}
-
-/*Estado*/
-
-#labelState{
-    display: flex;
-    font-family: 'Nunito', sans-serif;
-    font-size: 125%;
-    margin-top: -23%;
-    margin-left: 60%;
-}
-
-.optionStates{
-    display: flex;
-    padding: 3%;
-    width: 30%;
-    font-size: 100%;
-    text-overflow: ellipsis;
-    background-color: rgb(206, 206, 206);
-    border: none;
-    color: #000000;
-    margin-left: 60%;
-    margin-top: 0%;
-    border-radius: 2%;
-}
-
-/*Cidade*/
-
-#labelCity{
-    display: flex;
-    font-family: 'Nunito', sans-serif;
-    font-size: 125%;
-    margin-top: -23%;
-    margin-left: 100%;
-}
-
-.boxCidade{
-    display: flex;
-    padding: 2%;
-    width: 88%;
-    font-size: 125%;
-    text-overflow: ellipsis;
-    background-color: rgb(206, 206, 206);
-    border: none;
-    margin-left: 100%;
-    border-radius: 2%;
-}
-
-/*Bairro*/
-.boxBairro{
-    display: flex;
-    padding: 2%;
-    width: 125%;
-    font-size: 125%;
-    text-overflow: ellipsis;
-    background-color: rgb(206, 206, 206);
-    border: none;
-    margin-left: 5%;
-    border-radius: 2%;
-}
-
-/*Número de Residência*/
-#labelNumber{
-    display: flex;
-    font-size: 125%;
-    font-family: 'Nunito', sans-serif;
-    margin-top: -23%;
-    margin-left: 140%;
-}
+    header{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        position: fixed;
+    }
 
 
-.boxNum{
-    display: flex;
-    padding: 2%;
-    width: 48%;
-    font-size: 125%;
-    text-overflow: ellipsis;
-    background-color: rgb(206, 206, 206);
-    border: none;
-    margin-top: 0%;
-    margin-left: 140%;
-    border-radius: 2%;
-}
+    .infoAccount{
+        margin-top: 120px;
+        margin-left: 160px;
+        width:80vw;
+        height:75vh;
+        background-color:red ;
+        z-index: 2000;
+        display: flex;
+        
+        align-items: CENTER;
+       
+       
+       
+    }
+    .userImg{
+        height: 85%;
+        
+        padding-right: 80px;
+        border-right:  1px black;
+        display: flex;
+        align-items: center;
+        background-color: green;
+        flex:1;
+    }
+    .userImg img{
+        border-radius: 50%;
+        border: solid white 1px;
+        margin-left: 60px;
+        height: 280px;
+        
+    }
 
-/*Logradouro*/
-.boxLogradouro{
-    display: flex;
-    padding: 2%;
-    width: 183%;
-    font-size: 125%;
-    text-overflow: ellipsis;
-    background-color: rgb(206, 206, 206);
-    border: none;
-    margin-left: 5%;
-    border-radius: 2%;
-}
+    /* Class 
+    .infoNameAccount{
+        display: flex;
+        position: absolute;
+        font-size: 150%;
+        font-family: "Sniglet", sans-serif;
+        margin-left: 15%;
+        margin-top: -8%;
+    }
 
-.labelAccountGeral{
-    display: flex;
-    margin-top: 10%;
-    margin-left: 5%;
-    font-size: 125%;
-}
+    .CpfAccount{
+        display: flex;
+        position: absolute;
+        margin-left: 15%;
+        margin-top: -6%;
+        font-family: "Sniglet", sans-serif;
+        font-size: 140%;
+    }
 
-.labelAccountEndereco{
-    display: flex;
-    margin-top: 10%;
-    margin-left: 5%;
-    font-size: 125%;
-}
+    .DtNascAccount{
+        display: flex;
+        position: absolute;
+        margin-left: 15%;
+        margin-top: -4%;
+        font-family: "Sniglet", sans-serif;
+        font-size: 120%;
+    }
 
-.labelTitleTop{
-    color: white;
-}
+    .tablesFlex{
+        display: flex;
+    }
 
-.spaceDown{
-    padding-top: 5%;
-}
+    .spaceTableGeral{
+        display: flex;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-width: 1px;
+        width: 30%;
+        height: 32rem;
+        margin-left: 20%;
+        font-family: "Nunito", sans-serif;
+    }
 
-/* ID */
-#labelAccountEndereco{
-    display: flex;
-    justify-content: center;
-    border-style: solid;
-    border-width: 1px;
-    background-color: #E3286A;
-    width: 30%;
-    padding: 2%;
-}
+    .spaceTableEndereco{
+        display: flex;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-width: 1px;
+        width: 30%;
+        height: 32rem;
+        font-family: "Nunito", sans-serif;
+    }
 
-#labelAccountGeral{
-    display: flex;
-    border-style: solid;
-    border-width: 1px;
-    justify-content: center;
-    background-color: #E3286A;
-    width: 30%;
-    padding: 2%;
-}
+    .infoAccountTop{
+        display: flex;
+        font-family: "Nunito", sans-serif;
+        justify-content: center;
+        margin-top: 4%;
+        font-size: 115%;
+    }
 
-#imgAccount{
-    display: flex;
-    position: relative;
-    width: 10%;
-    height: 25%;
-    border-radius: 100%;
-    margin-left: 3%;
-    margin-top: 5%;
-}
+    .border{
+        border-style: solid;
+        border-color: black;
+        border-width: 12px;
+    }
 
-#spaceBtnExcluir{
-    display: flex;
-    justify-content: center;
-    width: 170%;
-}
+    E-mail
+    .boxEmail{
+        display: flex;
+        padding: 2%;
+        width: 170%;
+        font-size: 125%;
+        text-overflow: ellipsis;
+        background-color: rgb(206, 206, 206);
+        border: none;
+        margin-left: 5%;
+        border-radius: 2%;
+    }
+
+    Telefone
+    .boxTelefone{
+        display: flex;
+        padding: 2%;
+        width: 170%;
+        font-size: 125%;
+        text-overflow: ellipsis;
+        background-color: rgb(206, 206, 206);
+        border: none;
+        margin-left: 5%;
+        border-radius: 2%;
+    }
+
+    Senha
+    .boxSenha{
+        display: flex;
+        padding: 2%;
+        width: 170%;
+        font-size: 125%;
+        text-overflow: ellipsis;
+        background-color: rgb(206, 206, 206);
+        border: none;
+        margin-left: 5%;
+        border-radius: 2%;
+    }
+
+    Confirmar Senha
+    .boxConfSenha{
+        display: flex;
+        padding: 2%;
+        width: 170%;
+        font-size: 125%;
+        text-overflow: ellipsis;
+        background-color: rgb(206, 206, 206);
+        border: none;
+        margin-left: 5%;
+        border-radius: 2%;
+    }
+
+    CEP
+    .boxCEP{
+        display: flex;
+        padding: 2%;
+        width: 45%;
+        font-size: 125%;
+        text-overflow: ellipsis;
+        background-color: rgb(206, 206, 206);
+        border: none;
+        margin-left: 5%;
+        border-radius: 2%;
+    }
+
+    Estado
+
+    #labelState{
+        display: flex;
+        font-family: 'Nunito', sans-serif;
+        font-size: 125%;
+        margin-top: -23%;
+        margin-left: 60%;
+    }
+
+    .optionStates{
+        display: flex;
+        padding: 3%;
+        width: 30%;
+        font-size: 100%;
+        text-overflow: ellipsis;
+        background-color: rgb(206, 206, 206);
+        border: none;
+        color: #000000;
+        margin-left: 60%;
+        margin-top: 0%;
+        border-radius: 2%;
+    }
+
+    Cidade
+
+    #labelCity{
+        display: flex;
+        font-family: 'Nunito', sans-serif;
+        font-size: 125%;
+        margin-top: -23%;
+        margin-left: 100%;
+    }
+
+    .boxCidade{
+        display: flex;
+        padding: 2%;
+        width: 88%;
+        font-size: 125%;
+        text-overflow: ellipsis;
+        background-color: rgb(206, 206, 206);
+        border: none;
+        margin-left: 100%;
+        border-radius: 2%;
+    }
+
+    Bairro
+    .boxBairro{
+        display: flex;
+        padding: 2%;
+        width: 125%;
+        font-size: 125%;
+        text-overflow: ellipsis;
+        background-color: rgb(206, 206, 206);
+        border: none;
+        margin-left: 5%;
+        border-radius: 2%;
+    }
+
+    Número de Residência
+    #labelNumber{
+        display: flex;
+        font-size: 125%;
+        font-family: 'Nunito', sans-serif;
+        margin-top: -23%;
+        margin-left: 140%;
+    }
 
 
-/*Botão Excluir*/
-#btnExcluir{
-    display: flex;
-    background-color: #ff3a3a;
-    color: white;
-    font-size: 100%;
-    border-radius: 3%;
-    margin-top: 25%;
-    margin-right: 40%;
-    padding: 2%;
-    padding-left: 10%;
-    padding-right: 10%;
-    cursor: pointer;
-    border: none;
-    box-shadow: black 0.1em 0.1em 0.1em;
-    transition: 1s;
-}
+    .boxNum{
+        display: flex;
+        padding: 2%;
+        width: 48%;
+        font-size: 125%;
+        text-overflow: ellipsis;
+        background-color: rgb(206, 206, 206);
+        border: none;
+        margin-top: 0%;
+        margin-left: 140%;
+        border-radius: 2%;
+    }
 
-#btnExcluir:hover{
-    transition: 1s;
-    transform: scale(1.01);
-    color: #000000;
-    background-color: #FFA22D;
-}
+    Logradouro
+    .boxLogradouro{
+        display: flex;
+        padding: 2%;
+        width: 183%;
+        font-size: 125%;
+        text-overflow: ellipsis;
+        background-color: rgb(206, 206, 206);
+        border: none;
+        margin-left: 5%;
+        border-radius: 2%;
+    }
+
+    .labelAccountGeral{
+        display: flex;
+        margin-top: 10%;
+        margin-left: 5%;
+        font-size: 125%;
+    }
+
+    .labelAccountEndereco{
+        display: flex;
+        margin-top: 10%;
+        margin-left: 5%;
+        font-size: 125%;
+    }
+
+    .labelTitleTop{
+        color: white;
+    }
+
+    .spaceDown{
+        padding-top: 5%;
+    }
+
+    ID 
+    #labelAccountEndereco{
+        display: flex;
+        justify-content: center;
+        border-style: solid;
+        border-width: 1px;
+        background-color: #E3286A;
+        width: 30%;
+        padding: 2%;
+    }
+
+    #labelAccountGeral{
+        display: flex;
+        border-style: solid;
+        border-width: 1px;
+        justify-content: center;
+        background-color: #E3286A;
+        width: 30%;
+        padding: 2%;
+    }
+
+    #imgAccount{
+        display: flex;
+        position: relative;
+        width: 10%;
+        height: 25%;
+        border-radius: 100%;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    #spaceBtnExcluir{
+        display: flex;
+        justify-content: center;
+        width: 170%;
+    }
 
 
-.spaceBtnSave{
-    display: flex;
-    justify-content: center;
-    width: 170%;
-}
+    Botão Excluir
+    #btnExcluir{
+        display: flex;
+        background-color: #ff3a3a;
+        color: white;
+        font-size: 100%;
+        border-radius: 3%;
+        margin-top: 25%;
+        margin-right: 40%;
+        padding: 2%;
+        padding-left: 10%;
+        padding-right: 10%;
+        cursor: pointer;
+        border: none;
+        box-shadow: black 0.1em 0.1em 0.1em;
+        transition: 1s;
+    }
 
-#btnSalvar{
-    display: flex;
-    justify-content: center;
-    background-color: #E3286A;
-    color: white;
-    border: none;
-    font-size: 100%;
-    border-radius: 3px;
-    margin-top: 50%;
-    margin-left: 60%;
-    padding: 2%;
-    padding-left: 15%;
-    padding-right: 15%;
-    cursor: pointer;
-}
+    #btnExcluir:hover{
+        transition: 1s;
+        transform: scale(1.01);
+        color: #000000;
+        background-color: #FFA22D;
+    }
 
-#labelAccountEmail{
-    display: flex;
-    margin-left: 5%;
-    margin-top: 15%;
-    font-size: 125%;
-}
 
-#labelAccountCEP{
-    display: flex;
-    margin-left: 5%;
-    margin-top: 15%;
-    font-size: 125%;
-}
+    .spaceBtnSave{
+        display: flex;
+        justify-content: center;
+        width: 170%;
+    }
+
+    #btnSalvar{
+        display: flex;
+        justify-content: center;
+        background-color: #E3286A;
+        color: white;
+        border: none;
+        font-size: 100%;
+        border-radius: 3px;
+        margin-top: 50%;
+        margin-left: 60%;
+        padding: 2%;
+        padding-left: 15%;
+        padding-right: 15%;
+        cursor: pointer;
+    }
+
+    #labelAccountEmail{
+        display: flex;
+        margin-left: 5%;
+        margin-top: 15%;
+        font-size: 125%;
+    }
+
+    #labelAccountCEP{
+        display: flex;
+        margin-left: 5%;
+        margin-top: 15%;
+        font-size: 125%;
+    }*/

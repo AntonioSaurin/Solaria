@@ -56,7 +56,7 @@
                                 
                                 if(isset($_SESSION['id'])){  
                                     echo('
-                                        <a href="#" class="fa-regular fa-user fa-xl  nav-link  mt-2" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #5a5a5ac2; "></a>
+                                        <a href="#" id="accountIcon"class="fa-solid fa-user-group fa-xl nav-link  mt-2" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#db628d "></a>
 
                                         <section id="headerMenu"class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                                             <a class="dropdown-item" href="/infoUser">Conta</a>
