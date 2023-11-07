@@ -141,7 +141,7 @@
   text-align: center;
 }
 
-.modal-container.mostrar{
+.modal-container .mostrar{
   display: flex;
 }
 
