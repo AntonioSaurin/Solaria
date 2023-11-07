@@ -150,7 +150,7 @@ select:focus {
     transform: translateY(2px);
 }
 
-#btnLogin:hover, #btnLogin:active {
-    color:  #437292;
+#btnLogin, #btnLogin:hover, #btnLogin:active {
+    color:  #4b001a;
     text-decoration: none;
 }

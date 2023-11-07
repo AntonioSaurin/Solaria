@@ -52,7 +52,7 @@
 
                         <span name="next" class="nextButton" id="text" onclick=changeVisibleAdress()>Próximo</span>
 
-                        <p class="link">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
+                        <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
                     </span>
 
             </section>
@@ -119,24 +119,27 @@
             </section>
 
             <section class="signupBox form" id="pt3">
-                <h1>Outras Informações</h1><br>
+                <h1>Cadastrar Senhas</h1><br>
                 <span class="table1">
 
 
-                    <span class="backButton" id="text" onclick=changeVisibleAdress()>Voltar</span>
+                    <span class="backButton align" id="text" onclick=changeVisibleAdress()>Voltar</span>
                 </span>
 
-                <span class="table2">
-                    <p>Senha:</p>
-                    <input type="password" class="signupBox" name="password3" id="password3" placeholder="Senha"><br>
+                <span class="table2 test">
+                    <span class="table3">
+                        <p>Senha:</p>
+                        <input type="password" class="signupBox" name="password3" id="password3"
+                            placeholder="Senha"><br>
 
-                    <p>Confirmar Senha:</p>
-                    <input type="password" class="signupBox" name="conPassword3" id="conPassword3"
-                        placeholder="Confirmar Senha"><br>
+                        <p>Confirmar Senha:</p>
+                        <input type="password" class="signupBox" name="conPassword3" id="conPassword3"
+                            placeholder="Confirmar Senha"><br>
+                    </span>
 
-                    <button type="submit" name="submit" class="registerButton" id="text">Cadastrar</button>
+                    <button type="submit" name="submit" class="registerButton align" id="text">Cadastrar</button>
 
-                    <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
+                    <p class="link text align2">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
                 </span>
                 </form>
 
@@ -166,7 +169,7 @@
         function changeVisibleAdress() {
             var empty = verifyEmptyInfos(nome, cnpj, phone, email, director, directorCPF);
 
-            if (empty == true) {
+            if (empty != true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");
@@ -180,7 +183,7 @@
         function changeVisibleOthers() {
             var empty = verifyEmptyAddres(cep, state, city, district, street, number);
 
-            if (empty == true) {
+            if (empty != true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");
