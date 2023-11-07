@@ -19,9 +19,18 @@ header{
     left: 0;
     z-index: 1;
     position: fixed;
-    background-color: #fff;
+    
+    
 }
-
+#color{
+    color: #fff;
+}
+#color:hover {
+    text-decoration: overline;
+    color: rgba(255, 255, 255, 0.459)
+    
+    
+}
 #mainHowToAdopt{
     height: 35em;
     width: 60em;
