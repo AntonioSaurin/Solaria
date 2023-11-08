@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app/javaScript/jQuery.js"></script>
+    <script src="app/javaScript/jMask.js"></script>
     <link href="app/style/css/infoUser.css" rel="stylesheet">
     <title> Conta </title>
 </head>
@@ -11,19 +13,19 @@
 <body>
     <header>
         <?php
-            include_once("header.php");
+        include_once("header.php");
         ?>
     </header>
 
     <div class="infoAccount">
         <div class="userImg">
             <img src="app/style/img/images.jpg" id="userImg">
-            <h3 id="infoUsername">NOme de usuario</h3>
+            <h3 id="infoUsername">Nome de usuario</h3>
         </div>
         <div class="userInfo">
             <p>aahdjkhadshkja</p>
         </div>
-         
+
     </div>
     <!--<main class="infoAccountUser">
         
@@ -37,28 +39,68 @@
                 <label class="DtNascAccount"> Data de Nascimento: 05/06/1995 </label>
             </section>-->
 
-            <?php
-                /*include_once("historicUser.php");*/
-            ?>
+    <?php
+    /*include_once("historicUser.php");*/
+    ?>
 
+    <form name="formEditar" action="#" method="POST">
+        <label> Email: </label>
+        <input type="text" class=""> </input>
+        Telefone:
+        <input type="text" name="phone" id="phone" maxlength="12"> </input>
+        Senha:
+        <input type="password" class=""> </input>
+        Confirmar Senha:
+        <input type="password" class=""> </input>
 
-            <form name="formEditar" action="#" method="POST">
-                <label> Email: </label>
-                <input type="text" class=""> </input>
-                Telefone:
-                <input type="number" class=""> </input>
-                Senha:
-                <input type="password" class=""> </input>
-                Confirmar Senha:
-                <input type="password" class=""> </input>
-                <button> Excluir Conta </button>
+        <button> Excluir Conta </button>
+    </form>
+    <form>
+        <label> CEP: </label>
+        <input type="text" class=""> </input>
+        <label> Estado: </label>
+        <select class="signupBox" name="state" id="state">
+            <option value="AC"> Acre </option>
+            <option value="AL"> Alagoas </option>
+            <option value="AP"> Amapá </option>
+            <option value="AM"> Amazonas </option>
+            <option value="BA"> Bahia </option>
+            <option value="CE"> Ceará </option>
+            <option value="DF"> Distrito Federal </option>
+            <option value="ES"> Espírito Santo </option>
+            <option value="GO"> Goiás </option>
+            <option value="MA"> Maranhão </option>
+            <option value="MT"> Mato Grosso </option>
+            <option value="MS"> Mato Grosso do Sul </option>
+            <option value="MG"> Minas Gerais </option>
+            <option value="PA"> Pará </option>
+            <option value="PB"> Paraíba </option>
+            <option value="PR"> Paraná </option>
+            <option value="PE"> Pernambuco </option>
+            <option value="PI"> Piauí </option>
+            <option value="RJ"> Rio de Janeiro </option>
+            <option value="RN"> Rio Grande do Norte </option>
+            <option value="RS"> Rio Grande do Sul </option>
+            <option value="RO"> Rondônia </option>
+            <option value="RR"> Roraima </option>
+            <option value="SC"> Santa Catarina </option>
+            <option value="SP"> São Paulo </option>
+            <option value="SE"> Sergipe </option>
+            <option value="TO"> Tocantins </option>
+        </select>
+        <label> Cidade: </label>
+        <input type="text" class=""> </input>
+        <label> Bairro: </label>
+        <input type="text" class=""> </input>
+        <label> Número: </label>
+        <input type="number" class=""> </input>
+        <label> Logradouro: </label>
+        <input type="text" class=""> </input>
 
-                <label> CEP: </label>
-                <input type="text" class=""> </input>
-                
-            </form>
+        <button> Salvar </button>
+    </form>
 
-            <!--<section class="infoAccountTop">
+    <!--<section class="infoAccountTop">
                 <section id="labelAccountGeral"> <label class="labelTitleTop"> Geral </label> </section>
                 <section id="labelAccountEndereco"> <label class="labelTitleTop"> Endereço </label>  </section>
             </section>
@@ -136,6 +178,9 @@
             </section>
             <section class="spaceDown"> </section>
     </main>-->
+    <script>
+        $("#phone").mask("(00) 00000-0000");
+    </script>
 </body>
 
 </html>
