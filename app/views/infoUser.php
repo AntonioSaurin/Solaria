@@ -35,13 +35,30 @@
                 </section>
                 <label class="CpfAccount"> CPF: 287.778.748.62 </label>
                 <label class="DtNascAccount"> Data de Nascimento: 05/06/1995 </label>
-            </section>
+            </section>-->
 
             <?php
-                include_once("historicUser.php");
+                /*include_once("historicUser.php");*/
             ?>
+a
 
-            <section class="infoAccountTop">
+            <form name="formEditar" action="#" method="POST">
+                <label> Email: </label>
+                <input type="text" class=""> </input>
+                Telefone:
+                <input type="number" class=""> </input>
+                Senha:
+                <input type="password" class=""> </input>
+                Confirmar Senha:
+                <input type="password" class=""> </input>
+                <button> Excluir Conta </button>
+
+                <label> CEP: </label>
+                <input type="text" class=""> </input>
+                
+            </form>
+
+            <!--<section class="infoAccountTop">
                 <section id="labelAccountGeral"> <label class="labelTitleTop"> Geral </label> </section>
                 <section id="labelAccountEndereco"> <label class="labelTitleTop"> Endereço </label>  </section>
             </section>
