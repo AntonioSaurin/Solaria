@@ -27,7 +27,7 @@
                     <span class="table1">
                         <label  for="validationNameInstituition" class="form-label">Nome da Instituição:</label>
                         <section class="col-md-4">
-                            <input type="text" class="signupBox form-control" name="name" id="name validationCustom01"
+                            <input type="text" class="signupBox form-control" name="name" id="name"
                                 placeholder="Nome da Instituição"><br>
                         </section>
 
