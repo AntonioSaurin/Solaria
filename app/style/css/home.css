@@ -31,9 +31,7 @@ header {
 }
 #color:hover {
     text-decoration: overline;
-    color: rgba(255, 255, 255, 0.459)
-    
-    
+    color: #ffffff75
 }
 
 #contentHome {
@@ -73,52 +71,57 @@ header {
     margin-right: 10px; 
 }
 
-#howToAdopt {
-    height: 200px;
-    background-color: #fea02d; 
-    display: flex;
-    color:#000000;
-    padding-top: 65px;
-}
-
 #header p {
     margin-top: 17px;
     text-align: center;
 }
 
-#signUpInstitution {
-    padding-top:65px;
-    background-color: rgba(41, 120, 172, 0.979);
-    color: rgb(255, 255, 255);
-    height: 250px;
+#institutionArea{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
 }
 
+.optionsHomeArea{
+    height: 15em;
+    padding: 1em;
+    width: 50em;
+    display: flex;
+}
 
-#btnFirst, #btnSecond, #btnThird {
-    color: rgb(255, 255, 255);
-    background-color: #E12A69;
-    padding: 10px 20px; 
+#howToAdopt {
+    background-color: #fea02d; 
+    color:#000000;
+}
+
+#signUpInstitution {
+    background-color: #2978acfa;
+    color: #ffffff;
+}
+
+.btnHome {
+    color: #ffffff;
+    padding: 1em 1.5em; 
     display: inline-block; 
-    margin-left: 10px; 
+    margin-left: 1em; 
     transition: 0.2s;
 }
 
-#btnFirst:hover, #btnSecond:hover, #btnThird:hover {
-    background-color: #fff;
-    color: #E12A69;
-    
+#btnFirst{
+    background-color: #E12A69;
 }
 
 #btnSecond {
     background-color: #2778AD;
-    margin-left: 40rem;
-    margin-top: 1.2rem;
 }
 
 #btnThird {
-    margin-right: 350px;
-    margin-bottom: 10px;
     background-color: #E12A69;  
+}
+
+#btnFirst:hover, #btnSecond:hover, #btnThird:hover, .btnHome:hover{
+    background-color: #ffffff;
+    color: #E12A69;
 }
 
 .homeArrow1{

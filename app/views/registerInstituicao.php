@@ -127,7 +127,7 @@
                             <option value="SC"> Santa Catarina </option>
                             <option value="SP"> São Paulo </option>
                             <option value="SE"> Sergipe </option>
-                            <option value="TO"> Tocantins </option>
+                            <option value="TO"> Tocantinsa </option>
                         </select>
                     </section>
 
