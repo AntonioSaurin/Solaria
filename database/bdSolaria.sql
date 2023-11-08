@@ -56,7 +56,7 @@ create table userAccount(
     userPhoto int unique,
     userAdress int,
     userAdressNumber varchar(5),    
-    userStatus varchar(255) NOT NULL,
+    userStatus varchar(255) NOT NULL default 'Offline',
     primary key(ID),
     foreign key (userPhone) references phone(ID),
     foreign key (userPhoto) references photo(ID),

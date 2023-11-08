@@ -60,11 +60,11 @@
             <img class="img" src="app/style/img/brandWithout.png">
         </span>
     </main>
-    <script>
-        $("#phone").mask("(00) 00000-0000");
-        $("#CPF").mask("000.000.000-00");
-        $("#birthDate").mask("00/00/0000");
-    </script>
+        <script>
+            $("#phone").mask("(00) 00000-0000");
+            $("#CPF").mask("000.000.000-00");
+            $("#birthDate").mask("00/00/0000");
+        </script>
 </body>
 
 </html>

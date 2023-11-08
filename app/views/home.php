@@ -31,31 +31,33 @@
 				<h1> Sua ajuda pode fazer a diferença! </h1>
 				<h3> A cada doação um futuro prospero é construído </h3>
 				<a href="/cadastro">
-					<button type="button"  id="btnFirst" class="btn btn-info">Faça parte disso <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
+					<button type="button"  id="btnFirst" class="btn btn-info btnHome">Faça parte disso <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
 				</a>
 			</section>
 			
 		</section>
-		<section id="howToAdopt">
-			<section class="contentTextHome">
-				<h2>Como adotar?</h2>
-				<h4>Veja informações sobre o assunto</h6>
+		<section id="institutionArea">
+			<section id="howToAdopt" class="optionsHomeArea">
+				<section class="contentTextHome">
+					<h2>Como adotar?</h2>
+					<h4>Veja informações sobre o assunto</h6>
+				</section>
+				<section class="btnSecond">
+					<a href="/como-adotar">
+						<button type="button" id="btnSecond" class="btn btn-info btnHome">Descubra aqui  <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
+					</a>
+				</section>
 			</section>
-			<section class="btnSecond">
-				<a href="/como-adotar">
-					<button type="button" id="btnSecond" class="btn btn-info">Descubra aqui  <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
-				</a>
-			</section>
-		</section>
-		<section id="signUpInstitution">
-			<section class="contentTextHome">
-				<h2>É uma instituição?</h2>
-				<h4>Adicione-a em nossa plataforma</h6>
-			</section>
-			<section class="btnThird d-flex flex-row-reverse">
-				<a href="/cadastroInstituicao">
-					<button type="button" id="btnThird" class="btn btn-info">Cadastre-se  <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
-				</a>
+			<section id="signUpInstitution" class="optionsHomeArea">
+				<section class="contentTextHome">
+					<h2>É uma instituição?</h2>
+					<h4>Adicione-a em nossa plataforma</h6>
+				</section>
+				<section class="btnThird">
+					<a href="/cadastroInstituicao">
+						<button type="button" id="btnThird" class="btn btn-info btnHome">Cadastre-se  <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
+					</a>
+				</section>
 			</section>
 		</section>
 	</section>
