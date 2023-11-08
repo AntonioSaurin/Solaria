@@ -171,8 +171,8 @@ body {
     border-bottom-left-radius: 17px;
     border-bottom-right-radius: 17px;
     flex: 3;
-    background-color: #fff; /* Cor da parte inferior (Branca) */
-    color: #000; /* Cor do texto */
+    background-color: #fff; 
+    color: #000; 
     text-align: center;
     padding: 10px;
     flex-direction: column;

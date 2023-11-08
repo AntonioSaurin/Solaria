@@ -16,6 +16,8 @@
         include('header.php');
         ?>
     </header>
+   
+
     <main>
         <section class="form loginBox">
             <h1 class="text">Login</h1>
@@ -28,14 +30,24 @@
                     <input type="password" class="loginBox" name="password" id="password" placeholder="Senha">
 
                     <button type="submit" name="login" class="loginButton">Login</button>
-                    <p class="text">Ainda não tem uma conta? <a href="/cadastro" class="btnCadastro"
+                    <p class="text">Ainda não tem uma conta? 
+                
+                    <a href="/cadastro" class="btnCadastro"
                             id="btnCadastro">Cadastrar</a></p>
                 </span>
             </form>
         </section>
         <img class="img" src="app/style/img/brandWithout.png">
     </main>
+    
 
+    <section class="modal-container" id="modalRegister">
+        <sections class="modal2Register">
+        
+            <H1>TESTE</H1>
+        </sections>
+    </section>    
+    
 </body>
 
 </html>

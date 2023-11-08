@@ -21,45 +21,63 @@
     <main>
         <span id="gradient">
             <section class="signupBox form" id="pt1">
-                <form action="cadastro/efetuar" method="post" name="Cadastro" class="row g-3 needs-validation"
+                <form action="cadastro/efetuarInstituicao" method="post" name="Cadastro" class="row g-3 needs-validation"
                     novalidate>
                     <h1>Cadastrar</h1><br>
                     <span class="table1">
-                        <label  for="validationNameInstituition" class="form-label">Nome da Instituição:</label>
+                        <label for="validationNameInstituition" class="form-label">Nome da Instituição:</label>
                         <section class="col-md-4">
                             <input type="text" class="signupBox form-control" name="name" id="name"
                                 placeholder="Nome da Instituição"><br>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
                         </section>
 
-                        <label  for="validationDirector" class="form-label">Responsável:</label>
+                        <label for="validationDirector" class="form-label">Responsável:</label>
                         <section class="col-md-4">
                             <input type="text" class="signupBox" name="director" id="director"
                                 placeholder="Responsavél"><br>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
                         </section>
 
-                        <label  for="validationDirectorCPF" class="form-label">CPF do Responsavél:</label>
+                        <label for="validationDirectorCPF" class="form-label">CPF do Responsavél:</label>
                         <section class="col-md-4">
                             <input type="text" class="signupBox" name="directorCPF" id="directorCPF" placeholder="CPF"
                                 maxlength="14"><br>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
                         </section>
                     </span>
 
                     <span class="table2">
-                        <label  for="validationCNPJ" class="form-label">CNPJ:</label>
+                        <label for="validationCNPJ" class="form-label">CNPJ:</label>
                         <section class="col-md-4">
                             <input type="text" class="signupBox" name="CNPJ" id="CNPJ" placeholder="CNPJ"
                                 maxlength="14"><br>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
                         </section>
 
-                        <label  for="validationEmail" class="form-label">Email:</label>
+                        <label for="validationEmail" class="form-label">Email:</label>
                         <section class="col-md-4">
                             <input type="text" class="signupBox" name="email" id="email" placeholder="Email"><br>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
                         </section>
 
                         <label>Telefone:</label>
                         <section class="col-md-4">
                             <input type="text" class="signupBox" name="phone" id="phone" placeholder="Telefone"
                                 maxlength="12"><br>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
                         </section>
 
                         <span name="next" class="nextButton" id="text" onclick=changeVisibleAdress()>Próximo</span>
@@ -72,47 +90,54 @@
             <section class="signupBox form" id="pt2">
                 <h1>Cadastrar Endereço</h1><br>
                 <span class="table1">
-                    <label  for="validationCEP" class="form-label">CEP:</label>
+                    <label for="validationCEP" class="form-label">CEP:</label>
                     <section class="col-md-4">
                         <input type="text" class="signupBox" name="CEP" id="CEP" placeholder="00000-000"><br>
+                        <div class="invalid-feedback">
+        Please choose a username.
+      </div>
                     </section>
 
                     <label>Estado:</label>
                     <section class="col-md-4">
                         <select class="signupBox" name="state" id="state">
-                            <option value="AC"> AC </option>
-                            <option value="AL"> Al </option>
-                            <option value="AP"> AP </option>
-                            <option value="AM"> AM </option>
-                            <option value="BA"> BA </option>
-                            <option value="CE"> CE </option>
-                            <option value="DF"> DF </option>
-                            <option value="ES"> ES </option>
-                            <option value="GO"> GO </option>
-                            <option value="MA"> MA </option>
-                            <option value="MT"> MT </option>
-                            <option value="MS"> MS </option>
-                            <option value="MG"> MG </option>
-                            <option value="PA"> PA </option>
-                            <option value="PB"> PB </option>
-                            <option value="PE"> PE </option>
-                            <option value="PI"> PI </option>
-                            <option value="RJ"> RJ </option>
-                            <option value="RN"> RN </option>
-                            <option value="RS"> RS </option>
-                            <option value="RO"> RO </option>
-                            <option value="RR"> RR </option>
-                            <option value="SC"> SC </option>
-                            <option value="SP"> SP </option>
-                            <option value="SE"> SE </option>
-                            <option value="TO"> TO </option>
+                            <option value="AC"> Acre </option>
+                            <option value="AL"> Alagoas </option>
+                            <option value="AP"> Amapá </option>
+                            <option value="AM"> Amazonas </option>
+                            <option value="BA"> Bahia </option>
+                            <option value="CE"> Ceará </option>
+                            <option value="DF"> Distrito Federal </option>
+                            <option value="ES"> Espírito Santo </option>
+                            <option value="GO"> Goiás </option>
+                            <option value="MA"> Maranhão </option>
+                            <option value="MT"> Mato Grosso </option>
+                            <option value="MS"> Mato Grosso do Sul </option>
+                            <option value="MG"> Minas Gerais </option>
+                            <option value="PA"> Pará </option>
+                            <option value="PB"> Paraíba </option>
+                            <option value="PR"> Paraná </option>
+                            <option value="PE"> Pernambuco </option>
+                            <option value="PI"> Piauí </option>
+                            <option value="RJ"> Rio de Janeiro </option>
+                            <option value="RN"> Rio Grande do Norte </option>
+                            <option value="RS"> Rio Grande do Sul </option>
+                            <option value="RO"> Rondônia </option>
+                            <option value="RR"> Roraima </option>
+                            <option value="SC"> Santa Catarina </option>
+                            <option value="SP"> São Paulo </option>
+                            <option value="SE"> Sergipe </option>
+                            <option value="TO"> Tocantinsa </option>
                         </select>
                     </section>
-                    
+
                     <label>Cidade:</label>
                     <section class="col-md-4">
                         <input type="text" class="signupBox" name="city" id="city" placeholder="Telefone"
                             maxlength="12"><br>
+                            <div class="invalid-feedback">
+        Please choose a username.
+      </div>
                     </section>
 
                     <span class="backButton" id="text" onclick=changeVisibleInfos()>Voltar</span>
@@ -122,16 +147,25 @@
                     <label>Bairro:</label>
                     <section class="col-md-4">
                         <input type="text" class="signupBox" name="district" id="district" placeholder="Bairro"><br>
+                        <div class="invalid-feedback">
+        Please choose a username.
+      </div>
                     </section>
 
                     <label>Numero:</label>
                     <section class="col-md-4">
                         <input type="text" class="signupBox" name="number" id="number" placeholder="Numero"><br>
+                        <div class="invalid-feedback">
+        Please choose a username.
+      </div>
                     </section>
 
                     <label>Rua:</label>
                     <section class="col-md-4">
                         <input type="text" class="signupBox" name="street" id="street" placeholder="Rua"><br>
+                        <div class="invalid-feedback">
+        Please choose a username.
+      </div>
                     </section>
 
                     <span class="nextButton" id="text" onclick=changeVisibleOthers()>Próximo</span>
@@ -152,14 +186,14 @@
 
                 <span class="table2 test">
                     <span class="table3">
-                        <label  for="validationCustom01" class="form-label">Senha:</label>
+                        <label>Senha:</label>
                         <section class="col-md-4">
-                            <input type="password" class="signupBox" name="password3" id="password3"
+                            <input type="password" class="signupBox" name="password" id="password"
                                 placeholder="Senha"><br>
                         </section>
-                        <label  for="validationCustom01" class="form-label">Confirmar Senha:</label>
+                        <label>Confirmar Senha:</label>
                         <section class="col-md-4">
-                            <input type="password" class="signupBox" name="conPassword3" id="conPassword3"
+                            <input type="password" class="signupBox" name="conPassword" id="conPassword"
                                 placeholder="Confirmar Senha"><br>
                         </section>
                     </span>
