@@ -40,7 +40,7 @@
             <?php
                 /*include_once("historicUser.php");*/
             ?>
-
+a
 
             <form name="formEditar" action="#" method="POST">
                 <label> Email: </label>
