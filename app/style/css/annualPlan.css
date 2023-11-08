@@ -1,0 +1,49 @@
+@font-face{
+    font-family: "Nunito";
+    src: url('../style/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+  
+    font-family: "Sniglet";
+    src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.annualPlan{
+    height: 30em;
+    width: 70em;
+    background-color: #ffffff;
+    border: 0.1em solid;
+    margin: auto;
+    display: flex;
+    flex-direction:row;
+}
+
+.plan{
+    height: 20em;
+    width: 15em;
+    background-color: #ffffff;
+    border: 0.1em solid;
+    border-radius: 0.5em;
+    margin: auto;
+}
+
+h2{
+    width: 5em;
+    margin-top: 1em;
+    margin-left: 3em;
+    font-family: 'Sniglet';
+}
+
+.symbol{
+    font-size: 1em;
+    margin-left: 2em;
+    margin: 3em;
+}
+
+.number{
+    font-size: 3em;
+}

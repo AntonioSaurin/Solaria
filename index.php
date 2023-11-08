@@ -31,7 +31,8 @@ $routes = [
     '/doacao' => 'views/institutionPage.php',
     '/infoInstituicoes' => 'views/infoInstitution.php',
     '/historicoInst' => 'views/historicInstitution.php',
-    '/historicoUser' => 'views/historicUser.php'
+    '/historicoUser' => 'views/historicUser.php',
+    '/annualPlan' => 'views/annualPlan.php'
 ];
 
 $uri = Uri::load();
