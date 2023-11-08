@@ -186,12 +186,12 @@
 
                 <span class="table2 test">
                     <span class="table3">
-                        <label for="validationCustom01" class="form-label">Senha:</label>
+                        <label>Senha:</label>
                         <section class="col-md-4">
                             <input type="password" class="signupBox" name="password3" id="password3"
                                 placeholder="Senha"><br>
                         </section>
-                        <label for="validationCustom01" class="form-label">Confirmar Senha:</label>
+                        <label>Confirmar Senha:</label>
                         <section class="col-md-4">
                             <input type="password" class="signupBox" name="conPassword3" id="conPassword3"
                                 placeholder="Confirmar Senha"><br>
