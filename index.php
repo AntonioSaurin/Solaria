@@ -14,6 +14,7 @@ $routes = [
     '/sobre-nos' => 'views/aboutUs.php',
     '/como-adotar' => 'views/howToAdopt.php',
     '/cadastro/efetuar' => 'controllers/createUser.php',
+    '/cadastro/efetuarInstituicao' => 'controllers/createInstitution.php',
     '/login/efetuar' => 'controllers/login.php',
     '/teste' => 'views/teste.php',
     '/header' => 'views/header.php',

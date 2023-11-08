@@ -21,7 +21,7 @@
     <main>
         <span id="gradient">
             <section class="signupBox form" id="pt1">
-                <form action="cadastro/efetuar" method="post" name="Cadastro" class="row g-3 needs-validation"
+                <form action="cadastro/efetuarInstituicao" method="post" name="Cadastro" class="row g-3 needs-validation"
                     novalidate>
                     <h1>Cadastrar</h1><br>
                     <span class="table1">
@@ -188,12 +188,12 @@
                     <span class="table3">
                         <label>Senha:</label>
                         <section class="col-md-4">
-                            <input type="password" class="signupBox" name="password3" id="password3"
+                            <input type="password" class="signupBox" name="password" id="password"
                                 placeholder="Senha"><br>
                         </section>
                         <label>Confirmar Senha:</label>
                         <section class="col-md-4">
-                            <input type="password" class="signupBox" name="conPassword3" id="conPassword3"
+                            <input type="password" class="signupBox" name="conPassword" id="conPassword"
                                 placeholder="Confirmar Senha"><br>
                         </section>
                     </span>
@@ -230,7 +230,7 @@
         function changeVisibleAdress() {
             var empty = verifyEmptyInfos(nome, cnpj, phone, email, director, directorCPF);
 
-            if (empty != true) {
+            if (empty == true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");
@@ -244,7 +244,7 @@
         function changeVisibleOthers() {
             var empty = verifyEmptyAddres(cep, state, city, district, street, number);
 
-            if (empty != true) {
+            if (empty == true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");
