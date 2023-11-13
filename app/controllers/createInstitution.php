@@ -41,7 +41,7 @@ $phoneNumber = trim($phoneExplode[1]);
 $ddd = explode('(', $phoneExplode[0]);
 
 $cPhoneAction = $cPhone->insert([
-    'phoneNumber' => $cPhoneNumber,
+    'phoneNumber' => $phoneNumber,
     'DDD' => $ddd[1]
 ]);
 
@@ -53,13 +53,14 @@ if ($cPhoneAction != 1) {
     die;
 }
 
-$cPhoneData = $cPhone->find('phoneNumber', $cPhoneNumber);
+$cPhoneData = $cPhone->find('phoneNumber', $phoneNumber);
 
 $cCity = new City;
 
 $cCityData = $cCity->find('city', $city);
+var_dump($cCityData);
 
-if ($cCityData != null) {
+if ($cCityData['ID'] == "1") {
     $cPhone->delete('ID', $cPhoneData['ID']);
     echo '<script> 
     alert("Incapaz de efetuar o cadastro!";
@@ -72,7 +73,7 @@ $cAdress = new Adress;
 
 $cAdressAction = $cAdress->insert([
     'CEP' => $cep,
-    'city' => $city['ID'],
+    'city' => $cCityData['ID'],
     'district' => $district,
     'street' => $street
 ]);
@@ -123,7 +124,7 @@ $cInstitutionAction = $cInstitution->insert([
     'instagram' => $instagram,
     'facebook' => $facebook,
     'description' => null,
-    'state' => 'waitings'
+    'state' => 'waiting'
 ]);
 
 if ($cUserAction != 1) {
