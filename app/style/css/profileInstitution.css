@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url('../img/bgInstituition.png');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.containerProfile {
+    width: 60%;
+    margin-top: 6em;
+    border: 0;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.42);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+section {
+    margin: auto;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.profile img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-right: 0px;
+    margin-left: 7em;
+    border: 1px solid;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info h2 {
+    margin: 0;
+    color: #000000;
+}
+
+.profile-info p {
+    color: #ffffff;
+    margin-top: 1em;
+}
+
+.profile-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.profile-info li {
+    margin-bottom: 5px;
+}
+
+.line {
+    width: 100%;
+}
+
+.line hr {
+    border-top: 1px solid #ffffff;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto 5px;
+}
+
+.simple-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    padding: 5px 0;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    margin: 0px;
+}
+
+.button:hover {
+    color:#e3286a;
+    text-decoration: none;
+}
+
+.posts {
+    margin-top: 1em;
+}
+
+.post {
+    position: relative;
+    width: 80%;
+    padding: 1.5em;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.4); 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(233, 126, 126, 0.3); 
+    align-items: center;
+}
+
+.headerPost{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+    height: 2em;
+    width: 50em;
+    margin-left: 5em;
+    margin-top: 1em;
+}
+
+.options-button{
+    width: 5em;
+    height: 2em;
+    margin-left: 21.5em;
+}
+
+.post-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    width: 8em;
+    margin-top: 0em;
+    margin-left: 0.1em;
+}
+
+.post-options.show-options {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.post img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #dbdbdb;
+    height: 500px;
+    width: 550px;
+}
+
+.post .headerPost p {
+    margin: 0;
+    width: 8em;
+}
+
+.post p{
+    width: 30em;
+}
+
+.post p:first-child {
+    font-weight: bold;
+}
+
+.post-date {
+    color: #4a4b4b;
+    font-size: 12px;
+    margin-left: 65em;
+}
+
+.post .edit-button, .post .delete-button {
+    background-color: #e3286a;
+    color: #fff;
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    width: 5.5em;
+}
+
+.post .edit-button:hover, .post .delete-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #e3286a;
+}
