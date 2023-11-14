@@ -20,8 +20,11 @@
         <section class="infoAccount">
             <section class="userImg">
                 <img src="app/style/img/images.jpg" id="userImg">
-                <h3 id="infoUsername"> Nome de usuario: André Nascimento </h3>
-                <label class="basicInfo"> CPF: </label>
+                <section class="organInfo">
+                <h3 id="infoUsername"> André Nascimento </h3>
+                <label class="basicInfo"> CPF: 287.778.748.62  </label>
+                <label class="basicInfo"> Data de Nascimento: 05/06/1995  </label>
+            </section>
             </section>
             <section class="userInfo">
                 <label></label>
@@ -97,14 +100,14 @@
                     </select>
                     <label class="infoCity"> Cidade: </label>
                     <input type="text" class="inputCity"> </input>
-                    <label class=""> Bairro: </label>
-                    <input type="text" class=""> </input>
-                    <label> Número: </label>
-                    <input type="number" class=""> </input>
-                    <label> Logradouro: </label>
-                    <input type="text" class=""> </input>
+                    <label class="infoForm"> Bairro: </label>
+                    <input type="text" class="inputEdit"> </input>
+                    <label class="infoNum"> Número: </label>
+                    <input type="number" class="inputNum"> </input>
+                    <label class="infoForm"> Logradouro: </label>
+                    <input type="text" class="inputBairro"> </input>
 
-                    <button> Salvar </button>
+                    <button id="btnSalvar"> Salvar </button>
                 </section>
             </form>
 
