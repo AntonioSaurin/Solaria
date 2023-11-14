@@ -28,6 +28,7 @@ $routes = [
 
     '/usuario/editar' => 'controllers/updateUser.php',
     '/instituicoes' => 'views/institutionPage.php',
+    '/perfilInstituicoes' => 'views/profileInstitution.php',
     '/infoUser' => 'views/infoUser.php',
     '/doacao' => 'views/institutionPage.php',
     '/infoInstituicoes' => 'views/infoInstitution.php',
