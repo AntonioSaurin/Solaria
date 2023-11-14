@@ -108,6 +108,10 @@
     #submit-error {
       color: #f00;
     }
+
+    .input-group span i{
+      color: #0f0;
+    }
   </style>
 </head>
 
@@ -118,26 +122,26 @@
 
       <div class="input-group">
         <label>Full Name</label>
-        <input type="text" placeholder="Enter your name">
-        <span id="name-error">name is required</span>
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validationName()">
+        <span id="name-error"></span>
       </div>
 
       <div class="input-group">
         <label>Phone No.</label>
-        <input type="tel" placeholder="123 456 7890">
-        <span id="phone-error">phone is required</span>
+        <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validationPhone()" maxlength="10">
+        <span id="phone-error"></span>
       </div>
 
       <div class="input-group">
         <label>Email Id</label>
-        <input type="email" placeholder="Enter Email">
-        <span id="email-error">email is required</span>
+        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validationEmail()">
+        <span id="email-error"></span>
       </div>
 
       <div class="input-group">
         <label>Your Message</label>
-        <textarea rows="5" placeholder="Enter your message"></textarea>
-        <span id="message-error">message is required</span>
+        <textarea rows="5" placeholder="Enter your message" id="contact-textArea" onkeyup="validationTextArea()"></textarea>
+        <span id="message-error"></span>
       </div>
 
       <button>Submit</button>
@@ -146,9 +150,61 @@
     </form>
 
   </div>
-    <script>
-      
-    </script>
+  <script>
+    var nameError = document.getElementById("name-error");
+    var phoneError = document.getElementById("phone-error");
+    var emailError = document.getElementById("email-error");
+    var messageError = document.getElementById("message-error");
+    var submitError = document.getElementById("submit-error");
+
+    function validationName() {
+      var name = document.getElementById('contact-name').value;
+
+      if (name.length == 0) {
+        nameError.innerHTML = "Name required";
+        return false;
+      }
+
+      if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+        nameError.innerHTML = "Write full name";
+        return false;
+      }
+      nameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+      return true;
+    }
+
+    function validationPhone() {
+      var phone = document.getElementById('contact-phone').value;
+
+      if (phone.length == 0) {
+        phoneError.innerHTML = "Phone required";
+        return false;
+      }
+
+      if (!phone.match(/^[0-9]{10}$/)) {
+        phoneError.innerHTML = "Only digits please";
+        return false;
+      }
+      phoneError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+      return true;
+    }
+
+    function validationEmail() {
+      var email = document.getElementById('contact-email').value;
+
+      if (email.length == 0) {
+        emailError.innerHTML = "email required";
+        return false;
+      }
+
+      if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[.][a-z]{2,4}$/)) {
+        emailError.innerHTML = "Email invalid";
+        return false;
+      }
+      emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+      return true;
+    }
+  </script>
 </body>
 
 </html>

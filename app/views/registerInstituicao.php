@@ -21,63 +21,52 @@
     <main>
         <span id="gradient">
             <section class="signupBox form" id="pt1">
-                <form action="cadastro/efetuarInstituicao" method="post" name="Cadastro" class="row g-3 needs-validation"
-                    novalidate>
+                <form action="cadastro/efetuarInstituicao" method="post" name="Cadastro">
                     <h1>Cadastrar</h1><br>
                     <span class="table1">
-                        <label for="validationNameInstituition" class="form-label">Nome da Instituição:</label>
-                        <section class="col-md-4">
+
+                        <section class="input-group">
+                            <label>Nome da Instituição:</label>
                             <input type="text" class="signupBox form-control" name="name" id="name"
-                                placeholder="Nome da Instituição"><br>
-                            <div class="invalid-feedback">
-                                Please choose a username.
-                            </div>
+                                placeholder="Nome da Instituição" onkeyup="validationNameInstituition()"><br>
+                            <span id="name-error"></span>
                         </section>
 
-                        <label for="validationDirector" class="form-label">Responsável:</label>
-                        <section class="col-md-4">
-                            <input type="text" class="signupBox" name="director" id="director"
-                                placeholder="Responsavél"><br>
-                            <div class="invalid-feedback">
-                                Please choose a username.
-                            </div>
+                        <section class="input-group">
+                            <label>Responsável:</label>
+                            <input type="text" class="signupBox" name="director" id="director" placeholder="Responsavél"
+                                onkeyup="validationDirector()">
+                            <span id="director-error"></span>
                         </section>
 
-                        <label for="validationDirectorCPF" class="form-label">CPF do Responsavél:</label>
-                        <section class="col-md-4">
+                        <section class="input-group">
+                            <label>CPF do Responsavél:</label>
                             <input type="text" class="signupBox" name="directorCPF" id="directorCPF" placeholder="CPF"
-                                maxlength="14"><br>
-                            <div class="invalid-feedback">
-                                Please choose a username.
-                            </div>
+                                maxlength="14" onkeyup="validationDirectorCPF()"><br>
+                            <span id="directorCPF-error"></span>
                         </section>
                     </span>
 
                     <span class="table2">
-                        <label for="validationCNPJ" class="form-label">CNPJ:</label>
-                        <section class="col-md-4">
-                            <input type="text" class="signupBox" name="CNPJ" id="CNPJ" placeholder="CNPJ"
-                                maxlength="14"><br>
-                            <div class="invalid-feedback">
-                                Please choose a username.
-                            </div>
+                        <section class="input-group">
+                            <label>CNPJ:</label><br><br>
+                            <input type="text" class="signupBox" name="CNPJ" id="CNPJ" placeholder="CNPJ" maxlength="14"
+                                onkeyup="validationCNPJ()"><br>
+                            <span id="CNPJ-error"></span>
                         </section>
 
-                        <label for="validationEmail" class="form-label">Email:</label>
-                        <section class="col-md-4">
-                            <input type="text" class="signupBox" name="email" id="email" placeholder="Email"><br>
-                            <div class="invalid-feedback">
-                                Please choose a username.
-                            </div>
+                        <section class="input-group">
+                            <label>Email:</label>
+                            <input type="text" class="signupBox" name="email" id="email" placeholder="Email"
+                                onkeyup="validationEmail()"><br>
+                            <span id="email-error"></span>
                         </section>
 
-                        <label>Telefone:</label>
-                        <section class="col-md-4">
+                        <section class="input-group">
+                            <label>Telefone:</label>
                             <input type="text" class="signupBox" name="phone" id="phone" placeholder="Telefone"
-                                maxlength="12"><br>
-                            <div class="invalid-feedback">
-                                Please choose a username.
-                            </div>
+                                maxlength="12" onkeyup="validationPhone()"><br>
+                            <span id="phone-error"></span>
                         </section>
 
                         <span name="next" class="nextButton" id="text" onclick=changeVisibleAdress()>Próximo</span>
@@ -90,16 +79,15 @@
             <section class="signupBox form" id="pt2">
                 <h1>Cadastrar Endereço</h1><br>
                 <span class="table1">
-                    <label for="validationCEP" class="form-label">CEP:</label>
-                    <section class="col-md-4">
-                        <input type="text" class="signupBox" name="CEP" id="CEP" placeholder="00000-000"><br>
-                        <div class="invalid-feedback">
-        Please choose a username.
-      </div>
+                    <label>CEP:</label>
+                    <section class="input-group">
+                        <input type="text" class="signupBox" name="CEP" id="CEP" placeholder="00000-000"
+                            onkeyup="validationCEP()"><br>
+                        <span id="CEP-error"></span>
                     </section>
 
                     <label>Estado:</label>
-                    <section class="col-md-4">
+                    <section class=" input-group">
                         <select class="signupBox" name="state" id="state">
                             <option value="AC"> Acre </option>
                             <option value="AL"> Alagoas </option>
@@ -132,43 +120,40 @@
                     </section>
 
                     <label>Cidade:</label>
-                    <section class="col-md-4">
-                        <input type="text" class="signupBox" name="city" id="city" placeholder="Telefone"
-                            maxlength="12"><br>
-                            <div class="invalid-feedback">
-        Please choose a username.
-      </div>
+                    <section class="input-group">
+                        <input type="text" class="signupBox" name="city" id="city" placeholder="Cidade"
+                            onkeyup="validationCity()"><br>
+                        <span id="city-error"></span>
                     </section>
 
-                    <span class="backButton" id="text" onclick=changeVisibleInfos()>Voltar</span>
+                    <span class=" backButton" id="text" onclick=changeVisibleInfos()>Voltar
+                    </span>
                 </span>
 
                 <span class="table2">
                     <label>Bairro:</label>
-                    <section class="col-md-4">
-                        <input type="text" class="signupBox" name="district" id="district" placeholder="Bairro"><br>
-                        <div class="invalid-feedback">
-        Please choose a username.
-      </div>
+                    <section class="input-group">
+                        <input type="text" class="signupBox" name="district" id="district" placeholder="Bairro"
+                            onkeyup="validationDistrict()"><br>
+                        <span id="district-error"></span>
                     </section>
 
                     <label>Numero:</label>
-                    <section class="col-md-4">
-                        <input type="text" class="signupBox" name="number" id="number" placeholder="Numero"><br>
-                        <div class="invalid-feedback">
-        Please choose a username.
-      </div>
+                    <section class=" input-group">
+                        <input type="text" class="signupBox" name="number" id="number" placeholder="Numero"
+                            onkeyup="validationNumber()"><br>
+                        <span id="number-error"></span>
                     </section>
 
                     <label>Rua:</label>
-                    <section class="col-md-4">
-                        <input type="text" class="signupBox" name="street" id="street" placeholder="Rua"><br>
-                        <div class="invalid-feedback">
-        Please choose a username.
-      </div>
+                    <section class=" input-group">
+                        <input type="text" class="signupBox" name="road" id="road" placeholder="Rua"
+                            onkeyup="validationRoad()"><br>
+                        <span id="road-error"></span>
                     </section>
 
-                    <span class="nextButton" id="text" onclick=changeVisibleOthers()>Próximo</span>
+                    <span class=" nextButton" id="text" onclick=changeVisibleOthers()>Próximo
+                    </span>
 
                     <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></label>
                 </span>
@@ -187,12 +172,12 @@
                 <span class="table2 test">
                     <span class="table3">
                         <label>Senha:</label>
-                        <section class="col-md-4">
+                        <section class="input-group">
                             <input type="password" class="signupBox" name="password" id="password"
                                 placeholder="Senha"><br>
                         </section>
                         <label>Confirmar Senha:</label>
-                        <section class="col-md-4">
+                        <section class="input-group">
                             <input type="password" class="signupBox" name="conPassword" id="conPassword"
                                 placeholder="Confirmar Senha"><br>
                         </section>
@@ -214,6 +199,64 @@
         $("#directorCPF").mask("000.000.000-00");
         $("#CNPJ").mask("00.000.000/0000-00");
         $("#CEP").mask("00000-000");
+
+        var nameError = document.getElementById("name-error");
+        var directorError = document.getElementById("director-error");
+        var directorCPFError = document.getElementById("directorCPF-error");
+        var CNPJError = document.getElementById("CNPJ-error");
+        var emailError = document.getElementById("email-error");
+        var phoneError = document.getElementById("phone-error");
+
+
+        var nextError = document.getElementsByClassName("nextButton");
+
+        function validationNameInstituition() {
+            var name = document.getElementById('name').value;
+
+            if (name.length == 0) {
+                nameError.innerHTML = "Name required";
+                return false;
+            }
+
+            if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+                nameError.innerHTML = "Write full name";
+                return false;
+            }
+            nameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+        }
+
+        function validationPhone() {
+            var phone = document.getElementById('contact-phone').value;
+
+            if (phone.length == 0) {
+                phoneError.innerHTML = "Phone required";
+                return false;
+            }
+
+            if (!phone.match(/^[0-9]{10}$/)) {
+                phoneError.innerHTML = "Only digits please";
+                return false;
+            }
+            phoneError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+        }
+
+        function validationEmail() {
+            var email = document.getElementById('contact-email').value;
+
+            if (email.length == 0) {
+                emailError.innerHTML = "email required";
+                return false;
+            }
+
+            if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[.][a-z]{2,4}$/)) {
+                emailError.innerHTML = "Email invalid";
+                return false;
+            }
+            emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+        }
 
         function changeVisibleInfos() {
 
