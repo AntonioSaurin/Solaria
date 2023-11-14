@@ -16,17 +16,19 @@
         include_once("header.php");
         ?>
     </header>
+    <section class="center">
+        <section class="infoAccount">
+            <section class="userImg">
+                <img src="app/style/img/images.jpg" id="userImg">
+                <h3 id="infoUsername"> Nome de usuario: André Nascimento </h3>
+                <label class="basicInfo"> CPF: </label>
+            </section>
+            <section class="userInfo">
+                <label></label>
+            </section>
+        </section>
 
-    <div class="infoAccount">
-        <div class="userImg">
-            <img src="app/style/img/images.jpg" id="userImg">
-            <h3 id="infoUsername">Nome de usuario</h3>
-        </div>
-        <div class="userInfo">
-            <p>aahdjkhadshkja</p>
-        </div>
-
-    </div>
+    </section>
     <!--<main class="infoAccountUser">
         
         <section class="infoAccount">
@@ -42,63 +44,72 @@
     <?php
     /*include_once("historicUser.php");*/
     ?>
+    <section class="center">
+        <section class="spaceForm">
+            <form name="formEditar" action="#" method="POST" class="formSave">
+                <section class="organForm">
+                    <label class="infoForm"> Email: </label>
+                    <input type="text" class="inputEdit"> </input>
+                    <label class="infoForm"> Telefone: </label>
+                    <input type="text" name="phone" id="phone" maxlength="12" class="inputEdit"> </input>
+                    <label class="infoForm"> Senha: </label>
+                    <input type="password" class="inputEdit"> </input>
+                    <label class="infoForm"> Confirmar Senha: </label>
+                    <input type="password" class="inputEdit"> </input>
 
-    <form name="formEditar" action="#" method="POST">
-        <label> Email: </label>
-        <input type="text" class=""> </input>
-        Telefone:
-        <input type="text" name="phone" id="phone" maxlength="12"> </input>
-        Senha:
-        <input type="password" class=""> </input>
-        Confirmar Senha:
-        <input type="password" class=""> </input>
+                    <button id="btnExcluir"> Excluir Conta </button>
+                </section>
+            </form>
 
-        <button> Excluir Conta </button>
-    </form>
-    <form>
-        <label> CEP: </label>
-        <input type="text" class=""> </input>
-        <label> Estado: </label>
-        <select class="signupBox" name="state" id="state">
-            <option value="AC"> Acre </option>
-            <option value="AL"> Alagoas </option>
-            <option value="AP"> Amapá </option>
-            <option value="AM"> Amazonas </option>
-            <option value="BA"> Bahia </option>
-            <option value="CE"> Ceará </option>
-            <option value="DF"> Distrito Federal </option>
-            <option value="ES"> Espírito Santo </option>
-            <option value="GO"> Goiás </option>
-            <option value="MA"> Maranhão </option>
-            <option value="MT"> Mato Grosso </option>
-            <option value="MS"> Mato Grosso do Sul </option>
-            <option value="MG"> Minas Gerais </option>
-            <option value="PA"> Pará </option>
-            <option value="PB"> Paraíba </option>
-            <option value="PR"> Paraná </option>
-            <option value="PE"> Pernambuco </option>
-            <option value="PI"> Piauí </option>
-            <option value="RJ"> Rio de Janeiro </option>
-            <option value="RN"> Rio Grande do Norte </option>
-            <option value="RS"> Rio Grande do Sul </option>
-            <option value="RO"> Rondônia </option>
-            <option value="RR"> Roraima </option>
-            <option value="SC"> Santa Catarina </option>
-            <option value="SP"> São Paulo </option>
-            <option value="SE"> Sergipe </option>
-            <option value="TO"> Tocantins </option>
-        </select>
-        <label> Cidade: </label>
-        <input type="text" class=""> </input>
-        <label> Bairro: </label>
-        <input type="text" class=""> </input>
-        <label> Número: </label>
-        <input type="number" class=""> </input>
-        <label> Logradouro: </label>
-        <input type="text" class=""> </input>
+            <form name="formEditar" action="#" method="POST" class="formSave">
+                <section class="organForm">
+                    <label class="infoForm"> CEP: </label>
+                    <input type="text" class=""> </input>
+                    <label class="infoFormState"> Estado: </label>
+                    <select class="signupBox" name="state" id="state">
+                        <option value="AC"> Acre </option>
+                        <option value="AL"> Alagoas </option>
+                        <option value="AP"> Amapá </option>
+                        <option value="AM"> Amazonas </option>
+                        <option value="BA"> Bahia </option>
+                        <option value="CE"> Ceará </option>
+                        <option value="DF"> Distrito Federal </option>
+                        <option value="ES"> Espírito Santo </option>
+                        <option value="GO"> Goiás </option>
+                        <option value="MA"> Maranhão </option>
+                        <option value="MT"> Mato Grosso </option>
+                        <option value="MS"> Mato Grosso do Sul </option>
+                        <option value="MG"> Minas Gerais </option>
+                        <option value="PA"> Pará </option>
+                        <option value="PB"> Paraíba </option>
+                        <option value="PR"> Paraná </option>
+                        <option value="PE"> Pernambuco </option>
+                        <option value="PI"> Piauí </option>
+                        <option value="RJ"> Rio de Janeiro </option>
+                        <option value="RN"> Rio Grande do Norte </option>
+                        <option value="RS"> Rio Grande do Sul </option>
+                        <option value="RO"> Rondônia </option>
+                        <option value="RR"> Roraima </option>
+                        <option value="SC"> Santa Catarina </option>
+                        <option value="SP"> São Paulo </option>
+                        <option value="SE"> Sergipe </option>
+                        <option value="TO"> Tocantins </option>
+                    </select>
+                    <label class="infoCity"> Cidade: </label>
+                    <input type="text" class="inputCity"> </input>
+                    <label class=""> Bairro: </label>
+                    <input type="text" class=""> </input>
+                    <label> Número: </label>
+                    <input type="number" class=""> </input>
+                    <label> Logradouro: </label>
+                    <input type="text" class=""> </input>
 
-        <button> Salvar </button>
-    </form>
+                    <button> Salvar </button>
+                </section>
+            </form>
+
+        </section>
+    </section>
 
     <!--<section class="infoAccountTop">
                 <section id="labelAccountGeral"> <label class="labelTitleTop"> Geral </label> </section>
@@ -178,8 +189,9 @@
             </section>
             <section class="spaceDown"> </section>
     </main>-->
+        <section id="space"> </section>
     <script>
-        $("#phone").mask("(00) 00000-0000");
+        $("#phone").mask("+55 (00) 00000-0000");
     </script>
 </body>
 
