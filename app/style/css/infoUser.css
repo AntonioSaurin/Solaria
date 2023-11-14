@@ -21,7 +21,6 @@
         position: fixed;
     }
 
-
     .infoAccount{
         margin-top: 120px;
         margin-left: 160px;
@@ -32,24 +31,46 @@
         display: flex;
         align-items: CENTER; 
     }
+    
     .userImg{
+        display: flex;
         height: 85%;
-        
         padding-right: 80px;
         border-right:  1px black;
         display: flex;
-        align-items: center;
-        background-color: green;
+        align-items: center; 
+        background-color:#00b8a9;
         flex:1;
     }
+
     .userImg img{
         border-radius: 50%;
         border: solid white 1px;
         margin-left: 60px;
-        height: 280px;
-        
+        height: 12em;
     }
 
+    h3{
+        margin-left: 1em;
+    }
+    
+    .formSave{
+        justify-content: center;
+        border-style: solid;
+        margin-top: 5em;
+        width: 50em;
+        height: 20em;
+    }
+
+    .infoForm{
+        display: flex;
+        margin-top: 2em;
+    }
+
+    .spaceForm{
+        display: flex;
+        justify-content: center;
+    }
     /* Class 
     .infoNameAccount{
         display: flex;

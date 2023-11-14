@@ -17,16 +17,16 @@
         ?>
     </header>
 
-    <div class="infoAccount">
-        <div class="userImg">
+    <section class="infoAccount">
+        <section class="userImg">
             <img src="app/style/img/images.jpg" id="userImg">
-            <h3 id="infoUsername">Nome de usuario</h3>
-        </div>
-        <div class="userInfo">
-            <p>aahdjkhadshkja</p>
-        </div>
+            <h3 id="infoUsername">Nome de usuario:</h3>
+        </section>
+        <section class="userInfo">
+            <label></label>
+        </section>
 
-    </div>
+    </section>
     <!--<main class="infoAccountUser">
         
         <section class="infoAccount">
@@ -42,9 +42,9 @@
     <?php
     /*include_once("historicUser.php");*/
     ?>
-
-    <form name="formEditar" action="#" method="POST">
-        <label> Email: </label>
+    <section class="spaceForm">
+    <form name="formEditar" action="#" method="POST" class="formSave">
+        <label class="infoForm"> Email: </label>
         <input type="text" class=""> </input>
         Telefone:
         <input type="text" name="phone" id="phone" maxlength="12"> </input>
@@ -55,7 +55,7 @@
 
         <button> Excluir Conta </button>
     </form>
-    <form>
+    <form name="formEditar" action="#" method="POST" class="formSave">
         <label> CEP: </label>
         <input type="text" class=""> </input>
         <label> Estado: </label>
