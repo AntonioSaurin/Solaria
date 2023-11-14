@@ -29,29 +29,33 @@
                     <a href="/">
                         <img src="app/style/img/Brand.png" width="60px">
                     </a>
-                    <section id="color"><p id="brandText" class="d-inline ml-3">Solaria</p></section>
+                    <section id="color"><p id="brandText" class="d-inline ml-3 ">Solaria</p></section>
                 </section>
 
                 <button class="navbar-toggler" data-togle="collapse" data-target="#nav-pricipal">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <section>
+                <section class="link-Area">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mr-4">
-                            <a href="/admin" class="nav-link" id="color">Admin</a>
+                        <li class="nav-item mr-5">
+                            <a href="/admin" class="nav-link link-Header" id="color">Admin</a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a href="/instituicoes" class="nav-link" id="color">Instituições</a>
+                            <a href="/instituicoes" class="nav-link link-Header" id="color">Instituições</a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a href="/como-adotar" class="nav-link" id="color">Como adotar</a>
+                            <a href="/como-adotar" class="nav-link link-Header" id="color">Como adotar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/sobre-nos" class="nav-link" id="color">Sobre nós</a>
+                            <a href="/sobre-nos" class="nav-link link-Header" id="color">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class=" ml-5 nav-link link-Header" id="color">home</a>
                         </li>
                         
-                        <li class="nav-item dropdown ml-4" id="accountIcon">
+                        
+                        <li class="nav-item dropdown ml-4 " id="accountIcon">
                             <?php
                                 
                                 if(isset($_SESSION['id'])){  

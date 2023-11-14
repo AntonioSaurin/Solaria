@@ -32,8 +32,8 @@
                     <button type="submit" name="login" class="loginButton">Login</button>
                     <p class="text">Ainda não tem uma conta? 
                 
-                    <a href="/cadastro" class="btnCadastro"
-                            id="btnCadastro">Cadastrar</a></p>
+                    <button type="button" class="btnCadastro"
+                            id="btnCadastro">Cadastrar</button></p>
                 </span>
             </form>
         </section>
@@ -45,8 +45,34 @@
         <sections class="modal2Register">
         
             <H1>TESTE</H1>
+            <button type="button" class="btnExit" id="btnExit">
+                sair
+            </button>
+            <a class="modal-Link" href="/cadastro">Registro Usuario comum</a>
+            <a class="modal-Link" href="/cadastroInstituicao">Registro instituicao</a>
+
         </sections>
-    </section>    
+    </section>  
+    
+    <script>
+        function openModal(idModal){
+            const modal = document.getElementById(idModal);
+            modal.classList.add("mostrar");
+        }
+        const btnOpen = document.querySelector('.btnCadastro');
+        btnOpen.addEventListener('click', ()=>openModal('modalRegister'));
+
+         
+        function closeModal(idModal){
+            const modalClose = document.getElementById(idModal);
+            modalClose.classList.remove('mostrar');   
+        }
+        const btnClose = document.querySelector('.btnExit');
+        btnClose.addEventListener('click',()=>closeModal('modalRegister'));   
+            
+        
+        
+    </script>
     
 </body>
 

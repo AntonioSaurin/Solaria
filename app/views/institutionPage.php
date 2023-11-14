@@ -26,7 +26,9 @@
     </section>
 
     <section class="institutionArea">
+    <h1 >Selecione uma Instituicao</h1>
         <section class="institutionBox">
+           
             <img src="app/style/img/imgInstitutionAdotar.png" alt="Instituição Adotar">
                 <section class="institutionInfo">
                     <h2>Instituição Adotar</h2>
@@ -112,7 +114,7 @@
         
         function closeModal(idModal){
             const modalClose = document.getElementById(idModal);
-            modal.classList.remove('mostrar');   
+            modalClose.classList.remove('mostrar');   
         }
         const btnClose = document.querySelectorAll('.btnExit');
         for (let index = 0; index < btnClose.length; index++) {

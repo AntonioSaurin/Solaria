@@ -18,10 +18,10 @@ body {
 p {
     font-family: "Sniglet";
 }
-a{
+.link-Header{
     color: #fff;
 }
-a:hover{
+.link-Header:hover{
     color: gray;
 }
 #brandText {

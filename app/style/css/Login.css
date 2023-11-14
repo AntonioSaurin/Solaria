@@ -90,7 +90,7 @@ h1{
     font-size: 13px;
 }
 
-.loginBox button {
+.loginBox .loginButton{
     background-color: #2778ad;
     color: #fff;
     padding: 10px 2px;
@@ -102,7 +102,7 @@ h1{
     width: 10em;
 }
 
-.loginBox button:hover {
+.loginButton:hover {
     background-color: #2778ad;
 }
 
@@ -153,10 +153,16 @@ h1{
     color:  #437292;
     text-decoration: none;
 }
-
+.btnCadastro{
+    background-color: red;
+}
 /*modal*/
+.modal-container a{
+    color: black;
+    
+}
 .modal-container{
-    display: flex;
+    display: none;
     top: 0px;
     right: 0px;
     position: fixed;
@@ -176,6 +182,9 @@ h1{
     flex-direction: column;
     position: relative;
 
+}
+.modal-container.mostrar{
+    display: flex;
 }
 @keyframes modal{
     from{
