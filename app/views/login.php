@@ -16,8 +16,6 @@
         include('header.php');
         ?>
     </header>
-   
-
     <main>
         <section class="form loginBox">
             <h1 class="text">Login</h1>
@@ -30,50 +28,59 @@
                     <input type="password" class="loginBox" name="password" id="password" placeholder="Senha">
 
                     <button type="submit" name="login" class="loginButton">Login</button>
-                    <p class="text">Ainda não tem uma conta? 
-                
-                    <button type="button" class="btnCadastro"
-                            id="btnCadastro">Cadastrar</button></p>
+                    <p class="text">Ainda não tem uma conta?
+
+                        <button type="button" class="btnCadastro" id="btnCadastro">Cadastrar</button>
+                    </p>
                 </span>
             </form>
         </section>
         <img class="img" src="app/style/img/brandWithout.png">
     </main>
-    
+
 
     <section class="modal-container" id="modalRegister">
-        <sections class="modal2Register">
-        
-            <H1>TESTE</H1>
-            <button type="button" class="btnExit" id="btnExit">
-                sair
-            </button>
-            <a class="modal-Link" href="/cadastro">Registro Usuario comum</a>
-            <a class="modal-Link" href="/cadastroInstituicao">Registro instituicao</a>
 
+        <sections class="modal2Register">
+            <section class="background">
+                <p class='titleRegister'>Para qual usuário?</p>
+                <button type="button" class="btnExit">
+                    <img src="app\style\img\close.png" class="btnExit" id="btnExit">
+                </button>
+                <a class="modal-Link teste" href="/cadastro"><img src="app\style\img\handIcon.png" class='imageDonator'>
+                    <p class="alignText" id="redirect">Registro Doador</p>
+                    <section class="backgroundAnimation1"></section>
+                </a>
+                <a class="modal-Link teste2" href="/cadastroInstituicao"><img src="app\style\img\houseIcon.png"
+                        class='imageInstituition'>
+                    <p class="alignText" id="redirect">Registro instituicao</p>
+                    <section class="backgroundAnimation2"></section>
+                </a>
+            </section>
         </sections>
-    </section>  
-    
+
+    </section>
+
     <script>
-        function openModal(idModal){
+        function openModal(idModal) {
             const modal = document.getElementById(idModal);
             modal.classList.add("mostrar");
         }
         const btnOpen = document.querySelector('.btnCadastro');
-        btnOpen.addEventListener('click', ()=>openModal('modalRegister'));
+        btnOpen.addEventListener('click', () => openModal('modalRegister'));
 
-         
-        function closeModal(idModal){
+
+        function closeModal(idModal) {
             const modalClose = document.getElementById(idModal);
-            modalClose.classList.remove('mostrar');   
+            modalClose.classList.remove('mostrar');
         }
         const btnClose = document.querySelector('.btnExit');
-        btnClose.addEventListener('click',()=>closeModal('modalRegister'));   
-            
-        
-        
+        btnClose.addEventListener('click', () => closeModal('modalRegister'));
+
+
+
     </script>
-    
+
 </body>
 
 </html>

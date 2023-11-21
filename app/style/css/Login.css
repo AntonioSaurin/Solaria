@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: "Sniglet";
     src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
 
@@ -13,7 +13,7 @@ html {
     width: 100%;
 }
 
-header{
+header {
     position: absolute;
     width: 100%;
     top: 0;
@@ -21,35 +21,35 @@ header{
     z-index: 1;
 }
 
-#color{
+#color {
     color: #fff;
 }
 
-.text{
+.text {
     color: #0d4266;
 }
 
-#btnCadastro{
+#btnCadastro {
     color: #00857a;
 }
 
-    .img {
-        transform: scaleX(-1);
-        height: 60em;
-        display: grid;
-        position: relative;
-        left: 68em;
-        top: -7em;
-        z-index: 0;
-    }
+.img {
+    transform: scaleX(-1);
+    height: 60em;
+    display: grid;
+    position: relative;
+    left: 68em;
+    top: -7em;
+    z-index: 0;
+}
 
-h1{
+h1 {
     position: relative;
     left: 3.3em;
     padding-bottom: 0.5em;
 }
 
-
+/* Caixa do formulario */
 .form {
     font-family: "Nunito", "sans-serif";
     color: #000;
@@ -78,6 +78,7 @@ h1{
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+/* Caixa de input */
 .loginBox input[type="text"],
 .loginBox input[type="email"],
 .loginBox input[type="password"] {
@@ -90,7 +91,7 @@ h1{
     font-size: 13px;
 }
 
-.loginBox .loginButton{
+.loginBox .loginButton {
     background-color: #2778ad;
     color: #fff;
     padding: 10px 2px;
@@ -106,6 +107,7 @@ h1{
     background-color: #2778ad;
 }
 
+/* Botao do login */
 .loginButton {
     align-items: center;
     font-weight: bold;
@@ -149,19 +151,25 @@ h1{
     transform: translateY(2px);
 }
 
-#btnCadastro:hover, #btnCadastro:active {
-    color:  #437292;
+#btnCadastro:hover,
+#btnCadastro:active {
+    color: #437292;
     text-decoration: none;
 }
-.btnCadastro{
-    background-color: red;
+
+.btnCadastro {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
 }
+
 /*modal*/
-.modal-container a{
+.modal-container a {
     color: black;
-    
+
 }
-.modal-container{
+
+.modal-container {
     display: none;
     top: 0px;
     right: 0px;
@@ -173,29 +181,113 @@ h1{
     align-items: center;
     justify-content: center;
 }
-.modal2Register{
+
+.modal2Register {
     background-color: white;
     width: 30%;
-    height: 30%;
-   border-radius: 30px;
+    height: 50%;
+    border-radius: 2em;
     display: flex;
     flex-direction: column;
     position: relative;
-
 }
-.modal-container.mostrar{
+
+.modal-container.mostrar {
     display: flex;
 }
-@keyframes modal{
-    from{
-        opacity:;
-        transform: translate3d(0,-80px,0);
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -80px, 0);
     }
-    to{
+
+    to {
         opacity: 1;
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
     }
 }
-.mostrar .modal2Register{
+
+.mostrar .modal2Register {
     animation: modal .5s;
+}
+
+/* Estilização do modal */
+.btnExit {
+    width: 1.5em;
+    position: absolute;
+    top: 0.7em;
+    left: 13.65em;
+    cursor: pointer;
+    background: transparent;
+    border: transparent;
+
+}
+
+.titleRegister {
+    font-size: 2em;
+    font-family: "Sniglet";
+    position: relative;
+    left: 3.5em;
+    top: 1em;
+}
+
+.imageDonator {
+    width: 7em;
+}
+
+.imageInstituition {
+    width: 7em;
+}
+
+.teste{
+    position: absolute;
+    top: 10em;
+    width: 7.5em;
+    left: 4em;
+}
+
+.backgroundAnimation1{
+    
+}
+
+.backgroundAnimation1:hover,
+.backgroundAnimation1:focus{
+    background: #014b7c5b;
+}
+
+.teste2{
+    position: absolute;
+    top: 9.5em;
+    left: 19em;
+    width: 12em;
+}
+
+.backgroundAnimation2{
+    border-radius: 1em;
+    width: 15em;
+    height: 24.4em;
+    top: -18.95em;
+    left: -4em;
+    position: relative;
+    background: transparent;
+    transition: background 0.7s;
+}
+
+.backgroundAnimation2:hover,
+.backgroundAnimation2:focus{
+    background: #014b7c5b;
+}
+
+.background{
+    background-image: url("../img/magicpattern-wave-generator-1700585598565.png");
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+
+}
+
+#redirect{
+    text-decoration: none;
+    color: #fff;
 }
