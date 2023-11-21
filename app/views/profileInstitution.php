@@ -19,9 +19,7 @@
             <section class="profile-info">
                 <h2>Nome do Usuário</h2>
                 <p>Descrição curta do usuário.</p>
-                <ul>
-                    <li><strong>Necessidades:</strong> Informações sobre as necessidades</li>
-                </ul>
+                <p><strong>Necessidades:</strong> Informações sobre as necessidades</p>
                 <a href="#">Link para localização</a>
             </section>
         </section>
@@ -38,7 +36,7 @@
 
         <section class="posts">
             <section class="post">
-                <section class="headerPost">
+                <!-- <section class="headerPost">
                     <button class="options-button" aria-label="Opções" onclick="toggleOptions(this)">
                         Opções
                     </button>
@@ -50,9 +48,91 @@
                             <i class="fas fa-trash-alt"></i> Excluir
                         </button>
                     </section>
-                </section>
-                <img src="img/perfil - instagram.jpg" alt="post">
+                </section> -->
+
+                <img src="app/style/img/headerHowToAdopt.png" alt="post">
+
             </section>
+
+            <section class="post">
+                <!-- <section class="headerPost">
+                    <button class="options-button" aria-label="Opções" onclick="toggleOptions(this)">
+                        Opções
+                    </button>
+                    <section class="post-options" id="postOptions">
+                        <button class="edit-button" aria-label="Editar post">
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+                        <button class="delete-button" aria-label="Excluir post">
+                            <i class="fas fa-trash-alt"></i> Excluir
+                        </button>
+                    </section>
+                </section> -->
+
+                <img src="app/style/img/headerHowToAdopt.png" alt="post">
+
+            </section>
+
+
+            <section class="post">
+                <!-- <section class="headerPost">
+                    <button class="options-button" aria-label="Opções" onclick="toggleOptions(this)">
+                        Opções
+                    </button>
+                    <section class="post-options" id="postOptions">
+                        <button class="edit-button" aria-label="Editar post">
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+                        <button class="delete-button" aria-label="Excluir post">
+                            <i class="fas fa-trash-alt"></i> Excluir
+                        </button>
+                    </section>
+                </section> -->
+                
+                <img src="app/style/img/headerHowToAdopt.png" alt="post">
+
+
+            </section>
+
+            <section class="post">
+                <!-- <section class="headerPost">
+                    <button class="options-button" aria-label="Opções" onclick="toggleOptions(this)">
+                        Opções
+                    </button>
+                    <section class="post-options" id="postOptions">
+                        <button class="edit-button" aria-label="Editar post">
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+                        <button class="delete-button" aria-label="Excluir post">
+                            <i class="fas fa-trash-alt"></i> Excluir
+                        </button>
+                    </section>
+                </section> -->
+                
+                <img src="app/style/img/headerHowToAdopt.png" alt="post">
+
+
+            </section>
+            <section class="post">
+                <!-- <section class="headerPost">
+                    <button class="options-button" aria-label="Opções" onclick="toggleOptions(this)">
+                        Opções
+                    </button>
+                    <section class="post-options" id="postOptions">
+                        <button class="edit-button" aria-label="Editar post">
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+                        <button class="delete-button" aria-label="Excluir post">
+                            <i class="fas fa-trash-alt"></i> Excluir
+                        </button>
+                    </section>
+                </section> -->
+                
+                <img src="app/style/img/headerHowToAdopt.png" alt="post">
+
+
+            </section>
+        
         </section>
 
         <script>
