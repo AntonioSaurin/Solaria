@@ -1,14 +1,8 @@
 <?php
-require_once 'vendor/autoload.php';
 
-use app\classes\Routes;
-use app\classes\Uri;
-
-session_start();
-
-<<<<<<< HEAD
-$routes = [
+return [
     '/' => 'views/home.php',
+    
     '/login' => 'views/login.php',
     '/cadastro' => 'views/register.php',
     '/cadastroInstituicao' => 'views/registerInstituicao.php',
@@ -23,6 +17,8 @@ $routes = [
     '/admin' => 'views/adminMenu.php',
 
     '/chat' => 'views/chat/chatUsers.php',
+    '/chat/login' => 'views/chat/chatLogin.php',
+    '/chat/registrar' => 'views/chat/chatSignup.php',
     '/chat/conversar' => 'views/chat/chatMain.php',
 
     '/usuario/editar' => 'controllers/updateUser.php',
@@ -35,10 +31,3 @@ $routes = [
     '/historicoUser' => 'views/historicUser.php',
     '/annualPlan' => 'views/annualPlan.php'
 ];
-=======
-$routes = require('app/config/routes.php');
->>>>>>> 0fac48630e58ac525bf7983242d86f2097024f26
-
-$uri = Uri::load();
-
-require Routes::load($routes, $uri);
