@@ -4,8 +4,8 @@
   }
   
   include_once "php/chatConfig.php";
-  if(!isset($_SESSION['uniqueID'])){
-    header("location: /chat/login");
+  if(!isset($_SESSION['id'])){
+    header("location: /login");
   }
 ?>
 <?php include_once "chatHeader.php"; ?>
@@ -15,7 +15,7 @@
       <header>
         <div class="content">
           <?php 
-            $sql = mysqli_query($conn, "SELECT * FROM userAccount WHERE uniqueID = {$_SESSION['uniqueID']}");
+            $sql = mysqli_query($conn, "SELECT * FROM userAccount WHERE ID = {$_SESSION['id']}");
             if(mysqli_num_rows($sql) > 0){
               $row = mysqli_fetch_assoc($sql);
             }
@@ -27,7 +27,7 @@
             <p><?php echo $row['userStatus']; ?></p>
           </div>
         </div>
-        <a href="../app/views/chat/php/chatLogout.php?logout_id=<?php echo $row['uniqueID']; ?>" class="logout">Sair</a>
+        <a href="../app/views/chat/php/chatLogout.php?logout_id=<?php echo $row['ID']; ?>" class="logout">Sair</a>
       </header>
       <div class="search">
         <span class="text">Selecione um usuário</span>

@@ -5,7 +5,7 @@
 }
 
 html{
-    background-image: url('../img/bgInstituition.png');
+    background-color: #3ddacd;
 }
 
 body {
@@ -28,12 +28,11 @@ header{
     width: 60%;
     margin-top: 6em;
     border: 0;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.42);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 1em 1em 0em 0em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(6.4px);
-    -webkit-backdrop-filter: blur(6.4px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #ffffff;
 }
 
 section {
@@ -43,7 +42,7 @@ section {
 .profile {
     display: flex;
     align-items: center;
-    margin: 15px;
+    margin: 3em;
 }
 
 .profile img {
@@ -62,11 +61,11 @@ section {
 
 .profile-info h2 {
     margin: 0;
-    color: #000000;
+    color: #2778AD;
 }
 
 .profile-info p {
-    color: #ffffff;
+    color: #363636;
     margin-top: 1em;
 }
 
@@ -78,6 +77,11 @@ section {
 
 .profile-info li {
     margin-bottom: 5px;
+    color: #000000;
+}
+
+strong{
+    color: #e3286a;
 }
 
 .line {
@@ -85,9 +89,8 @@ section {
 }
 
 .line hr {
-    border-top: 1px solid #ffffff;
-    width: 100%;
-    max-width: 800px;
+    border-top: 1px solid #e3286a;
+    width: 85%;
     margin: 20px auto 5px;
 }
 
@@ -99,11 +102,12 @@ section {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    ;
 }
 
 .button {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
     transition: color 0.3s ease;
     margin: 0px;
@@ -116,23 +120,31 @@ section {
 
 .posts {
     margin-top: 1em;
-}
-
-.post {
-    position: relative;
-    width: 80%;
-    padding: 1.5em;
-    margin-bottom: 20px;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 1.2em;
+    border-radius: 0.2em; 
+    box-shadow: 0 0 10px rgba(43, 43, 43, 0.1); 
     background: rgba(255, 255, 255, 0.4); 
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(233, 126, 126, 0.3); 
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-auto-rows: 15em;
+    padding-left: 0.9em;
+    padding-top: 1.2em;
+    padding-bottom: 0.9em;
 }
 
+.post, .post img{
+    width: 16em;
+    height: 16em;
+    box-shadow: 0 0 0px rgba(52, 52, 52, 0.1);
+    align-items: center;
+    padding-bottom: 1.1em;
+    margin-left: 0.1em;
+}
+
+/*
 .headerPost{
     display: flex;
     flex-direction: row;
@@ -166,32 +178,12 @@ section {
     opacity: 1;
     pointer-events: auto;
 }
+*/
 
-.post img {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border: 1px solid #dbdbdb;
-    height: 500px;
-    width: 550px;
-}
-
+/*
 .post .headerPost p {
     margin: 0;
     width: 8em;
-}
-
-.post p{
-    width: 30em;
-}
-
-.post p:first-child {
-    font-weight: bold;
-}
-
-.post-date {
-    color: #4a4b4b;
-    font-size: 12px;
-    margin-left: 65em;
 }
 
 .post .edit-button, .post .delete-button {

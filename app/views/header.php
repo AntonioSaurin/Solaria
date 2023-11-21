@@ -51,9 +51,8 @@
                             <a href="/sobre-nos" class="nav-link link-Header" id="color">Sobre nós</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class=" ml-5 nav-link link-Header" id="color">home</a>
+                            <a href="/" class=" ml-5 nav-link link-Header" id="color">Home</a>
                         </li>
-                        
                         
                         <li class="nav-item dropdown ml-4 " id="accountIcon">
                             <?php
@@ -64,6 +63,8 @@
 
                                         <section id="headerMenu"class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                                             <a class="dropdown-item" href="/infoUser">Conta</a>
+                                            <a class="dropdown-item" href="../app/views/logout.php">Sair</a>
+                                
                                         </section>  
                                     ');
                                 }else if(!isset($_SESSION['id'])){
@@ -71,15 +72,6 @@
                                         <a href="\login" class="nav-link" id="color">Login</a>
                                         
                                     ');
-
-                                      
-                                      if(isset($_SESSION['uniqueID'])){
-                                        echo($_SESSION['uniqueID']);
-                                      }else{
-                                        
-
-                                      }
-                                    
                                }    
                             
                             ?>
