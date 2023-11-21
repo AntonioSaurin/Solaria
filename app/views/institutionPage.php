@@ -13,43 +13,43 @@
 			include_once("header.php");
 		?>
 	</header>
-
-    <section class="filterArea">
-        <label for="filtroTipo" class="filterText"><img class="filterImage" src="app/style/img/filterImage.png">Filtrar:</label>
-        <select class="selectFilter" id="filtroTipo">
-            <option value="">Todos</option>
-            <option value="dinheiro">Dinheiro</option>
-            <option value="roupas">Roupas</option>
-            <option value="alimentos">Alimentos</option>
-            <option value="brinquedos">Brinquedos</option>
-        </select>
-    </section>
-
-    <section class="institutionArea">
-    <h1 >Selecione uma Instituicao</h1>
-        <section class="institutionBox">
-           
-            <img src="app/style/img/imgInstitutionAdotar.png" alt="Instituição Adotar">
-                <section class="institutionInfo">
-                    <h2>Instituição Adotar</h2>
-                    <p>A Adotar é uma instituição de adoção dedicada a encontrar lares amorosos e seguros para crianças vulneráveis. Nossa equipe oferece cuidados de qualidade, apoio emocional e recursos para famílias adotivas. </p>
-                    <p><b>Necessita:</b> Brinquedos, Roupas e Dinheiro.</p>
-                </section>
-                <button class="donateButton"><b>Doar ></b></button>
+    <section>
+    <section id="content">
+        <section class="SearchArea">
+            <div class="search" id="search-bar">
+                <input name="search-input" type="text" id="search-input">
+                <i class="fa-solid fa-magnifying-glass fa-lg" id="search-icon" style="color: #ffff;"></i>   
+            </div>
+            
+            
         </section>
+        <h1 id="title-Page">Selecione uma Instituicao</h1>
+        <section class="institutionArea">
+        
+            <section class="institutionBox">
+            
+                <img src="app/style/img/imgInstitutionAdotar.png" alt="Instituição Adotar">
+                    <section class="institutionInfo">
+                        <h2>Instituição Adotar</h2>
+                    
+                        <p><b>Necessita:</b> Brinquedos, Roupas e Dinheiro.</p>
+                    </section>
+                    <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+            </section>
 
-        <section class="institutionBox" >
-            <img src="app/style/img/imgInstitutionCoracao.png" alt="Instituição Coração">
-                <section class="institutionInfo">
-                    <h2>Instituição Coração</h2>
-                    <p>Nossa instituição de adoção comprometida em encontrar lares amorosos para crianças vulneráveis. Nossa equipe qualificada oferece cuidados dedicados e apoio emocional para famílias adotivas.</p>
-                    <p><b>Necessita:</b> Brinquedos e Roupas.</p>
-                </section>
-                <button class="donateButton"><b>Doar ></b></button>
+            <section class="institutionBox" >
+                <img src="app/style/img/imgInstitutionCoracao.png" alt="Instituição Coração">
+                    <section class="institutionInfo">
+                        <h2>Instituição Coração</h2>
+                       <!--
+                         <p>Nossa instituição de adoção comprometida em encontrar lares amorosos para crianças vulneráveis. Nossa equipe qualificada oferece cuidados dedicados e apoio emocional para famílias adotivas.</p>-->
+                        <p><b>Necessita:</b> Brinquedos e Roupas.</p>
+                    </section>
+                    <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+            </section>
+
         </section>
-
     </section>
-   
     
     <section id="modal" class="modal-container">
         <section class="modal1">
