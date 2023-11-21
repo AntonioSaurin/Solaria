@@ -1,7 +1,7 @@
 <?php
     while($row = mysqli_fetch_assoc($query)){
-        $sql2 = "SELECT * FROM messages WHERE (incomingMsgID = {$row['uniqueID']}
-                OR outgoingMsgID = {$row['uniqueID']}) AND (outgoingMsgID = {$outgoing_id} 
+        $sql2 = "SELECT * FROM messages WHERE (incomingMsgID = {$row['ID']}
+                OR outgoingMsgID = {$row['ID']}) AND (outgoingMsgID = {$outgoing_id} 
                 OR incomingMsgID = {$outgoing_id}) ORDER BY msgID DESC LIMIT 1";
         $query2 = mysqli_query($conn, $sql2);
         $row2 = mysqli_fetch_assoc($query2);
@@ -13,9 +13,9 @@
             $you = "";
         }
         ($row['userStatus'] == "Indisponível") ? $offline = "offline" : $offline = "";
-        ($outgoing_id == $row['uniqueID']) ? $hid_me = "hide" : $hid_me = "";
+        ($outgoing_id == $row['ID']) ? $hid_me = "hide" : $hid_me = "";
 
-        $output .= '<a href="/chat/conversar?user_id='. $row['uniqueID'] .'">
+        $output .= '<a href="/chat/conversar?user_id='. $row['ID'] .'">
                     <div class="content">
                     <img src="../app/style/img/defaultProfile.png" alt="">
                     <div class="details">
