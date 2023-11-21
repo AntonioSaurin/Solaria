@@ -3,8 +3,8 @@
         session_start();
     }
     include_once "chatConfig.php";
-    $outgoing_id = $_SESSION['uniqueID'];
-    $sql = "SELECT * FROM userAccount WHERE NOT uniqueID = {$outgoing_id} ORDER BY ID DESC";
+    $outgoing_id = $_SESSION['id'];
+    $sql = "SELECT * FROM userAccount WHERE NOT ID = {$outgoing_id} ORDER BY ID DESC";
     $query = mysqli_query($conn, $sql);
     $output = "";
     if(mysqli_num_rows($query) == 0){

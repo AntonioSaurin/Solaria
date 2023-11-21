@@ -19,7 +19,7 @@ $actionSendLogin = $sendLogin->login([
 ], $userAction);
 
 if($actionSendLogin == 1) {
-    echo '<script>alert("Login bem sucedido");
+    echo '<script>
     window.location.href = "/";
     </script>';
 }

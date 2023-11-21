@@ -54,7 +54,6 @@
                             <a href="/" class=" ml-5 nav-link link-Header" id="color">home</a>
                         </li>
                         
-                        
                         <li class="nav-item dropdown ml-4 " id="accountIcon">
                             <?php
                                 
@@ -71,15 +70,6 @@
                                         <a href="\login" class="nav-link" id="color">Login</a>
                                         
                                     ');
-
-                                      
-                                      if(isset($_SESSION['uniqueID'])){
-                                        echo($_SESSION['uniqueID']);
-                                      }else{
-                                        
-
-                                      }
-                                    
                                }    
                             
                             ?>

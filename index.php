@@ -22,8 +22,6 @@ $routes = [
     '/admin' => 'views/adminMenu.php',
 
     '/chat' => 'views/chat/chatUsers.php',
-    '/chat/login' => 'views/chat/chatLogin.php',
-    '/chat/registrar' => 'views/chat/chatSignup.php',
     '/chat/conversar' => 'views/chat/chatMain.php',
 
     '/usuario/editar' => 'controllers/updateUser.php',

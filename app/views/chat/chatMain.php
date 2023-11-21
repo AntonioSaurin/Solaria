@@ -3,7 +3,7 @@
     session_start();
 }
   include_once "php/chatConfig.php";
-   if(!isset($_SESSION['uniqueID'])){
+   if(!isset($_SESSION['id'])){
      header("location: /chat");
    }
 ?>
@@ -14,7 +14,7 @@
       <header>
         <?php 
           $user_id = mysqli_real_escape_string($conn, $_GET['user_id']);
-          $sql = mysqli_query($conn, "SELECT * FROM userAccount WHERE uniqueID = {$user_id}");
+          $sql = mysqli_query($conn, "SELECT * FROM userAccount WHERE id = {$user_id}");
           if(mysqli_num_rows($sql) > 0){
             $row = mysqli_fetch_assoc($sql);
           }else{
