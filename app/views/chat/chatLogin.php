@@ -3,7 +3,7 @@
     session_start();
   }
   
-  if(isset($_SESSION['uniqueID'])){
+  if(isset($_SESSION['id'])){
     header("location: chatUsers.php");
   }
 ?>

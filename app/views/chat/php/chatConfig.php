@@ -1,5 +1,5 @@
 <?php
-  $hostname = "localhost:3306";
+  $hostname = "localhost:3307";
   $username = "root";
   $password = "";
   $dbname = "dbSolaria";
