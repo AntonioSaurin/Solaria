@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app/javaScript/jQuery.js"></script>
     <script src="app/javaScript/jMask.js"></script>
+    <script src="app/javaScript/jmodal.js"></script>
     <link href="app/style/css/infoUser.css" rel="stylesheet">
     <title> Conta </title>
 </head>
@@ -21,10 +22,10 @@
             <section class="userImg">
                 <img src="app/style/img/images.jpg" id="userImg">
                 <section class="organInfo">
-                <h3 id="infoUsername"> André Nascimento </h3>
-                <label class="basicInfo"> CPF: 287.778.748.62  </label>
-                <label class="basicInfo"> Data de Nascimento: 05/06/1995  </label>
-            </section>
+                    <h3 id="infoUsername"> André Nascimento </h3>
+                    <label class="basicInfo"> CPF: 287.778.748.62 </label>
+                    <label class="basicInfo"> Data de Nascimento: 05/06/1995 </label>
+                </section>
             </section>
             <section class="userInfo">
                 <label></label>
@@ -49,7 +50,7 @@
     ?>
     <section class="center">
         <section class="spaceForm">
-            <form name="formEditar" action="#" method="POST" class="formSave">
+            <form name="formEditar"  method="POST" class="formSave">
                 <section class="organForm">
                     <label class="infoForm"> Email: </label>
                     <input type="text" class="inputEdit"> </input>
@@ -61,10 +62,11 @@
                     <input type="password" class="inputEdit"> </input>
 
                     <button id="btnExcluir"> Excluir Conta </button>
+
                 </section>
             </form>
 
-            <form name="formEditar" action="#" method="POST" class="formSave">
+            <form name="formEditar"  method="POST" class="formSave">
                 <section class="organForm">
                     <label class="infoForm"> CEP: </label>
                     <input type="text" class=""> </input>
@@ -107,12 +109,17 @@
                     <label class="infoForm"> Logradouro: </label>
                     <input type="text" class="inputBairro"> </input>
 
-                    <button id="btnSalvar"> Salvar </button>
+                    <input type="submit" value="Salvar" name="Salvar" id="btnSalvar"> </input>
+
+
                 </section>
             </form>
 
         </section>
+        
     </section>
+    
+
 
     <!--<section class="infoAccountTop">
                 <section id="labelAccountGeral"> <label class="labelTitleTop"> Geral </label> </section>
@@ -192,10 +199,12 @@
             </section>
             <section class="spaceDown"> </section>
     </main>-->
-        <section id="space"> </section>
-    <script>
-        $("#phone").mask("+55 (00) 00000-0000");
-    </script>
+    
+    <section id="space"> </section>
+
+        <script>
+            $("#phone").mask("+55 (00) 00000-0000");
+        </script>
 </body>
 
 </html>

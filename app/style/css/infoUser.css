@@ -86,6 +86,7 @@
     .formSave{
         justify-content: center;
         border-style: solid;
+        border-radius: 0.5em;
         border-width: 2px;
         margin-top: 5em;
         width: 50em;
@@ -160,8 +161,9 @@
     .spaceForm{
         display: flex;
         justify-content: center;
-        margin-top: -5em;
+        max-height: 80em;
         max-width: 80em;
+        margin-top: -10.5em;
     }
 
     .center{
@@ -183,13 +185,38 @@
         margin-top: 12em;
     }
 
+    #btnSalvar:hover{
+        font: inherit;
+        cursor: pointer;
+    }
+
     #btnExcluir{
         display: flex;
         justify-content: center;
         margin-top: 2em;
         margin-left: 5em;
         width: 10em;
+        padding: 0.9em 0.9em 0.9em;
+        text-decoration: none;
+        border: 0;
+        border-radius: 0.5em;
+        color: white;
+        background-color: #e3286a;
+        box-shadow: black 0.1em 0.1em 0.1em;
+        transition: 0.3s ease;
     }
+
+    #btnExcluir:active{
+        padding: 0.8em 0.7em 0.8em;
+        box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
+        transform: translate(3px, 3px);
+        border: none;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+
 
     .inputEdit{
         display: flex;
@@ -197,9 +224,15 @@
     }
 
     #space{
-        padding: 3em;
+        padding: 2em;
     }
+    
 
+    /*MODAL*/
+
+
+    
+    
     /* Class 
     .infoNameAccount{
         display: flex;
