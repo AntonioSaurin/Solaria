@@ -31,13 +31,13 @@
                                 $ran_id = rand(time(), 100000000);
                                 $status = "Disponível";
                                 $encrypt_pass = md5($password);
-                                $insert_query = mysqli_query($conn, "INSERT INTO userAccount (uniqueID, userName, userEmail, userPassword, userStatus)
+                                $insert_query = mysqli_query($conn, "INSERT INTO userAccount (ID, userName, userEmail, userPassword, userStatus)
                                 VALUES ({$ran_id}, '{$fname}', '{$email}', '{$encrypt_pass}', '{$status}')");
                                 if($insert_query){
                                     $select_sql2 = mysqli_query($conn, "SELECT * FROM userAccount WHERE userEmail = '{$email}'");
                                     if(mysqli_num_rows($select_sql2) > 0){
                                         $result = mysqli_fetch_assoc($select_sql2);
-                                        $_SESSION['unique_id'] = $result['uniqueID'];
+                                        $_SESSION['id'] = $result['ID'];
                                         echo "sucess";
                                     }else{
                                         echo "Esse endereço de e-mail não existe!";

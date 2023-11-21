@@ -2,18 +2,18 @@
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
     }
-    if(isset($_SESSION['uniqueID'])){
+    if(isset($_SESSION['id'])){
         include_once "chatConfig.php";
-        $outgoing_id = $_SESSION['uniqueID'];
+        $outgoing_id = $_SESSION['id'];
         $incoming_id = mysqli_real_escape_string($conn, $_POST['incoming_id']);
         $output = "";
-        $sql = "SELECT * FROM messages LEFT JOIN userAccount ON userAccount.uniqueID = messages.outgoingMsgID
+        $sql = "SELECT * FROM messages LEFT JOIN userAccount ON userAccount.ID = messages.outgoingMsgID
                 WHERE (outgoingMsgID = {$outgoing_id} AND incomingMsgID = {$incoming_id})
                 OR (outgoingMsgID = {$incoming_id} AND incomingMsgID = {$outgoing_id}) ORDER BY msgId";
         $query = mysqli_query($conn, $sql);
         if(mysqli_num_rows($query) > 0){
             while($row = mysqli_fetch_assoc($query)){
-                if($row['outgoingMsgID'] === $outgoing_id){
+                if($row['outgoingMsgID'] == $outgoing_id){
                     $msgExplode = explode(":", $row['msgTime']);
                     //$row['msgTime']
 
@@ -43,7 +43,7 @@
         }
         echo $output;
     }else{
-        header("location: /chat/login");
+        header("location: /login");
     }
 
 ?>
