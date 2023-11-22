@@ -8,7 +8,7 @@ class User extends Model
 
     public function fullFind($id)
     {
-        $sql = 'SELECT 
+        $sql = "SELECT 
         userAccount.userName AS userName, 
         userAccount.userEmail AS userEmail,
         donator.birthDate as birthDate,
@@ -26,6 +26,12 @@ class User extends Model
             INNER JOIN adress ON userAccount.userAdress = adress.id  
             INNER JOIN phone ON userAccount.userPhone = phone.id
             INNER JOIN city on addres.city = city.id
-            INNER JOIN state on city.state = state.id;';
+            INNER JOIN state on city.state = state.id
+            WHERE ID = :value;";
+        $list = $this->connection->prepare($sql);
+        $list->bindValue(':value', $id);
+        $list->execute();
+
+        return $list->fetch();
     }
 }
