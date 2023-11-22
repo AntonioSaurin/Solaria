@@ -238,35 +238,72 @@
     .modalContainer{
         display: flex;
         justify-content: center;
-        position: absolute;
+        position: relative;
+        width: 100%;
     }
 
     #modal{
         display: flex;
         justify-content: center;
         position: absolute;
-        background-color: beige;
+        background-color: #ffffff;
         width: 50em;
-        height: 30em;
-        
+        height: 20em;
+        border-radius: 0.5em;
+        box-shadow: black 0 0 10px 0;
     }
 
     .block{
         display: block;
+        width: 100%;
     }
 
     .h3modal{
-        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        margin-top: 2em;
     }
 
     .btnmodal{
         display: flex;
         justify-content: center;
+        align-items: center;
         height: 2em;
-        width: 6em;
-        margin-top: 22em;
-        margin-right: 10em;
+        width: 10em;
+        margin-top: 8em;
+        margin-left: 2em;
+        background-color: #00b8a9;
+        color: white;
+        border: none;
+        border-radius: 0.5em;
+        padding-right: 2em;
+        padding-left: 2em;
+        font-size: 125%;
     }
+
+    .btncancelmodal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2em;
+        width: 10em;
+        margin-top: -2em;
+        margin-left: 28em;
+        background-color: #e3286a;
+        color: white;
+        border: none;
+        border-radius: 0.5em;
+        padding-right: 2em;
+        padding-left: 2em;
+        font-size: 125%;
+    }
+
+    .modalShow{
+        opacity: 1;
+        pointer-events: auto;   
+    }
+
 
     #modifyFooter{
         margin-bottom: 1rem;

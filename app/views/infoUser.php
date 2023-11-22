@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app/javaScript/jQuery.js"></script>
     <script src="app/javaScript/jMask.js"></script>
+    <script src="app/javaScript/jmodal.js"></script>
     <link href="app/style/css/infoUser.css" rel="stylesheet">
     <title> Conta </title>
 </head>
@@ -33,18 +34,6 @@
         </section>
     </section>
 
-    <!--<main class="infoAccountUser">
-        
-        <section class="infoAccount">
-            <section class="spaceImgAccount">
-                <img src="app/style/img/images.jpg" id="imgAccount">
-                <section class="infoNameAccount">
-                    <label class="nameAccount"> André Varíola do Nascimento Souza</label>
-                </section>
-                <label class="CpfAccount"> CPF: 287.778.748.62 </label>
-                <label class="DtNascAccount"> Data de Nascimento: 05/06/1995 </label>
-            </section>-->
-
     <?php
     /*include_once("historicUser.php");*/
     ?>
@@ -52,7 +41,7 @@
     <section class="center" id="modifyFooter">
         <section class="borderForm">
             <section class="spaceForm">
-                <form name="formEditar" method="POST" class="formSave">
+                <form name="formEditar" class="formSave">
                     <section class="organForm">
                         <label class="infoForm"> Email: </label>
                         <input type="text" class="inputEdit"> </input>
@@ -63,12 +52,12 @@
                         <label class="infoForm"> Confirmar Senha: </label>
                         <input type="password" class="inputEdit"> </input>
 
-                        <button id="btnExcluir"> Excluir Conta </button>
+                        <button id="btnExcluir" onclick="acao()"> Excluir Conta </button>
 
                     </section>
                 </form>
 
-                <form name="formEditar" method="POST" class="formSave">
+                <form name="formEditar"  class="formSave">
                     <section class="organForm">
                         <label class="infoForm"> CEP: </label>
                         <input type="text" class=""> </input>
@@ -122,14 +111,27 @@
 
     <script>
         $("#phone").mask("+55 (00) 00000-0000");
+
+        function acao(){
+            let modal = document.querySelector('.modal')
+
+            modal.style.display = 'block    '
+        }
+
     </script>
     <section class="center">
         <section class="modalContainer">
             <section id="modal">
                 <section class="block">
-                <h3 class="h3modal"> Deseja Excluir a sua conta? </h3>
-                <button class="btnmodal"> Excluir </button>
+                <section class="modalShow">
+                <h3 class="h3modal"> Deseja excluir a sua conta? </h3>
+
+                <button class="btnmodal" id="Excluir"> Excluir </button>
+                <button class="btncancelmodal" id="Cancelar"> Cancelar </button>
+                
                 </section>
+                </section>
+                
             </section>
         </section>
     </section>
