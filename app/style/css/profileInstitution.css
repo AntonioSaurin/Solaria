@@ -4,16 +4,11 @@
     box-sizing: border-box;
 }
 
-html{
-    background-color: #3ddacd;
-}
-
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    min-height: 100vh;
 }
 
 header{
@@ -22,17 +17,20 @@ header{
     top: 0;
     left: 0;
     z-index: 1;
+    background-color: #e3286a;
+    color: #ffffff;
 }
 
 .containerProfile {
-    width: 60%;
-    margin-top: 6em;
+    width: 80%;
+    margin-top: 5em;
     border: 0;
-    border-radius: 1em 1em 0em 0em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(6.4px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.6em 0.6em 0em 0em;
+    box-shadow: 0 0.3em 0.3em  rgba(104, 104, 104, 0.5);
+    backdrop-filter: blur(6em);
+    border: 0.1em solid rgba(255, 255, 255, 0.1);
     background-color: #ffffff;
+    min-height: 45em;
 }
 
 section {
@@ -42,46 +40,59 @@ section {
 .profile {
     display: flex;
     align-items: center;
-    margin: 3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
-.profile img {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    margin-right: 0px;
-    margin-left: 7em;
-    border: 1px solid;
+.profile .photoProfile{
+    width: 12em;
+    height: 12em;
+    border-radius: 100%;
+    margin: auto;
+    border: 0.1em solid;
+    margin-left: 9em;
 }
 
 .profile-info {
     display: flex;
     flex-direction: column;
+    margin-right: 21.5em;
+    margin-bottom: 0em;
 }
 
 .profile-info h2 {
-    margin: 0;
+    padding-top: 1em;
     color: #2778AD;
 }
 
 .profile-info p {
-    color: #363636;
-    margin-top: 1em;
+    color: #4b4b4b;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
 }
 
 .profile-info ul {
     list-style: none;
-    padding: 0;
-    margin: 10px 0;
 }
 
 .profile-info li {
-    margin-bottom: 5px;
     color: #000000;
+}
+
+a{
+    color: #e3286a ;
 }
 
 strong{
     color: #e3286a;
+}
+
+.addProfile{
+    position: relative;
+    width: 3em;
+    height: 3em;
+    margin-right: 7em;
+    margin-bottom: 7em;
 }
 
 .line {
@@ -89,26 +100,24 @@ strong{
 }
 
 .line hr {
-    border-top: 1px solid #e3286a;
+    border-top: 0.1em solid #e3286a;
     width: 85%;
-    margin: 20px auto 5px;
+    margin: auto;
 }
 
 .simple-nav {
     display: flex;
     justify-content: space-around;
     background-color: transparent;
-    padding: 5px 0;
+    padding: 1em 1.5em;
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    ;
+    margin: auto;
 }
 
 .button {
     text-decoration: none;
     color: #000000;
-    font-size: 16px;
+    font-size: 1em;
     transition: color 0.3s ease;
     margin: 0px;
 }
@@ -120,48 +129,28 @@ strong{
 
 .posts {
     margin-top: 1em;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 65em;
+    margin: auto;
     margin-bottom: 1.2em;
     border-radius: 0.2em; 
-    box-shadow: 0 0 10px rgba(43, 43, 43, 0.1); 
-    background: rgba(255, 255, 255, 0.4); 
+    box-shadow: 0 0em 0.3em  rgba(104, 104, 104, 0.5);
+    backdrop-filter: blur(6em);
     display: grid;
-    grid-template-columns: repeat(3, 0fr);
+    grid-template-columns: repeat(4, 0fr);
     grid-auto-rows: 15em;
-    padding-left: 0.9em;
-    padding-top: 1.2em;
-    padding-bottom: 0.9em;
+    min-height: 30em;
 }
 
 .post, .post img{
     width: 16em;
     height: 16em;
     box-shadow: 0 0 0px rgba(52, 52, 52, 0.1);
-    align-items: center;
     padding-bottom: 1.1em;
-    margin-left: 0.1em;
-}
-
-/*
-.headerPost{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 0;
-    height: 2em;
-    width: 50em;
-    margin-left: 5em;
-    margin-top: 1em;
-}
-
-.options-button{
-    width: 5em;
-    height: 2em;
-    margin-left: 21.5em;
+    margin-left: 0.15em;
 }
 
 .post-options {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -170,17 +159,15 @@ strong{
     pointer-events: none;
     transition: opacity 0.3s ease;
     width: 8em;
-    margin-top: 0em;
-    margin-left: 0.1em;
+    margin-top: -16em;
+    margin-left: 11.8em;
 }
 
 .post-options.show-options {
     opacity: 1;
     pointer-events: auto;
 }
-*/
 
-/*
 .post .headerPost p {
     margin: 0;
     width: 8em;
@@ -192,11 +179,148 @@ strong{
     padding: 4px 8px;
     border: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 0.8em;
     width: 5.5em;
 }
 
 .post .edit-button:hover, .post .delete-button:hover {
     background-color: rgb(255, 255, 255);
     color: #e3286a;
+}
+
+
+
+/*modal*/
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.32);
+    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.modal1{
+    width: 50%;
+  height: 65%;
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+ 
+}
+#btnExitIncon{
+    position: absolute;
+    top: 18px;
+    right: 10px;
+   
+}
+#modalContent{
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    flex: 3;
+    background-color: #fff; 
+    color: #000; 
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    
+
+}
+#modalTop{
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    flex: 0.3;
+    background-color: #006DB7;
+    text-align: center;
+   
+
+}
+#donationAmount{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between; 
+    margin-right: 200px;
+    margin-left: 200px;
+    /* align-items: center; */
+    justify-content: center;
+}
+#custimizeAmount h4{
+    
+    margin-bottom: 20px;
+}
+#btnNext{
+    margin-top: 20px;
+    height: 35px;
+    width: 140px;
+    margin-left:550px;
+   
+}
+
+#custimizeAmount input{
+    padding-left:90px;
+    margin-left: 35%;
+    height: 40px;
+    width: 30%;
+    align-items: center;
+    
+}
+#custimizeAmount{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+#institutionAreaModal{
+    border-bottom: solid 1px gray;
+    display: flex;
+}
+
+.modalImageInstitution{
+    height: 7rem;
+    width:  7rem;
+    margin: 5px;
+}
+
+h4{
+    display: inline;
+}
+#donationArea{
+    margin-top: 15px;
+    flex: 2;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-60px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+
+    }
+}
+.mostrar .modal1{
+    animation: modal .4s;
 }

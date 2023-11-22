@@ -89,7 +89,6 @@
                         
                         <input id="btnNext"type="submit" name="avancar" value="Prosseguir"></input>
                         
-                        
                     </form>    
 
                 </section>
@@ -107,11 +106,6 @@
             btnOpen[index].addEventListener('click', ()=> openModal('modal'));   
         }
 
-
-
-
-
-        
         function closeModal(idModal){
             const modalClose = document.getElementById(idModal);
             modalClose.classList.remove('mostrar');   
@@ -121,8 +115,6 @@
             btnClose[index].addEventListener('click',()=>closeModal('modal'));   
             
         }
-       
-        
     </script>    
 </body>
 </html>
