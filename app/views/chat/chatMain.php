@@ -1,3 +1,5 @@
+
+
 <?php 
   if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -11,8 +13,7 @@
 ?>
 <?php include_once "chatHeader.php"; ?>
 <body>
-  <header>
-    
+<header>
    <?php
 			include('app/views/header.php');
 		?>

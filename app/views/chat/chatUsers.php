@@ -10,7 +10,7 @@
 ?>
 <?php include_once "chatHeader.php"; ?>
 <body>
-<header>
+  <header>
    <?php
 			include('app/views/header.php');
 		?>
