@@ -17,7 +17,7 @@
 		
 	</header>
   
-  <div class="wrapper">
+  <div class="wrapper" >
     <section class="users">
       <header>
       
@@ -35,7 +35,7 @@
             <p><?php echo $row['userStatus']; ?></p>
           </div>
         </div>
-        <a href="../app/views/chat/php/chatLogout.php?logout_id=<?php echo $row['ID']; ?>" class="logout">Sair</a>
+        <a href="/" class="logout">Voltar</a>
       </header>
       <div class="search">
         <span class="text">Selecione um usuário</span>
