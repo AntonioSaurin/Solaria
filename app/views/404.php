@@ -9,15 +9,17 @@
 	<link rel="stylesheet" href="app/style/css/404.css">
 </head>
 <body>
-<header>
+    <header>
 		<?php
 			include('header.php');
 		?>
 		
 	</header>
+
     <section class="mainTextArea">
-        <h1>Página não existe</h1>
-        <h2>Erro 404</h2>
+        <img class="errorPageImg" src="app/style/img/imgSadKid.png">
+        <h1>Página não encontrada.</h1>
+        
 
         <a href="/">
 			<button type="button"  id="btnFirst" class="btn btn-info btnHome">Voltar <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>

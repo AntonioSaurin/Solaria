@@ -10,9 +10,17 @@
 ?>
 <?php include_once "chatHeader.php"; ?>
 <body>
-  <div class="wrapper">
+  <header>
+   <?php
+			include('app/views/header.php');
+		?>
+		
+	</header>
+  
+  <div class="wrapper" >
     <section class="users">
       <header>
+      
         <div class="content">
           <?php 
             $sql = mysqli_query($conn, "SELECT * FROM userAccount WHERE ID = {$_SESSION['id']}");
@@ -27,7 +35,7 @@
             <p><?php echo $row['userStatus']; ?></p>
           </div>
         </div>
-        <a href="../app/views/chat/php/chatLogout.php?logout_id=<?php echo $row['ID']; ?>" class="logout">Sair</a>
+        <a href="/" class="logout">Voltar</a>
       </header>
       <div class="search">
         <span class="text">Selecione um usuário</span>

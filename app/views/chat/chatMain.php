@@ -11,7 +11,9 @@
 ?>
 <?php include_once "chatHeader.php"; ?>
 <body>
-  <div class="wrapper">
+
+
+  <div class="wrapper" style="margin-top:4%";>
     <section class="chat-area">
       
       <header>
