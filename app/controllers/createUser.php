@@ -49,7 +49,7 @@ $userAction = $user->insert([
     'userEmail' => $email,
     'userPassword' => $password,
     'userPhone' => $phoneData['ID'],
-    'userPhoto' => null,
+    'userPhoto' => '1',
     'userAdress' => '1',
     'userAdressNumber' => '41'
 ]);

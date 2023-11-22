@@ -40,11 +40,13 @@ create table photo(
     ID int auto_increment,
     photoName varchar(255),
     photoFormat varchar(5),
-    photeSize double,
+    photoSize double,
     photoPath varchar(255),
     photoType enum('profile', 'banner', 'post'),
     primary key (ID)
 );
+
+insert into `photo` (ID, photoName, photoFormat, photeSize, photoPath, photoType) values ('1', 'dafaultImage.png', 'png', '4352', 'app/uploads/defaultImage.png', 'profile');
 
 create table userAccount(
     ID int auto_increment,
