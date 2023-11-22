@@ -164,11 +164,6 @@ h1 {
 }
 
 /*modal*/
-.modal-container a {
-    color: black;
-
-}
-
 .modal-container {
     display: none;
     top: 0px;
@@ -230,6 +225,7 @@ h1 {
     position: relative;
     left: 3.5em;
     top: 1em;
+    color: #fff;
 }
 
 .imageDonator {
@@ -240,43 +236,32 @@ h1 {
     width: 7em;
 }
 
-.teste{
+.animationDonator{
     position: absolute;
     top: 10em;
     width: 7.5em;
     left: 4em;
+    transition: 0.5s;
 }
 
-.backgroundAnimation1{
-    
+.animationDonator:hover{
+    top: 9em;
+    transition: 1s;
+    text-decoration: none;
 }
 
-.backgroundAnimation1:hover,
-.backgroundAnimation1:focus{
-    background: #014b7c5b;
-}
-
-.teste2{
+.animationInstituition{
     position: absolute;
     top: 9.5em;
     left: 19em;
     width: 12em;
+    transition: 0.5s;
 }
 
-.backgroundAnimation2{
-    border-radius: 1em;
-    width: 15em;
-    height: 24.4em;
-    top: -18.95em;
-    left: -4em;
-    position: relative;
-    background: transparent;
-    transition: background 0.7s;
-}
-
-.backgroundAnimation2:hover,
-.backgroundAnimation2:focus{
-    background: #014b7c5b;
+.animationInstituition:hover{
+    top: 8.5em;
+    transition: 1s;
+    text-decoration: none;
 }
 
 .background{
@@ -284,10 +269,19 @@ h1 {
     width: 100%;
     height: 100%;
     border-radius: 1em;
-
 }
 
 #redirect{
     text-decoration: none;
     color: #fff;
+}
+
+.line{
+    width: 0.1em;
+    height: 15em;
+    background: #fff;
+    position: absolute;
+    left: 15em;
+    top: 6em;
+    border-radius: 1em;
 }

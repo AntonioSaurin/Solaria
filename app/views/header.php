@@ -16,7 +16,7 @@
 
     <script src="app/javaScript/fontAwesome.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="app/style/css/headerStyle.css">
-
+    
     
     <title>header</title>
 </head>
@@ -63,6 +63,7 @@
 
                                         <section id="headerMenu"class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                                             <a class="dropdown-item" href="/infoUser">Conta</a>
+                                            <a class="dropdown-item" href="/chat">Chat</a>
                                             <a class="dropdown-item" href="../app/views/logout.php">Sair</a>
                                 
                                         </section>  

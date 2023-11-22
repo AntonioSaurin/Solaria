@@ -27,5 +27,6 @@ return [
     '/infoInstituicoes' => 'views/infoInstitution.php',
     '/historicoInst' => 'views/historicInstitution.php',
     '/historicoUser' => 'views/historicUser.php',
+    '/404' => 'views/404.php',
     '/annualPlan' => 'views/annualPlan.php'
 ];

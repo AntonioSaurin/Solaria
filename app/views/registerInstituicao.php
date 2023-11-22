@@ -19,186 +19,176 @@
         ?>
     </header>
     <main>
-        <span id="gradient">
-            <section class="signupBox form" id="pt1">
-                <form action="cadastro/efetuarInstituicao" method="post" name="Cadastro">
-                    <h1>Cadastrar</h1><br>
-                    <span class="table1">
-
-                        <section class="input-group">
-                            <label>Nome da Instituição:</label>
-                            <input type="text" class="signupBox form-control" name="name" id="name"
-                                placeholder="Nome da Instituição" onkeyup="validationNameInstituition()"><br>
-                            <span id="name-error"></span>
-                        </section>
-
-                        <section class="input-group">
-                            <label>Responsável:</label>
-                            <input type="text" class="signupBox" name="director" id="director" placeholder="Responsavél"
-                                onkeyup="validationDirector()">
-                            <span id="director-error"></span>
-                        </section>
-
-                        <section class="input-group">
-                            <label>CPF do Responsavél:</label>
-                            <input type="text" class="signupBox" name="directorCPF" id="directorCPF" placeholder="CPF"
-                                maxlength="14" onkeyup="validationDirectorCPF()"><br>
-                            <span id="directorCPF-error"></span>
-                        </section>
-                    </span>
-
-                    <span class="table2">
-                        <section class="input-group">
-                            <label>CNPJ:</label><br><br>
-                            <input type="text" class="signupBox" name="CNPJ" id="CNPJ" placeholder="CNPJ" maxlength="14"
-                                onkeyup="validationCNPJ()"><br>
-                            <span id="CNPJ-error"></span>
-                        </section>
-
-                        <section class="input-group">
-                            <label>Email:</label>
-                            <input type="text" class="signupBox" name="email" id="email" placeholder="Email"
-                                onkeyup="validationEmail()"><br>
-                            <span id="email-error"></span>
-                        </section>
-
-                        <section class="input-group">
-                            <label>Telefone:</label>
-                            <input type="text" class="signupBox" name="phone" id="phone" placeholder="Telefone"
-                                maxlength="12" onkeyup="validationPhone()"><br>
-                            <span id="phone-error"></span>
-                        </section>
-
-                        <span name="next" class="nextButton" id="text" onclick=changeVisibleAdress()>Próximo</span>
-
-                        <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></label>
-                    </span>
-
-            </section>
-
-            <section class="signupBox form" id="pt2">
-                <h1>Cadastrar Endereço</h1><br>
+        <section class="signupBox form" id="pt1">
+            <form action="cadastro/efetuarInstituicao" method="post" name="Cadastro">
+                <h1>Cadastrar</h1>
                 <span class="table1">
-                    <label>CEP:</label>
+
                     <section class="input-group">
-                        <input type="text" class="signupBox" name="CEP" id="CEP" placeholder="00000-000"
-                            onkeyup="validationCEP()"><br>
-                        <span id="CEP-error"></span>
+                        <label>Nome da Instituição:</label>
+                        <input type="text" class="signupBox" name="name" id="name"
+                            onkeyup="validationNameInstituition()">
+                        <span id="name-error"></span>
                     </section>
 
-                    <label>Estado:</label>
-                    <section class=" input-group">
-                        <select class="signupBox" name="state" id="state">
-                            <option value="AC"> Acre </option>
-                            <option value="AL"> Alagoas </option>
-                            <option value="AP"> Amapá </option>
-                            <option value="AM"> Amazonas </option>
-                            <option value="BA"> Bahia </option>
-                            <option value="CE"> Ceará </option>
-                            <option value="DF"> Distrito Federal </option>
-                            <option value="ES"> Espírito Santo </option>
-                            <option value="GO"> Goiás </option>
-                            <option value="MA"> Maranhão </option>
-                            <option value="MT"> Mato Grosso </option>
-                            <option value="MS"> Mato Grosso do Sul </option>
-                            <option value="MG"> Minas Gerais </option>
-                            <option value="PA"> Pará </option>
-                            <option value="PB"> Paraíba </option>
-                            <option value="PR"> Paraná </option>
-                            <option value="PE"> Pernambuco </option>
-                            <option value="PI"> Piauí </option>
-                            <option value="RJ"> Rio de Janeiro </option>
-                            <option value="RN"> Rio Grande do Norte </option>
-                            <option value="RS"> Rio Grande do Sul </option>
-                            <option value="RO"> Rondônia </option>
-                            <option value="RR"> Roraima </option>
-                            <option value="SC"> Santa Catarina </option>
-                            <option value="SP"> São Paulo </option>
-                            <option value="SE"> Sergipe </option>
-                            <option value="TO"> Tocantinsa </option>
-                        </select>
-                    </section>
-
-                    <label>Cidade:</label>
                     <section class="input-group">
-                        <input type="text" class="signupBox" name="city" id="city" placeholder="Cidade"
-                            onkeyup="validationCity()"><br>
-                        <span id="city-error"></span>
+                        <label>Responsável:</label>
+                        <input type="text" class="signupBox" name="director" id="director"
+                            onkeyup="validationDirector()">
+                        <span id="director-error"></span>
                     </section>
 
-                    <span class=" backButton" id="text" onclick=changeVisibleInfos()>Voltar
-                    </span>
+                    <section class="input-group">
+                        <label>CPF do Responsavél:</label>
+                        <input type="text" class="signupBox" name="directorCPF" id="directorCPF" maxlength="11"
+                            onkeyup="validationDirectorCPF()">
+                        <span id="directorCPF-error"></span>
+                    </section>
                 </span>
 
                 <span class="table2">
-                    <label>Bairro:</label>
                     <section class="input-group">
-                        <input type="text" class="signupBox" name="district" id="district" placeholder="Bairro"
-                            onkeyup="validationDistrict()"><br>
-                        <span id="district-error"></span>
+                        <label>CNPJ:</label>
+                        <input type="text" class="signupBox" name="CNPJ" id="CNPJ" maxlength="14"
+                            onkeyup="validationCNPJ()">
+                        <span id="CNPJ-error"></span>
                     </section>
 
-                    <label>Numero:</label>
-                    <section class=" input-group">
-                        <input type="text" class="signupBox" name="number" id="number" placeholder="Numero"
-                            onkeyup="validationNumber()"><br>
-                        <span id="number-error"></span>
+                    <section class="input-group">
+                        <label>Email:</label>
+                        <input type="text" class="signupBox" name="email" id="email" onkeyup="validationEmail()">
+                        <span id="email-error"></span>
                     </section>
 
-                    <label>Rua:</label>
-                    <section class=" input-group">
-                        <input type="text" class="signupBox" name="road" id="road" placeholder="Rua"
-                            onkeyup="validationRoad()"><br>
-                        <span id="road-error"></span>
+                    <section class="input-group">
+                        <label>Telefone:</label>
+                        <input type="text" class="signupBox" name="phone" id="phone" maxlength="11"
+                            onkeyup="validationPhone()">
+                        <span id="phone-error"></span>
                     </section>
 
-                    <span class=" nextButton" id="text" onclick=changeVisibleOthers()>Próximo
-                    </span>
+                    <span name="next" class="nextButton" id="text" onclick=changeVisibleAdress()>Próximo</span>
 
                     <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></label>
                 </span>
 
+        </section>
 
-            </section>
+        <section class="signupBox form" id="pt2">
+            <h1>Cadastrar Endereço</h1>
+            <span class="table1">
+                <label>CEP:</label>
+                <section class="input-group">
+                    <input type="text" class="signupBox" name="CEP" id="CEP" onkeyup="validationCEP()">
+                    <span id="CEP-error"></span>
+                </section>
 
-            <section class="signupBox form" id="pt3">
-                <h1>Cadastrar Senhas</h1><br>
-                <span class="table1">
+                <label>Estado:</label>
+                <section class=" input-group">
+                    <select class="signupBox" name="state" id="state">
+                        <option value="AC"> Acre </option>
+                        <option value="AL"> Alagoas </option>
+                        <option value="AP"> Amapá </option>
+                        <option value="AM"> Amazonas </option>
+                        <option value="BA"> Bahia </option>
+                        <option value="CE"> Ceará </option>
+                        <option value="DF"> Distrito Federal </option>
+                        <option value="ES"> Espírito Santo </option>
+                        <option value="GO"> Goiás </option>
+                        <option value="MA"> Maranhão </option>
+                        <option value="MT"> Mato Grosso </option>
+                        <option value="MS"> Mato Grosso do Sul </option>
+                        <option value="MG"> Minas Gerais </option>
+                        <option value="PA"> Pará </option>
+                        <option value="PB"> Paraíba </option>
+                        <option value="PR"> Paraná </option>
+                        <option value="PE"> Pernambuco </option>
+                        <option value="PI"> Piauí </option>
+                        <option value="RJ"> Rio de Janeiro </option>
+                        <option value="RN"> Rio Grande do Norte </option>
+                        <option value="RS"> Rio Grande do Sul </option>
+                        <option value="RO"> Rondônia </option>
+                        <option value="RR"> Roraima </option>
+                        <option value="SC"> Santa Catarina </option>
+                        <option value="SP"> São Paulo </option>
+                        <option value="SE"> Sergipe </option>
+                        <option value="TO"> Tocantinsa </option>
+                    </select>
+                </section>
 
+                <label>Cidade:</label>
+                <section class="input-group">
+                    <input type="text" class="signupBox" name="city" id="city" onkeyup="validationCity()">
+                    <span id="city-error"></span>
+                </section>
 
-                    <span class="backButton align" id="text" onclick=changeVisibleAdress()>Voltar</span>
+                <span class=" backButton" id="text" onclick=changeVisibleInfos()>Voltar
+                </span>
+            </span>
+
+            <span class="table2">
+                <label>Bairro:</label>
+                <section class="input-group">
+                    <input type="text" class="signupBox" name="district" id="district" onkeyup="validationDistrict()">
+                    <span id="district-error"></span>
+                </section>
+
+                <label>Numero:</label>
+                <section class=" input-group">
+                    <input type="text" class="signupBox" name="number" id="number" onkeyup="validationNumber()">
+                    <span id="number-error"></span>
+                </section>
+
+                <label>Rua:</label>
+                <section class=" input-group">
+                    <input type="text" class="signupBox" name="road" id="road" onkeyup="validationRoad()">
+                    <span id="road-error"></span>
+                </section>
+
+                <span class="nextButton" id="text" onclick=changeVisibleOthers()>Próximo
                 </span>
 
-                <span class="table2 test">
-                    <span class="table3">
-                        <label>Senha:</label>
-                        <section class="input-group">
-                            <input type="password" class="signupBox" name="password" id="password"
-                                placeholder="Senha"><br>
-                        </section>
-                        <label>Confirmar Senha:</label>
-                        <section class="input-group">
-                            <input type="password" class="signupBox" name="conPassword" id="conPassword"
-                                placeholder="Confirmar Senha"><br>
-                        </section>
-                    </span>
+                <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></label>
+            </span>
 
-                    <button type="submit" name="submit" class="registerButton align" id="text">Cadastrar</button>
 
-                    <p class="link text align2">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></label>
+        </section>
+
+        <section class="signupBox form" id="pt3">
+            <h1>Cadastrar Senhas</h1>
+            <span class="table1">
+
+
+                <span class="backButton align" id="text" onclick=changeVisibleAdress()>Voltar</span>
+            </span>
+
+            <span class="table2 test">
+                <span class="table3">
+                    <label>Senha:</label>
+                    <section class="input-group">
+                        <input type="password" class="signupBox" name="password" id="password">
+                    </section>
+                    <label>Confirmar Senha:</label>
+                    <section class="input-group">
+                        <input type="password" class="signupBox" name="conPassword" id="conPassword">
+                    </section>
                 </span>
-                </form>
 
-            </section>
+                <button type="submit" name="submit" class="registerButton align" id="text">Cadastrar</button>
 
-            <img class="img" src="app/style/img/brandWithout.png">
-        </span>
+                <p class="link text align2">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></label>
+            </span>
+            </form>
+
+        </section>
+
+        <img class="img" src="app/style/img/brandWithout.png">
     </main>
     <script>
         $("#phone").mask("(00) 00000-0000");
-        $("#directorCPF").mask("000.000.000-00");
         $("#CNPJ").mask("00.000.000/0000-00");
         $("#CEP").mask("00000-000");
+        $("#directorCPF").mask("000.000.000-00");
 
         var nameError = document.getElementById("name-error");
         var directorError = document.getElementById("director-error");
@@ -214,47 +204,95 @@
             var name = document.getElementById('name').value;
 
             if (name.length == 0) {
-                nameError.innerHTML = "Name required";
+                nameError.innerHTML = "Nome é necessário";
                 return false;
             }
 
             if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
-                nameError.innerHTML = "Write full name";
+                nameError.innerHTML = "Inválido";
                 return false;
             }
             nameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
             return true;
         }
 
-        function validationPhone() {
-            var phone = document.getElementById('contact-phone').value;
+        function validationDirector() {
+            var director = document.getElementById('director').value;
 
-            if (phone.length == 0) {
-                phoneError.innerHTML = "Phone required";
+            if (director.length == 0) {
+                directorError.innerHTML = "Name necesário";
                 return false;
             }
 
-            if (!phone.match(/^[0-9]{10}$/)) {
-                phoneError.innerHTML = "Only digits please";
+            if (!director.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+                directorError.innerHTML = "Inválido";
                 return false;
             }
-            phoneError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            directorError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+        }
+
+        function validationDirectorCPF() {
+            var directorCPF = document.getElementById('directorCPF').value;
+
+            if (directorCPF.length == 0) {
+                directorCPFError.innerHTML = "CPF é necessário";
+                return false;
+            }
+
+            if (!directorCPF.match(/^\d{3}\.\d{3}\.\d{3}-\d{2}$/)) {
+                directorCPFError.innerHTML = "Inválido";
+                return false;
+            }
+            directorCPFError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+        }
+
+        function validationCNPJ() {
+            var CNPJ = document.getElementById('CNPJ').value;
+
+            if (CNPJ.length == 0) {
+                CNPJError.innerHTML = "CNPJ é necessário";
+                return false;
+            }
+
+            if (!CNPJ.match(/^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/)) {
+                CNPJError.innerHTML = "Inválido";
+                return false;
+            }
+            CNPJError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
             return true;
         }
 
         function validationEmail() {
-            var email = document.getElementById('contact-email').value;
+            var email = document.getElementById('email').value;
 
             if (email.length == 0) {
-                emailError.innerHTML = "email required";
+                emailError.innerHTML = "email necessário";
                 return false;
             }
 
             if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[.][a-z]{2,4}$/)) {
-                emailError.innerHTML = "Email invalid";
+                emailError.innerHTML = "Email inválido";
                 return false;
             }
             emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+        }
+
+        function validationPhone() {
+            var phone = document.getElementById('phone').value;
+
+            if (phone.length == 0) {
+                phoneError.innerHTML = "Telefone necessário";
+                return false;
+            }
+
+            if (!phone.match(/^(\(\d{2}\))?(\d{10})$/)) {
+                phoneError.innerHTML = "Inválido";
+                return false;
+            }
+            phoneError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
             return true;
         }
 
@@ -273,7 +311,7 @@
         function changeVisibleAdress() {
             var empty = verifyEmptyInfos(nome, cnpj, phone, email, director, directorCPF);
 
-            if (empty == true) {
+            if (empty != true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");
@@ -287,7 +325,7 @@
         function changeVisibleOthers() {
             var empty = verifyEmptyAddres(cep, state, city, district, street, number);
 
-            if (empty == true) {
+            if (empty != true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");
