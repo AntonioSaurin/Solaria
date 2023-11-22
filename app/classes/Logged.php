@@ -12,8 +12,8 @@ class Logged extends User{
                 return true;
             }
             
-            return false;
+            header('/login');
         }
-        return false;
+        header('/login');
     }
 }
