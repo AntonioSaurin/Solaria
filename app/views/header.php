@@ -63,6 +63,7 @@
 
                                         <section id="headerMenu"class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                                             <a class="dropdown-item" href="/infoUser">Conta</a>
+                                            <a class="dropdown-item" href="/chat">Chat</a>
                                             <a class="dropdown-item" href="../app/views/logout.php">Sair</a>
                                 
                                         </section>  

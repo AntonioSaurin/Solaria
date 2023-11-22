@@ -10,9 +10,17 @@
 ?>
 <?php include_once "chatHeader.php"; ?>
 <body>
+<header>
+   <?php
+			include('app/views/header.php');
+		?>
+		
+	</header>
+  
   <div class="wrapper">
     <section class="users">
       <header>
+      
         <div class="content">
           <?php 
             $sql = mysqli_query($conn, "SELECT * FROM userAccount WHERE ID = {$_SESSION['id']}");
