@@ -1,6 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 
+use app\models\Adress;
 use app\models\Donator;
 use app\models\Phone;
 use app\models\User;
@@ -49,7 +50,8 @@ $userAction = $user->insert([
     'userPassword' => $password,
     'userPhone' => $phoneData['ID'],
     'userPhoto' => null,
-    'userAdress' => null,
+    'userAdress' => '1',
+    'userAdressNumber' => '41'
 ]);
 
 if($userAction != true){
