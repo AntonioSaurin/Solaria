@@ -73,7 +73,7 @@
       })
     })
   </script>
-  	<footer id="footerArea">
+  <footer id="footerArea">
 		<?php
 			include_once("footer.php");
 		?>

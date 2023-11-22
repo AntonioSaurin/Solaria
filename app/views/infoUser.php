@@ -49,7 +49,7 @@
     /*include_once("historicUser.php");*/
     ?>
 
-    <section class="center">
+    <section class="center" id="modifyFooter">
         <section class="borderForm">
             <section class="spaceForm">
                 <form name="formEditar" method="POST" class="formSave">
@@ -133,6 +133,12 @@
             </section>
         </section>
     </section>
+
+    <footer id="footerArea">
+		<?php
+			include_once("footer.php");
+		?>
+	</footer>
 
 
 </body>
