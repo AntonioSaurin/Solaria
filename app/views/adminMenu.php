@@ -37,7 +37,7 @@
       </a>
 
       <a href="#">
-        <section class="admin-card">
+        <section class="admin-card" id="modifyFooter">
           <img class="img_icon" src="app/style/img/imgAprove.png">
           <h2>Aprovar Instituições</h2>
           <p class="subtitle">Aprovar ou negar a criação de instituições.</p>
@@ -73,6 +73,11 @@
       })
     })
   </script>
+  <footer id="footerArea">
+		<?php
+			include_once("footer.php");
+		?>
+	</footer>
 </body>
 
 </html>

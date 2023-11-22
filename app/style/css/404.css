@@ -1,5 +1,12 @@
 .mainTextArea{
-    margin-left: auto;
+   align-items: center;
+   text-align: center;
+   margin-top: 6.5%;
+}
+
+.errorPageImg{
+    height: 20%;
+    width: 20%;
 }
 
 .btnHome {
@@ -8,15 +15,20 @@
     display: inline-block; 
     margin-left: 1em; 
     transition: 0.2s;
+    
 }
 
 #btnFirst{
     background-color: #E12A69;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12);
+    transition: 0.2s;
+    border-radius: 20px;
 }
 
 #btnFirst:hover, #btnSecond:hover, #btnThird:hover, .btnHome:hover{
     background-color: #ffffff;
     color: #E12A69;
+    filter: invert(0%);
 }
 
 .homeArrow1{

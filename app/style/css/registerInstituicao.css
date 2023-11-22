@@ -25,6 +25,7 @@ header {
 
 .text {
     color: #0d4266;
+    width: 20em;
 }
 
 #btnLogin,
@@ -43,7 +44,6 @@ header {
     top: -6em;
     z-index: 0;
 }
-
 
 .form {
     font-family: "Nunito", "sans-serif";
@@ -81,14 +81,15 @@ h1 {
     top: 7.5rem;
     position: fixed;
     left: 22rem;
+    width: 15rem;
 }
 
 .align {
-    top: 17.39em;
+    top: 16.15em;
 }
 
 .align2 {
-    top: 16em;
+    top: 14.75em;
 }
 
 .table3 {
@@ -222,6 +223,15 @@ span.nextButton:hover {
     right: 17px;
     font-size: 14px;
     color: #f00;
+}
+
+#name-error,
+#director-error,
+#directorCPF-error,
+#CNPJ-error,
+#email-error{
+    position: absolute;
+    top: 3.5em;
 }
 
 #submit-error {
