@@ -1,4 +1,3 @@
-'
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,8 +36,6 @@
         </section>
         <img class="img" src="app/style/img/brandWithout.png">
     </main>
-
-
     <section class="modal-container" id="modalRegister">
 
         <sections class="modal2Register">
@@ -47,14 +44,16 @@
                 <button type="button" class="btnExit">
                     <img src="app\style\img\close.png" class="btnExit" id="btnExit">
                 </button>
-                <a class="modal-Link teste" href="/cadastro"><img src="app\style\img\handIcon.png" class='imageDonator'>
+
+                <a class="modal-Link animationDonator" href="/cadastro"><img src="app\style\img\handIcon.png" class='imageDonator'>
                     <p class="alignText" id="redirect">Registro Doador</p>
-                    <section class="backgroundAnimation1"></section>
                 </a>
-                <a class="modal-Link teste2" href="/cadastroInstituicao"><img src="app\style\img\houseIcon.png"
+
+                <section class="line"></section>
+
+                <a class="modal-Link animationInstituition" href="/cadastroInstituicao"><img src="app\style\img\houseIcon.png"
                         class='imageInstituition'>
                     <p class="alignText" id="redirect">Registro instituicao</p>
-                    <section class="backgroundAnimation2"></section>
                 </a>
             </section>
         </sections>
