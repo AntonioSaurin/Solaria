@@ -141,8 +141,8 @@
 
                 <label>Rua:</label>
                 <section class=" input-group">
-                    <input type="text" class="signupBox" name="road" id="road" onkeyup="validationRoad()">
-                    <span id="road-error"></span>
+                    <input type="text" class="signupBox" name="street" id="street" onkeyup="validationStreet()">
+                    <span id="street-error"></span>
                 </section>
 
                 <span class="nextButton" id="text" onclick=changeVisibleOthers()>Próximo
@@ -288,10 +288,10 @@
                 return false;
             }
 
-            if (!phone.match(/^(\(\d{2}\))?(\d{10})$/)) {
-                phoneError.innerHTML = "Inválido";
-                return false;
-            }
+            // if (!phone.match(/^(\(\d{2}\))?(\d{10})$/)) {
+            //     phoneError.innerHTML = "Inválido";
+            //     return false;
+            // }
             phoneError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
             return true;
         }
@@ -311,7 +311,7 @@
         function changeVisibleAdress() {
             var empty = verifyEmptyInfos(nome, cnpj, phone, email, director, directorCPF);
 
-            if (empty != true) {
+            if (empty == true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");
@@ -325,7 +325,7 @@
         function changeVisibleOthers() {
             var empty = verifyEmptyAddres(cep, state, city, district, street, number);
 
-            if (empty != true) {
+            if (empty == true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");

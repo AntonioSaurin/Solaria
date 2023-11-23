@@ -21,9 +21,8 @@ $director = filter_input(INPUT_POST, 'director', FILTER_SANITIZE_STRING);
 $directorCPF = filter_input(INPUT_POST, 'directorCPF', FILTER_SANITIZE_STRING);
 $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-$phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
 
-$cep = filter_input(INPUT_POST, 'cep', FILTER_SANITIZE_STRING);
+$cep = filter_input(INPUT_POST, 'CEP', FILTER_SANITIZE_STRING);
 $state = filter_input(INPUT_POST, 'state', FILTER_SANITIZE_STRING);
 $city = filter_input(INPUT_POST, 'city', FILTER_SANITIZE_STRING);
 $district = filter_input(INPUT_POST, 'district', FILTER_SANITIZE_STRING);
@@ -41,7 +40,7 @@ $phoneNumber = trim($phoneExplode[1]);
 $ddd = explode('(', $phoneExplode[0]);
 
 $cPhoneAction = $cPhone->insert([
-    'phoneNumber' => $cPhoneNumber,
+    'phoneNumber' => $phoneNumber,
     'DDD' => $ddd[1]
 ]);
 
@@ -53,13 +52,15 @@ if ($cPhoneAction != 1) {
     die;
 }
 
-$cPhoneData = $cPhone->find('phoneNumber', $cPhoneNumber);
+$cPhoneData = $cPhone->find('phoneNumber', $phoneNumber);
 
 $cCity = new City;
 
 $cCityData = $cCity->find('city', $city);
 
-if ($cCityData != null) {
+
+
+if (empty($cCityData['ID'])) {
     $cPhone->delete('ID', $cPhoneData['ID']);
     echo '<script> 
     alert("Incapaz de efetuar o cadastro!";
@@ -70,12 +71,12 @@ if ($cCityData != null) {
 
 $cAdress = new Adress;
 
-$cAdressAction = $cAdress->insert([
+var_dump($cAdressAction = $cAdress->insert([
     'CEP' => $cep,
-    'city' => $city['ID'],
+    'city' => $cCityData['ID'],
     'district' => $district,
     'street' => $street
-]);
+]));
 
 if ($cAdressAction != 1) {
     $cPhone->delete('ID', $cPhoneData['ID']);
@@ -96,7 +97,7 @@ $cUserAction = $cUser->insert([
     'userEmail' => $email,
     'userPassword' => $password,
     'userPhone' => $cPhoneData['ID'],
-    'userPhoto' => null,
+    'userPhoto' => '1',
     'userAdress' => $cAdressData['ID'],
     'userAdressNumber' => $number
 ]);
@@ -122,8 +123,8 @@ $cInstitutionAction = $cInstitution->insert([
     'directorCPF' => $directorCPF,
     'instagram' => $instagram,
     'facebook' => $facebook,
-    'description' => null,
-    'state' => 'waitings'
+    'description' => null,  
+    'state' => 'waiting'
 ]);
 
 if ($cUserAction != 1) {
