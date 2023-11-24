@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 @font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
+    
     font-family: "Sniglet";
     src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
 }
@@ -25,6 +28,7 @@ body {
 
     margin: 0;
 }
+/*header link color*/
 #color{
     color: #fff;
 }
@@ -34,20 +38,26 @@ body {
     
     
 }
+/*final header*/
 
+/* area de conteudo */
 #content{
     margin-top: 20px;
    display: flex;
    flex-direction: column;
    align-items: center;
 }
-.filterImage{
-   width: 25px;
-    margin-top: 4px;
-    margin-left: 5px;
-    margin-right: 10px;
 
-}
+/*final*/
+
+/*Pesquisa e filtro*/
+.filterImage{
+    width: 25px;
+     margin-top: 4px;
+     margin-left: 5px;
+     margin-right: 10px;
+ 
+ }
 
 #search-bar{
     border: 1px solid #00b8a9;
@@ -69,21 +79,7 @@ body {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-.institutionArea{
-    display: flex;
-    flex-direction: row ;
-    border-radius:5px;
-    margin-top: 10px;
-    border: 1px solid #00b8a9; 
-}
-#title-Page{
-   
-    font-family: Sniglet;
-    margin-top: 60px;
-    
-    
 
-}
 #search-input{
     outline: none;
     font-family: Sniglet;
@@ -97,14 +93,50 @@ body {
     position: absolute;
     right: 5px;
 }
+/*final pesquisa*/
+.intitution-images-area{
+    background-color: rgb(255, 255, 255);
+    height: 38vh;
+    width: 38vw;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../img/imagem_teste.jpg");
 
+}
+.institutionArea{
+    display: flex;
+    flex-direction: row ;
+    border-radius:5px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+   
+   align-items: center;
+   justify-content: center;
+   
+   
+}
+#title-Page{
+   text-decoration: underline;
+    font-family: Sniglet;
+    font-size: 30px;
+    margin-top: 60px;
+    
+    
+
+}
+
+.intitution-info{
+    display: flex;
+    flex-direction: row;
+    height: 18vh;
+}
 .institutionBox{ 
     display: flex;
-    background-color: white;
-    flex-direction: row;   
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;   
     margin: 30px;
     width: 40vw;
-    height:20vh;
+    height:60vh;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12);
     align-items: center;
     border-radius: 15px;
@@ -112,6 +144,7 @@ body {
 }
 
 .institutionBox img {
+    width: 75px;
     max-width: 100px;
     max-height: 100px;
     margin-left: 15px;
@@ -124,6 +157,7 @@ body {
 
 .institutionInfo{
     max-width: 70%;
+    height: ;
 }
 
 .institutionBox h2{
@@ -137,11 +171,12 @@ body {
     
 }
 .arrowImage{
+    
     width: 35px;
 }
 
 
-
+/*final area de'  */
 
 /*modal*/
 .modal-container{
