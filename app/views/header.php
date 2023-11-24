@@ -28,10 +28,11 @@ if (session_status() == PHP_SESSION_NONE) {
                 <section id="brandImg">
                     <a href="/">
                         <img src="app/style/img/Brand.png" width="60px">
+
+                        <section id="color">
+                            <p id="brandText" class="d-inline ml-3 ">Solaria</p>
+                        </section>
                     </a>
-                    <section id="color">
-                        <p id="brandText" class="d-inline ml-3 ">Solaria</p>
-                    </section>
                 </section>
 
                 <button class="navbar-toggler" data-togle="collapse" data-target="#nav-pricipal">
@@ -70,9 +71,15 @@ if (session_status() == PHP_SESSION_NONE) {
                                 echo ('
                                         <a href="#" id="accountIcon"class="fa-solid fa-user-group fa-xl nav-link  mt-2" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#db628d "></a>
 
-                                        <section id="headerMenu"class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" href="/infoUser">Conta</a>
-                                            <a class="dropdown-item" href="/chat">Chat</a>
+                                        <section id="headerMenu"class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">');
+                                            if(!isset($_SESSION['institution'])) {
+                                                echo('<a class="dropdown-item" href="/infoUser">Conta</a>');
+                                            } else if(isset($_SESSION['institution'])) {
+                                                echo('<a class="dropdown-item" href="/infoInstituicoes">Conta</a>');
+                                            }
+                                        
+
+                                            echo('<a class="dropdown-item" href="/chat">Chat</a>
                                             <a class="dropdown-item" href="../app/views/logout.php">Sair</a>
                                 
                                         </section>  
