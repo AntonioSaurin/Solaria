@@ -154,3 +154,11 @@ select:focus {
     color:  #4b001a;
     text-decoration: none;
 }
+
+#pt1 {
+    display: inherit;
+}
+
+#pt2 {
+    display: none;
+}

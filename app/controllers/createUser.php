@@ -54,6 +54,10 @@ $userAction = $user->insert([
     'userAdressNumber' => '41'
 ]);
 
+$userAction;
+
+die;
+
 if($userAction != true){
     echo '<script> 
     alert("Incapaz de efetuar o cadastro!";

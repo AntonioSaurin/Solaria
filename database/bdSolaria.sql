@@ -46,7 +46,7 @@ create table photo(
     primary key (ID)
 );
 
-insert into `photo` (ID, photoName, photoFormat, photeSize, photoPath, photoType) values ('1', 'dafaultImage.png', 'png', '4352', 'app/uploads/defaultImage.png', 'profile');
+insert into `photo` (ID, photoName, photoFormat, photoSize, photoPath, photoType) values ('1', 'dafaultImage.png', 'png', '4352', 'app/uploads/defaultImage.png', 'profile');
 
 create table userAccount(
     ID int auto_increment,

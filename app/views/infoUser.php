@@ -52,7 +52,7 @@
                         <label class="infoForm"> Confirmar Senha: </label>
                         <input type="password" class="inputEdit"> </input>
 
-                        <button id="btnExcluir" onclick="acao()"> Excluir Conta </button>
+                        <button id="btnExcluir" onclick="action()"> Excluir Conta </button>
 
                     </section>
                 </form>
@@ -112,7 +112,8 @@
     <script>
         $("#phone").mask("+55 (00) 00000-0000");
 
-        function acao(){
+        function action(){
+            event.preventDefault()
             let modal = document.querySelector('.modal')
 
             modal.style.display = 'block    '
@@ -126,7 +127,7 @@
                 <section class="modalShow">
                 <h3 class="h3modal"> Deseja excluir a sua conta? </h3>
 
-                <button class="btnmodal" id="Excluir"> Excluir </button>
+                <button class="btnmodal" id="Excluir" > Excluir </button>
                 <button class="btncancelmodal" id="Cancelar"> Cancelar </button>
                 
                 </section>

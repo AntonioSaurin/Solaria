@@ -32,4 +32,4 @@ if($user == false) {
 
 (new Photo)->delete('id', $user['userPhoto']);
 
-$user->delete('id', $user['ID']);
+(new User)->delete('id', $user['ID']);

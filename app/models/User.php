@@ -36,4 +36,37 @@ class User extends Model
 
         return $list->fetch();
     }
+
+    public function login($email, $password)
+    {
+        $data = $this->find('userEmail', $email);
+
+        if($data == false) {
+            return false;
+        }
+
+        if (!password_verify($password, $data['userPassword'])) {
+            return false;
+        }
+
+        $institution = (new Institution)->find('accountID', $data['ID']);
+
+        if ($institution != false) {
+            $_SESSION['institution'] = $institution['ID'];
+        }
+
+        $admin = (new Administrator)->find('userAccount', $data['ID']);
+
+        if ($admin != false) {
+            $_SESSION['admin'] = $admin['ID'];
+        }
+
+        $_SESSION['id'] = $data['ID'];
+        $_SESSION['name'] = $data['userName'];
+        $_SESSION['email'] = $data['userEmail'];
+        $_SESSION['photo'] = $data['userPhoto'];
+        $_SESSION['phone'] = $data['userPhone'];
+
+        return true;
+    }
 }
