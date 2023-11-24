@@ -22,7 +22,7 @@
                     <i class="fa-solid fa-magnifying-glass fa-lg" id="search-icon" style="color: #ffff;"></i>   
                 </section>
             </section>
-            <h1 id="title-Page">Selecione uma Instituicao</h1>
+            
             <!--Inicio cards intituicoes-->
             <section class="institutionArea">
                 
@@ -32,13 +32,12 @@
                         <section class="institutionInfo">
                             <h2>Instituição Adotar</h2>
                             <p><b>Necessita:</b> Brinquedos, Roupas e Dinheiro.</p>
-                            <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+                            <!--<a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>-->
                         </section>
                         
                     </section>   
-                    <section id="intitution-images-area">
-                        aaaaaaa
-
+                    <section class="intitution-images-area">
+                        
                     </section> 
                 </section>
 

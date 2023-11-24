@@ -94,7 +94,15 @@ body {
     right: 5px;
 }
 /*final pesquisa*/
+.intitution-images-area{
+    background-color: rgb(255, 255, 255);
+    height: 38vh;
+    width: 38vw;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../img/imagem_teste.jpg");
 
+}
 .institutionArea{
     display: flex;
     flex-direction: row ;
@@ -120,14 +128,15 @@ body {
 .intitution-info{
     display: flex;
     flex-direction: row;
+    height: 18vh;
 }
 .institutionBox{ 
     display: flex;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     flex-direction: column;   
     margin: 30px;
     width: 40vw;
-    height:50vh;
+    height:60vh;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12);
     align-items: center;
     border-radius: 15px;
@@ -135,6 +144,7 @@ body {
 }
 
 .institutionBox img {
+    width: 75px;
     max-width: 100px;
     max-height: 100px;
     margin-left: 15px;
@@ -147,6 +157,7 @@ body {
 
 .institutionInfo{
     max-width: 70%;
+    height: ;
 }
 
 .institutionBox h2{
