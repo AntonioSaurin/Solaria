@@ -2,6 +2,7 @@
 require_once 'vendor/autoload.php';
 
 use app\models\Adress;
+use app\models\City;
 use app\models\Donator;
 use app\models\Phone;
 use app\models\User;
@@ -21,6 +22,13 @@ $userPhone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 $password = password_hash(filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING), PASSWORD_BCRYPT);
 $conPassword = filter_input(INPUT_POST, 'conPassword', FILTER_SANITIZE_STRING);
+
+$cep = filter_input(INPUT_POST, 'CEP', FILTER_SANITIZE_STRING);
+$state = filter_input(INPUT_POST, 'state', FILTER_SANITIZE_STRING);
+$city = filter_input(INPUT_POST, 'city', FILTER_SANITIZE_STRING);
+$district = filter_input(INPUT_POST, 'district', FILTER_SANITIZE_STRING);
+$number = filter_input(INPUT_POST, 'number', FILTER_SANITIZE_STRING);
+$street = filter_input(INPUT_POST, 'street', FILTER_SANITIZE_STRING);
 
 $phone = new Phone;
 
@@ -42,6 +50,40 @@ if($phoneAction != 1){
 
 $phoneData = $phone->find('phoneNumber', $phoneNumber);
 
+$cCity = new City;
+
+$cCityData = $cCity->find('city', $city);
+
+if (empty($cCityData['ID'])) {
+    $cPhone->delete('ID', $cPhoneData['ID']);
+    echo '<script> 
+    alert("Incapaz de efetuar o cadastro!";
+    window.location.href = "/cadastro"; 
+    </script>';
+    die;
+}
+
+$cAdress = new Adress;
+
+$cAdressAction = $cAdress->insert([
+    'CEP' => $cep,
+    'city' => $cCityData['ID'],
+    'district' => $district,
+    'street' => $street
+]);
+
+if ($cAdressAction != 1) {
+    $cPhone->delete('ID', $cPhoneData['ID']);
+    echo '<script> 
+    alert("Incapaz de efetuar o cadastro!";
+    window.location.href = "/cadastro"; 
+    </script>';
+    die;
+}
+;
+
+$cAdressData = $cAdress->findTwoFields('CEP', 'street', $CEP, $street);
+
 $user = new User;
 
 $userAction = $user->insert([
@@ -50,13 +92,9 @@ $userAction = $user->insert([
     'userPassword' => $password,
     'userPhone' => $phoneData['ID'],
     'userPhoto' => '1',
-    'userAdress' => '1',
-    'userAdressNumber' => '41'
+    'userAdress' => $cAdressData['ID'],
+    'userAdressNumber' => $number
 ]);
-
-$userAction;
-
-die;
 
 if($userAction != true){
     echo '<script> 
