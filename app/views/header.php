@@ -78,7 +78,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                                 echo('<a class="dropdown-item" href="/infoInstituicoes">Conta</a>');
                                             }
                                         
-
+                                            
                                             echo('<a class="dropdown-item" href="/chat">Chat</a>
                                             <a class="dropdown-item" href="../app/views/logout.php">Sair</a>
                                 
@@ -87,7 +87,6 @@ if (session_status() == PHP_SESSION_NONE) {
                             } else if (!isset($_SESSION['id'])) {
                                 echo ('
                                         <a href="\login" class="nav-link" id="color">Login</a>
-                                        
                                     ');
                             }
 
