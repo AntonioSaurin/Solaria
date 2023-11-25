@@ -1,0 +1,36 @@
+------------------CADASTROS------------------
+
+DOADOR:
+
+Nome completo: Lucas Rossi
+Email: luquinhasrossi@gmail.com
+Data de Nascimento: 11/12/1991
+CPF: 628.719.748-02
+Telefone: (19) 99957-3463
+Senha: olucas123@#
+
+INSTITUIÇÃO:
+ Part 1:
+  Nome da instituição: Instituição Adotar
+  CNPJ: 45.302.593/0001-89
+  Responsável: Beatriz Mendes
+  Email: instituicao.adotar@gmail.com
+  CPF do Responsável: 056.463.818-86
+  Telefone: (19) 99358-5310
+
+ Part 2:
+  CEP: 04538-133
+  Bairro: Itaim Bibi
+  Estado: SP
+  Número: 3477
+  Cidade: São Paulo
+  Rua: Av. Brig. Faria Lima
+
+ Part 3:
+  Senha: 1nst1tu1c40_4d0t4r#@812
+
+------------------LOGIN------------------
+
+ADMIN:
+ Email:
+ Senha:
