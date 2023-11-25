@@ -58,8 +58,6 @@ $cCity = new City;
 
 $cCityData = $cCity->find('city', $city);
 
-
-
 if (empty($cCityData['ID'])) {
     $cPhone->delete('ID', $cPhoneData['ID']);
     echo '<script> 
@@ -71,12 +69,12 @@ if (empty($cCityData['ID'])) {
 
 $cAdress = new Adress;
 
-var_dump($cAdressAction = $cAdress->insert([
+$cAdressAction = $cAdress->insert([
     'CEP' => $cep,
     'city' => $cCityData['ID'],
     'district' => $district,
     'street' => $street
-]));
+]);
 
 if ($cAdressAction != 1) {
     $cPhone->delete('ID', $cPhoneData['ID']);
