@@ -31,7 +31,7 @@
         <nav class="simple-nav">
             <a href="#" class="button">Posts</a>
             <a href="#" class="button">Chat</a>
-            <a href="#" class="button" class="donateButton">Doar</a>
+            <a href="#" class="button donateButton" >Doar</a>
         </nav>
 
         <section class="posts">
