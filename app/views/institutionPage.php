@@ -33,7 +33,7 @@
                 </section>
                 <section class="institutionInfo">
                 <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
-                    <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+                    <a href="/perfilInstituicoes" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
                     <h2 class="institution-Name">Instituição Adotar</h2>
                     <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
                 </section>
@@ -49,7 +49,7 @@
                     <img src="app/style/img/imagem_slide3.jpg" alt="Instituição Coração">
                 </section>
                 <section class="institutionInfo">
-                    <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+                    <a href="/perfilInstituicoes" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
                     <h2 class="institution-Name">Instituição Adotar</h2>
                     <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
                     <!--<a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>-->
@@ -61,12 +61,12 @@
                 </section>
             </section>
 
-            <section class="institutionBox" id="card-institution1">
+            <section class="institutionBox" id="card-institution3">
                 <section class="intitution-images-area">
                     <img src="app/style/img/imagem_slide1.jpg" alt="Instituição Coração">
                 </section>
                 <section class="institutionInfo">
-                    <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+                    <a href="/perfilInstituicoes" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
                     <h2 class="institution-Name">Instituição Adotar</h2>
                     <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
                     <!--<a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>-->
@@ -81,81 +81,35 @@
 
         </section>
         <!--final cards intituicoes-->
-        Mais instituicoes >
+       
+        <button onclick="toggle()" type="button" class="btn-OpenAll" id="btn-OpenAll"> Mais instituicoes ></button>
+        <button onclick="toggle()" type="button" class="hide" id="btn-hideAll"> mostrar menos <</button>
+         
+        <section class="all-institution" id="show-All-Institution">
+            
+             <img src="app/style/img/imagem_slide1.jpg" alt="Instituição Coração">
+            
+        </section>
     </section>
     <!--final area de conteudo-->
 
-    <!--inicio modal estrutura-->
-    <section id="modal" class="modal-container">
-        <section class="modal1">
-            <section id="modalTop">
-                <i id="btnExitIncon" class="btnExit fa-solid fa-rectangle-xmark   fa-xl" style="color: #c7c7c7;"></i>
-                <h1>Nome da Instituição<h1>
-            </section>
-
-            <section id="modalContent">
-
-                <section id="institutionAreaModal">
-                    <img class="modalImageInstitution" src="app/style/img/imgInstitutionAdotar.png" alt="Instituição Adotar">
-                    Descrição da Instituição
-                </section>
-
-                <section id="donationArea">
-                    <form>
-                        <section id="donationType">
-                            <h4>O que deseja doar?</h4><br>
-                            <input type="radio" id="dinheiro" name="donationType" value="dinheiro">Dinheiro</input>
-                            <input type="radio" id="roupa" name="donationType" value="roupa">Roupas</input>
-                            <input type="radio" id="brinquedo" name="donationType" value="brinquedo">Brinquedos</input>
-                            <input type="radio" id="alimento" name="donationType" value="alimento">Alimentos</input>
-                        </section>
-                        <section id="donationAmount">
-                            <input type="radio" id="qnt1" name="donationAmount" value="2">R$2,00</input>
-                            <input type="radio" id="qnt2" name="donationAmount" value="10">R$10,00</input>
-                            <input type="radio" id="qnt3" name="donationAmount" value="25">R$25,00</input>
-                            <input type="radio" id="qnt4" name="donationAmount" value="50">R$50,00</input>
-
-                        </section>
-                        <section id="custimizeAmount">
-                            <h4>Quantia personalizada</h4>
-                            <input type="number" name="dntCustimizeAmount" placeholder="R$100" min="0" step="0.01">
-
-                        </section>
-
-                        <input id="btnNext" type="submit" name="avancar" value="Prosseguir"></input>
-
-
-                    </form>
-
-                </section>
-            </section>
-        </section>
-
-    </section>
-    <!--final modal estrutura-->
-    <!--inicio logica modal JS-->
     <script>
-        //abrir modal 
-        function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.classList.add('mostrar');
+        function toggle(){
+            const openAll = document.querySelector('#btn-OpenAll');
+            const hideAll = document.querySelector('#btn-hideAll');
+            openAll.classList.toggle('hide');
+            hideAll.classList.toggle('hide');
         }
-        const btnOpen = document.querySelectorAll('.donateButton');
-        for (let index = 0; index < btnOpen.length; index++) {
-            btnOpen[index].addEventListener('click', () => openModal('modal'));
+        function showAll(pageId){
+           const showAll = document.getElementById(pageId);
+           showAll.classList.add('mostrar');
         }
-        //fechar modal 
-        function closeModal(idModal) {
-            const modalClose = document.getElementById(idModal);
-            modalClose.classList.remove('mostrar');
-        }
-        const btnClose = document.querySelectorAll('.btnExit');
-        for (let index = 0; index < btnClose.length; index++) {
-            btnClose[index].addEventListener('click', () => closeModal('modal'));
-
-        }
+        const btnOpenAll = document.querySelector('.btn-OpenAll');
+        btnOpenAll.addEventListener('click', () => showAll('show-All-Institution'));
+        
     </script>
-    <!--final logica modal-->
+
+   
 </body>
 
 </html>

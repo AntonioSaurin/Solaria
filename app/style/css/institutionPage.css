@@ -12,7 +12,7 @@
 }
 
 html{
-    overflow: hidden;
+   
 
     
     width: 100%;
@@ -197,8 +197,20 @@ body {
 
 
 /*final area de'  */
+/*area more institutions*/
 
-/*modal*/
+
+.all-institution{
+    display: none;
+}
+.all-institution.mostrar{
+    display: flex;
+   
+}
+.hide{
+    visibility: hidden;
+}
+/*modal
 .modal-container{
     width: 100vw;
     height: 100vh;
@@ -212,7 +224,7 @@ body {
     align-items: center;
 
 
-    /* From https://css.glass */
+     From https://css.glass 
     background: rgba(255, 255, 255, 0.32);
     
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -265,7 +277,7 @@ body {
     justify-content: space-between; 
     margin-right: 200px;
     margin-left: 200px;
-    /* align-items: center; */
+     align-items: center; 
     justify-content: center;
 }
 #custimizeAmount h4{
@@ -334,7 +346,7 @@ h4{
     animation: modal .4s;
 }
 
-/*end modal*/
+end modal*/
 
 
 
