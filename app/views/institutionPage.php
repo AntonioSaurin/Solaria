@@ -29,45 +29,27 @@
         <section class="institutionArea">
             <section class="institutionBox" id="card-institution1">
                 <section class="intitution-images-area">
-                    <div class="slides">
-                        <!--Radio butoes-->
-                        <input type="radio" name="radio-btn" id="radio 1">
-                        <input type="radio" name="radio-btn" id="radio 2">
-                        <input type="radio" name="radio-btn" id="radio 3">
-                        <input type="radio" name="radio-btn" id="radio 4">
-                        <!--fim radio-->
-
-                        <!--Slide Images-->
-                        <div class="slide first">
-                            <img src="../app/style/img/imagem_teste.jpg" alt="imagem teste">
-                        </div>
-                        <div class="slide">
-                            <img src="../app/style/img/imagem_slide1.jpg" alt="imagem 1">
-                        </div>
-                        <div class="slide">
-                            <img src="../app/style/img/imagem_slide2.jpg" alt="imagem 1">
-                        </div>
-                        <div class="slide">
-                            <img src="../app/style/img/imagem_slide3.jpg" alt="imagem 1">
-                        </div>
-                        <!--fim slide-->
-
-                        <!--navigatio auto-->
-                        <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                            <div class="auto-btn4"></div>
-                        </div>
-                    </div>
-                    <div class="manual-navigation">
-                        <label for="radio 1" class="manual-btn"></label>
-                        <label for="radio 2" class="manual-btn"></label>
-                        <label for="radio 3" class="manual-btn"></label>
-                        <label for="radio 4" class="manual-btn"></label>
-                    </div>
+                    <img src="app/style/img/imagem_slide2.jpg" alt="Instituição Coração">
                 </section>
                 <section class="institutionInfo">
+                <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+                    <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+                    <h2 class="institution-Name">Instituição Adotar</h2>
+                    <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
+                </section>
+
+                <section class="cardFooter">
+                    <i class="fa-solid fa-location-crosshairs fa-lg locatioIcon" style="color: #ffffff;"></i>
+                    <p>Santa Isabel-Sp</p>
+                </section>
+            </section>
+
+            <section class="institutionBox" id="card-institution2">
+                <section class="intitution-images-area">
+                    <img src="app/style/img/imagem_slide3.jpg" alt="Instituição Coração">
+                </section>
+                <section class="institutionInfo">
+                    <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
                     <h2 class="institution-Name">Instituição Adotar</h2>
                     <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
                     <!--<a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>-->
@@ -79,18 +61,27 @@
                 </section>
             </section>
 
-            <section class="institutionBox" id="card-institution2">
-                <img src="app/style/img/imgInstitutionCoracao.png" alt="Instituição Coração">
-                <section class="institutionInfo">
-                    <h2>Instituição Coração</h2>
-                    <p><b>Necessita:</b> Brinquedos e Roupas.</p>
+            <section class="institutionBox" id="card-institution1">
+                <section class="intitution-images-area">
+                    <img src="app/style/img/imagem_slide1.jpg" alt="Instituição Coração">
                 </section>
-                <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+                <section class="institutionInfo">
+                    <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+                    <h2 class="institution-Name">Instituição Adotar</h2>
+                    <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
+                    <!--<a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>-->
+                </section>
+
+                <section class="cardFooter">
+                    <i class="fa-solid fa-location-crosshairs fa-lg locatioIcon" style="color: #ffffff;"></i>
+                    <p>Santa Isabel-Sp</p>
+                </section>
             </section>
 
 
         </section>
         <!--final cards intituicoes-->
+        Mais instituicoes >
     </section>
     <!--final area de conteudo-->
 
