@@ -79,14 +79,14 @@
         </section>
         <!--final cards intituicoes-->
         <!--inicio pagina mais insituicoes-->
-        <div class="btn-more-institution">
+        <section class="btn-more-institution">
             <a href="#show-All-Institution"><button onclick="toggle()" type="button" class="btn-OpenAll" id="btn-OpenAll"> Mais instituicoes ></button></a>
             <a href="#header"> <button onclick="toggle()" type="button" class="hide btn-hideAll" id="btn-hideAll"> Ocultar Institui. < </button></a>
-        </div>
+        </section>
 
         <section class="all-institution" id="show-All-Institution">
         
-            <div class="institutionArea" id="allInsitutionArea">
+            <section class="institutionArea" id="allInsitutionArea">
                 <section class="institutionBox" id="card-institution3">
                     <section class="intitution-images-area">
                         <img src="app/style/img/imagem_slide1.jpg" alt="img insti 3">
@@ -101,7 +101,7 @@
                         <p>Santa Isabel-Sp</p>
                     </section>
                 </section>
-            </div>  
+            </section>  
         </section>
     </section>
     <!--final area de conteudo-->
