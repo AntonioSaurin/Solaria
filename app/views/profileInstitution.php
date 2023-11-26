@@ -61,22 +61,29 @@
             </section>
         </section>
 
-        <section id="modal" class="modal-container">
+    <section id="modal" class="modal-container">
         <section class="modal1">
             <section id="modalTop"> 
-                <i id="btnExitIncon"class="btnExit fa-solid fa-rectangle-xmark   fa-xl" style="color: #c7c7c7;"></i>
-                <h1>Nome da Instituição<h1>
+                <i id="btnExitIncon" class="btnExit fa-solid fa-rectangle-xmark  fa-xl" style="color: #fffff;"></i>
+                <h2>Nome da Instituição<h2>
             </section>
             
             <section id="modalContent">
                 
-                <section id="institutionAreaModal">
-                    <img class="modalImageInstitution" src="app/style/img/imgInstitutionAdotar.png" alt="Instituição Adotar">
-                    Descrição da Instituição
-                </section>
-
                 <section id="donationArea">
-                    <form>
+                    <section id="title">
+                        <h3>Doe com</h3>
+                        <img src="app/style/img/logoPix.png">
+                    </section>
+                    <section id="qrCode">
+                        
+                    </section>
+                    <section id="guidelines">
+                            <p>1. Acesse seu banco</p>
+                            <p>2. Selecione pagar com QR CODE</p>
+                            <p>3. Aponte a câmera para o código.</p>
+                    </section>
+                    <!-- <form>
                         <section id="donationType">
                             <h4>O que deseja doar?</h4><br>
                             <input type="radio" id="dinheiro" name="donationType" value="dinheiro">Dinheiro</input>
@@ -98,14 +105,12 @@
                         </section>
                         
                         <input id="btnNext"type="submit" name="avancar" value="Prosseguir"></input>
-                        
-                        
-                    </form>    
-
+                    </form>     -->
                 </section>
+               
             </section>   
         </section>
-
+    
         <script>
             function toggleOptions(button) {
                 var postOptions = button.nextElementSibling;
