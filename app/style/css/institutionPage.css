@@ -10,24 +10,33 @@
     font-family: "Sniglet";
     src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
 }
-
-html{
+#footer{
    
-
-    
+}
+html::-webkit-scrollbar{
+    width: 0.1em;
+}
+html{
+  
+   transition: 3s;
+    scroll-behavior: smooth;
     width: 100%;
 }
 header{
+    
     background-color:#00b8a9 ;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 body {
+    
+    
     font-family: Arial, sans-serif;
-
     margin: 0;
 }
+
+
 /*header link color*/
 #color{
     color: #fff;
@@ -41,6 +50,7 @@ body {
 /*final header*/
 
 /* area de conteudo */
+
 #content{
     margin-top: 20px;
    display: flex;
@@ -51,14 +61,15 @@ body {
 /*final*/
 
 /*Pesquisa e filtro*/
-.filterImage{
-    width: 25px;
-     margin-top: 4px;
-     margin-left: 5px;
-     margin-right: 10px;
- 
- }
 
+.filterImage{
+    position: absolute;
+    width: 2%;
+    right: 32.5%;
+    top:110px;
+   
+ }
+ 
 #search-bar{
     border: 1px solid #00b8a9;
     background-color: rgba(255, 255, 255, 0.582);
@@ -81,6 +92,8 @@ body {
 }
 
 #search-input{
+   
+    text-align: center;
     outline: none;
     font-family: Sniglet;
     height:5vh ;
@@ -88,7 +101,6 @@ body {
     width: 26.05vw;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-
     border: 1px solid #00000000;
     position: absolute;
     right: 5px;
@@ -112,10 +124,10 @@ body {
 
 }
 .institutionArea{
+    border-top: 1px solid #00b8a9;
     padding-bottom: 25px;
     display: flex;
     flex-direction: row ;
-    border-radius:5px;
     margin-top: 30px;
     flex-wrap: wrap;
    align-items: center;
@@ -198,13 +210,62 @@ body {
 
 /*final area de'  */
 /*area more institutions*/
+ #allInsitutionArea{
+    
+    border-top: 1px solid #e3286a;
+    margin: 0px;
+    padding: 0px;
+}
 
+.btn-hideAll{
+    position: absolute;
+    top: 0%;
+    right:75px;
+    width:130px;
 
+}
+.btn-more-institution button:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.btn-more-institution button:hover{
+    box-shadow: 0 4px 15px #e328696e;
+    border-color:#e32869d7;
+    background-color: #e32869d7;
+    color: white;
+    transform: translateY(-10%);
+}
+
+.btn-more-institution button{
+
+    transition: all 600ms ;
+    font-family: Sniglet;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid #e3286a;
+    color: #e3286a;
+}
+.btn-more-institution{
+   
+    width: 89%;
+    margin-bottom: 5px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    padding-bottom: 25px;
+    justify-content: center;
+}
 .all-institution{
     display: none;
 }
 .all-institution.mostrar{
+    border-radius: 10px;
+    width: 97%;
+   
     display: flex;
+    flex-direction: column;
    
 }
 .hide{
@@ -218,11 +279,10 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: 2000;
+    z-index: 2000
     display: none;
     justify-content: center;
     align-items: center;
-
 
      From https://css.glass 
     background: rgba(255, 255, 255, 0.32);
