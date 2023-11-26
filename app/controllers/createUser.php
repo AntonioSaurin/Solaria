@@ -30,13 +30,13 @@ $district = filter_input(INPUT_POST, 'district', FILTER_SANITIZE_STRING);
 $number = filter_input(INPUT_POST, 'number', FILTER_SANITIZE_STRING);
 $street = filter_input(INPUT_POST, 'street', FILTER_SANITIZE_STRING);
 
-$phone = new Phone;
+$cPhone = new Phone;
 
 $phoneExplode = explode(')', $userPhone);
 $phoneNumber = trim($phoneExplode[1]);
 $ddd = explode('(', $phoneExplode[0]);
 
-$phoneAction = $phone->insert([
+$phoneAction = $cPhone->insert([
     'phoneNumber' => $phoneNumber,
     'DDD' => $ddd[1]
 ]);
@@ -48,7 +48,7 @@ if($phoneAction != 1){
     </script>';
 }
 
-$phoneData = $phone->find('phoneNumber', $phoneNumber);
+$cPhoneData = $cPhone->find('phoneNumber', $phoneNumber);
 
 $cCity = new City;
 
