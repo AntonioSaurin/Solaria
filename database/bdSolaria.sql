@@ -55,7 +55,7 @@ create table userAccount(
     userEmail varchar(100) unique,
     userPassword varchar(255),
     userPhone int,
-    userPhoto int unique,
+    userPhoto int,
     userAdress int,
     userAdressNumber varchar(5),    
     userStatus varchar(255) NOT NULL default 'Offline',

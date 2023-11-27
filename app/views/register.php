@@ -57,18 +57,10 @@
                         <span name="next" class="nextButton" id="text" onclick="changeVisibleAdress()">Próximo</span>
                         <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
                     </span>
-<<<<<<< HEAD
-=======
-                
->>>>>>> 48d936f6c4e1d851162d5122187702e7160dc27b
             </section>
 
             <section class="signupBox form" id="pt2">
                 <h2>Cadastrar Endereço</h2>
-<<<<<<< HEAD
-=======
-                
->>>>>>> 48d936f6c4e1d851162d5122187702e7160dc27b
                     <span class="table1">
                         <label>CEP:</label>
                         <section class="input-group">
