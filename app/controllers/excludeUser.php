@@ -30,10 +30,10 @@ if ($user == false) {
 
 (new User)->delete('id', $user['ID']);
 
-if ($user['userPhoto'] != '1') {
+if ($user['userPhoto'] != 1) {
+    (new Photo)->delete('id', $user['userPhoto']);
 }
 
-(new Photo)->delete('id', $user['userPhoto']);
 
 (new Phone)->delete('id', $user['userPhone']);
 
