@@ -3,7 +3,7 @@
 namespace app\models;
 
 class Message extends Model {
-    protected $table = "message";
+    protected $table = "messages";
 
     public function delUserMessage($id){
         $credentials = require 'app\config\database.php';

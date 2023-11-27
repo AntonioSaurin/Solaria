@@ -9,12 +9,20 @@
     <script src="app/javaScript/jmodal.js"></script>
     <link href="app/style/css/infoUser.css" rel="stylesheet">
     <title> Conta </title>
+    <script>
+        function excluir() {
+            window.location.href = "/excluir-doador"; 
+        }
+    </script>
 </head>
 
 <body>
     <header>
         <?php
+        use app\models\User;
         include_once("header.php");
+
+        $user = (new User)->fullFind($_SESSION['id']);
         ?>
     </header>
 
@@ -25,7 +33,7 @@
                     <section class="modalShow">
                         <h3 class="h3modal"> Deseja excluir a sua conta? </h3>
 
-                        <button class="btnmodal" id="Excluir"> Excluir </button>
+                        <button class="btnmodal" id="Excluir" onclick="excluir()"> Excluir </button>
                         <button id="btncancelmodal" class="close"
                             onclick="document.getElementById('myModal').style.display='none'">Cancelar</button>
                         
@@ -41,9 +49,9 @@
             <section class="userImg">
                 <img src="app/style/img/images.jpg" id="userImg">
                 <section class="organInfo">
-                    <h3 id="infoUsername"> André Nascimento </h3>
-                    <label class="basicInfo"> CPF: 287.778.748.62 </label>
-                    <label class="basicInfo"> Data de Nascimento: 05/06/1995 </label>
+                    <h3 id="infoUsername"> <?= $user['userName'] ?> </h3>
+                    <label class="basicInfo"> CPF: <?= $user['CPF'] ?> </label>
+                    <label class="basicInfo"> Data de Nascimento: <?= $user['birthDate'] ?> </label>
                 </section>
             </section>
             <section class="userInfo">
@@ -61,9 +69,9 @@
                 <form name="formEditar" class="formSave">
                     <section class="organForm">
                         <label class="infoForm"> Email: </label>
-                        <input type="text" class="inputEdit"> </input>
+                        <input type="text" class="inputEdit" value="<?= $user['userEmail'] ?>"> </input>
                         <label class="infoForm"> Telefone: </label>
-                        <input type="text" name="phone" id="phone" maxlength="12" class="inputEdit"> </input>
+                        <input type="text" name="phone" id="phone" maxlength="12" class="inputEdit" value="<?=  $user['DDD'].' '.$user['phoneNumber'] ?>"> </input>
                         <label class="infoForm"> Senha: </label>
                         <input type="password" class="inputEdit"> </input>
                         <label class="infoForm"> Confirmar Senha: </label>
@@ -76,9 +84,9 @@
             <form name="formEditar" class="formSave">
                 <section class="organForm">
                     <label class="infoForm"> CEP: </label>
-                    <input type="text" class="inputCEP"> </input>
+                    <input type="text" class="inputCEP" value="<?= $user['CEP'] ?>"> </input>
                     <label class="infoFormState"> Estado: </label>
-                    <select class="signupBox" name="state" id="state">
+                    <select class="signupBox" name="state" id="state" selected="<?= $user['state'] ?>">
                         <option value="AC"> Acre </option>
                         <option value="AL"> Alagoas </option>
                         <option value="AP"> Amapá </option>
@@ -103,18 +111,18 @@
                         <option value="RO"> Rondônia </option>
                         <option value="RR"> Roraima </option>
                         <option value="SC"> Santa Catarina </option>
-                        <option value="SP"> São Paulo </option>
+                        <option value="SP" selected> São Paulo </option>
                         <option value="SE"> Sergipe </option>
                         <option value="TO"> Tocantins </option>
                     </select>
                     <label class="infoCity"> Cidade: </label>
-                    <input type="text" class="inputCity"> </input>
+                    <input type="text" class="inputCity" value="<?= $user['city'] ?>"> </input>
                     <label class="infoForm"> Bairro: </label>
-                    <input type="text" class="inputEdit"> </input>
+                    <input type="text" class="inputEdit" value="<?= $user['district'] ?>"> </input>
                     <label class="infoNum"> Número: </label>
-                    <input type="number" class="inputNum"> </input>
+                    <input type="number" class="inputNum" value="<?= $user['AdressNumber'] ?>"> </input>
                     <label class="infoForm"> Logradouro: </label>
-                    <input type="text" class="inputLogradouro"> </input>
+                    <input type="text" class="inputLogradouro" value="<?= $user['street'] ?>"> </input>
 
                     <input type="submit" value="Salvar" name="Salvar" id="btnSalvar"> </input>
             </form>

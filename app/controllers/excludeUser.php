@@ -9,15 +9,15 @@ use app\models\User;
 
 require_once 'vendor/autoload.php';
 
-(new Logged)->verify();
+$logged = (new Logged)->verify();
 
-if($logged == false) {
+if ($logged == false) {
     header('Location: /login');
 }
 
-$user = (new User)->fullFind($_SESSION['id']);
+$user = (new User)->find('id', $_SESSION['id']);
 
-if($user == false) {
+if ($user == false) {
     echo '<script> alert("Usuario com problemas de cadastro!) </script>"';
     header('Location: /infoUser');
 }
@@ -28,8 +28,13 @@ if($user == false) {
 
 (new Donator)->delete('id', $user['ID']);
 
-(new Phone)->delete('id', $user['userPhone']);
+(new User)->delete('id', $user['ID']);
+
+if ($user['userPhoto'] != '1') {
+}
 
 (new Photo)->delete('id', $user['userPhoto']);
 
-(new User)->delete('id', $user['ID']);
+(new Phone)->delete('id', $user['userPhone']);
+
+header('Location: ../app/views/logout.php');

@@ -9,6 +9,7 @@ class User extends Model
     public function fullFind($id)
     {
         $sql = "SELECT 
+        userAccount.ID as ID,
         userAccount.userName AS userName, 
         userAccount.userEmail AS userEmail,
         donator.birthDate AS birthDate,

@@ -28,5 +28,5 @@ return [
     '/cadastro/efetuarInstituicao' => 'controllers/createInstitution.php',
     '/login/efetuar' => 'controllers/login.php',
     '/usuario/editar' => 'controllers/updateUser.php',
-    '/excluir-doador' => 'controllers/excludeDonator.php'
+    '/excluir-doador' => 'controllers/excludeUser.php'
 ];
