@@ -21,7 +21,7 @@
                 <p>Descrição curta do usuário.</p>
                 <p><strong>Necessidades:</strong> Informações sobre as necessidades</p>
             </section>
-            <img src="app/style/img/imgUsers.png" class="addProfile" onclick="addPhoto(this)">
+            <img src="app/style/img/iconAdd.png" class="addProfile" onclick="addPhoto(this)">
         </section>
 
         <section class="line">

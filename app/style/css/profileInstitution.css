@@ -89,10 +89,12 @@ strong{
 
 .addProfile{
     position: relative;
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
     margin-right: 7em;
     margin-bottom: 7em;
+    border: 3px solid;
+    border-radius: 0.5em;
 }
 
 .line {

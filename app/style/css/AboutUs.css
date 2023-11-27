@@ -15,7 +15,6 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #e25285;
 }
 
 header{
@@ -27,165 +26,84 @@ header{
   position: fixed;
   
 } 
-#color{
-  color: #fff;
-}
-#color:hover {
-  text-decoration: overline;
-  color: rgba(255, 255, 255, 0.459)
-  
-  
-}
 
-html::-webkit-scrollbar{
-  width: 0.1em;
-}
-
-.blog_header{
-  position: relative;
-  text-align: center;
-}
-
-.blog_title {
-  font-family: 'REM';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: #FFF;
-}
-
-.h_aboutUs{
+#composer{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.h1_aboutUs{
-  display: flex;
-  margin-top: 10%;
-  position: absolute;
-  justify-content: center;
-  font-family: "Sniglet", sans-serif;
-  color: #fff;
-  text-shadow: black 0.1em 0.1em 0.2em;
-  font-size: 30px;
-}
-
-.h2_aboutUS{
-  display: flex;
-  margin-top: 12.3%;
-  position: absolute;
-  justify-content: center;
-  color: white;
-  font-family: "Sniglet", sans-serif;
-  text-shadow: black 0.1em 0.1em 0.2em;
-  font-size: 17px;
-}
-
-.h3_aboutUs{
-  display: flex;
-  justify-content: center;
-  margin-top: -1%;
-  margin-bottom: 1%;
-  font-family: "Sniglet", sans-serif;
-  font-size: 200%;
-  letter-spacing: 3px;
-}
-
-.position_img_aboutUs{
-  display: flex;
-  justify-content: center;
-  position: absolute;
+#headerAbout{
   width: 100%;
-  height: 110%;
-  object-fit: cover;
+  display: grid;
+  height: 29em;
+  grid-template-columns: repeat(2,0fr);
+  background-color: #e3286a;
+  z-index: -1;
 }
 
-.blog_content{
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin: 12px auto;
-  margin-top: 20%;
-  padding-bottom: 12%;
-  background-color: #fff; 
-}
-
-.blog_content_p{
-  justify-content: center;
-  text-align: justify;
-  max-width: 40%;
-  font-size: 18px;
-  padding-right: 15px;
-  margin-top: 5%;
-}
-
-.blog_content_img{
-  display: flex;
-  justify-content: center;
-  left: -2%;
-}
-
-.blog_aboutUs{
-  display: flex;
-  background-color: #FFF;
-}
-
-.label_space_aboutUs{
-  margin-left: 3%;
-}
-
-p{
-  font-family:'Times New Roman', Times, serif;
-}
-
-#img_aboutUs{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 120%;
-}
-
-#img_brand_aboutUs{
-  width: 40%;
-  margin-top: -1%;
-  margin-left: -2%;
-  margin-bottom: 2%;
-}
-
-#blog_p_content{
-  margin-top: 12px;
-  margin-bottom: 10px;
-}
-
-#goUpButton{
-  display: none;
+#headerAbout #brand{
+  position: static;
+  width: 26em;
+  margin-top:-4em;
+  margin-left: -10em;
   position: fixed;
-  bottom: 50px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 30px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: 0.2s;
 }
 
-#goUpButton:hover {
-  background-color: rgb(180, 180, 180);
-  color: #fff;
+#headerAbout #banner{
+  width: 40em;
+  margin-top: 6em;
+  margin-left: 30rem;
+  position: fixed;
 }
 
+
+.main{
+  width: 100%;
+  min-height: 20em;
+  margin: auto;
+  background-color: #FFFFFF;
+  margin-top: -2em;
+}
+
+.infos{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 2em 2em;
+  margin: auto;
+}
+.video{
+  border: 1px solid;
+  height: 30em;
+}
+
+.goals{
+  height: 30em;
+  width: 30em;
+  margin: auto;
+  padding: 3em 3em;
+  text-align: center;
+  border-top: 1px solid #e3286a;
+  border-bottom: 1px solid #e3286a;
+}
+
+.goals h2, .goals h3{
+  color: #ffa22d;
+ 
+}
+.goals h3{
+  padding-bottom: 1em;
+}
 .goUpArrow {
   height: 30px;
   width: 30px;
   transform: rotate(270deg);
+  position: absolute;
+  bottom: 0em;
+  right: 1em;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
