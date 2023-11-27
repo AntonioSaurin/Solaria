@@ -104,10 +104,16 @@ h1 {
 .align2 {
     top: 14.75em;
 }
-
+#pt2 .link{
+    right: 50%;
+    top: 80%;
+    position: absolute;
+    
+}
 .link {
     position: relative;
     right: 9.5rem;
+    
 }
 
 .signupBox input[type="text"],
