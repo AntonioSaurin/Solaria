@@ -2,6 +2,7 @@
 use app\classes\Logged;
 use app\models\Donation;
 use app\models\Donator;
+use app\models\Institution;
 use app\models\Message;
 use app\models\Phone;
 use app\models\Photo;
@@ -26,7 +27,12 @@ if ($user == false) {
 
 (new Donation)->delete('id', $user['ID']);
 
-(new Donator)->delete('id', $user['ID']);
+if(isset($_SESSION['institution'])) {
+    (new Institution)->delete('id', $user['ID']);
+}else if(!isset($_SESSION['institution']    )) {
+    (new Donator)->delete('id', $user['ID']);
+}
+
 
 (new User)->delete('id', $user['ID']);
 

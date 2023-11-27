@@ -9,6 +9,11 @@
     <script src="app/javaScript/jmodal.js"></script>
     <link href="app/style/css/infoInstitution.css" rel="stylesheet">
     <title> Conta </title>
+    <script>
+        function excluir() {
+            window.location.href = "/excluir-doador"; 
+        }
+    </script>
 </head>
 
 <body>
@@ -25,7 +30,7 @@
                     <section class="modalShow">
                         <h3 class="h3modal"> Deseja excluir a sua conta? </h3>
 
-                        <button class="btnmodal" id="Excluir"> Excluir </button>
+                        <button class="btnmodal" id="Excluir" onclick=excluir()> Excluir </button>
                         <button id="btncancelmodal" class="close"
                             onclick="document.getElementById('myModal').style.display='none'">Cancelar</button>
                         

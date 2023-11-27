@@ -122,7 +122,6 @@ create table rejectedInstitution(
     reason enum('fakeInstitution', 'banned', 'outOfStandard'),
     banisher int,
     primary key(ID),
-    foreign key (institution) references institution(ID),
     foreign key (banisher) references administrator(ID)
 );
 
