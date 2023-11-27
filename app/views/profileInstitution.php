@@ -82,6 +82,7 @@
                             <p>1. Acesse seu banco</p>
                             <p>2. Selecione pagar com QR CODE</p>
                             <p>3. Aponte a câmera para o código.</p>
+                            <p>Ou digite a chave PIX: 45.302.593/0001-89</p>
                     </section>
                     <!-- <form>
                         <section id="donationType">
