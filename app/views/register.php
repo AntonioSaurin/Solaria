@@ -57,12 +57,12 @@
                         <span name="next" class="nextButton" id="text" onclick="changeVisibleAdress()">Próximo</span>
                         <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
                     </span>
-                </form>
+                
             </section>
 
             <section class="signupBox form" id="pt2">
                 <h2>Cadastrar Endereço</h2>
-                <form action="cadastro/efetuar" method="post" name="Cadastro">
+                
                     <span class="table1">
                         <label>CEP:</label>
                         <section class="input-group">
@@ -130,13 +130,14 @@
                         <button type="submit" name="submit" class="registerButton align" id="text">Cadastrar</button>
                         <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
                     </span>
-                </form>
+</form>
             </section>
 
             <img class="img" src="app/style/img/brandWithout.png">
         </span>
     </main>
     <script>
+        $("#birthDate").mask("00/00/00");
         $("#phone").mask("(00) 00000-0000");
         $("#CEP").mask("00000-000");
         $("#CPF").mask("000.000.000-00");
