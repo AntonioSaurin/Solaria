@@ -203,6 +203,10 @@ select:focus {
     will-change: box-shadow, transform;
     font-size: 18px;
     margin-top: 10px;
+    position: absolute;
+    
+    top: -0px;
+    right: 50%;
 }
 
 .registerButton:focus {
