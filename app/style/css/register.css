@@ -6,7 +6,7 @@
     src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
 }
 
-html { 
+html {
     overflow: hidden;
     background-image: url('../img/bgCadastro.png');
 }
@@ -19,8 +19,20 @@ header {
     z-index: 1;
 }
 
-#color{
+#color {
     color: #fff;
+}
+
+.text {
+    color: #0d4266;
+    width: 20em;
+}
+
+#btnLogin,
+#btnLogin:hover,
+#btnLogin:active {
+    color: #4b001a;
+    text-decoration: none;
 }
 
 .img {
@@ -39,9 +51,9 @@ header {
     color: #000;
     border-radius: 12px;
     position: absolute;
-    padding: 18rem 20rem;
+    padding: 13.5em 17em;
     left: 27.5em;
-    top: 20em;
+    top: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     background: rgba(255, 255, 255, 0.32);
@@ -52,17 +64,37 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.table1 {
+h1 {
     top: 37px;
     position: fixed;
     left: 4rem;
+}
+
+.table1 {
+    top: 7.5rem;
+    position: fixed;
+    left: 4rem;
+    width: 15rem;
 }
 
 .table2 {
     top: 7.5rem;
     position: fixed;
     left: 22rem;
+    width: 15rem;
+}
 
+.align {
+    top: 16.15em;
+}
+
+.align2 {
+    top: 14.75em;
+}
+
+.link {
+    position: relative;
+    right: 9.5rem;
 }
 
 .signupBox input[type="text"],
@@ -78,6 +110,24 @@ header {
     margin-bottom: 15px;
     box-sizing: border-box;
     font-size: 13px;
+}
+.signupBox select {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    width: 15rem;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.signupBox select {
+    align-self: center;
 }
 
 .signupBox button {
@@ -161,4 +211,66 @@ select:focus {
 
 #pt2 {
     display: none;
+}
+
+.registerButton,
+.nextButton,
+.backButton {
+    align-items: center;
+    font-weight: bold;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #ffa500 0, #ff8c00 100%);
+    border: 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-grid;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.registerButton:focus,
+.nextButton:focus,
+.backButton:focus {
+    box-shadow: #fe5a1d 0 0 0 1.5px inset, rgba(255, 103, 0, .4) 0 2px 4px, rgba(255, 103, 0, .3) 0 7px 13px -3px, #fe5a1d 0 -3px 0 inset;
+}
+
+.registerButton:hover,
+.nextButton:hover,
+.backButton:hover {
+    box-shadow: rgba(255, 103, 0, .4) 0 4px 8px, rgba(255, 103, 0, .3) 0 7px 13px -3px, #fe5a1d 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.registerButton:active,
+.nextButton:active,
+.backButton:active {
+    box-shadow: #fe5a1d 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.input-group span {
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: #f00;
 }
