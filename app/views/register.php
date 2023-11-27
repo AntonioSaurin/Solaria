@@ -57,12 +57,10 @@
                         <span name="next" class="nextButton" id="text" onclick="changeVisibleAdress()">Próximo</span>
                         <p class="link text">Você já tem uma conta? <a href="/login" id="btnLogin">Login</a></p>
                     </span>
-                
             </section>
 
             <section class="signupBox form" id="pt2">
                 <h2>Cadastrar Endereço</h2>
-                
                     <span class="table1">
                         <label>CEP:</label>
                         <section class="input-group">
@@ -141,6 +139,7 @@
         $("#phone").mask("(00) 00000-0000");
         $("#CEP").mask("00000-000");
         $("#CPF").mask("000.000.000-00");
+        $("#birthDate").mask("00/00/0000");
 
         function changeVisibleInfos() {
             var box1 = document.getElementById("pt1");

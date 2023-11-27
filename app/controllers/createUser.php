@@ -82,7 +82,12 @@ if ($cAdressAction != 1) {
 }
 ;
 
-$cAdressData = $cAdress->findTwoFields('CEP', 'street', $CEP, $street);
+$cAdressData = $cAdress->findTwoFields('CEP', 'street', $cep, $street);
+
+var_dump($cAdressData);
+var_dump($cPhoneData);
+
+
 
 $user = new User;
 
@@ -90,7 +95,7 @@ $userAction = $user->insert([
     'userName' => $name,
     'userEmail' => $email,
     'userPassword' => $password,
-    'userPhone' => $phoneData['ID'],
+    'userPhone' => $cPhoneData['ID'],
     'userPhoto' => '1',
     'userAdress' => $cAdressData['ID'],
     'userAdressNumber' => $number

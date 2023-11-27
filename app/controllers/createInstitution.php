@@ -86,7 +86,16 @@ if ($cAdressAction != 1) {
 }
 ;
 
-$cAdressData = $cAdress->findTwoFields('CEP', 'street', $CEP, $street);
+$cAdressData = $cAdress->findTwoFields('CEP', 'street', $cep, $street);
+
+// var_dump($cPhoneData);
+// var_dump($cAdressData);
+// var_dump($name);
+// var_dump($email);
+// var_dump($password);
+// var_dump($number);
+
+// die;
 
 $cUser = new User;
 
