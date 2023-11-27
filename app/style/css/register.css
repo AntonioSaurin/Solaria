@@ -63,6 +63,19 @@ header {
     -webkit-backdrop-filter: blur(6.4px);
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
+#pt2 h2{
+    position: absolute;
+    top: 10%;
+    right: 50%;
+}
+#pt2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    height: 80%;
+    
+}
 
 h1 {
     top: 37px;
