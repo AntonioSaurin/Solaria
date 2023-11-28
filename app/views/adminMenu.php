@@ -43,15 +43,15 @@
         </a>
         </section>
     
-        <section class="admin-container"> 
+        <section class="admin-container" id="modifyFooter"> 
           <a id="institutionApprove">
-          <section class="admin-card" id="modifyFooter">
+          <section class="admin-card">
             <img class="img_icon" src="app/style/img/imgAprove.png">
             <h2>Aprovar Instituições</h2>
             <p class="subtitle">Aprovar ou negar a criação de instituições.</p>
             <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
           </section>      
-        </a>
+          </a>
         </section>
 
     </section>
