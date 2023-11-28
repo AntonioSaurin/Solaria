@@ -47,7 +47,8 @@
     <section class="center">
         <section class="infoAccount">
             <section class="userImg">
-                <img src="app/style/img/imgUsers.png" id="userImg">
+                <img src="app/style/img/imgUsers.png" id="userImg" alt="Alterar Imagem">
+             
                 <section class="organInfo">
                     <h3 id="infoUsername"> <?= $user['userName'] ?> </h3>
                     <label class="basicInfo"> CPF: <?= $user['CPF'] ?> </label>
