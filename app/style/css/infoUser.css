@@ -1,383 +1,390 @@
-    @font-face{
-        font-family: "Nunito";
-        src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
-    
-        font-family: "Sniglet";
-        src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
-    }
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
+    font-family: "Sniglet";
+    src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+}
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    header{
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        position: fixed;
-    }
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+    background: rgba(3, 51, 83, 0.32);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+}
 
-    .infoAccount{
-        display: flex;
-        margin-top: 10em;
-        width:80vw;
-        height:75vh;
-        z-index: -1;
-        display: flex; 
-    }
-    
-    .userImg{
-        display: flex;
-        height: 85%;
-        padding-right: 5em;
-        border-right:  1px black;
-        align-items: center; 
-        background: linear-gradient(45deg, #00b8a9, #2778ad, #126196);
-        background-size: 300% 300%;
-        flex:1;
-        border-radius: 1em;
-        animation: colors 5s ease infinite;
-    }
+.infoAccount {
+    display: flex;
+    margin-top: 10em;
+    width: 80vw;
+    height: 75vh;
+    z-index: -1;
+    display: flex;
+}
 
-    @keyframes colors{
-        0%{
-            background-position: 0% 50%;
-        }
-        50%{
-            background-position: 100% 50%;
-        }
+.userImg {
+    display: flex;
+    height: 85%;
+    padding-right: 5em;
+    border-right: 1px black;
+    align-items: center;
+    background: linear-gradient(45deg, #00b8a9, #2778ad, #126196);
+    background-size: 300% 300%;
+    flex: 1;
+    border-radius: 1em;
+    animation: colors 5s ease infinite;
+}
 
-        100%{
-            background-position: 0% 50%;
-        }
-    }
-
-    .userImg img{
-        border-radius: 50%;
-        border: solid white 4px;
-        margin-left: 60px;
-        height: 12em;
-    }
-
-    #infoUsername{
-        display: flex;
-        margin-left: 1em;
-        color: white;
-    }
-
-    .organInfo{
-        display: block;
-        margin-left: 1em;
-        font-size: 120%;
-        color: white;
-    }
-
-    .basicInfo{
-        display: flex;
-        font-family: 'Nunito', sans-serif;
-        margin-left: 2em;
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
     }
     
-    .formSave{
-        justify-content: center;
-        border-radius: 0.5em;
-        margin-top: 4em;
-        width: 50em;
-        height: 35em;
-    }
-
-    .infoForm{
-        display: flex;
-        margin-top: 2em;
-        font-family: 'Nunito', sans-serif;
-        font-size: 120%;
-    }
-
-    .infoFormSave{
-        display: flex;
-        margin-left: 12em;
-        font-family: 'Nunito', sans-serif;
-        font-size: 120%;
-    }
-
-    .infoFormState{
-        display: grid;
-        margin-left: 11em;
-        margin-top: -11%;
-        margin-bottom: 1em;
-        font-family: 'Nunito', sans-serif;
-        font-size: 120%;
-
+    50% {
+        background-position: 100% 50%;
     }
     
-    #state{
-        display: flex;
-        margin-top: -2%;
-        height: 2em;    
-        margin-left: 13em;
-    }
-
-    .infoCity{
-        display: grid;
-        margin-left: 21em;
-        margin-top: -11%;
-        margin-bottom: 2%;
-        font-family: 'Nunito', sans-serif;
-        font-size: 120%;
-    }
-
-    .inputCity{
-        display: flex;
-        margin-top: -1%;
-        margin-left: 25em;
-        height: 2em;
-    }
-
-    .infoNum{
-        display: grid;
-        font-family: 'Nunito', sans-serif;
-        font-size: 120%;
-        margin-top: -11%;
-        margin-left: 18em;
-    }
-
-    .inputNum{
-        display: flex;
-        margin-left: 57%;
-    }
-
-    .inputLogradouro{
-        display: flex;
-        width: 36.5em;
-    }
-
-    .spaceForm{
-        display: flex;
-        justify-content: center;
-        max-height: 80em;
-        max-width: 80em;
-        margin-top: -10.4em;
-    }
-
-    .center{
-        display: flex;
-        justify-content: center;
-    }
-
-    .organForm{
-        display: block;
-        height: 2em;
-        margin-left: 2em;
-    }
-
-    #btnSalvar{
-        display: flex;
-        justify-content: center;
-        width: 16em;
-        padding-left: 5em;
-        padding-right: 5em;
-        margin-left: 26em;
-        margin-top: 12em;
-        font-weight: bold;
-    }
-
-    #btnSalvar:hover{
-        cursor: pointer;
-    }
-
-    #btnExcluir{
-        display: flex;
-        justify-content: center;
-        margin-top: 2em;
-        margin-left: 5em;
-        width: 12em;
-        padding: 0.9em 0.10em 0.9em;
-        text-decoration: none;
-        border: 0;
-        border-radius: 0.5em;
-        color: white;
-        background-color: #e3286a;
-        box-shadow: black 0.1em 0.1em 0.1em;
-        transition: 0.3s ease;
-        font-weight: bold;
-    }
-
-    #btnExcluir:hover{
-        padding: 0.8em 0.7em 0.8em;
-        box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
-        transform: translate(3px, 3px);
-        border: none;
-    }
-
-    button:hover{
-        cursor: pointer;
-    }
-
-    .borderForm{
-        border-style: solid;
-        margin-top: -5.2%;
-        padding-top: 6em;
-        border-radius: 1em;
-    }
-
-    .inputEdit{
-        display: flex;
-        width: 20em;
-    }
-
-    #space{
-        padding: 2em;
+    100% {
+        background-position: 0% 50%;
     }
     
-    input{
-        border-radius: 0.3em;
-        border: none;
-        border-style: solid;
-        border-width: 0.1em;
-    }
+}
 
-    select{
-        border-radius: 0.3em;
-        border-style: solid;
-        border-width: 0.1em;
-    }
+.userImg img {
+    border-radius: 50%;
+    border: solid white 4px;
+    margin-left: 60px;
+    height: 12em;
+}
 
-    /*MODAL*/
+#infoUsername {
+    display: flex;
+    margin-left: 1em;
+    color: white;
+}
 
-    .centerModal{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-    }
+.organInfo {
+    display: block;
+    margin-left: 1em;
+    font-size: 120%;
+    color: white;
+}
 
-    .modalContainer{
-      display: none;
-      position: fixed;
-      z-index: 1; 
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
-      transition: 1s;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+.basicInfo {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 2em;
+}
+
+.formSave {
+    justify-content: center;
+    border-radius: 0.5em;
+    margin-top: 4em;
+    width: 50em;
+    height: 35em;
+}
+
+.infoForm {
+    display: flex;
+    margin-top: 2em;
+    font-family: 'Nunito', sans-serif;
+    font-size: 120%;
+}
+
+.infoFormSave {
+    display: flex;
+    margin-left: 12em;
+    font-family: 'Nunito', sans-serif;
+    font-size: 120%;
+}
+
+.infoFormState {
+    display: grid;
+    margin-left: 11em;
+    margin-top: -11%;
+    margin-bottom: 1em;
+    font-family: 'Nunito', sans-serif;
+    font-size: 120%;
+}
+
+#state {
+    display: flex;
+    margin-top: -2%;
+    height: 2em;
+    margin-left: 13em;
+}
+
+.infoCity {
+    display: grid;
+    margin-left: 21em;
+    margin-top: -11%;
+    margin-bottom: 2%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 120%;
+}
+
+.inputCity {
+    display: flex;
+    margin-top: -1%;
+    margin-left: 25em;
+    height: 2em;
+}
+
+.infoNum {
+    display: grid;
+    font-family: 'Nunito', sans-serif;
+    font-size: 120%;
+    margin-top: -11%;
+    margin-left: 18em;
+}
+
+.inputNum {
+    display: flex;
+    margin-left: 57%;
+}
+
+.inputLogradouro {
+    display: flex;
+    width: 36.5em;
+}
+
+.spaceForm {
+    display: flex;
+    justify-content: center;
+    max-height: 80em;
+    max-width: 80em;
+    margin-top: -10.4em;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.organForm {
+    display: block;
+    height: 2em;
+    margin-left: 2em;
+}
+
+#btnSalvar {
+    display: flex;
+    justify-content: center;
+    width: 16em;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-left: 26em;
+    margin-top: 12em;
+    font-weight: bold;
+}
+
+#btnSalvar:hover {
+    cursor: pointer;
+}
+
+#btnExcluir {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-left: 5em;
+    width: 12em;
+    padding: 0.9em 0.10em 0.9em;
+    text-decoration: none;
+    border: 0;
+    border-radius: 0.5em;
+    color: white;
+    background-color: #e3286a;
+    box-shadow: black 0.1em 0.1em 0.1em;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+#btnExcluir:hover {
+    padding: 0.8em 0.7em 0.8em;
+    box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
+    transform: translate(3px, 3px);
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.borderForm {
+    border-style: solid;
+    margin-top: -5.2%;
+    padding-top: 6em;
+    border-radius: 1em;
+}
+
+.inputEdit {
+    display: flex;
+    width: 20em;
+}
+
+#space {
+    padding: 2em;
+}
+
+input {
+    border-radius: 0.3em;
+    border: none;
+    border-style: solid;
+    border-width: 0.1em;
+}
+
+select {
+    border-radius: 0.3em;
+    border-style: solid;
+    border-width: 0.1em;
+}
+
+/*MODAL*/
+.centerModal {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 1s;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.4px);
     -webkit-backdrop-filter: blur(6.4px);
     border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#modal {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 2em;
+    border: 1px solid #888;
+    width: 50em;
+    animation: modal .4s;
+    border-radius: 0.5em;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
     }
-
-    #modal{
-        background-color: #fefefe;
-        margin: 15% auto;
-        padding: 2em;
-        border: 1px solid #888;
-        width: 50em;
-        animation: modal .4s;
-        border-radius: 0.5em;
-      }
-
-      @keyframes modal{
-        from{
-            opacity: 0;
-            transform: translate3d(0,-60px,0);
-        }
-        to{
-            opacity: 1;
-            transform: translate3d(0,0,0);
     
-        }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
+    
+}
 
-    .block{
-        display: block;
-        width: 100%;
-    }
+.block {
+    display: block;
+    width: 100%;
+}
 
-    .h3modal{
-        display: flex;
-        justify-content: center;
-        color: rgb(0, 0, 0);
-        margin-top: 0.8em;
-    }
+.h3modal {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin-top: 0.8em;
+}
 
-    .btnmodal{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 2em;
-        width: 10em;
-        margin-top: 8em;
-        margin-left: 2em;
-        background-color: #00b8a9;
-        color: white;
-        border: none;
-        border-radius: 0.5em;
-        padding-right: 2em;
-        padding-left: 2em;
-        font-size: 125%;
-        box-shadow: black 0.1em 0.1em 0.1em;
-        transition: 0.3s ease;
-        font-weight: bold;
-    }
-    .btnmodal:hover{
-        padding: 0.8em 0.7em 0.8em;
-        box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
-        transform: translate(3px, 3px);
-        border: none;
-    }
+.btnmodal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 10em;
+    margin-top: 8em;
+    margin-left: 2em;
+    background-color: #00b8a9;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    font-size: 125%;
+    box-shadow: black 0.1em 0.1em 0.1em;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
 
-    #btncancelmodal{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 2em;
-        width: 10em;
-        margin-top: -2em;
-        margin-left: 28em;
-        background-color: #e3286a;
-        color: white;
-        border: none;
-        border-radius: 0.5em;
-        padding-right: 2em;
-        padding-left: 2em;
-        font-size: 125%;
-        box-shadow: black 0.1em 0.1em 0.1em;
-        transition: 0.3s ease;
-        font-weight: bold;
-    }
-    #btncancelmodal:hover{
-        padding: 0.8em 0.7em 0.8em;
-        box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
-        transform: translate(3px, 3px);
-        border: none;
-    }
+.btnmodal:hover {
+    padding: 0.8em 0.7em 0.8em;
+    box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
+    transform: translate(3px, 3px);
+    border: none;
+}
 
-    #btnSalvar{
-        display: flex;
-        background-color: #e3286a;
-        color: aliceblue;
-        border-radius: 0.5em;
-        border: none;
-        transition: 0.3s ease;
-        width: 8em;
-        height: 3em;
-        box-shadow: black 0.1em 0.1em 0.1em;
-        margin-top: 9em;
-    }
-    #btnSalvar:hover{
-        box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
-        transform: translate(3px, 3px);
-        border: none;
-    }
+#btncancelmodal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 10em;
+    margin-top: -2em;
+    margin-left: 28em;
+    background-color: #e3286a;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    font-size: 125%;
+    box-shadow: black 0.1em 0.1em 0.1em;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
 
-    #modifyFooter{
-        margin-bottom: 1rem;
-    }
+#btncancelmodal:hover {
+    padding: 0.8em 0.7em 0.8em;
+    box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
+    transform: translate(3px, 3px);
+    border: none;
+}
 
-    .no-scroll{
-        overflow: hidden;
-    }
+#btnSalvar {
+    display: flex;
+    background-color: #e3286a;
+    color: aliceblue;
+    border-radius: 0.5em;
+    border: none;
+    transition: 0.3s ease;
+    width: 8em;
+    height: 3em;
+    box-shadow: black 0.1em 0.1em 0.1em;
+    margin-top: 9em;
+}
+
+#btnSalvar:hover {
+    box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
+    transform: translate(3px, 3px);
+    border: none;
+}
+
+#modifyFooter {
+    margin-bottom: 1rem;
+}
+
+.no-scroll {
+    overflow: hidden;
+}

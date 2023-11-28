@@ -24,49 +24,27 @@
             <form action="cadastro/efetuarInstituicao" method="post" name="Cadastro">
                 <h1>Cadastrar</h1>
                 <span class="table1">
+                    <label>Nome da Instituição:</label>
+                    <input type="text" class="signupBox" name="name" id="name">
 
-                    <section class="input-group">
-                        <label>Nome da Instituição:</label>
-                        <input type="text" class="signupBox" name="name" id="name"
-                            onkeyup="validationNameInstituition()">
-                        <span id="name-error"></span>
-                    </section>
+                    <label>Responsável:</label>
+                    <input type="text" class="signupBox" name="director" id="director">
 
-                    <section class="input-group">
-                        <label>Responsável:</label>
-                        <input type="text" class="signupBox" name="director" id="director"
-                            onkeyup="validationDirector()">
-                        <span id="director-error"></span>
-                    </section>
-
-                    <section class="input-group">
-                        <label>CPF do Responsavél:</label>
-                        <input type="text" class="signupBox" name="directorCPF" id="directorCPF" maxlength="11"
-                            onkeyup="validationDirectorCPF()">
-                        <span id="directorCPF-error"></span>
-                    </section>
+                    <label>CPF do Responsavél:</label>
+                    <input type="text" class="signupBox" name="directorCPF" id="directorCPF" maxlength="11">
                 </span>
 
                 <span class="table2">
-                    <section class="input-group">
                         <label>CNPJ:</label>
                         <input type="text" class="signupBox" name="CNPJ" id="CNPJ" maxlength="14"
-                            onkeyup="validationCNPJ()">
-                        <span id="CNPJ-error"></span>
-                    </section>
+                            >
 
-                    <section class="input-group">
                         <label>Email:</label>
-                        <input type="text" class="signupBox" name="email" id="email" onkeyup="validationEmail()">
-                        <span id="email-error"></span>
-                    </section>
+                        <input type="text" class="signupBox" name="email" id="email">
 
-                    <section class="input-group">
                         <label>Telefone:</label>
                         <input type="text" class="signupBox" name="phone" id="phone" maxlength="11"
-                            onkeyup="validationPhone()">
-                        <span id="phone-error"></span>
-                    </section>
+                            >
 
                     <span name="next" class="nextButton" id="text" onclick=changeVisibleAdress()>Próximo</span>
 
@@ -78,11 +56,8 @@
         <section class="signupBox form" id="pt2">
             <h1>Cadastrar Endereço</h1>
             <span class="table1">
-                <label>CEP:</label>
-                <section class="input-group">
-                    <input type="text" class="signupBox" name="CEP" id="CEP" onkeyup="validationCEP()">
-                    <span id="CEP-error"></span>
-                </section>
+                <label class="cep">CEP:</label>
+                    <input type="text" class="signupBox" name="CEP" id="CEP">
 
                 <label>Estado:</label>
                 <section class=" input-group">
@@ -117,34 +92,22 @@
                     </select>
                 </section>
 
-                <label>Cidade:</label>
-                <section class="input-group">
-                    <input type="text" class="signupBox" name="city" id="city" onkeyup="validationCity()">
-                    <span id="city-error"></span>
-                </section>
+                <label class="city">Cidade:</label>
+                    <input type="text" class="signupBox" name="city" id="city">
 
-                <span class=" backButton" id="text" onclick=changeVisibleInfos()>Voltar
+                <span class="backButton botton" id="text" onclick=changeVisibleInfos()>Voltar
                 </span>
             </span>
 
             <span class="table2">
                 <label>Bairro:</label>
-                <section class="input-group">
-                    <input type="text" class="signupBox" name="district" id="district" onkeyup="validationDistrict()">
-                    <span id="district-error"></span>
-                </section>
+                    <input type="text" class="signupBox" name="district" id="district">
 
                 <label>Numero:</label>
-                <section class=" input-group">
-                    <input type="text" class="signupBox" name="number" id="number" onkeyup="validationNumber()">
-                    <span id="number-error"></span>
-                </section>
+                    <input type="text" class="signupBox" name="number" id="number">
 
                 <label>Rua:</label>
-                <section class=" input-group">
-                    <input type="text" class="signupBox" name="street" id="street" onkeyup="validationStreet()">
-                    <span id="street-error"></span>
-                </section>
+                    <input type="text" class="signupBox" name="street" id="street" >
 
                 <span class="nextButton" id="text" onclick=changeVisibleOthers()>Próximo
                 </span>
@@ -158,8 +121,7 @@
         <section class="signupBox form" id="pt3">
             <h1>Cadastrar Senhas</h1>
             <span class="table1">
-
-
+                
                 <span class="backButton align" id="text" onclick=changeVisibleAdress()>Voltar</span>
             </span>
 
@@ -191,7 +153,7 @@
         $("#CEP").mask("00000-000");
         $("#directorCPF").mask("000.000.000-00");
 
-       
+
 
         function changeVisibleInfos() {
 
@@ -208,7 +170,7 @@
         function changeVisibleAdress() {
             var empty = verifyEmptyInfos(nome, cnpj, phone, email, director, directorCPF);
 
-            if (empty == true) {
+            if (empty != true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");
@@ -222,7 +184,7 @@
         function changeVisibleOthers() {
             var empty = verifyEmptyAddres(cep, state, city, district, street, number);
 
-            if (empty == true) {
+            if (empty != true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");
