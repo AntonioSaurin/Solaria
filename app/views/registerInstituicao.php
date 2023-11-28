@@ -9,6 +9,7 @@
     <script src="app/javaScript/jQuery.js"></script>
     <script src="app/javaScript/jMask.js"></script>
     <script src="app/javaScript/inputsVerify.js"></script>
+    <script src="app/javaScript/viaCEP.js"></script>
     <title>Cadastrar</title>
 </head>
 

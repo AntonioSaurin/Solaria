@@ -86,8 +86,6 @@ if ($adressVerify != null) {
     ]);
 }
 
-
-
 if ($cAdressAction != 1) {
     $cPhone->delete('ID', $cPhoneData['ID']);
     echo '<script> 
