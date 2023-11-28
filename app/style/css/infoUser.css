@@ -26,8 +26,8 @@ header {
 
 .infoAccount {
     display: flex;
-    margin-top: 10em;
-    width: 80vw;
+    margin-top: 8em;
+    width: 80.4em;
     height: 75vh;
     z-index: -1;
     display: flex;
@@ -35,14 +35,14 @@ header {
 
 .userImg {
     display: flex;
-    height: 85%;
+    height: 20em;
     padding-right: 5em;
     border-right: 1px black;
     align-items: center;
     background: linear-gradient(45deg, #00b8a9, #2778ad, #126196);
     background-size: 300% 300%;
     flex: 1;
-    border-radius: 1em;
+    border-radius: 1em 1em 0em 0em;
     animation: colors 5s ease infinite;
 }
 
@@ -138,20 +138,19 @@ header {
     display: flex;
     margin-top: -1%;
     margin-left: 25em;
-    height: 2em;
 }
 
 .infoNum {
     display: grid;
     font-family: 'Nunito', sans-serif;
     font-size: 120%;
-    margin-top: -11%;
+    margin-top: -3.5em;
     margin-left: 18em;
 }
 
 .inputNum {
     display: flex;
-    margin-left: 57%;
+    margin-left: 21.5em;
 }
 
 .inputLogradouro {
@@ -223,9 +222,9 @@ button:hover {
 
 .borderForm {
     border-style: solid;
-    margin-top: -5.2%;
+    margin-top: -16.7em;
     padding-top: 6em;
-    border-radius: 1em;
+    border-radius: 0em 0em 1em 1em;
 }
 
 .inputEdit {
@@ -242,6 +241,8 @@ input {
     border: none;
     border-style: solid;
     border-width: 0.1em;
+    padding-left: 0.5em;
+    height: 2em;
 }
 
 select {
