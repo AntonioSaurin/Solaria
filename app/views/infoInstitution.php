@@ -153,6 +153,8 @@
 
     </script>
 
+<section id="space"> </section>
+
     <footer id="footerArea">
         <?php
         include_once("footer.php");

@@ -1,5 +1,5 @@
 *{
-    padding:0px;
+    padding:0;
     margin: 0;
     box-sizing: border-box;
   }
@@ -12,12 +12,13 @@
   #color:hover {
     text-decoration: overline;
   }
+  
   #admin{
-    margin-top: 20px;
+    margin-top: 0.23em;
   }
   
   #bemvenido { 
-    margin-left: 0px;
+    margin-left: 0;
     text-align: center;
     color: #333;
   }
@@ -34,107 +35,102 @@
   }
   
   .admin-card {
-    width: 500px;
-    margin: 20px 0;
+    width: 30em;
+    margin: 1em 0;
     background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    padding: 1.4em;
+    box-shadow: 0 0.3em 0.3em #0000001a;
     position: relative;
   }
   
   .admin-card .img_icon {
-    width: 64px;
-    height: 64px;
+    width: 4em;
+    height: 4em;
     color: #333;
-    margin-right: 10px;
-    margin-top: 6px;
-    margin-bottom: 4px;
+    margin-right: 0.8em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
     float: left;
   }
   
   .admin-card h2 {
-    font-size: 24px;
+    font-size: 1.60em;
     color: #333;
     margin: 0;
   }
   
   .admin-card .subtitle {
-    font-size: 18px;
+    font-size: 1.09em;
     color: #777;
-    margin-bottom: 10px;
+    margin-bottom: 0.4em;
   }
   
   .arrow {
     position: absolute;
-    top: 30px;
-    right: 10px;
-    font-size: 24px;
+    top: 1.2em;
+    right: 0.2em;
+    font-size: 1.5em;
     color: #333;
     /* transform: rotate(45deg); */
   }
 
   .arrowImage{
-    height: 24px;
-    width: 24px;
+    height: 1.2em;
+    width: 1.2em;
   }
-
 
   /*Modal do usuário*/
 /*modal*/
 .modal-container{
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 2000;
   display: none;
   justify-content: center;
   align-items: center;
   /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.32);
+    background: #ffffff52;
     
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.4px);
-    -webkit-backdrop-filter: blur(6.4px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0.7em 1em #0000001a;
+    backdrop-filter: blur(0.3em);
+    -webkit-backdrop-filter: blur(0.3em);
+    border: 0.2em solid #ffffff80;
 
 }
 .modal1{
-  width: 50%;
-  height: 65%;
-  border: 0px;
+  width: 50em;
+  height: 30em;
+  border: 0;
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-#btnExitIncon{
-  position: absolute;
-  top: 18px;
-  right: 10px;
+  border: 0.1em solid #0000001a;
+  border-radius: 1em;
 }
 
 #modalUsersContent{
-  border-bottom-left-radius: 17px;
-  border-bottom-right-radius: 17px;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
   flex: 3;
   background-color: #fff;
   color: #000; 
   text-align: center;
-  padding: 10px;
+  padding: 1em;
   flex-direction: column;
   display: flex;
 }
 
 #modalTop{
-  border-top-right-radius:10px;
-  border-top-left-radius:10px;
+  border-top-right-radius:1em;
+  border-top-left-radius:1em;
   flex: 0.3;
-  background-color: #006DB7;
+  background-color: #ffffff;
   text-align: center;
+  border: 0.2em solid #0000001a;
 }
 
 .modal-container .mostrar{
@@ -144,7 +140,7 @@
 @keyframes modal{
   from{
       opacity: 0;
-      transform: translate3d(0,-60px,0);
+      transform: translate3d(0,-30em,0);
   }
   to{
       opacity: 1;
@@ -156,10 +152,14 @@
   animation: modal .4s;
 }
 
+#modifyFooter{
+  margin-bottom: 10.9em;
+}
+
 /*end modal*/
 
 /* Estilos da caixa de pesquisa de usuários */
-.search-box {
+/* .search-box {
   position: relative;
   margin-top: 10px;
 }
@@ -182,7 +182,7 @@
 }
 
 /* Estilos da caixa de usuário */
-.user-box {
+/* .user-box {
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -223,10 +223,10 @@
 
 .make-admin:hover, .ban-user:hover {
   color: #333;
-}
+} */
 
 /* Estilos do segundo modal de confirmação */
-.confirmation-content {
+/* .confirmation-content {
   width: 300px;
   padding: 20px;
 }
@@ -246,6 +246,4 @@
   background-color: #0056b3;
 }
 
-#modifyFooter{
-  margin-bottom: 9.6rem;
-}
+ */
