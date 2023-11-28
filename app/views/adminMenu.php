@@ -20,43 +20,83 @@
   <section id="admin">
 
     <?= '<h1 id="bemvenido">' . Hour::getHour() . ', Moderador</h1>' ?>
-    <section class="admin-container" id="userManage">
-      <section class="admin-card">
+
+      <section class="admin-container" id="userManage">
+      <a id="usersManage">
+        <section class="admin-card">
         <img class="img_icon" src="app/style/img/imgUsers.png">
-        <h2>Gerenciar Usuários</h2>
-        <p class="subtitle">Adicionar cargo ou banir usuários.</p>
+        <h2>Gerenciar Doadores</h2>
+        <p class="subtitle">Editar e banir doadores.</p>
+        <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
+        </section>    
+      </a>
       </section>
-
-      <a id="institutionManage">
-        <section class="admin-card" id="openModalButton">
-          <img class="img_icon" src="app/style/img/imgInstitution.png">
-          <h2>Gerenciar Instituições</h2>
-          <p class="subtitle">Editar instituições disponiveis.</p>
-          <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
+      
+        <section class="admin-container">
+          <a id="institutionManage">
+          <section class="admin-card" id="openModalButton">
+            <img class="img_icon" src="app/style/img/imgInstitution.png">
+            <h2>Gerenciar Instituições</h2>
+            <p class="subtitle">Editar instituições disponiveis.</p>
+            <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
+          </section>
+        </a>
         </section>
-      </a>
-
-      <a href="#">
-        <section class="admin-card" id="modifyFooter">
-          <img class="img_icon" src="app/style/img/imgAprove.png">
-          <h2>Aprovar Instituições</h2>
-          <p class="subtitle">Aprovar ou negar a criação de instituições.</p>
-          <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
+    
+        <section class="admin-container"> 
+          <a id="institutionApprove">
+          <section class="admin-card" id="modifyFooter">
+            <img class="img_icon" src="app/style/img/imgAprove.png">
+            <h2>Aprovar Instituições</h2>
+            <p class="subtitle">Aprovar ou negar a criação de instituições.</p>
+            <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
+          </section>      
+        </a>
         </section>
-      </a>
+
     </section>
   </section>
 
+  <!-- Usuários: -->
   <section id="modalUsers" class="modal-container">
     <section class="modal1">
       <section id="modalTop">
-        <i id="btnExitIcon" class="btnExit fa-solid fa-rectangle-xmark   fa-xl" style="color: #c7c7c7;"></i>
-        <h4>teste</h4>
+        <i class="btnExitIcon btnExit fa-solid fa-rectangle-xmark   fa-xl"></i>
+        <h4>Doadores</h4>
       </section>
-
       <section id="modalUsersContent">
         <section id="institutionAreaModal">
-          AaAaAaaAaAaAaA
+         
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <!-- Instituição: -->
+  <section id="modalInstitutions" class="modal-container">
+    <section class="modal1">
+      <section id="modalTop">
+        <i class="btnExitIcon btnExit fa-solid fa-rectangle-xmark   fa-xl"></i>
+        <h4>Instituições</h4>
+      </section>
+      <section id="modalUsersContent">
+        <section id="institutionAreaModal">
+         
+        </section>
+      </section>
+    </section>
+  </section>
+
+    <!-- Aprovar Instituições: -->
+    <section id="modalApprove" class="modal-container">
+    <section class="modal1">
+      <section id="modalTop">
+        <i class="btnExitIcon btnExit fa-solid fa-rectangle-xmark   fa-xl"></i>
+        <h4>Aprovar Instituições</h4>
+      </section>
+      <section id="modalUsersContent">
+        <section id="institutionAreaModal">
+         
         </section>
       </section>
     </section>
@@ -64,11 +104,27 @@
 
   <script>
     $(document).ready(function () {
-      $('#institutionManage').click(function () {
-        $('.modal-container').css('display', 'flex')
+      $('#usersManage').click(function () {
+        $('#modalUsers').css('display', 'flex')
       })
 
-      $('#btnExitIcon').click(function () {
+      $('.btnExitIcon').click(function () {
+        $('.modal-container').css('display', 'none')
+      })
+
+      $('#institutionManage').click(function () {
+        $('#modalInstitutions').css('display', 'flex')
+      })
+
+      $('.btnExitIcon').click(function () {
+        $('.modal-container').css('display', 'none')
+      })
+
+      $('#institutionApprove').click(function () {
+        $('#modalApprove').css('display', 'flex')
+      })
+
+      $('.btnExitIcon').click(function () {
         $('.modal-container').css('display', 'none')
       })
     })

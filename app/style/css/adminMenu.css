@@ -85,7 +85,6 @@
 .modal-container{
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0px;
   left: 0px;
@@ -109,12 +108,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-#btnExitIncon{
-  position: absolute;
-  top: 18px;
-  right: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
 }
 
 #modalUsersContent{
@@ -133,8 +128,9 @@
   border-top-right-radius:10px;
   border-top-left-radius:10px;
   flex: 0.3;
-  background-color: #006DB7;
+  background-color: #ffffff;
   text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-container .mostrar{
