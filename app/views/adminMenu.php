@@ -60,13 +60,23 @@
   <!-- Usuários: -->
   <section id="modalUsers" class="modal-container">
     <section class="modal1">
-      <section id="modalTop">
+      <section class="modalTop">
         <i class="btnExitIcon btnExit fa-solid fa-rectangle-xmark   fa-xl"></i>
         <h4>Doadores</h4>
       </section>
-      <section id="modalUsersContent">
-        <section id="institutionAreaModal">
-         
+      <section class="modalUsersContent">
+        <section class="cardUser">
+          <section class="infoUser">
+            <img class="imgCardUser" src="app/style/img/imgUsers.png">
+            <h5 class="nameCardUser"> Nome do usuário </h5>
+          </section>
+          <section class="infoUser">
+            <a href="#">
+              <img class="imgControlUser" src="app/style/img/imgEdit.png"></a>
+            <a href="#">
+              <img class="imgControlUser" src="app/style/img/imgRemove.png">
+            </a>
+          </section>
         </section>
       </section>
     </section>
@@ -75,13 +85,23 @@
   <!-- Instituição: -->
   <section id="modalInstitutions" class="modal-container">
     <section class="modal1">
-      <section id="modalTop">
+      <section class="modalTop">
         <i class="btnExitIcon btnExit fa-solid fa-rectangle-xmark   fa-xl"></i>
         <h4>Instituições</h4>
       </section>
-      <section id="modalUsersContent">
-        <section id="institutionAreaModal">
-         
+      <section class="modalUsersContent">
+        <section class="cardUser">
+          <section class="infoUser">
+            <img class="imgCardUser" src="app/style/img/imgUsers.png">
+            <h5 class="nameCardUser"> Nome do usuário </h5>
+          </section>
+          <section class="infoUser">
+            <a href="#">
+              <img class="imgControlUser" src="app/style/img/imgEdit.png"></a>
+            <a href="#">
+              <img class="imgControlUser" src="app/style/img/imgRemove.png">
+            </a>
+          </section>
         </section>
       </section>
     </section>
@@ -90,13 +110,23 @@
     <!-- Aprovar Instituições: -->
     <section id="modalApprove" class="modal-container">
     <section class="modal1">
-      <section id="modalTop">
+      <section class="modalTop">
         <i class="btnExitIcon btnExit fa-solid fa-rectangle-xmark   fa-xl"></i>
         <h4>Aprovar Instituições</h4>
       </section>
-      <section id="modalUsersContent">
-        <section id="institutionAreaModal">
-         
+      <section class="modalUsersContent">
+        <section class="cardUser">
+          <section class="infoUser">
+            <img class="imgCardUser" src="app/style/img/imgUsers.png">
+            <h5 class="nameCardUser"> Nome do usuário </h5>
+          </section>
+          <section class="infoUser">
+            <a href="#">
+              <img class="imgControlUser" src="app/style/img/imgEdit.png"></a>
+            <a href="#">
+              <img class="imgControlUser" src="app/style/img/imgRemove.png">
+            </a>
+          </section>
         </section>
       </section>
     </section>
