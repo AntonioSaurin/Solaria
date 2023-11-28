@@ -7,16 +7,16 @@ use app\models\Donator;
 use app\models\Phone;
 use app\models\User;
 
-if($_POST['password'] != $_POST['conPassword']) {
+if ($_POST['password'] != $_POST['conPassword']) {
     echo '<script> window.alert("As senhas não coincidem")</script>';
-   
+
     header('Location: /cadastro');
     die;
 }
 
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 $birthDateExplode = explode('/', filter_input(INPUT_POST, 'birthDate', FILTER_SANITIZE_STRING));
-$birthDate = $birthDateExplode[2].'-'.$birthDateExplode[1].'-'.$birthDateExplode[0];
+$birthDate = $birthDateExplode[2] . '-' . $birthDateExplode[1] . '-' . $birthDateExplode[0];
 $cpf = filter_input(INPUT_POST, 'CPF', FILTER_SANITIZE_STRING);
 $userPhone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
@@ -41,7 +41,7 @@ $phoneAction = $cPhone->insert([
     'DDD' => $ddd[1]
 ]);
 
-if($phoneAction != 1){
+if ($phoneAction != 1) {
     echo '<script> 
     alert("Incapaz de efetuar o cadastro!";
     window.location.href = "/cadastro"; 
@@ -65,12 +65,28 @@ if (empty($cCityData['ID'])) {
 
 $cAdress = new Adress;
 
-$cAdressAction = $cAdress->insert([
-    'CEP' => $cep,
-    'city' => $cCityData['ID'],
-    'district' => $district,
-    'street' => $street
-]);
+$adressVerify = $cAdress->findTwoFields('CEP', 'street', $cep, $street);
+
+if ($adressVerify != null) {
+    $cAdressData = $adressVerify;
+    $cAdressAction = 1;
+} else if ($adressVerify == null) {
+    $cAdressAction = $cAdress->insert([
+        'CEP' => $cep,
+        'city' => $cCityData['ID'],
+        'district' => $district,
+        'street' => $street
+    ]);
+    
+    $cAdressAction = $cAdress->insert([
+        'CEP' => $cep,
+        'city' => $cCityData['ID'],
+        'district' => $district,
+        'street' => $street
+    ]);
+}
+
+
 
 if ($cAdressAction != 1) {
     $cPhone->delete('ID', $cPhoneData['ID']);
@@ -84,11 +100,6 @@ if ($cAdressAction != 1) {
 
 $cAdressData = $cAdress->findTwoFields('CEP', 'street', $cep, $street);
 
-var_dump($cAdressData);
-var_dump($cPhoneData);
-
-
-
 $user = new User;
 
 $userAction = $user->insert([
@@ -101,7 +112,7 @@ $userAction = $user->insert([
     'userAdressNumber' => $number
 ]);
 
-if($userAction != true){
+if ($userAction != true) {
     echo '<script> 
     alert("Incapaz de efetuar o cadastro!";
     window.location.href = "/cadastro"; 
@@ -118,7 +129,7 @@ $donatorAction = $donator->insert([
     'birthDate' => $birthDate
 ]);
 
-if($donatorAction != 1){
+if ($donatorAction != 1) {
     echo '<script> 
     alert("Incapaz de efetuar o cadastro!";
     window.location.href = "/cadastro"; 
