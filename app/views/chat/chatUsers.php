@@ -13,6 +13,7 @@
   <header>
    <?php
 			include('app/views/header.php');
+      use app\classes\Hour;
 		?>
 		
 	</header>
@@ -23,6 +24,12 @@
       
         <div class="content">
           <?php 
+
+            // if(!isset($_SESSION['institution'])) {
+            //   ECHO("USUARIO");
+            // } else if(isset($_SESSION['institution'])) {
+            //   ECHO("INSTITUIÇÃO");
+            // }
             $sql = mysqli_query($conn, "SELECT * FROM userAccount WHERE ID = {$_SESSION['id']}");
             if(mysqli_num_rows($sql) > 0){
               $row = mysqli_fetch_assoc($sql);
@@ -31,7 +38,8 @@
            <!-- <img src="php/images/<php /*echo $row['img']*/ ?>" alt=""> -->
           <img src="../app/style/img/defaultProfile.png" alt="">
           <div class="details">
-            <span><?php echo $row['userName']; ?></span>
+            
+            <span><?php echo Hour::getHour().', '; echo $row['userName']; ?></span>
             <p><?php echo $row['userStatus']; ?></p>
           </div>
         </div>
