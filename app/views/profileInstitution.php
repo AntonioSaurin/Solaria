@@ -30,7 +30,7 @@
 
         <nav class="simple-nav">
             <a href="#" class="button">Posts</a>
-            <a href="#" class="button">Chat</a>
+            <a href="/chat" class="button">Chat</a>
             <a href="#" class="button donateButton">Doar</a>
         </nav>
 
