@@ -47,7 +47,7 @@
     <section class="center">
         <section class="infoAccount">
             <section class="userImg">
-                <img src="app/style/img/images.jpg" id="userImg">
+                <img src="app/style/img/imgUsers.png" id="userImg">
                 <section class="organInfo">
                     <h3 id="infoUsername"> <?= $user['userName'] ?> </h3>
                     <label class="basicInfo"> CPF: <?= $user['CPF'] ?> </label>
@@ -157,13 +157,15 @@
 
     </script>
 
+
+<section id="space"> </section>
+
     <footer id="footerArea">
         <?php
         include_once("footer.php");
         ?>
     </footer>
-
-
+    
 </body>
 
 </html>
