@@ -21,38 +21,39 @@
 
     <?= '<h1 id="bemvenido">' . Hour::getHour() . ', Moderador</h1>' ?>
 
-    <a id="usersManage">
       <section class="admin-container" id="userManage">
+      <a id="usersManage">
         <section class="admin-card">
         <img class="img_icon" src="app/style/img/imgUsers.png">
         <h2>Gerenciar Doadores</h2>
         <p class="subtitle">Editar e banir doadores.</p>
         <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
-        </section>
+        </section>    
+      </a>
       </section>
-    </a>
-
-      <a id="institutionManage">
+      
         <section class="admin-container">
+          <a id="institutionManage">
           <section class="admin-card" id="openModalButton">
             <img class="img_icon" src="app/style/img/imgInstitution.png">
             <h2>Gerenciar Instituições</h2>
             <p class="subtitle">Editar instituições disponiveis.</p>
             <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
           </section>
+        </a>
         </section>
-      </a>
-
-      <a id="institutionApprove">
-        <section class="admin-container">
+    
+        <section class="admin-container"> 
+          <a id="institutionApprove">
           <section class="admin-card" id="modifyFooter">
             <img class="img_icon" src="app/style/img/imgAprove.png">
             <h2>Aprovar Instituições</h2>
             <p class="subtitle">Aprovar ou negar a criação de instituições.</p>
             <span class="arrow"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></span>
-          </section>
+          </section>      
+        </a>
         </section>
-      </a>
+
     </section>
   </section>
 
