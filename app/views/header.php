@@ -11,10 +11,8 @@ if (session_status() == PHP_SESSION_NONE) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="app/style/css/bootstrap.css">
-
     <script src="app/javaScript/fontAwesome.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app/style/css/bootstrap.css">
     <link rel="stylesheet" href="app/style/css/headerStyle.css">
 
 

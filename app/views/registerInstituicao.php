@@ -170,7 +170,8 @@
         function changeVisibleAdress() {
             var empty = verifyEmptyInfos(nome, cnpj, phone, email, director, directorCPF);
 
-            if (empty != true) {
+            //Não tirar mais a verificação
+            if (empty == true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");
@@ -184,7 +185,8 @@
         function changeVisibleOthers() {
             var empty = verifyEmptyAddres(cep, state, city, district, street, number);
 
-            if (empty != true) {
+            //Não tirar mais a verificação
+            if (empty == true) {
                 var box1 = document.getElementById("pt1");
                 var box2 = document.getElementById("pt2");
                 var box3 = document.getElementById("pt3");

@@ -42,7 +42,7 @@ class User extends Model
     {
         $data = $this->find('userEmail', $email);
 
-        if($data == false) {
+        if ($data == false) {
             return false;
         }
 
@@ -53,7 +53,17 @@ class User extends Model
         $institution = (new Institution)->find('accountID', $data['ID']);
 
         if ($institution != false) {
-            $_SESSION['institution'] = $institution['ID'];
+            if ($institution['state'] == 'waiting') {
+                echo ('<script>
+                    alert("Sua conta ainda está em analise!");
+                    window.location.href = "/login";
+                    </script>');
+
+                    die;
+            } else if ($institution['state'] == 'approved') {
+                $_SESSION['institution'] = $institution['ID'];
+            }
+
         }
 
         $admin = (new Administrator)->find('userAccount', $data['ID']);
