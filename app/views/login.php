@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app/style/css/login.css">
+    <script src="app\javaScript\jQuery.js"></script>
+    <script src="app\javaScript\login.js"></script>
     <title>Login</title>
 </head>
 
@@ -18,7 +20,7 @@
     <main>
         <section class="form loginBox">
             <h1 class="text">Login</h1>
-            <form action="/login/efetuar" method="post" name="login">
+            <form method="post" name="login" id="login">
                 <span class="table">
                     <label for="email" class="text">Email:</label>
                     <input type="email" class="loginBox" name="email" id="email" placeholder="Email">

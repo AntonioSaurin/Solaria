@@ -13,7 +13,7 @@ abstract class Model{
     }
 
     public function all(){
-        $credentials = require 'app\config\database.php';
+        $credentials = require $_SERVER['DOCUMENT_ROOT'].'\app\config\database.php';
 
         $sql = "select * from {$credentials['dbname']}.{$this->table}";
         $list = $this->connection->prepare($sql);
@@ -24,7 +24,7 @@ abstract class Model{
 
     public function find($field, $value){
         
-        $credentials = require 'app\config\database.php';
+        $credentials = require $_SERVER['DOCUMENT_ROOT'].'\app\config\database.php';
 
         $sql = "select * from {$credentials['dbname']}.{$this->table} where {$field} = :value";
         $list = $this->connection->prepare($sql);
@@ -36,7 +36,7 @@ abstract class Model{
 
     public function findTwoFields($field1, $field2, $value1, $value2){
         
-        $credentials = require 'app\config\database.php';
+        $credentials = require $_SERVER['DOCUMENT_ROOT'].'\app\config\database.php';
 
         $sql = "select * from {$credentials['dbname']}.{$this->table} where {$field1} = :value1 and {$field2} = :value2;";
         $list = $this->connection->prepare($sql);
@@ -48,7 +48,7 @@ abstract class Model{
     }
 
     public function delete($field, $value){
-        $credentials = require 'app\config\database.php';
+        $credentials = require $_SERVER['DOCUMENT_ROOT'].'\app\config\database.php';
 
         $sql = "delete from {$credentials['dbname']}.{$this->table} where {$field} = :value";
         $delete = $this->connection->prepare($sql);
