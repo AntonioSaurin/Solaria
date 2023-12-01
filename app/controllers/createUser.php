@@ -1,5 +1,9 @@
 <?php
-require_once 'vendor/autoload.php';
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+require_once ($_SERVER['DOCUMENT_ROOT'].'\vendor\autoload.php');
 
 use app\models\Adress;
 use app\models\City;
@@ -10,7 +14,7 @@ use app\models\User;
 if ($_POST['password'] != $_POST['conPassword']) {
     echo '<script> window.alert("As senhas não coincidem")</script>';
 
-    header('Location: /cadastro');
+    header('Location: /teste');
     die;
 }
 
@@ -42,10 +46,7 @@ $phoneAction = $cPhone->insert([
 ]);
 
 if ($phoneAction != 1) {
-    echo '<script> 
-    alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "/cadastro"; 
-    </script>';
+    echo json_encode(false);
 }
 
 $cPhoneData = $cPhone->find('phoneNumber', $phoneNumber);
@@ -56,10 +57,7 @@ $cCityData = $cCity->find('city', $city);
 
 if (empty($cCityData['ID'])) {
     $cPhone->delete('ID', $cPhoneData['ID']);
-    echo '<script> 
-    alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "/cadastro"; 
-    </script>';
+    echo json_encode(false);
     die;
 }
 
@@ -68,8 +66,10 @@ $cAdress = new Adress;
 $adressVerify = $cAdress->findTwoFields('CEP', 'street', $cep, $street);
 
 if ($adressVerify != null) {
+    
     $cAdressData = $adressVerify;
     $cAdressAction = 1;
+
 } else if ($adressVerify == null) {
     $cAdressAction = $cAdress->insert([
         'CEP' => $cep,
@@ -88,10 +88,7 @@ if ($adressVerify != null) {
 
 if ($cAdressAction != 1) {
     $cPhone->delete('ID', $cPhoneData['ID']);
-    echo '<script> 
-    alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "/cadastro"; 
-    </script>';
+    echo json_encode(false);
     die;
 }
 ;
@@ -111,10 +108,7 @@ $userAction = $user->insert([
 ]);
 
 if ($userAction != true) {
-    echo '<script> 
-    alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "/cadastro"; 
-    </script>';
+    echo json_encode(false);
 }
 
 $userData = $user->find('userEmail', $email);
@@ -128,10 +122,8 @@ $donatorAction = $donator->insert([
 ]);
 
 if ($donatorAction != 1) {
-    echo '<script> 
-    alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "/cadastro"; 
-    </script>';
+    echo json_encode(false);
+    die;
 }
 
-header('Location: /login');
+echo json_encode(true);

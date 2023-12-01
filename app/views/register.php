@@ -9,6 +9,7 @@
     <script src="app/javaScript/jQuery.js"></script>
     <script src="app/javaScript/jMask.js"></script>
     <script src="app/javaScript/viaCEP.js"></script>
+    <script src="app/javaScript/registerUser.js"></script>
     <title>Cadastrar</title>
 </head>
 
@@ -21,7 +22,7 @@
     <main>
         <span id="gradient">
             <section class="signupBox form" id="pt1">
-                <form action="cadastro/efetuar" method="post" name="Cadastro">
+                <form method="post" name="register" id="register">
                     <h1>Cadastrar</h1>
                     <span class="table1">
                         <section class="input-group">
