@@ -8,10 +8,10 @@
 </head>
 <body>
     <header>
-        <?php
-         include('header.php');
-        ?>
-    </header>
+		<?php
+			include('header.php');
+		?>
+	</header>
 
     <section class="containerProfile">
         <section class="profile">
