@@ -43,7 +43,7 @@ $('document').ready(function () {
                 $('#number').val('');
                 $('#street').val('');
 
-                alert('Não foi possivel efetuar o login!');
+                alert('Não foi possivel efetuar o cadastro!');
             }
         })
     })

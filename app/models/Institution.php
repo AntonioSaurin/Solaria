@@ -2,29 +2,31 @@
 
 namespace app\models;
 
-class Institution extends Model {
+class Institution extends Model
+{
     protected $table = "institution";
 
-    protected function findList(){
+    public function findList()
+    {
+        $credentials = require $_SERVER['DOCUMENT_ROOT'] . '\app\config\database.php';
 
-    }
+        $sql = "SELECT
+            institution.ID AS ID,
+            userAccount.userName AS userName,
+            institution.needs AS needs,
+            photo.photoPath AS photoPath,
+            city.city AS city,
+            state.acronym AS state
+            FROM  dbsolaria.institution
+            INNER JOIN userAccount ON institution.accountID = userAccount.id 
+            INNER JOIN adress ON userAccount.userAdress = adress.id
+            INNER JOIN photo ON userAccount.userPhoto = photo.id
+            INNER JOIN city ON adress.city = city.id
+            INNER JOIN state ON city.state = state.id
+            where institution.state = 'approved';";
+        $list = $this->connection->prepare($sql);
+        $list->execute();
 
-    public function list() {
-        echo("<section class='institutionBox' id='card-institution1'>
-        <section class='intitution-images-area'>
-            <img src='app/style/img/imagem_slide2.jpg' alt='img insti 1'>
-        </section>
-        <section class='institutionInfo'>
-            <a href='#' class='donateButton'><img class='arrowImage' src='app/style/img/imgArrowRight.png'></a>
-            <a href='/perfilInstituicoes' class='donateButton'><img class='arrowImage' src='app/style/img/imgArrowRight.png'></a>
-            <h2 class='institution-Name'>Instituição Adotar</h2>
-            <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
-        </section>
-
-        <section class='cardFooter'>
-            <i class='fa-solid fa-location-crosshairs fa-lg locatioIcon' style='color: #ffffff;'></i>
-            <p>Santa Isabel-Sp</p>
-        </section>
-    </section>");
+        return $list->fetchAll();
     }
 }
