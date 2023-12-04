@@ -17,7 +17,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <title>header</title>
 </head>
 
-<body>
+<body >
     <header id="navBar">
         <nav class="navbar navbar-expand-sm navbar-light">
             <section class="container">
