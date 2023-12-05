@@ -76,7 +76,7 @@
                         <img src="app/style/img/logoPix.png">
                     </section>
                     <section id="qrCode">
-                        
+                        <img src="app/style/img/solariaQrCode.png" class="qrCodeImage">
                     </section>
                     <section id="guidelines">
                             <p>1. Acesse seu banco</p>
