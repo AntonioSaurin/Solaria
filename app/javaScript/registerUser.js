@@ -19,7 +19,7 @@ $('document').ready(function () {
         };
 
         $.ajax({
-            url: 'http://localhost:6969/app/controllers/createUser.php',
+            url: 'https://localhost:6969/app/controllers/createUser.php',
             method: 'POST',
             data: data,
             dataType: 'json'
