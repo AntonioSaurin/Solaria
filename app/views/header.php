@@ -23,7 +23,7 @@ if (session_status() == PHP_SESSION_NONE) {
             <section class="container">
                 <section id="brandImg">
                     <a href="/">
-                        <img src="app/style/img/Brand.png" width="60px">
+                        <img src="app/style/img/Brand.png" width="10%">
 
                         <section id="color">
                             <p id="brandText" class="d-inline ml-3 ">Solaria</p>
@@ -53,11 +53,11 @@ if (session_status() == PHP_SESSION_NONE) {
                         <li class="nav-item mr-4">
                             <a href="/como-adotar" class="nav-link link-Header" id="color">Como adotar</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mr-4">
                             <a href="/sobre-nos" class="nav-link link-Header" id="color">Sobre nós</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="/" class=" ml-5 nav-link link-Header" id="color">Home</a>
+                        <li class="nav-item mr-4">
+                            <a href="/" class="  nav-link link-Header" id="color">Home</a>
                         </li>
 
                         <li class="nav-item dropdown ml-4 " id="accountIcon">
@@ -82,7 +82,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                     ');
                             } else if (!isset($_SESSION['id'])) {
                                 echo ('
-                                        <a href="\login" class="nav-link" id="color">Login</a>
+                                        <a href="\login" class="nav-link mr-6" id="color">Login</a>
                                     ');
                             }
 

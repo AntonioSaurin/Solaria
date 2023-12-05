@@ -31,7 +31,7 @@
 				<h1> Sua ajuda pode fazer a diferença! </h1>
 				<h3> A cada doação um futuro prospero é construído </h3>
 				<a href="/cadastro">
-					<button type="button"  id="btnFirst" class="btn btn-info btnHome">Faça parte disso <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
+					<button type="button"  id="btnFirst" class="btn btn-info btnHome">Faça parte disso <img class="homeArrow2" src="app/style/img/imgArrowRight.png"></button>
 				</a>
 			</section>
 			
