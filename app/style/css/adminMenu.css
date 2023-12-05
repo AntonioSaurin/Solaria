@@ -31,7 +31,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    transition: 0.3s;
+  }
+
+  .admin-container:hover{
+    padding-right: 0.5em;
+    transition: 0.3s;
+    cursor: pointer;
   }
   
   .admin-card {
@@ -133,6 +139,20 @@
   border: 0.2em solid #0000001a;
 }
 
+#topUser{
+  background-color: #ffa22d;
+}
+
+#topInstituition{
+  background-color: #2778ad;
+  color: #ffffff;
+}
+
+#topApprove{
+  background-color: #00b8a9;
+  color: #ffffff;
+}
+
 .modal-container .mostrar{
   display: flex;
 }
@@ -162,6 +182,7 @@
   border-radius: 1em;
   display: flex;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 .infoUser{
@@ -187,94 +208,8 @@
   margin: 0.6em;
 }
 
+.btnExitIcon:hover{
+  cursor: pointer;
+}
+
 /*end modal*/
-
-/* Estilos da caixa de pesquisa de usuários */
-/* .search-box {
-  position: relative;
-  margin-top: 10px;
-}
-
-#searchUser {
-  width: 90%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  outline: none;
-}
-
-.search-box i {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 30px;
-  color: #aaa;
-  font-size: 20px;
-}
-
-/* Estilos da caixa de usuário */
-/* .user-box {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.user-box img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.user-info {
-  flex-grow: 1;
-  text-align: left;
-}
-
-.user-info h3 {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
-.user-info p {
-  font-size: 12px;
-  color: #888;
-  margin: 0;
-  padding: 0;
-}
-
-.make-admin, .ban-user {
-  font-size: 24px;
-  color: #aaa;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.make-admin:hover, .ban-user:hover {
-  color: #333;
-} */
-
-/* Estilos do segundo modal de confirmação */
-/* .confirmation-content {
-  width: 300px;
-  padding: 20px;
-}
-
-.confirmAction {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.confirmAction:hover {
-  background-color: #0056b3;
-}
-
- */

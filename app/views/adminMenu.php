@@ -21,7 +21,7 @@
 
     <?= '<h1 id="bemvenido">' . Hour::getHour() . ', Moderador</h1>' ?>
 
-      <section class="admin-container" id="userManage">
+      <section class="admin-container">
       <a id="usersManage">
         <section class="admin-card">
         <img class="img_icon" src="app/style/img/imgUsers.png">
@@ -60,7 +60,7 @@
   <!-- Usuários: -->
   <section id="modalUsers" class="modal-container">
     <section class="modal1">
-      <section class="modalTop">
+      <section class="modalTop" id="topUser">
         <i class="btnExitIcon btnExit fa-solid fa-rectangle-xmark   fa-xl"></i>
         <h4>Doadores</h4>
       </section>
@@ -85,7 +85,7 @@
   <!-- Instituição: -->
   <section id="modalInstitutions" class="modal-container">
     <section class="modal1">
-      <section class="modalTop">
+      <section class="modalTop" id="topInstituition">
         <i class="btnExitIcon btnExit fa-solid fa-rectangle-xmark   fa-xl"></i>
         <h4>Instituições</h4>
       </section>
@@ -110,7 +110,7 @@
     <!-- Aprovar Instituições: -->
     <section id="modalApprove" class="modal-container">
     <section class="modal1">
-      <section class="modalTop">
+      <section class="modalTop" id="topApprove">
         <i class="btnExitIcon btnExit fa-solid fa-rectangle-xmark   fa-xl"></i>
         <h4>Aprovar Instituições</h4>
       </section>
