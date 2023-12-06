@@ -9,10 +9,18 @@ html, body {
     width: 100%;
 }
 
-html{
-    overflow-x: hidden;
+.teste{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
 html::-webkit-scrollbar{
     width: 0.1%;
 }
@@ -24,7 +32,7 @@ body {
 
 header {
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
    
    
@@ -45,7 +53,8 @@ header {
 
 #mainHome {
     color: #ffffff;
-    height: 100%; 
+    height: 100%;
+    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -54,6 +63,7 @@ header {
     #05b8a9,
     #05b8a900
     );
+    z-index: 1;
 }
 
 #imgHome{
@@ -84,26 +94,51 @@ header {
     display: flex;
     justify-content: space-around;
     margin: auto;
+    z-index: 2;
+    background-color: #faebd7;
+}
+
+#e{
+    width: 120px;
+    position: relative;
+    top: 5%;
+    left: 7%;
+}
+
+.a{
+    position: relative;
+    left: 60px;
+    width: 200%;
+}
+
+.align1{
+    position: relative;
+    left: 49%;
+}
+
+.align2{
+    position: relative;
+    right: 49%;
 }
 
 .optionsHomeArea{
     height: 150%;
-    width: 100%;
+    width: 48%;
     position: relative;
     bottom: 50%;
-    padding: 1%;
     display: flex;
     align-items: center;
+    border-style: solid;
 }
 
 #howToAdopt {
-    background-color: #fea02d; 
+    background-color: white; 
     color:#000000;
 }
 
 #signUpInstitution {
-    background-color: #2978acfa;
-    color: #ffffff;
+    background-color: white;
+    color: #000000;
 }
 
 .btnHome {
@@ -128,9 +163,20 @@ header {
     background-color: #2778AD;
 }
 
+.btnSecond {
+    position: relative;
+    bottom: 10%;  
+}
+
 #btnThird {
-    width: 30%;
-    background-color: #E12A69;  
+    width: 40%;
+    background-color: #2778AD;
+}
+
+.btnThird {
+    position: relative;
+    bottom: 10%;
+    left: 120px;
 }
 
 #btnFirst:hover, #btnSecond:hover, #btnThird:hover, .btnHome:hover{
