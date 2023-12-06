@@ -20,7 +20,7 @@ $('document').ready(function () {
         };
 
         $.ajax({
-            url: 'http://localhost:6969/app/controllers/createInstitution.php',
+            url: 'http://localhost:8000/app/controllers/createInstitution.php',
             method: 'POST',
             data: data,
             dataType: 'json'

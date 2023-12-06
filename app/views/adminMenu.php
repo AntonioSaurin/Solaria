@@ -116,19 +116,7 @@
         <h4>Aprovar Instituições</h4>
       </section>
       <section class="modalUsersContent">
-        <section class="cardUser">
-          <section class="infoUser">
-            <img class="imgCardUser" src="app/style/img/imgUsers.png">
-            <h5 class="nameCardUser"> Nome do usuário </h5>
-          </section>
-          <section class="infoUser">
-            <a href="#">
-              <img class="imgControlUser" src="app/style/img/imgEdit.png"></a>
-            <a href="#">
-              <img class="imgControlUser" src="app/style/img/imgRemove.png">
-            </a>
-          </section>
-        </section>
+        
       </section>
     </section>
   </section>

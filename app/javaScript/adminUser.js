@@ -1,10 +1,23 @@
 $(document).ready(function () {
     $('#usersManage').click(function () {
         $('#modalUsers').css('display', 'flex');
+
     })
 
     $('#institutionManage').click(function () {
         $('#modalInstitutions').css('display', 'flex')
+
+        console.log(1);
+        $.ajax({
+            url: 'http://localhost:8000/app/controllers/listInstitutions.php',
+            method: 'POST',
+            dataType: 'json'
+        }).done(function (result) {
+            console.log(result);
+           for (var i = 0; i < result.length; i++){
+            $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <img class="imgCardUser" src="app/style/img/imgUsers.png"> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <section class="infoUser"> <a href="#"> <img class="imgControlUser" src="app/style/img/imgAccept.png"></a> <a href="#"> <img class="imgControlUser" src="app/style/img/imgDecline.png"> </a> </section> </section>')
+           }
+        })
     })
 
     $('#institutionApprove').click(function () {
@@ -12,16 +25,21 @@ $(document).ready(function () {
 
         console.log(1);
         $.ajax({
-            url: 'http://localhost:6969/app/controllers/approveInstitution.php',
+            url: 'http://localhost:8000/app/controllers/approveInstitution.php',
             method: 'POST',
             dataType: 'json'
         }).done(function (result) {
             console.log(result);
+           for (var i = 0; i < result.length; i++){
+            $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <img class="imgCardUser" src="app/style/img/imgUsers.png"> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <section class="infoUser"> <a href="#"> <img class="imgControlUser" src="app/style/img/imgAccept.png"></a> <a href="#"> <img class="imgControlUser" src="app/style/img/imgDecline.png"> </a> </section> </section>')
+           }
         })
     })
 
     $('.btnExitIcon').click(function () {
+        $('.cardUser').remove();
         $('.modal-container').css('display', 'none')
+
     })
 })
 
