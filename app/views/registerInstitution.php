@@ -10,6 +10,7 @@
     <script src="app/javaScript/jMask.js"></script>
     <script src="app/javaScript/inputsVerify.js"></script>
     <script src="app/javaScript/viaCEP.js"></script>
+    <script src="app/javaScript/registerInstitution.js"></script>
     <title>Cadastrar</title>
 </head>
 
@@ -21,7 +22,7 @@
     </header>
     <main>
         <section class="signupBox form" id="pt1">
-            <form action="cadastro/efetuarInstituicao" method="post" name="Cadastro">
+            <form method="post" name="register" id="register">
                 <h1>Cadastrar</h1>
                 <span class="table1">
                     <label>Nome da Instituição:</label>
