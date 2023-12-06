@@ -48,17 +48,18 @@ if (session_status() == PHP_SESSION_NONE) {
                         ?>
 
                         <li class="nav-item mr-4">
-                            <a href="/instituicoes" class="nav-link link-Header" id="color">Instituições</a>
+                            <a href="/" class="  nav-link link-Header aling" id="color">Home</a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a href="/como-adotar" class="nav-link link-Header" id="color">Como adotar</a>
+                            <a href="/instituicoes" class="nav-link link-Header aling2" id="color">Instituições</a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a href="/sobre-nos" class="nav-link link-Header" id="color">Sobre nós</a>
+                            <a href="/como-adotar" class="nav-link link-Header aling2" id="color">Como adotar</a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a href="/" class="  nav-link link-Header" id="color">Home</a>
+                            <a href="/sobre-nos" class="nav-link link-Header aling3" id="color">Sobre nós</a>
                         </li>
+                     
 
                         <li class="nav-item dropdown ml-4 " id="accountIcon">
                             <?php
