@@ -51,7 +51,7 @@
 				</section>
 			</section>
 			<section id="signUpInstitution" class="optionsHomeArea align2">
-			<img src="app\style\img\houseIcon.png" id="e">
+			<img src="app\style\img\houseiconblue.png" id="e">
 				<section class="contentTextHome">
 					<h2 class='a'>É uma instituição?</h2>
 					<h4 class="a">Adicione-a em nossa plataforma</h6>

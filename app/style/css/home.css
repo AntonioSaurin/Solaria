@@ -95,19 +95,20 @@ header {
     justify-content: space-around;
     margin: auto;
     z-index: 2;
-    background-color: antiquewhite;
+    background-color: #faebd7;
 }
 
 #e{
-    background: #000;
     width: 120px;
     position: relative;
-    top: 15%;
+    top: 5%;
+    left: 7%;
 }
 
 .a{
     position: relative;
-    left: 120px;
+    left: 60px;
+    width: 200%;
 }
 
 .align1{
@@ -162,9 +163,20 @@ header {
     background-color: #2778AD;
 }
 
+.btnSecond {
+    position: relative;
+    bottom: 10%;  
+}
+
 #btnThird {
-    width: 30%;
-    background-color: #E12A69;  
+    width: 40%;
+    background-color: #2778AD;
+}
+
+.btnThird {
+    position: relative;
+    bottom: 10%;
+    left: 120px;
 }
 
 #btnFirst:hover, #btnSecond:hover, #btnThird:hover, .btnHome:hover{
