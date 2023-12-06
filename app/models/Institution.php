@@ -43,7 +43,7 @@ class Institution extends Model
         institution.facebook AS facebook,
         institution.description AS description,
         institution.needs AS needs,
-        institution.stateInstitution AS stateInstitution,
+        institution.state AS stateInstitution,
         phone.DDD AS DDD, 
         phone.phoneNumber AS phoneNumber,
         adress.CEP AS CEP, 
