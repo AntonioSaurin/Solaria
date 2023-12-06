@@ -95,10 +95,17 @@ header {
     justify-content: space-around;
     margin: auto;
     z-index: 2;
-    background-color: #faebd7;
+    background-color: #fff;
+
+}
+#e{
+    width: 120px;
+    position: relative;
+    top: 5%;
+    left: 7%;
 }
 
-#e{
+#f{
     width: 120px;
     position: relative;
     top: 5%;
@@ -114,11 +121,15 @@ header {
 .align1{
     position: relative;
     left: 49%;
+    box-shadow: 36px -1px 40px 20px rgba(0,0,0,0.36);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .align2{
     position: relative;
     right: 49%;
+    box-shadow: -36px -1px 40px 20px rgba(0,0,0,0.36);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .optionsHomeArea{
@@ -128,7 +139,6 @@ header {
     bottom: 50%;
     display: flex;
     align-items: center;
-    border-style: solid;
 }
 
 #howToAdopt {
@@ -154,13 +164,15 @@ header {
     height: 30%;
     position: relative;
     right: 10%;
-    background-color: #E12A69;
+    background-color: #2778AD;
     font-size: 100%;
 }
 
 #btnSecond {
-    width: 30%;
-    background-color: #2778AD;
+    width: 40%;
+    background-color: #E12A69;
+    position: relative;
+    left: 110px;
 }
 
 .btnSecond {
@@ -179,9 +191,19 @@ header {
     left: 120px;
 }
 
-#btnFirst:hover, #btnSecond:hover, #btnThird:hover, .btnHome:hover{
-    background-color: #ffffff;
+#btnSecond:hover,
+.btnHome:hover{
+    transition: 0.5s;
+    background-color: rgb(223, 222, 222);
     color: #E12A69;
+}
+
+#btnFirst:hover,
+#btnThird:hover
+{
+    transition: 0.5s;
+    background-color: rgb(223, 222, 222);
+    color: #2778AD;
 }
 
 .homeArrow1{
