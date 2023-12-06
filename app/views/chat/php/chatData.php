@@ -1,8 +1,12 @@
 <?php
     while($row = mysqli_fetch_assoc($query)){
+
+        //Parte que pega os usuários
         $sql2 = "SELECT * FROM messages WHERE (incomingMsgID = {$row['ID']}
                 OR outgoingMsgID = {$row['ID']}) AND (outgoingMsgID = {$outgoing_id} 
                 OR incomingMsgID = {$outgoing_id}) ORDER BY msgID DESC LIMIT 1";
+            
+    
         $query2 = mysqli_query($conn, $sql2);
         $row2 = mysqli_fetch_assoc($query2);
         (mysqli_num_rows($query2) > 0) ? $result = $row2['msg'] : $result ="Sem mensagens";

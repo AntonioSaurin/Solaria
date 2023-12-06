@@ -21,12 +21,14 @@
 		
 	</header>
 	
+	<img src="app/style/img/homeChildren.png" class="teste">
+
 	<section id="contentHome" class="flexContainer">
 	
 		<section id="mainHome">
-			<figure id="imgHome">
+			<!-- <figure id="imgHome">
 				<img src="app/style/img/homeChildren.png" alt="Crianças sorrindo" title="Bem vindo(a) a solaria!">
-			</figure>
+			</figure> -->
 			<section class="contentTextHome">
 				<h1> Sua ajuda pode fazer a diferença! </h1>
 				<h3> A cada doação um futuro prospero é construído </h3>
@@ -37,7 +39,7 @@
 			
 		</section>
 		<section id="institutionArea">
-			<section id="howToAdopt" class="optionsHomeArea">
+			<section id="howToAdopt" class="optionsHomeArea align1">
 				<section class="contentTextHome">
 					<h2>Como adotar?</h2>
 					<h4>Veja informações sobre o assunto</h6>
@@ -48,10 +50,11 @@
 					</a>
 				</section>
 			</section>
-			<section id="signUpInstitution" class="optionsHomeArea">
+			<section id="signUpInstitution" class="optionsHomeArea align2">
+			<img src="app\style\img\houseiconblue.png" id="e">
 				<section class="contentTextHome">
-					<h2>É uma instituição?</h2>
-					<h4>Adicione-a em nossa plataforma</h6>
+					<h2 class='a'>É uma instituição?</h2>
+					<h4 class="a">Adicione-a em nossa plataforma</h6>
 				</section>
 				<section class="btnThird">
 					<a href="/cadastroInstituicao">
