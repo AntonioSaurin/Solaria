@@ -4,7 +4,7 @@ $('document').ready(function () {
 
         console.log('oi');
         $.ajax({
-            url: 'http://localhost:6969/app/controllers/listInstitutions.php',
+            url: 'http://localhost:8000/app/controllers/listInstitutions.php',
             method: 'POST',
             data: { status: 1 },
             dataType: 'json'
