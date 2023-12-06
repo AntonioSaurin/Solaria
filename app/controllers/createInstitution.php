@@ -1,5 +1,9 @@
 <?php
-require_once 'vendor/autoload.php';
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+require_once ($_SERVER['DOCUMENT_ROOT'].'\vendor\autoload.php');
 
 use app\models\Adress;
 use app\models\City;
@@ -8,10 +12,7 @@ use app\models\Phone;
 use app\models\User;
 
 if ($_POST['password'] != $_POST['conPassword']) {
-    echo '<script> window.alert("As senhas não coincidem);
-    window.location.href = "/cadastroInstituicao";
-    </script>';
-
+    echo json_encode(false);
     die;
 }
 
@@ -45,10 +46,7 @@ $cPhoneAction = $cPhone->insert([
 ]);
 
 if ($cPhoneAction != 1) {
-    echo '<script> 
-    alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "/cadastro"; 
-    </script>';
+    echo json_encode(false);
     die;
 }
 
@@ -60,10 +58,7 @@ $cCityData = $cCity->find('city', $city);
 
 if (empty($cCityData['ID'])) {
     $cPhone->delete('ID', $cPhoneData['ID']);
-    echo '<script> 
-    alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "/cadastro"; 
-    </script>';
+    echo json_encode(false);
     die;
 }
 
@@ -78,24 +73,12 @@ $cAdressAction = $cAdress->insert([
 
 if ($cAdressAction != 1) {
     $cPhone->delete('ID', $cPhoneData['ID']);
-    echo '<script> 
-    alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "/cadastro"; 
-    </script>';
+    echo json_encode(false);
     die;
 }
 ;
 
 $cAdressData = $cAdress->findTwoFields('CEP', 'street', $cep, $street);
-
-// var_dump($cPhoneData);
-// var_dump($cAdressData);
-// var_dump($name);
-// var_dump($email);
-// var_dump($password);
-// var_dump($number);
-
-// die;
 
 $cUser = new User;
 
@@ -112,10 +95,7 @@ $cUserAction = $cUser->insert([
 if ($cUserAction != 1) {
     $cPhone->delete('ID', $cPhoneData['ID']);
     $cAdress->delete('ID', $cAdressData['ID']);
-    echo '<script> 
-    alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "/cadastro"; 
-    </script>';
+    echo json_encode(false);
     die;
 }
 
@@ -138,12 +118,9 @@ if ($cUserAction != 1) {
     $cPhone->delete('ID', $cPhoneData['ID']);
     $cAdress->delete('ID', $cAdressData['ID']);
     $cUser->delete('ID', $cUserData['ID']);
-    echo '<script> 
-    alert("Incapaz de efetuar o cadastro!";
-    window.location.href = "/cadastro"; 
-    </script>';
+    echo json_encode(false);
     die;
 }
 
-header('Location: /');
+echo json_encode(true);
 

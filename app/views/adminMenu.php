@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="app/style/css/adminMenu.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="app/javaScript/jQuery.js"></script>
+  <script src="app/javaScript/adminUser.js"></script>
 </head>
 
 <body>
@@ -133,31 +134,7 @@
   </section>
 
   <script>
-    $(document).ready(function () {
-      $('#usersManage').click(function () {
-        $('#modalUsers').css('display', 'flex')
-      })
-
-      $('.btnExitIcon').click(function () {
-        $('.modal-container').css('display', 'none')
-      })
-
-      $('#institutionManage').click(function () {
-        $('#modalInstitutions').css('display', 'flex')
-      })
-
-      $('.btnExitIcon').click(function () {
-        $('.modal-container').css('display', 'none')
-      })
-
-      $('#institutionApprove').click(function () {
-        $('#modalApprove').css('display', 'flex')
-      })
-
-      $('.btnExitIcon').click(function () {
-        $('.modal-container').css('display', 'none')
-      })
-    })
+    
   </script>
   <footer id="footerArea">
 		<?php

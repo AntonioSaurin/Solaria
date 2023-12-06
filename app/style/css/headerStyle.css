@@ -1,65 +1,79 @@
-@font-face {
-    font-family: "Sniglet";
-    src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+ul {
+    margin-right: -100px;
 }
 
 body {
     background-color: rgba(48, 230, 24, 0);
 }
 
+@font-face {
+    font-family: "Sniglet";
+    src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+}
+
 p {
     font-family: "Sniglet";
 }
 
-.link-Header{
+a,
+.link-Header {
     color: #fff;
+    width: 120px;
 }
 
-.link-Header:hover{
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aling{
+    position: relative;
+    left: 50px;
+}
+
+.aling2{
+    position: relative;
+    left: 35px;
+}
+
+.aling3{
+    position: relative;
+    left: 40px;
+}
+
+a:hover,
+.link-Header:hover {
     color: gray;
 }
 
 #brandText {
-    font-size: 165%;
+    font-size: 20pt;
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translate(-50%, -50%);
 }
 
-.container{
+#headerMenu {
+    border-radius: 8px;
+}
+
+.container {
     margin: 0;
     display: flex;
     align-content: space-between;
 }
 
-#accountIcon{
-    margin-right: 100%;
+#accountIcon {
+    margin-right: -160px;
 
 }
 
-li:hover{
-    color:#2778ad;
+li:hover {
+    color: #2778ad;
 }
 
-#accountIcon a{
+#accountIcon a {
     font-weight: bold;
-}
-
-.nav-link{
-    display: grid;
-    min-width: 7rem;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 270%;
-}
-
-.ml-5{
-    width: 50%;
-}
-
-.mr-6{
-    margin-left: -20%;
 }
