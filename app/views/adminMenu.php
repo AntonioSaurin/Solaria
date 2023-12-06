@@ -65,6 +65,10 @@
         <h4>Doadores</h4>
       </section>
       <section class="modalUsersContent">
+        <?php 
+          $user = (new User)-> all(); 
+          
+         ?>
         <section class="cardUser">
           <section class="infoUser">
             <img class="imgCardUser" src="app/style/img/imgUsers.png">
