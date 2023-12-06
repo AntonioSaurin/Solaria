@@ -6,9 +6,9 @@ $('document').ready(function () {
             email: $('#email').val(),
             password: $('#password').val()
         };
-console.log(data);
+
         $.ajax({
-            url: 'localhost:6969/app/controllers/login.php',
+            url: 'http://localhost:6969/app/controllers/login.php',
             method: 'POST',
             data: data,
             dataType: 'json'

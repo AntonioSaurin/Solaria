@@ -30,7 +30,7 @@ class Institution extends Model
         return $list->fetchAll();
     }
 
-    public function fullFind($id)
+    public function fullFind()
     {
         $sql = "SELECT 
         userAccount.ID as ID,
@@ -60,11 +60,10 @@ class Institution extends Model
             INNER JOIN photo ON userAccount.userPhoto = photo.id
             INNER JOIN city ON adress.city = city.id
             INNER JOIN state ON city.state = state.id
-            WHERE userAccount.ID = :value;";
+            WHERE institution.state = 'waiting';";
         $list = $this->connection->prepare($sql);
-        $list->bindValue(':value', $id);
         $list->execute();
 
-        return $list->fetch();
+        return $list->fetchAll();
     }
 }
