@@ -12,9 +12,7 @@ use app\models\Phone;
 use app\models\User;
 
 if ($_POST['password'] != $_POST['conPassword']) {
-    echo '<script> window.alert("As senhas não coincidem")</script>';
-
-    header('Location: /teste');
+    echo json_encode(false);
     die;
 }
 

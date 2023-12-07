@@ -10,61 +10,70 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="app/style/css/bootstrap.css">
 	<link rel="stylesheet" href="app/style/css/home.css">
-	
+
 </head>
 
 <body>
 	<header>
 		<?php
-			include('header.php');
+		include('header.php');
 		?>
-		
+
 	</header>
-	
+
+	<img src="app/style/img/homeChildren.png" class="teste">
+
 	<section id="contentHome" class="flexContainer">
-	
+
 		<section id="mainHome">
-			<figure id="imgHome">
-				<img src="app/style/img/homeChildren.png" alt="Crianças sorrindo" title="Bem vindo(a) a solaria!">
-			</figure>
 			<section class="contentTextHome">
 				<h1> Sua ajuda pode fazer a diferença! </h1>
 				<h3> A cada doação um futuro prospero é construído </h3>
 				<a href="/cadastro">
-					<button type="button"  id="btnFirst" class="btn btn-info btnHome">Faça parte disso <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
+					<button type="button" id="btnFirst" class="btn btn-info btnHome">
+						Faça parte disso 
+						<img class="homeArrow2" src="app/style/img/imgArrowRight.png">
+					</button>
 				</a>
 			</section>
-			
 		</section>
 		<section id="institutionArea">
-			<section id="howToAdopt" class="optionsHomeArea">
+			<section id="howToAdopt" class="optionsHomeArea align1">
+				<img src="app\style\img\iconhug.png" id="f">
 				<section class="contentTextHome">
-					<h2>Como adotar?</h2>
-					<h4>Veja informações sobre o assunto</h6>
+					<h2 class='a'>Saiba como adotar!</h2>
+					<h4 class='a'>Veja informações sobre o assunto</h6>
 				</section>
 				<section class="btnSecond">
 					<a href="/como-adotar">
-						<button type="button" id="btnSecond" class="btn btn-info btnHome">Descubra aqui  <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
+						<button type="button" id="btnSecond" class="btn btn-info btnHome">
+							Saiba aqui
+							<img class="homeArrow1" src="app/style/img/imgArrowRight.png">
+						</button>
 					</a>
 				</section>
 			</section>
-			<section id="signUpInstitution" class="optionsHomeArea">
+			<section id="signUpInstitution" class="optionsHomeArea align2">
+				<img src="app\style\img\houseiconblue.png" id="e">
 				<section class="contentTextHome">
-					<h2>É uma instituição?</h2>
-					<h4>Adicione-a em nossa plataforma</h6>
+					<h2 class='a'>É uma instituição?</h2>
+					<h4 class="a">Cadastre-se em nossa plataforma</h6>
 				</section>
 				<section class="btnThird">
 					<a href="/cadastroInstituicao">
-						<button type="button" id="btnThird" class="btn btn-info btnHome">Cadastre-se  <img class="homeArrow1" src="app/style/img/imgArrowRight.png"></button>
+						<button type="button" id="btnThird" class="btn btn-info btnHome">
+							Cadastre-se 
+							<img class="homeArrow1" src="app/style/img/imgArrowRight.png">
+						</button>
 					</a>
 				</section>
 			</section>
 		</section>
 	</section>
-	
+
 	<footer id="footerArea">
 		<?php
-			include_once("footer.php");
+		include_once("footer.php");
 		?>
 	</footer>
 

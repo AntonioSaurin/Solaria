@@ -46,7 +46,7 @@ create table photo(
     primary key (ID)
 );
 
-insert into `photo` (ID, photoName, photoFormat, photoSize, photoPath, photoType) values ('1', 'dafaultImage.png', 'png', '4352', 'app/uploads/defaultImage.png', 'profile');
+insert into `photo` (ID, photoName, photoFormat, photoSize, photoPath, photoType) values ('1', 'dafaultImage.png', 'png', '4352', './app/uploads/defaultImage.png', 'profile');
 
 create table userAccount(
     ID int auto_increment,
@@ -83,6 +83,7 @@ create table institution(
     instagram varchar (30),
     facebook varchar (30),
     description varchar(255),
+    needs varchar(50) default 'Brinquedos, Roupas, Produtos e Dinheiro.',
     state enum('waiting', 'approved'),
     primary key(ID),
     foreign key (accountID) references userAccount(ID)

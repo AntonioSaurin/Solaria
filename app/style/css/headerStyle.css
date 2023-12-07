@@ -4,11 +4,7 @@ ul {
 
 body {
     background-color: rgba(48, 230, 24, 0);
-    
-
 }
-
-
 
 @font-face {
     font-family: "Sniglet";
@@ -18,12 +14,39 @@ body {
 p {
     font-family: "Sniglet";
 }
-.link-Header{
+
+a,
+.link-Header {
     color: #fff;
+    width: 120px;
 }
-.link-Header:hover{
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aling{
+    position: relative;
+    left: 50px;
+}
+
+.aling2{
+    position: relative;
+    left: 35px;
+}
+
+.aling3{
+    position: relative;
+    left: 40px;
+}
+
+a:hover,
+.link-Header:hover {
     color: gray;
 }
+
 #brandText {
     font-size: 20pt;
     position: absolute;
@@ -36,18 +59,21 @@ p {
     border-radius: 8px;
 }
 
-.container{
+.container {
     margin: 0;
     display: flex;
     align-content: space-between;
 }
-#accountIcon{
+
+#accountIcon {
     margin-right: -160px;
-    
+
 }
- li:hover{
-    color:#2778ad;
+
+li:hover {
+    color: #2778ad;
 }
-#accountIcon a{
+
+#accountIcon a {
     font-weight: bold;
 }

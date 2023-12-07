@@ -14,8 +14,6 @@ if (session_status() == PHP_SESSION_NONE) {
     <script src="app/javaScript/fontAwesome.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="app/style/css/bootstrap.css">
     <link rel="stylesheet" href="app/style/css/headerStyle.css">
-
-
     <title>header</title>
 </head>
 
@@ -25,7 +23,7 @@ if (session_status() == PHP_SESSION_NONE) {
             <section class="container">
                 <section id="brandImg">
                     <a href="/">
-                        <img src="app/style/img/Brand.png" width="60px">
+                        <img src="app/style/img/Brand.png" width="10%">
 
                         <section id="color">
                             <p id="brandText" class="d-inline ml-3 ">Solaria</p>
@@ -50,17 +48,18 @@ if (session_status() == PHP_SESSION_NONE) {
                         ?>
 
                         <li class="nav-item mr-4">
-                            <a href="/instituicoes" class="nav-link link-Header" id="color">Instituições</a>
+                            <a href="/" class="  nav-link link-Header aling" id="color">Home</a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a href="/como-adotar" class="nav-link link-Header" id="color">Como adotar</a>
+                            <a href="/instituicoes" class="nav-link link-Header aling2" id="color">Instituições</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="/sobre-nos" class="nav-link link-Header" id="color">Sobre nós</a>
+                        <li class="nav-item mr-4">
+                            <a href="/como-adotar" class="nav-link link-Header aling2" id="color">Como adotar</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="/" class=" ml-5 nav-link link-Header" id="color">Home</a>
+                        <li class="nav-item mr-4">
+                            <a href="/sobre-nos" class="nav-link link-Header aling3" id="color">Sobre nós</a>
                         </li>
+                     
 
                         <li class="nav-item dropdown ml-4 " id="accountIcon">
                             <?php
@@ -84,7 +83,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                     ');
                             } else if (!isset($_SESSION['id'])) {
                                 echo ('
-                                        <a href="\login" class="nav-link" id="color">Login</a>
+                                        <a href="\login" class="nav-link mr-6" id="color">Login</a>
                                     ');
                             }
 
@@ -99,13 +98,13 @@ if (session_status() == PHP_SESSION_NONE) {
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>

@@ -6,14 +6,23 @@
 
 html, body {
     height: 100%;
+    width: 100%;
 }
 
-html{
-    overflow-x: hidden;
+.teste{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
 html::-webkit-scrollbar{
-    width: 0.1em;
+    width: 0.1%;
 }
 
 body {
@@ -23,7 +32,7 @@ body {
 
 header {
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
    
    
@@ -44,7 +53,8 @@ header {
 
 #mainHome {
     color: #ffffff;
-    height: 97vh; 
+    height: 100%;
+    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -53,11 +63,12 @@ header {
     #05b8a9,
     #05b8a900
     );
+    z-index: 1;
 }
 
 #imgHome{
-    width: 200vw;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-self: center;
     z-index: -1;
@@ -65,71 +76,139 @@ header {
 }
 
 .contentTextHome {
-    margin-left: 5rem;
+    margin-left: 5%;
 }
 
 .contentTextHome p {
     display: inline-block; 
-    margin-right: 10px; 
+    margin-right: 10%; 
 }
 
 #header p {
-    margin-top: 17px;
+    margin-top: 17%;
     text-align: center;
 }
 
 #institutionArea{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     margin: auto;
+    z-index: 2;
+    background-color: #fff;
+
+}
+#e{
+    width: 120px;
+    position: relative;
+    top: 5%;
+    left: 7%;
+}
+
+#f{
+    width: 120px;
+    position: relative;
+    top: 5%;
+    left: 7%;
+}
+
+.a{
+    position: relative;
+    left: 60px;
+    width: 200%;
+}
+
+.align1{
+    position: relative;
+    left: 49%;
+    box-shadow: 36px -1px 40px 20px rgba(0,0,0,0.36);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.align2{
+    position: relative;
+    right: 49%;
+    box-shadow: -36px -1px 40px 20px rgba(0,0,0,0.36);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .optionsHomeArea{
-    height: 15em;
-    padding: 1em;
-    width: 50em;
+    height: 150%;
+    width: 48%;
+    position: relative;
+    bottom: 50%;
     display: flex;
     align-items: center;
 }
 
 #howToAdopt {
-    background-color: #fea02d; 
+    background-color: white; 
     color:#000000;
 }
 
 #signUpInstitution {
-    background-color: #2978acfa;
-    color: #ffffff;
+    background-color: white;
+    color: #000000;
 }
 
 .btnHome {
     color: #ffffff;
-    padding: 1em 1.5em; 
+    padding: 1% 1.5%; 
     display: inline-block; 
-    margin-left: 1em; 
+    margin-left: 10%; 
     transition: 0.2s;
 }
 
 #btnFirst{
-    background-color: #E12A69;
+    width: 25%;
+    height: 30%;
+    position: relative;
+    right: 10%;
+    background-color: #2778AD;
+    font-size: 100%;
 }
 
 #btnSecond {
-    background-color: #2778AD;
+    width: 40%;
+    background-color: #E12A69;
+    position: relative;
+    left: 110px;
+}
+
+.btnSecond {
+    position: relative;
+    bottom: 10%;  
 }
 
 #btnThird {
-    background-color: #E12A69;  
+    width: 40%;
+    background-color: #2778AD;
 }
 
-#btnFirst:hover, #btnSecond:hover, #btnThird:hover, .btnHome:hover{
-    background-color: #ffffff;
+.btnThird {
+    position: relative;
+    bottom: 10%;
+    left: 120px;
+}
+
+#btnSecond:hover,
+.btnHome:hover{
+    transition: 0.5s;
+    background-color: rgb(223, 222, 222);
     color: #E12A69;
 }
 
+#btnFirst:hover,
+#btnThird:hover
+{
+    transition: 0.5s;
+    background-color: rgb(223, 222, 222);
+    color: #2778AD;
+}
+
 .homeArrow1{
-    height: 20px; 
-    width: 20px;
+    height: 10%; 
+    width: 10%;
     filter: invert(100%);
     margin: auto;
     display: inline;
@@ -140,5 +219,15 @@ header {
     filter: invert(0%);
 }
 
+.homeArrow2{
+    height: 40%; 
+    width: 15%;
+    filter: invert(100%);
+    margin: auto;
+    display: inline;
+    transition: 0.2s;
+}
 
-
+.homeArrow2:hover{
+    filter: invert(0%);
+}

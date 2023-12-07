@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="app/style/css/institutionPage.css" rel="stylesheet">
-    <script src="app/javaScript/fontAwesome.js" crossorigin="anonymous"></script>
-    <title>Solaria/Instituições</title>
+    <!-- <script src="app/javaScript/fontAwesome.js"></script> -->
+    <script src="app/javaScript/jQuery.js"></script>
+    <script src="app/javaScript/instituionPage.js"></script>
+    <title>Solaria/Instituições</title> 
 </head>
 
 <body>

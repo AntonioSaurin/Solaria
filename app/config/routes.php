@@ -5,7 +5,7 @@ return [
     
     '/login' => 'views/login.php',
     '/cadastro' => 'views/register.php',
-    '/cadastroInstituicao' => 'views/registerInstituicao.php',
+    '/cadastroInstituicao' => 'views/registerInstitution.php',
     '/sobre-nos' => 'views/aboutUs.php',
     '/como-adotar' => 'views/howToAdopt.php',
     '/teste' => 'views/teste.php',

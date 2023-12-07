@@ -70,7 +70,7 @@
                 <span class="table1">
                     <label>CEP:</label>
                     <section class="input-group">
-                        <input type="text" class="signupBox" name="CEP" id="CEP" onkeyup="validationCEP()">
+                        <input type="text" class="signupBox" name="CEP" id="CEP" >
                         <span id="CEP-error"></span>
                     </section>
 
@@ -108,26 +108,25 @@
                     </section>
                     <label>Cidade:</label>
                     <section class="input-group">
-                        <input type="text" class="signupBox" name="city" id="city" onkeyup="validationCity()">
+                        <input type="text" class="signupBox" name="city" id="city" >
                         <span id="city-error"></span>
                     </section>
                     <span class="table2">
                         <label>Bairro:</label>
                         <section class="input-group">
-                            <input type="text" class="signupBox" name="district" id="district"
-                                onkeyup="validationDistrict()">
+                            <input type="text" class="signupBox" name="district" id="district">
                             <span id="district-error"></span>
                         </section>
 
                         <label>Numero:</label>
                         <section class="input-group">
-                            <input type="text" class="signupBox" name="number" id="number" onkeyup="validationNumber()">
+                            <input type="text" class="signupBox" name="number" id="number">
                             <span id="number-error"></span>
                         </section>
 
                         <label>Rua:</label>
                         <section class="input-group">
-                            <input type="text" class="signupBox" name="street" id="street" onkeyup="validationStreet()">
+                            <input type="text" class="signupBox" name="street" id="street" >
                             <span id="street-error"></span>
                         </section>
 
