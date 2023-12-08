@@ -32,5 +32,5 @@ INSTITUIÇÃO:
 ------------------LOGIN------------------
 
 ADMIN:
- Email:
- Senha:
+ Email: antonio.saurin@etec.sp.gov.br
+ Senha: Admin

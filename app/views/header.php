@@ -17,7 +17,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <title>header</title>
 </head>
 
-<body >
+<body>
     <header id="navBar">
         <nav class="navbar navbar-expand-sm navbar-light">
             <section class="container">
@@ -37,15 +37,6 @@ if (session_status() == PHP_SESSION_NONE) {
 
                 <section class="link-Area">
                     <ul class="navbar-nav ml-auto">
-                        <?php
-                        if (isset($_SESSION['admin'])) {
-                            echo ('
-                                <li class="nav-item mr-5">
-                                    <a href="/admin" class="nav-link link-Header" id="color">Admin</a>
-                                </li>
-                            ');
-                        }
-                        ?>
 
                         <li class="nav-item mr-4">
                             <a href="/" class="  nav-link link-Header aling" id="color">Home</a>
@@ -59,7 +50,7 @@ if (session_status() == PHP_SESSION_NONE) {
                         <li class="nav-item mr-4">
                             <a href="/sobre-nos" class="nav-link link-Header aling3" id="color">Sobre nós</a>
                         </li>
-                     
+
 
                         <li class="nav-item dropdown ml-4 " id="accountIcon">
                             <?php
@@ -69,18 +60,20 @@ if (session_status() == PHP_SESSION_NONE) {
                                         <a href="#" id="accountIcon"class="fa-solid fa-user-group fa-xl nav-link  mt-2" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#db628d "></a>
 
                                         <section id="headerMenu"class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">');
-                                            if(!isset($_SESSION['institution'])) {
-                                                echo('<a class="dropdown-item" href="/infoUser">Conta</a>');
-                                            } else if(isset($_SESSION['institution'])) {
-                                                echo('<a class="dropdown-item" href="/infoInstituicoes">Conta</a>');
-                                            }
-                                        
-                                            
-                                            echo('<a class="dropdown-item" href="/chat">Chat</a>
-                                            <a class="dropdown-item" href="../app/views/logout.php">Sair</a>
-                                
-                                        </section>  
-                                    ');
+                                if (!isset($_SESSION['institution'])) {
+                                    echo ('<a class="dropdown-item" href="/infoUser">Conta</a>');
+                                } else if (isset($_SESSION['institution'])) {
+                                    echo ('<a class="dropdown-item" href="/infoInstituicoes">Conta</a>');
+                                }
+
+
+                                echo ('<a class="dropdown-item" href="/chat">Chat</a>');
+
+                                if (isset($_SESSION['admin'])) {
+                                    echo ('<a href="/admin" class="dropdown-item">Admin</a>');
+                                }
+                                echo ('<a class="dropdown-item" href="../app/views/logout.php">Sair</a>
+                                    </section>  ');
                             } else if (!isset($_SESSION['id'])) {
                                 echo ('
                                         <a href="\login" class="nav-link mr-6" id="color">Login</a>
