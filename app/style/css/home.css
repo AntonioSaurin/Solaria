@@ -4,23 +4,14 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
+
+    font-family: "Sniglet";
+    src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
 }
 
-.teste{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-html {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-}
 html::-webkit-scrollbar{
     width: 0.1%;
 }
@@ -28,128 +19,66 @@ html::-webkit-scrollbar{
 body {
     display: flex;
     flex-direction: column;
+    font-family: Arial, sans-serif;
 }
 
 header {
     width: 100%;
     z-index: 2;
     position: fixed;
-   
-   
 }
+
 #color{
     color: #fff;
 }
+
 #color:hover {
     text-decoration: overline;
-    color: #ffffff75
+    color: #fdfdfd;
 }
 
-#contentHome {
-    flex: 1.5; 
-    display: flex;
-    flex-direction: column;
-}
-
-#mainHome {
-    color: #ffffff;
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+#mainHome{
     background-image: linear-gradient(to right,
     #05b8a9,
     #05b8a900
     );
-    z-index: 1;
-}
 
-#imgHome{
-    height: 100%;
+    flex-direction: column;
+    display: flex;
+    
+    justify-content: center;
+    position: relative;
     width: 100%;
-    display: flex;
-    justify-self: center;
-    z-index: -1;
-    position: fixed;
+
+    border-bottom: 10px solid #e3286a;
 }
 
-.contentTextHome {
-    margin-left: 5%;
+#mainHome .imgTop{
+    width: 100vw;
+    height: 99vh;
 }
 
-.contentTextHome p {
-    display: inline-block; 
-    margin-right: 10%; 
+#imgTop{
+    z-index: -10;
 }
 
-#header p {
-    margin-top: 17%;
-    text-align: center;
+#contentTop{
+    margin-left: 40px;
+    width: 45vw;
+    position: absolute;
+    color: #fff;
 }
 
-#institutionArea{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    z-index: 2;
-    background-color: #fff;
-
-}
-#e{
-    width: 120px;
-    position: relative;
-    top: 5%;
-    left: 7%;
+#contentTop h1{
+    color: #e3286a;
+    font-size:60px;
+    font-family: Sniglet;
 }
 
-#f{
-    width: 120px;
-    position: relative;
-    top: 5%;
-    left: 7%;
+#contentTop p{
+    font-size: 25px;
 }
 
-.a{
-    position: relative;
-    left: 60px;
-    width: 200%;
-}
-
-.align1{
-    position: relative;
-    left: 49%;
-    box-shadow: 36px -1px 40px 20px rgba(0,0,0,0.36);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.align2{
-    position: relative;
-    right: 49%;
-    box-shadow: -36px -1px 40px 20px rgba(0,0,0,0.36);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.optionsHomeArea{
-    height: 150%;
-    width: 48%;
-    position: relative;
-    bottom: 50%;
-    display: flex;
-    align-items: center;
-}
-
-#howToAdopt {
-    background-color: white; 
-    color:#000000;
-}
-
-#signUpInstitution {
-    background-color: white;
-    color: #000000;
-}
 
 .btnHome {
     color: #ffffff;
@@ -159,54 +88,22 @@ header {
     transition: 0.2s;
 }
 
-#btnFirst{
+#buttonTop{
     width: 25%;
     height: 30%;
     position: relative;
     right: 10%;
-    background-color: #2778AD;
+    background-color: #ffa22d;
     font-size: 100%;
 }
 
-#btnSecond {
-    width: 40%;
-    background-color: #E12A69;
-    position: relative;
-    left: 110px;
-}
-
-.btnSecond {
-    position: relative;
-    bottom: 10%;  
-}
-
-#btnThird {
-    width: 40%;
-    background-color: #2778AD;
-}
-
-.btnThird {
-    position: relative;
-    bottom: 10%;
-    left: 120px;
-}
-
-#btnSecond:hover,
-.btnHome:hover{
+#buttonTop:hover, .arrow:hover, #btnHowToAdopt:hover{
     transition: 0.5s;
     background-color: rgb(223, 222, 222);
     color: #E12A69;
 }
 
-#btnFirst:hover,
-#btnThird:hover
-{
-    transition: 0.5s;
-    background-color: rgb(223, 222, 222);
-    color: #2778AD;
-}
-
-.homeArrow1{
+.arrow{
     height: 10%; 
     width: 10%;
     filter: invert(100%);
@@ -215,19 +112,89 @@ header {
     transition: 0.2s;
 }
 
-.homeArrow1:hover{
-    filter: invert(0%);
+#scrollInstitution{
+    align-self: center;
+    transition: 200ms;
+    font-family: Sniglet;
+    font-size: 20px;
+    position: absolute;
+    bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 95%;
 }
 
-.homeArrow2{
-    height: 40%; 
-    width: 15%;
-    filter: invert(100%);
+#scrollInstitution:hover{
+    transform: translateY(-20%);   
+}
+
+#scrollInstitution a{
+    color: #ffff;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+#scrollInstitution p{
+    margin-bottom: 0;
+}
+
+.arrowDown{
     margin: auto;
-    display: inline;
-    transition: 0.2s;
+    margin-top: 4%;
 }
 
-.homeArrow2:hover{
-    filter: invert(0%);
+#institutionArea{
+    width: 100%;
+    min-height: 50%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: #fff;
+}
+
+.optionsHomeArea{
+    width: 50%;
+    bottom: 50%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgInstitutionArea{
+    width: 15%;
+    margin: 5%;
+}
+
+.contentTextHome {
+    margin: 0%;
+}
+
+#btnHowToAdopt{
+    width: 60%;
+    height: 35%;
+    position: relative;
+    margin-top: 32%;
+    background-color: #e3286a;
+    font-size: 100%;
+    color: #fdfdfd;
+}
+
+#btnInstitution{
+    width: 85%;
+    height: 35%;
+    position: relative;
+    margin-top: 32%;
+    background-color: #2278AD;
+    font-size: 100%;
+    color: #fdfdfd;
+}
+
+#btnInstitution:hover{
+    transition: 0.5s;
+    background-color: rgb(223, 222, 222);
+    color: #2278AD;
 }

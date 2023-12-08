@@ -13,7 +13,7 @@
 }
 
 html::-webkit-scrollbar{
-    width: 0.1em;
+    width: 0.1%;
 }
 
 html {
@@ -23,24 +23,20 @@ html {
     width: 100%;
 }
 #footerArea{
-    
-    width: 100vw;
+    width: 100%;
 }
+
 header {
     position: fixed;
     width: 100%; 
     z-index:2000;
     background: rgba(0, 128, 0, 0);
-    
-   
-   
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
-
 
 /*header link color*/
 #color {
@@ -58,20 +54,20 @@ body {
 
 /*SLIDER AREA*/
 #top_main img{
-    
     width: 100vw;
-    height: 105vh;
+    height: 99vh;
 }
+
 #content-top h1{
     color: #e3286a;
     font-size:60px;
     font-family: Sniglet;
-    
 }
+
 #content-top p{
     font-size: 25px;
-   
 }
+
 #content-top{
     border-bottom: 10px solid #ffa22d;
     margin-left: 40px;
@@ -79,16 +75,21 @@ body {
     position: absolute;
     color: #fff;
 }
+
 #img_top{
     z-index: -1;
 }
+
 #scroll-institution a{
-    color:white;
+    color: #ffff;
     text-decoration: none;
+    text-align: center;
 }
+
 #scroll-institution:hover{
     transform: translateY(-20%);   
 }
+
  #scroll-institution{
     align-self: center;
     transition: 200ms;
@@ -99,11 +100,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    
+    top: 90%;
 }
+
 .arrow-down{
     padding-left: 15px;
+    margin: auto;
 }
 
 #top_main{
@@ -117,13 +119,10 @@ body {
     
     justify-content: center;
     position: relative;
-    width: 100vw;
-    height: 105vh;
-    
+    width: 100%;
 }
 
 #content {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,25 +130,24 @@ body {
 
 /*final*/
 .teste{
-    border-radius: 4px;
-    top: 70%;
+    border-radius: 3%;
+    top: 65%;
     left: 3%;
     position: absolute;
 }
 
 /*Pesquisa e filtro*/
 .loupe{
-
     opacity: 0.85;
 }
+
 .filter{
-   
     border-radius: 50%;
     background-color: #e3286a;
-    padding: 8.5px;
+    padding: 2%;
     position: absolute;
-    left: 8px;
-    top: 4px;
+    left: 0.9%;
+    top: 7.5%;
 }
 
 .search-box{
@@ -193,23 +191,20 @@ body {
 /*final pesquisa*/
 /*area intituicoes*/
 #left-arrow{
-    
-    left: 50px;
+    left: 30px;
 }
 #right-arrow{
-    
     right: 30px;
 }
 .arrow:focus {
     outline: thin dotted;
-       outline: 0px auto -webkit-focus-ring-color;
-       outline-offset: 0px;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
    }
 
 .arrow{
     margin-top: 180px;
     margin-top: 180px;
-        
     border: none;
     background: none;
     opacity: 0.5;
@@ -246,7 +241,7 @@ body {
     height: 35vh;
 }
 .institutionArea {
-    padding-top: 35px;
+   padding-top: 35px;
    max-width: 85vw;
    min-width: 85vw;
    min-height: 70vh;

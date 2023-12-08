@@ -33,7 +33,6 @@
                 <p>Veja a baixo as instituicoes que mais necessitam de auxilio, pesquise e filtre com base em suas necessidades</p>
             </section>
             <section id="scroll-institution"><a href="#institutionArea"><p>Ver as instiuicoes<i class="fa-solid fa-arrow-down arrow-down" style="color: #ffffff;"></i></p></a></section>
-           
         </section>
         <!--inicio area de pesquisa-->
         <section class="SearchArea">

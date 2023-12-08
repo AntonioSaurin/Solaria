@@ -21,54 +21,51 @@
 
 	</header>
 
-	<img src="app/style/img/homeChildren.png" class="teste">
-
 	<section id="contentHome" class="flexContainer">
-
 		<section id="mainHome">
-			<section class="contentTextHome">
-				<h1> Sua ajuda pode fazer a diferença! </h1>
-				<h3> A cada doação um futuro prospero é construído </h3>
-				<a href="/cadastro">
-					<button type="button" id="btnFirst" class="btn btn-info btnHome">
-						Faça parte disso 
-						<img class="homeArrow2" src="app/style/img/imgArrowRight.png">
-					</button>
-				</a>
+			<section id="imgTop">
+				<img src="app/style/img/homeChildren.png" class="imgTop">
 			</section>
+			<section id="contentTop">
+				<h1> Sua ajuda pode fazer a diferença! </h1>
+				<p> A cada doação um futuro prospero é construído </p>
+				<a href="/cadastro">
+					<button type="button" id="buttonTop" class="btn btn-info btnHome">
+						Faça parte disso 
+						<img class="arrow" src="app/style/img/imgArrowRight.png">
+					</button>
+				</a>  
+			</section>
+			<section id="scrollInstitution"><a href="#institutionArea"><p>Ler mais</p><i class="fa-solid fa-arrow-down arrowDown" style="color: #ffffff;"></i></a></section>
 		</section>
 		<section id="institutionArea">
-			<section id="howToAdopt" class="optionsHomeArea align1">
-				<img src="app\style\img\iconhug.png" id="f">
+			<section id="howToAdopt" class="optionsHomeArea">
+				<img src="app\style\img\iconhug.png" class="imgInstitutionArea">
 				<section class="contentTextHome">
 					<h2 class='a'>Saiba como adotar!</h2>
 					<h4 class='a'>Veja informações sobre o assunto</h6>
-				</section>
-				<section class="btnSecond">
-					<a href="/como-adotar">
-						<button type="button" id="btnSecond" class="btn btn-info btnHome">
-							Saiba aqui
-							<img class="homeArrow1" src="app/style/img/imgArrowRight.png">
-						</button>
-					</a>
-				</section>
+				</section> 
+				<a href="/como-adotar">
+					<button type="button" id="btnHowToAdopt" class="btn btn-info btnHome">
+						ver
+						<img class="arrow" src="app/style/img/imgArrowRight.png">
+					</button>
+				</a>
 			</section>
-			<section id="signUpInstitution" class="optionsHomeArea align2">
-				<img src="app\style\img\houseiconblue.png" id="e">
+			<section id="signUpInstitution" class="optionsHomeArea">
+				<img src="app\style\img\houseiconblue.png" class="imgInstitutionArea">
 				<section class="contentTextHome">
 					<h2 class='a'>É uma instituição?</h2>
 					<h4 class="a">Cadastre-se em nossa plataforma</h6>
-				</section>
-				<section class="btnThird">
-					<a href="/cadastroInstituicao">
-						<button type="button" id="btnThird" class="btn btn-info btnHome">
-							Cadastre-se 
-							<img class="homeArrow1" src="app/style/img/imgArrowRight.png">
-						</button>
-					</a>
-				</section>
-			</section>
-		</section>
+				</section> 
+				<a href="/cadastroInstituicao">
+					<button type="button" id="btnInstitution" class="btn btn-info btnHome">
+						cadastrar
+						<img class="arrow" src="app/style/img/imgArrowRight.png">
+					</button>
+				</a>
+			</section> 
+		</section> 
 	</section>
 
 	<footer id="footerArea">
@@ -88,7 +85,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
-
 </body>
 
 </html>
