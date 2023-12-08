@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+<?php
+if (!isset($_SESSION['admin'])) {
+  header('Location: /');
+}
+?>
 
 <html>
-
 <head>
   <title>Solaria/Admin</title>
   <link rel="stylesheet" href="app/style/css/adminMenu.css">
