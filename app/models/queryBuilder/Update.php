@@ -12,7 +12,9 @@ class Update {
 	}
 
     public function sql($table, $attributes) {
-        $sql = "update {$table} set ";
+        $credentials = require $_SERVER['DOCUMENT_ROOT'].'/app/config/database.php';
+
+        $sql = "update {$credentials['dbname']}.{$table} set ";
 
         unset($attributes[array_keys($this->where)[0]]);
         foreach ($attributes as $key => $value) {

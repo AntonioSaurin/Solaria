@@ -6,13 +6,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 require_once ($_SERVER['DOCUMENT_ROOT'].'\vendor\autoload.php');
 
-if(!isset($_POST['status']) || $_POST['status'] != 1) {
-    die;
-}
-
-$institutions = new Institution;
-
-$data = $institutions->findList();
+$data = (new Institution)->fullFind();
 
 echo json_encode($data);
 

@@ -1,18 +1,11 @@
 <?php
-use app\models\Institution;
+use app\models\Donator;
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
 require_once ($_SERVER['DOCUMENT_ROOT'].'\vendor\autoload.php');
 
-if(!isset($_POST['status']) || $_POST['status'] != 1) {
-    die;
-}
-
-$institutions = new Institution;
-
-$data = $institutions->findList();
+$data = (new Donator)-> findList();
 
 echo json_encode($data);
-

@@ -4,7 +4,7 @@ $(document).ready(function () {
 
         console.log(1);
         $.ajax({
-            url: 'http://localhost:8000/app/controllers/listUsers.php',
+            url: 'http://localhost:8000/app/controllers/listDonators.php',
             method: 'POST',
             dataType: 'json'
         }).done(function (result) {
@@ -36,14 +36,28 @@ $(document).ready(function () {
 
         console.log(1);
         $.ajax({
-            url: 'http://localhost:8000/app/controllers/approveInstitution.php',
+            url: 'http://localhost:8000/app/controllers/waitingInstitution.php',
             method: 'POST',
             dataType: 'json'
         }).done(function (result) {
             console.log(result);
-           for (var i = 0; i < result.length; i++){
-            $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <img class="imgCardUser" src="app/style/img/imgUsers.png"> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <section class="infoUser"> <a href="#"> <img class="imgControlUser" src="app/style/img/imgAccept.png"></a> <a href="#"> <img class="imgControlUser" src="app/style/img/imgDecline.png"> </a> </section> </section>')
-           }
+            for (var i = 0; i < result.length; i++) {
+                $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <img class="imgCardUser" src="app/style/img/imgUsers.png"> <h5 class="nameCardUser">' + result[i].userName + '</h5> </section> <section class="infoUser"> <a href="#"> <img class="imgControlUser accept" src="app/style/img/imgAccept.png" data-id="' + result[i].ID + '"></a> <a href="#"> <img class="imgControlUser" src="app/style/img/imgDecline.png"> </a> </section> </section>')
+
+                $('.accept').click(function () {
+                    console.log(2);
+                    var accept = 'approved'; 
+                    var institutionId = $(this).data('id');
+                    
+                    $.ajax({
+                        url: 'http://localhost:8000/app/controllers/approveInstitution.php',
+                        method: 'POST',
+                        data: { state: accept, id: institutionId }
+                    }).done(function (result) {
+                      
+                    });
+                });
+            }
         })
     })
 
@@ -53,30 +67,3 @@ $(document).ready(function () {
 
     })
 })
-
-// document.getElementById('openModalButton').addEventListener('click', function() {
-//     document.getElementById('modal').style.display = 'block';
-// });
-
-// document.getElementById('closeModal').addEventListener('click', function() {
-//     document.getElementById('modal').style.display = 'none';
-// });
-
-// document.getElementById('closeConfirmationModal').addEventListener('click', function() {
-//     document.getElementById('confirmationModal').style.display = 'none';
-// });
-
-// document.querySelector('.make-admin').addEventListener('click', function() {
-//     document.getElementById('confirmationModal').style.display = 'block';
-//     // Lógica para tornar admin
-// });
-
-// document.querySelector('.ban-user').addEventListener('click', function() {
-//     document.getElementById('confirmationModal').style.display = 'block';
-//     // Lógica para banir usuário
-// });
-
-// document.getElementById('confirmAction').addEventListener('click', function() {
-//     // Lógica para confirmar a ação
-//     document.getElementById('confirmationModal').style.display = 'none';
-// });

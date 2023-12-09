@@ -14,5 +14,5 @@ $users = new User;
 
 $data = $users->findList();
 
-echo json_encode($data->fetchAll);
+echo json_encode($data);
 
