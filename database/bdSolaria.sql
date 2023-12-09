@@ -50,7 +50,6 @@ insert into `photo` (ID, photoName, photoFormat, photoSize, photoPath, photoType
 
 create table userAccount(
     ID int auto_increment,
-    uniqueID int NOT NULL,
     userName varchar(100),
     userEmail varchar(100) unique,
     userPassword varchar(255),
@@ -5722,3 +5721,12 @@ INSERT INTO `city` (`id`, `city`, `state`) VALUES
 (5562, 'Tupiratins', 27),
 (5563, 'Wanderlândia', 27),
 (5564, 'Xambioá', 27);
+
+
+INSERT INTO `phone` (DDD, phoneNumber) VALUES (11, 944771109);
+
+INSERT INTO `adress` (CEP, city, district, street) VALUES ('07417-385', 4750, 'Parque Rodrigo Barreto', 'Rua Quitéria Alves Ferreira');
+
+INSERT INTO `userAccount` (userName, userEmail, userPassword, userPhone, userPhoto, userAdress, userAdressNumber) VALUES ('Antonio Saurin', 'antonio.saurin@etec.sp.gov.br', '$2y$10$ab0U7lpuiP0u1mP4QpsLKe9OwQvDjKwhY2ubtp4MXORWfPeuQG5Pi', 1, 1, 1, 41);
+
+INSERT INTO `administrator` (userAccount, office) VALUES (1, 'Owner');	

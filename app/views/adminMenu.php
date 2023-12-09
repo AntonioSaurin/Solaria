@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<?php
+
+?>
 
 <html>
-
 <head>
   <title>Solaria/Admin</title>
   <link rel="stylesheet" href="app/style/css/adminMenu.css">

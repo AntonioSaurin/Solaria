@@ -12,33 +12,31 @@
     src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
 }
 
-html::-webkit-scrollbar {
-    width: 0.1em;
+html::-webkit-scrollbar{
+    width: 0.1%;
 }
 
 html {
+    overflow-x: hidden;
     transition: 3s;
     scroll-behavior: smooth;
     width: 100%;
 }
+#footerArea{
+    width: 100%;
+}
 
 header {
-   
-    width: 100%;
-    
-    z-index: 1;
-   
-    background: rgb(0, 153, 255);
-    
-   
-   
+    position: fixed;
+    width: 100%; 
+    z-index:2000;
+    background: rgba(0, 128, 0, 0);
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
-
 
 /*header link color*/
 #color {
@@ -54,106 +52,225 @@ body {
 
 /* area de conteudo */
 
+/*SLIDER AREA*/
+#top_main img{
+    width: 100vw;
+    height: 99vh;
+}
+
+#content-top h1{
+    color: #e3286a;
+    font-size:60px;
+    font-family: Sniglet;
+}
+
+#content-top p{
+    font-size: 25px;
+}
+
+#content-top{
+    border-bottom: 10px solid #ffa22d;
+    margin-left: 40px;
+    width: 45vw;
+    position: absolute;
+    color: #fff;
+}
+
+#img_top{
+    z-index: -1;
+}
+
+#scroll-institution a{
+    color: #ffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+#scroll-institution:hover{
+    transform: translateY(-20%);   
+}
+
+ #scroll-institution{
+    align-self: center;
+    transition: 200ms;
+    font-family: Sniglet;
+    font-size: 20px;
+    position: absolute;
+    bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 90%;
+}
+
+.arrow-down{
+    padding-left: 15px;
+    margin: auto;
+}
+
+#top_main{
+    background-image: linear-gradient(to right,
+    #05b8a9,
+    #05b8a900
+    );
+
+    flex-direction: column;
+    display: flex;
+    
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
 #content {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /*final*/
+.teste{
+    border-radius: 3%;
+    top: 65%;
+    left: 3%;
+    position: absolute;
+}
 
 /*Pesquisa e filtro*/
+.loupe{
+    opacity: 0.85;
+}
 
-.filterImage {
+.filter{
+    border-radius: 50%;
+    background-color: #e3286a;
+    padding: 2%;
     position: absolute;
-    width: 2%;
-    right: 32.5%;
-    top: 110px;
-
+    left: 0.9%;
+    top: 7.5%;
 }
 
-#search-bar {
-    border: 1px solid #00b8a9;
-    background-color: rgba(255, 255, 255, 0.582);
-    width: 30vw;
-    height: 6vh;
-    border-radius: 20px;
-    position: relative;
-}
-
-#search-icon {
-    height: 5.9vh;
-    width: 50px;
-    background-color: #00b8a9;
+.search-box{
+    border: solid 2px rgba(0, 0, 0, 0.1);
     position: absolute;
-    padding-top: 19px;
-    padding-left: 18px;
-    top: 0;
-    left: 0px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    background-color:rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 55px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-#search-input {
-
-    text-align: center;
-    outline: none;
+.search-input{
     font-family: Sniglet;
-    height: 5vh;
-    top: 2.5px;
-    width: 26.05vw;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border: 1px solid #00000000;
-    position: absolute;
-    right: 5px;
+    color: rgba(0, 0, 0, 0.534);
+    text-align: center;
+    margin-left: 45px;
+    position: relative;
+    right: 0px;
+    width: 300px;
+    background:none;
+    border: 1px;
+    outline: 0;
+    font-size: 16px;
+    padding: 0px;
 }
+.SearchArea{
+  padding-top:85px; 
+    border-top: 10px solid #e3286a;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+   
+}
+
+
 
 /*final pesquisa*/
+/*area intituicoes*/
+#left-arrow{
+    left: 30px;
+}
+#right-arrow{
+    right: 30px;
+}
+.arrow:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+   }
 
+.arrow{
+    margin-top: 180px;
+    margin-top: 180px;
+    border: none;
+    background: none;
+    opacity: 0.5;
+    position: absolute;
+    
+}
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.gallery-wrapper{
+    overflow-x: auto;
+}
+.gallery{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 .intitution-images-area img {
     cursor: pointer;
     width: 25vw;
     height: 35vh;
-
 }
-
 .intitution-images-area {
+    position: relative;
     width: 25vw;
     border-radius: 15px;
     height: 35vh;
-
-
-
-
 }
-
 .institutionArea {
-    border-top: 1px solid #00b8a9;
-    padding-bottom: 25px;
+   padding-top: 35px;
+   max-width: 85vw;
+   min-width: 85vw;
+   min-height: 70vh;
+
+    border-top: solid 1px  #e3286a ;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: -25px;
+    margin-bottom: 40px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
-
+    
 }
-
 .institutionBox:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.459);
     transform: translateY(-3%);
 }
-
 .institutionBox {
+    flex-shrink: 0;
     transition: all 400ms ease;
     overflow: hidden;
     display: flex;
     background-color: white;
     flex-direction: column;
     margin: 30px;
+    min-width: 25vw;
+    min-height: 55vh;
     width: 25vw;
     height: 55vh;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12);
@@ -161,15 +278,12 @@ body {
     border-radius: 15px;
     position: relative;
 }
-
 .cardFooter p {
     text-decoration: underline;
     color: rgb(255, 255, 255);
     margin-top: 15px;
     font-family: Sniglet;
-
 }
-
 .cardFooter {
     display: flex;
     align-items: center;
@@ -180,22 +294,17 @@ body {
     bottom: 0px;
     background-color: #00b8a9;
     width: 100%;
-
 }
-
 .institution-Name {
     font-family: Sniglet;
     text-align: center;
 }
-
 .locatioIcon {
     margin-right: 10px;
 }
-
 .institutionInfo p {
     color: #777777;
 }
-
 .institutionInfo {
     text-align: center;
     padding-top: 15px;
@@ -203,228 +312,18 @@ body {
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
-
 .institutionBox h2 {
     text-decoration: bold;
     font-size: 26px;
 }
-
 .donateButton {
     position: absolute;
     right: 8px;
-
 }
-
 .arrowImage {
+    margin-left: 80%;
     margin-top: 25px;
     opacity: 0.4;
     width: 25px;
 }
-
-
 /*final area de'  */
-/*area more institutions*/
-#allInsitutionArea {
-
-    border-top: 1px solid #e3286a;
-    margin: 0px;
-    padding: 0px;
-}
-
-.btn-hideAll {
-    position: absolute;
-    top: 0%;
-    right: 75px;
-    width: 130px;
-
-}
-
-.btn-more-institution button:focus {
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-}
-
-.btn-more-institution button:hover {
-    box-shadow: 0 4px 15px #e328696e;
-    border-color: #e32869d7;
-    background-color: #e32869d7;
-    color: white;
-    transform: translateY(-10%);
-}
-
-.btn-more-institution button {
-
-    transition: all 600ms;
-    font-family: Sniglet;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: transparent;
-    border: 1px solid #e3286a;
-    color: #e3286a;
-}
-
-.btn-more-institution {
-
-    width: 89%;
-    margin-bottom: 5px;
-    align-items: center;
-    display: flex;
-    position: relative;
-    padding-bottom: 25px;
-    justify-content: center;
-}
-
-.all-institution {
-    display: none;
-}
-
-.all-institution.mostrar {
-    border-radius: 10px;
-    width: 97%;
-
-    display: flex;
-    flex-direction: column;
-
-}
-
-.hide {
-    visibility: hidden;
-}
-
-/*modal
-.modal-container{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 2000
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-     From https://css.glass 
-    background: rgba(255, 255, 255, 0.32);
-    
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.4px);
-    -webkit-backdrop-filter: blur(6.4px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-
-}
-.modal1{
-    width: 50%;
-  height: 65%;
-  border: 0px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
- 
-}
-#btnExitIncon{
-    position: absolute;
-    top: 18px;
-    right: 10px;
-   
-}
-#modalContent{
-    border-bottom-left-radius: 17px;
-    border-bottom-right-radius: 17px;
-    flex: 3;
-    background-color: #fff; 
-    color: #000; 
-    text-align: center;
-    padding: 10px;
-    flex-direction: column;
-    display: flex;
-    
-
-}
-#modalTop{
-    border-top-right-radius:10px;
-    border-top-left-radius:10px;
-    flex: 0.3;
-    background-color: #006DB7;
-    text-align: center;
-   
-
-}
-#donationAmount{
-    display: flex;
-    margin-top: 25px;
-    justify-content: space-between; 
-    margin-right: 200px;
-    margin-left: 200px;
-     align-items: center; 
-    justify-content: center;
-}
-#custimizeAmount h4{
-    
-    margin-bottom: 20px;
-}
-#btnNext{
-    margin-top: 20px;
-    height: 35px;
-    width: 140px;
-    margin-left:550px;
-   
-    
-}
-
-#custimizeAmount input{
-    padding-left:90px;
-    margin-left: 35%;
-    height: 40px;
-    width: 30%;
-    align-items: center;
-    
-}
-#custimizeAmount{
-    margin-top: 35px;
-    display: flex;
-    flex-direction: column;
-}
-#institutionAreaModal{
-    border-bottom: solid 1px gray;
-    display: flex;
-}
-
-.modalImageInstitution{
-    height: 7rem;
-    width:  7rem;
-    margin: 5px;
-}
-
-h4{
-    display: inline;
-}
-#donationArea{
-    margin-top: 15px;
-    flex: 2;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-}
-
-.modal-container.mostrar{
-    display: flex;
-}
-@keyframes modal{
-    from{
-        opacity: 0;
-        transform: translate3d(0,-60px,0);
-    }
-    to{
-        opacity: 1;
-        transform: translate3d(0,0,0);
-
-    }
-}
-.mostrar .modal1{
-    animation: modal .4s;
-}
-
-end modal*/
