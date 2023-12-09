@@ -6,9 +6,9 @@ if (session_status() == PHP_SESSION_NONE) {
 
 require_once ($_SERVER['DOCUMENT_ROOT'].'\vendor\autoload.php');
 
-// if($_POST['status'] != 1) {
-//     die;
-// }
+if(!isset($_POST['status']) || $_POST['status'] != 1) {
+    die;
+}
 
 $institutions = new Institution;
 
