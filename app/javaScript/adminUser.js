@@ -4,7 +4,7 @@ $(document).ready(function () {
 
         console.log(1);
         $.ajax({
-            url: 'http://localhost:8000/app/controllers/listUsers.php',
+            url: 'http://localhost:8000/app/controllers/listDonators.php',
             method: 'POST',
             dataType: 'json'
         }).done(function (result) {
