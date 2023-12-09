@@ -17,19 +17,30 @@
 
     <button onclick="topFunction()" id="goUpButton" title="Voltar ao topo"> <img class="goUpArrow" src="app/style/img/imgArrowRight.png"></button>
 
-    <main>
-        <section id="contentHowToAdopt" class="flexContainer">
-		    <section id="mainHowToAdopt">
-                <figure id="imgHowToAdopt">
-                    <img src="app/style/img/headerHowToAdopt.png" alt="Mãe com criança" title="Header Adoção">
-                </figure>
-                <section class="contentTextHowToAdopt">
-                    <h1>Adoção:</h1>
-                    <legend>Dê a uma criança o amor, a segurança e o carinho que ela merece!</legend>
-                    <a href="https://www.cnj.jus.br/programas-e-acoes/adocao/passo-a-passo-da-adocao/" target="blank"  class="btn btn-info" id="button">Saiba Mais</a>
-                </section>
+	<section id="contentAdopt" class="flexContainer">
+		<section id="mainAdopt">
+            <section id="imgTop">
+                <img src="app/style/img/headerHowToAdopt.png" alt="Mãe com criança" title="Header Adoção" class="imgTop">
             </section>
-            <section class="containerOrganizer">
+            <section id="contentTop">
+                <h1>Como Adotar?</h1>
+                <p>Dê a uma criança o amor, a segurança e o carinho que ela merece!</p>
+                <a href="https://www.cnj.jus.br/programas-e-acoes/adocao/passo-a-passo-da-adocao/">
+					<button type="button" id="buttonTop" class="btn btn-info btnAdopt">
+						Saiba mais
+						<img class="arrow" src="app/style/img/imgArrowRight.png">
+					</button>
+				</a> 
+            </section>
+            <section id="scrollAdopt"><a href="#howToAdoptArea"><p>Ler mais</p><i class="fa-solid fa-arrow-down arrowDown" style="color: #ffffff;"></i></a></section>
+        </section>
+        <section id="howToADopt">
+            <h2>Qual o passo a passo para adotar uma criança ou um adolescente?</h2>
+            
+
+
+        </section>
+            <!-- <section class="containerOrganizer">
                 <p>A adoção é o procedimento legal pelo qual alguém assume como filho, de modo definitivo e irrevogável, uma criança ou adolescente nascido de outra pessoa. Ela é regulamentada pelo Estatuto da Criança e do Adolescente (ECA).
                 No Brasil, não há custo algum para adotar. Podem ser adotados crianças ou adolescentes com, no máximo, 18 anos de idade à data do pedido de adoção e que estejam com situação jurídica definida, ou seja, pais biológicos desconhecidos, falecidos ou quando os pais foram destituídos do poder familiar e esgotadas todas as alternativas de permanência na família de origem.Qualquer pessoa maior de 18 (dezoito) anos pode adotar, independentemente do estado civil, orientação sexual ou classe social. O pretendente deverá apresentar uma diferença mínima de 16 (dezesseis) anos em relação à idade da criança ou adolescente que for adotado.
                 O interessado em adotar deverá procurar a Vara de Infância e da Juventude do município/região em que reside, onde serão fornecidas todas as orientações necessárias.</p><hr>
@@ -65,12 +76,9 @@
                    
                         <h3>10. Quando acaba o estágio de convivência, o que acontece?</h3>
                         <p>Decorrido o período do estágio de convivência, o setor técnico apresentará relatório conclusivo que será apreciado pelo Ministério Público e irá ao juiz para a decisão final (sentença de adoção). Com a sentença de adoção proferida, após decorrer o prazo para o recurso, você já poderá providenciar a nova documentação e registrar seu filho. Lembrando que toda a documentação e o trâmite da adoção serão gratuitos. Oficialmente, uma família!<p>
-                </section>
-            </section>
-        </section>
-
-    </main>
-
+                </section> -->
+    </section>
+  
     <footer id="footerArea">
         <?php
             include_once("footer.php");

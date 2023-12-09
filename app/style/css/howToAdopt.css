@@ -1,4 +1,4 @@
-@font-face{
+/* @font-face{
     font-family: "Nunito";
     src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
   
@@ -139,7 +139,157 @@ hr{
 }
 
 
-/*Botão de voltar ao topo*/
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format('truetype');
+
+    font-family: "Sniglet";
+    src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
+}
+
+html::-webkit-scrollbar{
+    width: 0.1%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+}
+
+#color{
+    color: #fff;
+}
+
+#color:hover {
+    text-decoration: overline;
+    color: #fdfdfd;
+}
+
+#mainAdopt{
+    background-image: linear-gradient(to right,
+    #05b8a9,
+    #05b8a900
+    );
+
+    flex-direction: column;
+    display: flex;
+    
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
+    border-bottom: 10px solid #e3286a;
+}
+
+#mainAdopt .imgTop{
+    width: 100vw;
+    height: 99vh;
+}
+
+#imgTop{
+    z-index: -10;
+}
+
+#contentTop{
+    margin-left: 40px;
+    width: 40vw;
+    position: absolute;
+    color: #fff;
+}
+
+#contentTop h1{
+    color: #e3286a;
+    font-size:60px;
+    font-family: Sniglet;
+}
+
+#contentTop p{
+    font-size: 25px;
+}
+
+.btnAdopt{
+    color: #ffffff;
+    padding: 1% 1.5%; 
+    display: inline-block; 
+    margin-left: 10%; 
+    transition: 0.2s;
+}
+
+#buttonTop{
+    width: 25%;
+    height: 30%;
+    position: relative;
+    right: 10%;
+    background-color: #ffa22d;
+    font-size: 100%;
+}
+
+#buttonTop:hover{
+    transition: 0.5s;
+    background-color: rgb(223, 222, 222);
+    color: #E12A69;
+}
+
+.arrow{
+    height: 10%; 
+    width: 10%;
+    filter: invert(100%);
+    margin: auto;
+    display: inline;
+    transition: 0.2s;
+}
+
+#scrollAdopt{
+    align-self: center;
+    transition: 200ms;
+    font-family: Sniglet;
+    font-size: 20px;
+    position: absolute;
+    bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 95%;
+}
+
+#scrollAdopt:hover{
+    transform: translateY(-20%);   
+}
+
+#scrollAdopt a{
+    color: #ffff;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+#scrollAdopt p{
+    margin-bottom: 0;
+}
+
+.arrowDown{
+    margin: auto;
+    margin-top: 4%;
+}
+
+
+
+
 #goUpButton{
     display: none;
     position: fixed;
@@ -167,4 +317,4 @@ hr{
     height: 30px;
     width: 30px;
     transform: rotate(270deg);
-  }
+  } 
