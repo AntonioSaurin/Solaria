@@ -9,10 +9,15 @@ require_once ($_SERVER['DOCUMENT_ROOT'].'\vendor\autoload.php');
 
 $institution = new Institution;
 
-$state = $_POST['state'];
-$id = $_POST['id'];
+$id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
 
-console.log($state);
+$updated = $institution->update($_POST, ['id' => $id]);
 
+if(!$updated) {
+    echo json_encode(false);
+    
+    die;
+}
 
-$updated = $institution->update($id, ['stateInstitution' => $state]);
+echo json_encode(true);
+die;
