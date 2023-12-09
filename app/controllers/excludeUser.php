@@ -25,14 +25,15 @@ if ($user == false) {
 
 (new Message)->delUserMessage($user['ID']);
 
-(new Donation)->delete('id', $user['ID']);
+(new Donation)->delete('donator', $user['ID']);
 
 if(isset($_SESSION['institution'])) {
-    (new Institution)->delete('id', $user['ID']);
-}else if(!isset($_SESSION['institution']    )) {
-    (new Donator)->delete('id', $user['ID']);
+    (new Institution)->delete('accountID', $user['ID']);
 }
 
+if(!isset($_SESSION['institution']    )) {
+    (new Donator)->delete('accountID', $user['ID']);
+}
 
 (new User)->delete('id', $user['ID']);
 
@@ -40,7 +41,7 @@ if ($user['userPhoto'] != 1) {
     (new Photo)->delete('id', $user['userPhoto']);
 }
 
-
 (new Phone)->delete('id', $user['userPhone']);
+
 
 header('Location: ../app/views/logout.php');
