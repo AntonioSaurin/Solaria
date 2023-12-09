@@ -9,3 +9,4 @@ require_once ($_SERVER['DOCUMENT_ROOT'].'\vendor\autoload.php');
 $data = (new Institution)->fullFind();
 
 echo json_encode($data);
+
