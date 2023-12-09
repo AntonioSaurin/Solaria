@@ -68,6 +68,9 @@
 		</section> 
 	</section>
 
+	<button onclick="topFunction()" id="goUpButton" title="Voltar ao topo"> <img class="goUpArrow" src="app/style/img/imgArrowRight.png"></button>
+	<script src="../app/javaScript/blogArrow.js"></script>
+	
 	<footer id="footerArea">
 		<?php
 		include_once("footer.php");

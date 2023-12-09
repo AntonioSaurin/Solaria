@@ -12,6 +12,7 @@
     src: url('../fonts/Sniglet/Sniglet-Regular.ttf') format('truetype');
 }
 
+
 html::-webkit-scrollbar{
     width: 0.1%;
 }
@@ -152,6 +153,7 @@ header {
     flex-direction: row;
     margin: auto;
     background-color: #fff;
+    font-family: Sniglet;
 }
 
 .optionsHomeArea{
@@ -173,7 +175,7 @@ header {
 }
 
 #btnHowToAdopt{
-    width: 60%;
+    width: 85%;
     height: 35%;
     position: relative;
     margin-top: 32%;
@@ -197,3 +199,32 @@ header {
     background-color: rgb(223, 222, 222);
     color: #2278AD;
 }
+
+#goUpButton{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+  
+  #goUpButton:hover {
+    background-color: rgb(180, 180, 180);
+    color: #fff;
+  }
+  
+  .goUpArrow {
+    height: 20px;
+    width: 20px;
+    transform: rotate(270deg);
+  } 
