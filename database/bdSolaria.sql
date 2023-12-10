@@ -5727,6 +5727,6 @@ INSERT INTO `phone` (DDD, phoneNumber) VALUES (11, 944771109);
 
 INSERT INTO `adress` (CEP, city, district, street) VALUES ('07417-385', 4750, 'Parque Rodrigo Barreto', 'Rua Quitéria Alves Ferreira');
 
-INSERT INTO `userAccount` (userName, userEmail, userPassword, userPhone, userPhoto, userAdress, userAdressNumber) VALUES ('Antonio Saurin', 'antonio.saurin@etec.sp.gov.br', '$2y$10$ab0U7lpuiP0u1mP4QpsLKe9OwQvDjKwhY2ubtp4MXORWfPeuQG5Pi', 1, 1, 1, 41);
+INSERT INTO `userAccount` (userName, userEmail, userPassword, userPhone, userPhoto, userAdress, userAdressNumber) VALUES ('Antonio Saurin', 'antonio.saurin@etec.sp.gov.br', '$2y$10$rXk8a6Dui5lNsUwkvsCh.ucz3NRSjGv9Kpl/N.OGSLomvZM4N9zaa', 1, 1, 1, 41);
 
 INSERT INTO `administrator` (userAccount, office) VALUES (1, 'Owner');	
