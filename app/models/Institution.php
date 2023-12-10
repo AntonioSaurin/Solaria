@@ -66,4 +66,5 @@ class Institution extends Model
 
         return $list->fetchAll();
     }
+
 }

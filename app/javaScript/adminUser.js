@@ -20,7 +20,7 @@ $(document).ready(function () {
 
         console.log(1);
         $.ajax({
-            url: 'http://localhost:8000/app/controllers/listInstitutions.php',
+            url: 'http://localhost:8000/app/controllers/approveInstitution.php',
             method: 'POST',
             dataType: 'json'
         }).done(function (result) {
@@ -52,7 +52,8 @@ $(document).ready(function () {
                     $.ajax({
                         url: 'http://localhost:8000/app/controllers/approveInstitution.php',
                         method: 'POST',
-                        data: { state: accept, id: institutionId }
+                        data: { state: accept, id: institutionId },
+                        dataType: 'json'
                     }).done(function (result) {
                       
                     });
