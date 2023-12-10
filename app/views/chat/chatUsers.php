@@ -7,7 +7,13 @@
   if(!isset($_SESSION['id'])){
     header("location: /login");
   }
-?>
+
+  use app\models\User;
+  
+
+  $user = (new User)->fullFind($_SESSION['id']);
+  ?>
+
 <?php include_once "chatHeader.php"; ?>
 <body>
   <header>
@@ -35,8 +41,11 @@
               $row = mysqli_fetch_assoc($sql);
             }
           ?>
-           <!-- <img src="php/images/<php /*echo $row['img']*/ ?>" alt=""> -->
-          <img src="../app/style/img/defaultProfile.png" alt="">
+
+        
+          <img src="<?= $user['photoPath'] ?>" id="userImg" alt="Usuário">
+          <!-- <img src="php/images/<php /*echo $row['img']*/ ?>" alt=""> -->
+           
           <div class="details">
             
             <span><?php echo Hour::getHour().', '; echo $row['userName']; ?></span>
