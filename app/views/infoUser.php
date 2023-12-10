@@ -47,7 +47,13 @@
     <section class="center">
         <section class="infoAccount">
             <section class="userImg">
-                <img src="app/style/img/imgUsers.png" id="userImg" alt="Alterar Imagem">
+                <!-- <img src="app/style/img/imgUsers.png" id="userImg" alt="Alterar Imagem"> -->
+
+                <img src="app/uploads/defaultImage.png" id="userImg" alt="Alterar Imagem">
+
+                 <!-- <img src="php/images/<php /*echo $row['img']*/ ?>" alt=""> -->
+                 <!-- <img src="<?= $user['photoPath'] ?>" id="userImg" alt="Alterar Imagem"> -->
+                <h3 id="infoUsername"> <?= $user['photoPath'] ?> </h3>
              
                 <section class="organInfo">
                     <h3 id="infoUsername"> <?= $user['userName'] ?> </h3>
@@ -67,9 +73,6 @@
         </section>
     </section>
 
-    <?php
-    /*include_once("historicUser.php");*/
-    ?>
 
     <section class="center" id="modifyFooter">
         <section class="borderForm">
