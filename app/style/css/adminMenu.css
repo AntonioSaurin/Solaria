@@ -102,7 +102,6 @@ a {
   top: 0;
   left: 0;
   z-index: 2000;
-  display: none;
   justify-content: center;
   align-items: center;
   background: #ffffff52;
@@ -110,6 +109,10 @@ a {
   backdrop-filter: blur(0.3em);
   -webkit-backdrop-filter: blur(0.3em);
   border: 0.2em solid #ffffff80;
+}
+
+#modalApprove, #modalInstitutions, #modalUsers{
+  display: none;
 }
 
 .modal1 {
@@ -120,6 +123,7 @@ a {
   border: 0;
   border-radius: 1em;
   overflow: hidden;
+  margin: auto;
   box-shadow: 0 0.7em 1em #0000001a;
 }
 
@@ -253,7 +257,7 @@ a {
   align-items: center;
 }
 
-#modalDelete.modal-container {
+#modalDelete{
   z-index: 3000;
 }
 

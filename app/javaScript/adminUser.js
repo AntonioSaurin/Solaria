@@ -64,9 +64,15 @@ $(document).ready(function () {
         });
     });    
 
-    $('.deleteUser').click(function () {
-        $('#modalDelete').css('display', 'flex');
-        $('.modalUsersContent').prepend('<section id="modalDelete" class="modal-container"><section class="modal1"><section class="modalTop" id="topDelete"><i class="btnExitDelete fa-solid fa-rectangle-xmark fa-xl"></i><h4>Deseja mesmo excluir esta conta??</h4></section><section class="modalUsersContent deleteContent"><button class="btnmodal btnDeleteUser" id="Delete"> Excluir </button><button class="btnExitDelete btnmodal btnCancel">Cancelar</button></section></section></section> ');
+    $(document).on('click', '.deleteUser', function () {
+        console.log('Código está sendo executado.');
+        
+        if ($('#modalDelete').length === 0) {
+            $('.modalUsersContent').prepend('<section id="modalDelete" class="modal-container"><section class="modal1"><section class="modalTop" id="topDelete"><i class="btnExitDelete fa-solid fa-rectangle-xmark fa-xl"></i><h4>Deseja mesmo excluir esta conta??</h4></section><section class="modalUsersContent deleteContent"><button class="btnmodal btnDeleteUser" id="Delete"> Excluir </button><button class="btnExitDelete btnmodal btnCancel">Cancelar</button></section></section></section>');
+
+            console.log('Modal criado:', $('#modalDelete').length);
+            $('#modalDelete').css('display', 'flex');
+        }
 
         $('.btnDeleteUser').click(function (){
             console.log(2);
@@ -87,7 +93,7 @@ $(document).ready(function () {
                 data: { institution: institution, idDelete : idDelete }
             }).done(function (result) {
                 console.log('Delete User Result:', result);
-            });
+            })
         })
         
 
@@ -95,6 +101,7 @@ $(document).ready(function () {
             $('#modalDelete').remove(); 
         });
     })
+    
 
     $('.btnExitIcon').click(function () {
         $('.cardUser').remove();
