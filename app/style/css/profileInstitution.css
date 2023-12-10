@@ -259,21 +259,30 @@ strong{
 
 #donationArea{
     margin-top: 15px;
-    
     flex: 2;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: auto;
+    align-items: center;
 }
 
+#donationArea p{
+    width: 88%;
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+}
 #title{
     display: grid;
     grid-template-columns: repeat(2, 3fr);
     margin-top: -1em;
+
 }
 
 #title h3{
     color: #05b8a9;
     margin-top: 0.7em;
+    margin-left: 55%;
 }
 
 #title img{
@@ -282,75 +291,44 @@ strong{
 }
 
 #qrCode{
-    align-items: center;
-    justify-content: center;
-    margin-left: 1.5em;
+    margin-left: 34%;
  }
 
 .qrCodeImage{
-    height: 200px;
-    width: 200px;
-    margin: 0 auto;
+    width: 12vw;
+    margin: auto;
 }
 
 #guidelines {
     margin-top: 13.5em; 
     font-size: 0.9em;
-    text-align: center;
     color: #474747;
 }
- 
-/*
-#donationAmount{
-    display: flex;
-    margin-top: 25px;
-    justify-content: space-between; 
-    margin-right: 200px;
-    margin-left: 200px;
-    justify-content: center;
+
+#buttonTop{
+    width: 15%;
+    height: 20%;
+    right: 10%;
+    background-color: #e3286a;
+    font-size: 100%;
+    color: #fff;
 }
 
-#custimizeAmount h4{
-    margin-bottom: 20px;
+#buttonTop:hover{
+    transition: 0.5s;
+    background-color: rgb(223, 222, 222);
+    color: #E12A69;
 }
 
-#btnNext{
-    margin-top: 20px;
-    height: 35px;
-    width: 140px;
-    margin-left:550px;
-}
-
-#custimizeAmount input{
-    padding-left:90px;
-    margin-left: 35%;
-    height: 40px;
-    width: 30%;
-    align-items: center;
-}
-
-#custimizeAmount{
-    margin-top: 35px;
-    display: flex;
-    flex-direction: column;
-}
-
-#institutionAreaModal{
-    border-bottom: solid 1px gray;
-    display: flex;
-}
-
-.modalImageInstitution{
-    height: 7rem;
-    width:  7rem;
-    margin: 5px;
-}
-
-h4{
+.arrow{
+    height: 10%; 
+    width: 10%;
+    filter: invert(100%);
+    margin: auto;
     display: inline;
+    transition: 0.2s;
 }
 
-*/
 .modal-container.mostrar{
     display: flex;
 }

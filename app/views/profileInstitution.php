@@ -82,31 +82,14 @@
                             <p>1. Acesse seu banco</p>
                             <p>2. Selecione pagar com QR CODE</p>
                             <p>3. Aponte a câmera para o código.</p>
-                            <p>Ou digite a chave PIX: 45.302.593/0001-89</p>
+                            <!-- <p>Ou digite a chave PIX: 45.302.593/0001-89</p> -->
                     </section>
-                    <!-- <form>
-                        <section id="donationType">
-                            <h4>O que deseja doar?</h4><br>
-                            <input type="radio" id="dinheiro" name="donationType" value="dinheiro">Dinheiro</input>
-                            <input type="radio" id="roupa" name="donationType" value="roupa">Roupas</input>
-                            <input type="radio" id="brinquedo" name="donationType" value="brinquedo">Brinquedos</input>
-                            <input type="radio" id="alimento" name="donationType" value="alimento">Alimentos</input>
-                        </section>
-                        <section id="donationAmount">
-                            <input type="radio" id="qnt1" name="donationAmount" value="2">R$2,00</input>
-                            <input type="radio" id="qnt2" name="donationAmount" value="10">R$10,00</input>
-                            <input type="radio" id="qnt3" name="donationAmount" value="25">R$25,00</input>
-                            <input type="radio" id="qnt4" name="donationAmount" value="50">R$50,00</input>
-                            
-                        </section>
-                        <section id="custimizeAmount">
-                            <h4>Quantia personalizada</h4>
-                            <input type="number" name="dntCustimizeAmount" placeholder="R$100" min="0" step="0.01">
-                           
-                        </section>
-                        
-                        <input id="btnNext"type="submit" name="avancar" value="Prosseguir"></input>
-                    </form>     -->
+                    <p style="border-top:1px solid;">Em caso de doações materiais como alimentos, roupas ou brinquedos, entre em contato com a instituição para agendar sua visita! <a href="/chat">
+					<button type="button" id="buttonTop" class="btn btn-info btnHome">
+						Chat
+						<img class="arrow" src="app/style/img/imgArrowRight.png">
+					</button>
+				</a>  </p>
                 </section>
                
             </section>   
