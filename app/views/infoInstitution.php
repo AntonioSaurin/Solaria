@@ -19,10 +19,14 @@
 <body>
     <header>
         <?php
+        use app\models\Institution;
         include_once("header.php");
+        $user = (new Institution)->fullFind($_SESSION['id']);
+
+
         ?>
     </header>
-
+  
     <section class="centerModal">
         <section id="myModal" class="modalContainer">
             <section id="modal">
@@ -47,7 +51,7 @@
                 <img src="app/style/img/imgInstitutionAdotar.png" id="userImg">
                 <section class="organInfo">
                     <h3 id="infoUsername"> Instituição Adotar </h3>
-                    <label class="basicInfo"> CNPJ: 12.345.678/0001-00 </label>
+                    <label class="basicInfo"> CNPJ: 45.302.593/0001-89 </label>
                 </section>
             </section>
             <section class="userInfo">
