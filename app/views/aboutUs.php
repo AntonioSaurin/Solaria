@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="app/style/css/aboutUs.css" rel="stylesheet">
+  <script src="app/javaScript/jQuery.js"></script>
   <title> Sobre nós </title>
   
 </head>
