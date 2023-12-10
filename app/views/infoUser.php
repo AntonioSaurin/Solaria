@@ -51,7 +51,12 @@
                 <section class="organInfo">
                     <h3 id="infoUsername"> <?= $user['userName'] ?> </h3>
                     <label class="basicInfo"> CPF: <?= $user['CPF'] ?> </label>
-                    <label class="basicInfo"> Data de Nascimento: <?= $user['birthDate'] ?> </label>
+                    <?php
+                        //Pega a data de nascimento e ordena
+                        $birthDate  = $user['birthDate'];
+                        $birthDateExplode = explode("-", $birthDate);
+                    ?>
+                    <label class="basicInfo"> Data de Nascimento: <?= $birthDateExplode[2].'/'.$birthDateExplode[1].'/'.$birthDateExplode[0] ?> </label>
                 </section>
             </section>
             <section class="userInfo">
