@@ -76,8 +76,7 @@
                         <input type="password" class="inputEdit"> </input>
                         <label class="infoForm"> Confirmar Senha: </label>
                         <input type="password" class="inputEdit"> </input>
-                        <label class="infoForm" class="inputEdit"> Escolha uma imagem de Perfil: </label>
-                        <input placeholder="Escolha uma Imagem" type="file" class="file" id="imagem" accept="image/png">
+                        
                 </form>
                 <button type="button" id="btnExcluir"
                 onclick="document.getElementById('myModal').style.display='block'"> Excluir Conta </input>
@@ -125,6 +124,8 @@
                     <input type="number" class="inputNum" value="<?= $user['AdressNumber'] ?>"> </input>
                     <label class="infoForm"> Logradouro: </label>
                     <input type="text" class="inputLogradouro" value="<?= $user['street'] ?>"> </input>
+                    <label class="infoForm" class="inputEdit"> Escolha uma imagem de Perfil: </label>
+                    <input placeholder="Escolha uma Imagem" type="file" class="file" id="imagem" accept="image/png">
 
                     <input type="submit" value="Salvar" name="Salvar" id="btnSalvar"> </input>
             </form>
