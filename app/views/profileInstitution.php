@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app\style\css\profileInstitution.css">
-    <title>Meu Perfil</title>
+    <title>Solaria/Perfil Instituição</title>
 </head>
 <body>
     <header>
@@ -64,7 +64,7 @@
     <section id="modal" class="modal-container">
         <section class="modal1">
             <section id="modalTop"> 
-                <i id="btnExitIncon" class="btnExit fa-solid fa-rectangle-xmark  fa-xl" style="color: #fffff;"></i>
+                <i id="btnExitIncon" class="btnExit fa-solid fa-rectangle-xmark  fa-xl" style="color: #ffffff;"></i>
                 <h2>Nome da Instituição<h2>
             </section>
             
