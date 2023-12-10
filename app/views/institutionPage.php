@@ -8,7 +8,7 @@
     <link href="app/style/css/institutionPage.css" rel="stylesheet">
     <!-- <script src="app/javaScript/fontAwesome.js"></script> -->
     <script src="app/javaScript/jQuery.js"></script>
-    <script src="app/javaScript/instituionPage.js"></script>
+    <script src="app\javaScript\institutionPage.js"></script>
     <title>Solaria/Instituições</title> 
 </head>
 
