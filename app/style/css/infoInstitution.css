@@ -95,7 +95,7 @@ header {
     border-radius: 0.5em;
     margin-top: 9em;
     width: 50em;
-    height: 35em;
+    height: 40em;
 
     
 }
@@ -404,6 +404,27 @@ select {
     overflow: hidden;
 }
 
+.file{
+    display: flex;
+    margin-top: 2%;
+    border: none;
+    width: 9em;
+    transition: 0.3s;
+    border-radius: 0.3em;
+    margin-left: -1%;
+}
+
+.file:hover{
+    display: flex;
+    transition: 0.3s;
+    width: 25em;
+}
+
+.file:active{
+    display: flex;
+    width: 25em;
+}
+
 .updatePhoto {
     background-color: indigo;
     color: white;
@@ -413,3 +434,5 @@ select {
     cursor: pointer;
     margin-top: 1rem;
   }
+
+

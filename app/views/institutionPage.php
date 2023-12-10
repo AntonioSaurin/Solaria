@@ -60,7 +60,7 @@
                 <button type="button" class="arrow left control" id="left-arrow"> <img  src="app/style/img/left-arrow.png" alt="left-arrow" width="50px"></button>
                 <section class="gallery" id="gallery">
 
-                    <section class="institutionBox current-item" id="card-institution1">
+                    <!-- <section class="institutionBox current-item" id="card-institution1">
                             <section class="intitution-images-area">
                                 <img src="app/style/img/imagem_slide2.jpg" alt="img insti 1">
                             </section>
@@ -70,7 +70,7 @@
                                 <h2 class="institution-Name">Instituição Adotar</h2>
                                 <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
                             </section>
-                    </section>
+                    </section> -->
 
                 </section>    
             </section>    

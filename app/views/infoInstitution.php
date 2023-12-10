@@ -123,7 +123,8 @@
                     <input type="number" class="inputNum"> </input>
                     <label class="infoForm"> Logradouro: </label>
                     <input type="text" class="inputLogradouro"> </input>
-
+                    <label class="infoForm" class="inputEdit"> Escolha uma imagem de Perfil: </label>
+                    <input placeholder="Escolha uma Imagem" type="file" class="file" id="imagem" accept="image/png">
                     <input type="submit" value="Salvar" name="Salvar" id="btnSalvar"> </input>
             </form>
         </section>
