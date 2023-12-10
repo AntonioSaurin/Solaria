@@ -23,7 +23,7 @@ if (session_status() == PHP_SESSION_NONE) {
             <section class="container">
                 <section id="brandImg">
                     <a href="/">
-                        <img src="app/style/img/Brand.png" width="10%">
+                        <img src="app/style/img/Brand.png" width="8%">
 
                         <section id="color">
                             <p id="brandText" class="d-inline ml-3 ">Solaria</p>
@@ -56,6 +56,14 @@ if (session_status() == PHP_SESSION_NONE) {
                             <?php
 
                             if (isset($_SESSION['id'])) {
+                                    
+                                $credentials = require $_SERVER['DOCUMENT_ROOT'].'/app/config/database.php';
+
+                                $conn = mysqli_connect($credentials['host'], $credentials['username'], $credentials['password'], $credentials['dbname']);
+
+                                $status = "Disponível";
+                                mysqli_query($conn, "UPDATE userAccount SET userStatus = '{$status}' WHERE ID = {$_SESSION['id']}");
+
                                 echo ('
                                         <a href="#" id="accountIcon"class="fa-solid fa-user-group fa-xl nav-link  mt-2" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#db628d "></a>
 

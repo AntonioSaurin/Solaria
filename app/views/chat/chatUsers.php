@@ -40,7 +40,7 @@
           <div class="details">
             
             <span><?php echo Hour::getHour().', '; echo $row['userName']; ?></span>
-            <p><?php echo $row['userStatus']; ?></p>
+            <p><?php echo "Online"; ?></p>
           </div>
         </div>
         <a href="/" class="logout">Voltar</a>
