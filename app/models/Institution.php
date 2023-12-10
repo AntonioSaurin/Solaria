@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-class Institution extends Model
+class  Institution extends Model
 {
     protected $table = "institution";
 
