@@ -10,7 +10,7 @@ $(document).ready(function () {
         }).done(function (result) {
             console.log(result);
            for (var i = 0; i < result.length; i++){
-            $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <img class="imgCardUser" src="app/style/img/imgUsers.png"> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <section class="infoUser"> <a href="#"> <img class="imgControlUser" src="app/style/img/imgRemove.png"> </a> </section> </section>')
+            $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <section class="infoTop"><img class="imgCardUser" src="app/style/img/imgUsers.png"><br> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <br> <section class="infoBottom"> <p><b> Email </b>'+ result[i].userEmail +' </p>  <p><b> CPF </b> '+ result[i].CPF +'</p>  <p><b> Tel: </b> ('+ result[i].DDD +') '+ result[i].phoneNumber +'</p></section> <section class="infoUser"> <a href="#"> <img class="imgControlUser deleteUser" id="'+result[i].ID+'_donator" src="app/style/img/imgRemove.png"> </a> </section> </section> </section>')
            }
         })
     })
@@ -26,7 +26,7 @@ $(document).ready(function () {
         }).done(function (result) {
             console.log(result);
            for (var i = 0; i < result.length; i++){
-            $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <img class="imgCardUser" src="app/style/img/imgUsers.png"> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <section class="infoUser"> <a href="#"> <img class="imgControlUser" src="app/style/img/imgRemove.png"> </a> </section> </section>')
+            $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <section class="infoTop"><img class="imgCardUser" src="app/style/img/imgUsers.png"><br> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <br> <section class="infoBottom">  <p><b> Email </b> '+ result[i].userEmail +' </p>  <p><b> CNPJ </b>'+ result[i].CNPJ +'</p>  <p><b> Diretor </b> '+ result[i].director +'</p>  <p><b> CPF </b> '+ result[i].directorCPF +'</p>  <p><b> Tel </b> ('+ result[i].DDD +') '+ result[i].phoneNumber +'</p></section> <section class="infoUser"> <a href="#"> <img class="imgControlUser deleteUser" id="'+result[i].ID+'_institution" src="app/style/img/imgRemove.png"> </a> </section> </section>  </section>')
            }
         })
     })
@@ -43,8 +43,7 @@ $(document).ready(function () {
             console.log(result);
     
             for (var i = 0; i < result.length; i++) {
-                $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <img class="imgCardUser" src="app/style/img/imgUsers.png"> <h5 class="nameCardUser">' + result[i].userName + '</h5> </section> <section class="infoUser"> <a href="#" class="accept"> <img class="imgControlUser" src="app/style/img/imgAccept.png" data-id="' + result[i].ID + '"></a> <a href="#"> <img class="imgControlUser" src="app/style/img/imgDecline.png"> </a> </section> </section>');
-
+                $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <section class="infoTop"><img class="imgCardUser" src="app/style/img/imgUsers.png"><br> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <br> <section class="infoBottom">  <p><b> Email </b> '+ result[i].userEmail +' </p>  <p><b> CNPJ </b>'+ result[i].CNPJ +'</p>  <p><b> Diretor </b> '+ result[i].director +'</p>  <p><b> CPF </b> '+ result[i].directorCPF +'</p>  <p><b> Tel </b> ('+ result[i].DDD +') '+ result[i].phoneNumber +'</p></section> <section class="infoUser"> <a href="#" class="accept"> <img class="imgControlUser" src="app/style/img/imgAccept.png" data-id="' + result[i].ID + '"></a><a href="#" class="deleteUser"> <img class="imgControlUser" src="app/style/img/imgDecline.png"> </a> </section> </section> </section>');
             }
 
             $('.accept').off('click').on('click', function () {
@@ -65,9 +64,41 @@ $(document).ready(function () {
         });
     });    
 
+    $('.deleteUser').click(function () {
+        $('#modalDelete').css('display', 'flex');
+        $('.modalUsersContent').prepend('<section id="modalDelete" class="modal-container"><section class="modal1"><section class="modalTop" id="topDelete"><i class="btnExitDelete fa-solid fa-rectangle-xmark fa-xl"></i><h4>Deseja mesmo excluir esta conta??</h4></section><section class="modalUsersContent deleteContent"><button class="btnmodal btnDeleteUser" id="Delete"> Excluir </button><button class="btnExitDelete btnmodal btnCancel">Cancelar</button></section></section></section> ');
+
+        $('.btnDeleteUser').click(function (){
+            console.log(2);
+            var idsDeleteUser = $(this).attr('id').split('_');
+            var typeAccount = idsDeleteUser[1];
+            var idDelete = idsDeleteUser[0];
+            console.log('Type Account: ' + typeAccount + ', ID Delete: ' + idDelete);
+        
+            if(typeAccount === 'Institution'){
+                var institution = true;
+            } else {
+                var institution = false;
+            }
+        
+            $.ajax({
+                url: 'http://localhost:8000/app/controllers/deleteUser.php',
+                method: 'POST',
+                data: { institution: institution, idDelete : idDelete }
+            }).done(function (result) {
+                console.log('Delete User Result:', result);
+            });
+        })
+        
+
+        $('.btnExitDelete').click(function () {
+            $('#modalDelete').remove(); 
+        });
+    })
+
     $('.btnExitIcon').click(function () {
         $('.cardUser').remove();
-        $('.modal-container').css('display', 'none')
-
+        $('.modal-container').css('display', 'none');
     })
+
 })

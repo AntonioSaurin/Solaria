@@ -19,7 +19,7 @@ $user = (new User)->find('ID', $id);
 (new Donation)->delete('donator', $user['ID']);
 
 if($institution === true){
-    (new Institution)->delete('accountID', $user['ID']);
+ (new Institution)->delete('accountID', $user['ID']);
 }
 
 if($institution === false){
