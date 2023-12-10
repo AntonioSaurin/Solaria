@@ -15,10 +15,10 @@ p {
     font-family: "Sniglet";
 }
 
-a,
+/* a, */
 .link-Header {
     color: #fff;
-    width: 120px;
+    width: 120px; 
 }
 
 .nav-link {
@@ -51,7 +51,7 @@ a:hover,
     font-size: 20pt;
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 8%;
     transform: translate(-50%, -50%);
 }
 
@@ -77,3 +77,4 @@ li:hover {
 #accountIcon a {
     font-weight: bold;
 }
+

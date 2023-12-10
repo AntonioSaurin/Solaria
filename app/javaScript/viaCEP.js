@@ -40,14 +40,22 @@ $(document).ready(function () {
                         $("#city").val(dados.localidade);
                         {
                             var state = document.getElementById("state");
-                
+
                             for (var i = 0; i < state.options.length; i++) {
                                 if (state.options[i].value == dados.uf) {
                                     state.options[i].selected = "true";
                                     break;
                                 }
-                            }
+                            }   
                         }
+                        var nome = true;
+                        var cnpj = true;
+                        var phone = true;
+                        var email = true;
+                        var password = true;
+                        var conPassword = true;
+                        var director = true;
+                        var directorCPF = true;
                         // $("#uf").val(dados.uf);
                         $("#ibge").val(dados.ibge);
                     } //end if.

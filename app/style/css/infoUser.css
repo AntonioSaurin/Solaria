@@ -22,22 +22,29 @@ header {
     display: flex;
     margin-top: 8em;
     width: 80.4em;
-    height: 75vh;
+    height: 26.7em;
     z-index: -1;
-    display: flex;
+    /* display: flex;
+    border-style: solid;
+    /* border-color: black; */
+    /* border: 10px; */ 
 }
 
 .userImg {
     display: flex;
-    height: 20em;
+    height: 10em;
     padding-right: 5em;
-    border-right: 1px black;
+    /* border-right: 1px black; */
     align-items: center;
     background: linear-gradient(45deg, #00b8a9, #2778ad, #126196);
     background-size: 300% 300%;
     flex: 1;
     border-radius: 1em 1em 0em 0em;
     animation: colors 5s ease infinite;
+
+    border-style: none;
+    border: 0px;
+    
 }
 
 @keyframes colors {
@@ -56,10 +63,10 @@ header {
 }
 
 .userImg img {
-    border-radius: 50%;
+    border-radius: 100%;
     border: solid white 4px;
     margin-left: 60px;
-    height: 12em;
+    height: 8em;
 }
 
 #infoUsername {
@@ -73,6 +80,8 @@ header {
     margin-left: 1em;
     font-size: 120%;
     color: white;
+
+    
 }
 
 .basicInfo {
@@ -84,9 +93,11 @@ header {
 .formSave {
     justify-content: center;
     border-radius: 0.5em;
-    margin-top: 4em;
+    margin-top: 9em;
     width: 50em;
     height: 35em;
+
+    
 }
 
 .infoForm {
@@ -156,13 +167,16 @@ header {
     display: flex;
     justify-content: center;
     max-height: 80em;
-    max-width: 80em;
+    max-width: 80.2em;
     margin-top: -10.4em;
+
+   
 }
 
 .center {
     display: flex;
     justify-content: center;
+    
 }
 
 .organForm {
@@ -198,14 +212,14 @@ header {
     border-radius: 0.5em;
     color: white;
     background-color: #e3286a;
-    box-shadow: black 0.1em 0.1em 0.1em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transition: 0.3s ease;
     font-weight: bold;
 }
 
 #btnExcluir:hover {
     padding: 0.8em 0.7em 0.8em;
-    box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transform: translate(3px, 3px);
     border: none;
 }
@@ -214,11 +228,17 @@ button:hover {
     cursor: pointer;
 }
 
-.borderForm {
-    border-style: solid;
+.borderForm{
+   
     margin-top: -16.7em;
-    padding-top: 6em;
+    /* padding-top: 6em; */
     border-radius: 0em 0em 1em 1em;
+
+    border-style: none;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    
 }
 
 .inputEdit {
@@ -262,7 +282,7 @@ select {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     transition: 1s;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     backdrop-filter: blur(6.4px);
     -webkit-backdrop-filter: blur(6.4px);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -318,14 +338,14 @@ select {
     padding-right: 2em;
     padding-left: 2em;
     font-size: 125%;
-    box-shadow: black 0.1em 0.1em 0.1em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transition: 0.3s ease;
     font-weight: bold;
 }
 
 .btnmodal:hover {
     padding: 0.8em 0.7em 0.8em;
-    box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transform: translate(3px, 3px);
     border: none;
 }
@@ -345,14 +365,14 @@ select {
     padding-right: 2em;
     padding-left: 2em;
     font-size: 125%;
-    box-shadow: black 0.1em 0.1em 0.1em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transition: 0.3s ease;
     font-weight: bold;
 }
 
 #btncancelmodal:hover {
     padding: 0.8em 0.7em 0.8em;
-    box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transform: translate(3px, 3px);
     border: none;
 }
@@ -366,12 +386,12 @@ select {
     transition: 0.3s ease;
     width: 8em;
     height: 3em;
-    box-shadow: black 0.1em 0.1em 0.1em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     margin-top: 9em;
 }
 
 #btnSalvar:hover {
-    box-shadow: black 0 0 0, inset 2px 1px 1px 2px black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transform: translate(3px, 3px);
     border: none;
 }
@@ -383,3 +403,13 @@ select {
 .no-scroll {
     overflow: hidden;
 }
+
+.updatePhoto {
+    background-color: indigo;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }

@@ -47,7 +47,8 @@
     <section class="center">
         <section class="infoAccount">
             <section class="userImg">
-                <img src="app/style/img/imgUsers.png" id="userImg" alt="Alterar Imagem">
+
+                <img src="<?= $user['photoPath'] ?>" id="userImg" alt="Usuário">
              
                 <section class="organInfo">
                     <h3 id="infoUsername"> <?= $user['userName'] ?> </h3>
@@ -60,16 +61,20 @@
 
 
                     <label class="basicInfo"> Data de Nascimento: <?= $birthDateExplode[2].'/'.$birthDateExplode[1].'/'.$birthDateExplode[0] ?> </label>
+
+                    
+                        
                 </section>
+
+                <label class="updatePhoto" for="actual-btn">Alterar Foto</label>
+
+                        <input type="file" id="actual-btn" hidden/>
             </section>
             <section class="userInfo">
             </section>
         </section>
     </section>
 
-    <?php
-    /*include_once("historicUser.php");*/
-    ?>
 
     <section class="center" id="modifyFooter">
         <section class="borderForm">
