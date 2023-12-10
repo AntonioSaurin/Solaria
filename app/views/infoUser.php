@@ -47,34 +47,21 @@
     <section class="center">
         <section class="infoAccount">
             <section class="userImg">
-
-                <img src="<?= $user['photoPath'] ?>" id="userImg" alt="Usuário">
-             
+            <img src="app/style/img/imgUsers.png" id="userImg" alt="Alterar Imagem">
                 <section class="organInfo">
                     <h3 id="infoUsername"> <?= $user['userName'] ?> </h3>
                     <label class="basicInfo"> CPF: <?= $user['CPF'] ?> </label>
-                    <?php
-                        //Pega a data de nascimento e ordena
-                        $birthDate  = $user['birthDate'];
-                        $birthDateExplode = explode("-", $birthDate);
-                    ?>
-
-
-                    <label class="basicInfo"> Data de Nascimento: <?= $birthDateExplode[2].'/'.$birthDateExplode[1].'/'.$birthDateExplode[0] ?> </label>
-
-                    
-                        
+                    <label class="basicInfo"> Data de Nascimento: <?= $user['birthDate'] ?> </label>
                 </section>
-
-                <label class="updatePhoto" for="actual-btn">Alterar Foto</label>
-
-                        <input type="file" id="actual-btn" hidden/>
             </section>
             <section class="userInfo">
             </section>
         </section>
     </section>
 
+    <?php
+    /*include_once("historicUser.php");*/
+    ?>
 
     <section class="center" id="modifyFooter">
         <section class="borderForm">
@@ -89,6 +76,7 @@
                         <input type="password" class="inputEdit"> </input>
                         <label class="infoForm"> Confirmar Senha: </label>
                         <input type="password" class="inputEdit"> </input>
+                        
                 </form>
                 <button type="button" id="btnExcluir"
                 onclick="document.getElementById('myModal').style.display='block'"> Excluir Conta </input>
@@ -136,6 +124,8 @@
                     <input type="number" class="inputNum" value="<?= $user['AdressNumber'] ?>"> </input>
                     <label class="infoForm"> Logradouro: </label>
                     <input type="text" class="inputLogradouro" value="<?= $user['street'] ?>"> </input>
+                    <label class="infoForm" class="inputEdit"> Escolha uma imagem de Perfil: </label>
+                    <input placeholder="Escolha uma Imagem" type="file" class="file" id="imagem" accept="image/png">
 
                     <input type="submit" value="Salvar" name="Salvar" id="btnSalvar"> </input>
             </form>
@@ -146,6 +136,14 @@
 
     <script>
         $("#phone").mask("+55 (00) 00000-0000");
+        
+        var arquivo = document.getElementById("arquivo");
+        var imagem = document.getElementById("userImg");
+
+        var escolherArquivo = function(){
+            arquivo.click();
+        }
+        
 
         window.onclick = function (event) {
             var modal = document.getElementById('modalContainer');
