@@ -49,93 +49,17 @@
            <img class="teste" src="../app/style/img/bannerAbout.png" alt="" width="200px" >
         </section>
 
+        <div id="testeresult">
+
+        </div>
+
         <!--Inicio cards intituicoes-->
         <section class="institutionArea" id="institutionArea">
             <section class="gallery-wrapper">
                 <button type="button" class="arrow right control" id="right-arrow"><img src="app/style/img/right-arrow.png" alt="right-arrow" width="50px"></button>
                 <button type="button" class="arrow left control" id="left-arrow"> <img  src="app/style/img/left-arrow.png" alt="left-arrow" width="50px"></button>
-                <section class="gallery">
-                    <section class="institutionBox current-item" id="card-institution1">
-                        <section class="intitution-images-area">
-                            <img src="app/style/img/imagem_slide2.jpg" alt="img insti 1">
-                        </section>
-                        <section class="institutionInfo">
-                            <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
-                            <a href="/perfilInstituicoes" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
-                            <h2 class="institution-Name">Instituição Adotar</h2>
-                            <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
-                        </section>
-
-                        <section class="cardFooter">
-                            <i class="fa-solid fa-location-crosshairs fa-lg locatioIcon" style="color: #ffffff;"></i>
-                            <p>Santa Isabel-Sp</p>
-                        </section>
-                    </section>
-
-                    <section class="institutionBox current-item" id="card-institution2">
-                        <section class="intitution-images-area">
-                            <img src="app/style/img/imagem_slide3.jpg" alt="img insti 2">
-                        </section>
-                        <section class="institutionInfo">
-                            <a href="/perfilInstituicoes" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
-                            <h2 class="institution-Name">Instituição Adotar</h2>
-                            <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
-                        </section>
-                        <section class="cardFooter">
-                            <i class="fa-solid fa-location-crosshairs fa-lg locatioIcon" style="color: #ffffff;"></i>
-                            <p>Santa Isabel-Sp</p>
-                        </section>
-                    </section>
-
-                    <section class="institutionBox current-item" id="card-institution3">
-                        <section class="intitution-images-area">
-                            <img src="app/style/img/imagem_slide1.jpg" alt="img insti 3">
-                        </section>
-                        <section class="institutionInfo">
-                            <a href="/perfilInstituicoes" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
-                            <h2 class="institution-Name">Instituição Adotar</h2>
-                            <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
-                            <!--<a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>-->
-                        </section>
-
-                        <section class="cardFooter">
-                            <i class="fa-solid fa-location-crosshairs fa-lg locatioIcon" style="color: #ffffff;"></i>
-                            <p>Santa Isabel-Sp</p>
-                        </section>
-                    </section>
+                <section class="gallery" id="gallery">
                     
-                    <section class="institutionBox current-item" id="card-institution4">
-                        <section class="intitution-images-area">
-                            <img src="app/style/img/imagem_slide2.jpg" alt="img insti 1">
-                        </section>
-                        <section class="institutionInfo">
-                            <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
-                            <a href="/perfilInstituicoes" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
-                            <h2 class="institution-Name">Instituição Adotar</h2>
-                            <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
-                        </section>
-
-                        <section class="cardFooter">
-                            <i class="fa-solid fa-location-crosshairs fa-lg locatioIcon" style="color: #ffffff;"></i>
-                            <p>Santa Isabel-Sp</p>
-                        </section>
-                    </section>
-                    <section class="institutionBox current-item" id="card-institution5">
-                        <section class="intitution-images-area">
-                            <img src="app/style/img/imagem_slide2.jpg" alt="img insti 1">
-                        </section>
-                        <section class="institutionInfo">
-                            <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
-                            <a href="/perfilInstituicoes" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
-                            <h2 class="institution-Name">Solaria</h2>
-                            <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
-                        </section>
-
-                        <section class="cardFooter">
-                            <i class="fa-solid fa-location-crosshairs fa-lg locatioIcon" style="color: #ffffff;"></i>
-                            <p>Santa Isabel-Sp</p>
-                        </section>
-                    </section>
                 </section>    
             </section>    
         </section>
@@ -233,6 +157,9 @@
         }
         const btnHideAll = document.querySelector('.btn-hideAll');
         btnHideAll.addEventListener('click', () => hideAll('show-All-Institution'));
+
+
+        
     </script>
 </body>
 
