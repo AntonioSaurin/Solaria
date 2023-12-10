@@ -8,7 +8,7 @@
     <link href="app/style/css/institutionPage.css" rel="stylesheet">
     <!-- <script src="app/javaScript/fontAwesome.js"></script> -->
     <script src="app/javaScript/jQuery.js"></script>
-    <script src="app/javaScript/instituionPage.js"></script>
+    <script src="app\javaScript\institutionPage.js"></script>
     <title>Solaria/Instituições</title> 
 </head>
 
@@ -30,9 +30,9 @@
             <section id="content-top">
                 
                 <H1>Deseja doar?</H1>
-                <p>Veja a baixo as instituicoes que mais necessitam de auxilio, pesquise e filtre com base em suas necessidades</p>
+                <p>Veja a baixo as instituições que mais necessitam de auxilio, pesquise e filtre com base em suas necessidades</p>
             </section>
-            <section id="scroll-institution"><a href="#institutionArea"><p>Ver as instiuicoes<i class="fa-solid fa-arrow-down arrow-down" style="color: #ffffff;"></i></p></a></section>
+            <section id="scroll-institution"><a href="#institutionArea"><p>Ver as instituições<i class="fa-solid fa-arrow-down arrow-down" style="color: #ffffff;"></i></p></a></section>
         </section>
         <!--inicio area de pesquisa-->
         <section class="SearchArea">
@@ -59,7 +59,19 @@
                 <button type="button" class="arrow right control" id="right-arrow"><img src="app/style/img/right-arrow.png" alt="right-arrow" width="50px"></button>
                 <button type="button" class="arrow left control" id="left-arrow"> <img  src="app/style/img/left-arrow.png" alt="left-arrow" width="50px"></button>
                 <section class="gallery" id="gallery">
-                    
+
+                    <section class="institutionBox current-item" id="card-institution1">
+                            <section class="intitution-images-area">
+                                <img src="app/style/img/imagem_slide2.jpg" alt="img insti 1">
+                            </section>
+                            <section class="institutionInfo">
+                                <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+                                <a href="/perfilInstituicoes" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>
+                                <h2 class="institution-Name">Instituição Adotar</h2>
+                                <p><u>Necessita:</u> Brinquedos, Roupas e Dinheiro.</p>
+                            </section>
+                    </section>
+
                 </section>    
             </section>    
         </section>
