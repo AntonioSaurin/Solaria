@@ -20,7 +20,7 @@ $(document).ready(function () {
 
         console.log(1);
         $.ajax({
-            url: 'http://localhost:8000/app/controllers/approveInstitution.php',
+            url: 'http://localhost:8000/app/controllers/approvedInstitution.php',
             method: 'POST',
             dataType: 'json'
         }).done(function (result) {
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     $('#institutionApprove').click(function () {
         $('#modalApprove').css('display', 'flex');
-
+    
         console.log(1);
         $.ajax({
             url: 'http://localhost:8000/app/controllers/waitingInstitution.php',
@@ -41,26 +41,30 @@ $(document).ready(function () {
             dataType: 'json'
         }).done(function (result) {
             console.log(result);
+    
             for (var i = 0; i < result.length; i++) {
-                $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <img class="imgCardUser" src="app/style/img/imgUsers.png"> <h5 class="nameCardUser">' + result[i].userName + '</h5> </section> <section class="infoUser"> <a href="#"> <img class="imgControlUser accept" src="app/style/img/imgAccept.png" data-id="' + result[i].ID + '"></a> <a href="#"> <img class="imgControlUser" src="app/style/img/imgDecline.png"> </a> </section> </section>')
-
-                $('.accept').click(function () {
-                    console.log(2);
-                    var accept = 'approved'; 
-                    var institutionId = $(this).data('id');
-                    
-                    $.ajax({
-                        url: 'http://localhost:8000/app/controllers/approveInstitution.php',
-                        method: 'POST',
-                        data: { state: accept, id: institutionId },
-                        dataType: 'json'
-                    }).done(function (result) {
-                      
-                    });
-                });
+                $('.modalUsersContent').prepend('<section class="cardUser" id="card' + result[i].ID + '"> <section class="infoUser"> <img class="imgCardUser" src="app/style/img/imgUsers.png"> <h5 class="nameCardUser">' + result[i].userName + '</h5> </section> <section class="infoUser"> <a href="#" class="accept"> <img class="imgControlUser" src="app/style/img/imgAccept.png" data-id="' + result[i].ID + '"></a> <a href="#"> <img class="imgControlUser" src="app/style/img/imgDecline.png"> </a> </section> </section>');
             }
-        })
-    })
+
+            $('.accept').off('click').on('click', function () {
+                console.log(2);
+                var accept = 'approved';
+                var institutionId = $(this).data('id');
+                var removeCard = "#card" + institutionId;
+    
+                $.ajax({
+                    url: 'http://localhost:8000/app/controllers/acceptInstitution.php',
+                    method: 'POST',
+                    data: { state: accept, id: institutionId }
+                }).done(function (result) {
+                    $(removeCard).remove();
+                });
+            });
+        });
+    });
+    
+    
+
 
     $('.btnExitIcon').click(function () {
         $('.cardUser').remove();
