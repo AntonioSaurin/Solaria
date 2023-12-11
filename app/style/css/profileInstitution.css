@@ -62,7 +62,8 @@ section {
 .profile-info {
     display: flex;
     flex-direction: column;
-    margin-right: 21.5em;
+    /* margin-right: 35.5em; */
+    margin-left: -12em;
     margin-bottom: 0em;
 }
 

@@ -7,6 +7,17 @@ $('document').ready(function () {
         data: { id: id},
         dataType: 'json'
     }).done(function (result) {
+        $('h2').prepend(result.userName);
+        $('.descUser').prepend('CNPJ: ' +result.CNPJ+ '<BR>Telefone: (' +result.DDD + ')' + result.phoneNumber+ '<BR>Cidade: ' +result.city+', ' + result.state);
+        $('.needsUser').prepend('<strong>Necessidades:</strong> ' + result.needs);
+        $('.donateModal').prepend('Doar para: ' + result.userName);
+
+
+       
+       
+      
+
+
         console.log(result);
     });
 })
