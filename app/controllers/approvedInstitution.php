@@ -8,7 +8,5 @@ require_once ($_SERVER['DOCUMENT_ROOT'].'\vendor\autoload.php');
 
 $data = (new Institution)->findList();
 
-var_dump($data);
-
-// echo json_encode($data);
+echo json_encode($data);
 
