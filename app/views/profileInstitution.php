@@ -17,11 +17,11 @@
 
     <section class="containerProfile">
         <section class="profile">
-            <img src="" alt="Foto de Perfil" class="photoProfile">
+            <img src="../app/style/img/imgInstitutionAdotar.png" alt="Foto de Perfil" class="photoProfile">
             <section class="profile-info">
-                <h2>Nome do Usuário</h2>
-                <p>Descrição curta do usuário.</p>
-                <p><strong>Necessidades:</strong> Informações sobre as necessidades</p>
+                <h2></h2>
+                <p class="descUser"></p>
+                <p class="needsUser"></p>
             </section>
             <img src="app/style/img/iconAdd.png" class="addProfile" onclick="addPhoto(this)">
         </section>
@@ -31,8 +31,13 @@
         </section>
 
         <nav class="simple-nav">
+            <?php
+                $startChat = $_GET['user'];
+            ?>
+            
+
             <a href="#" class="button">Posts</a>
-            <a href="/chat" class="button">Chat</a>
+            <a href="/chat/conversar?user_id=<?= $startChat ?>" class="button">Chat</a>
             <a href="#" class="button donateButton">Doar</a>
         </nav>
 
@@ -67,7 +72,7 @@
         <section class="modal1">
             <section id="modalTop"> 
                 <i id="btnExitIncon" class="btnExit fa-solid fa-rectangle-xmark  fa-xl" style="color: #ffffff;"></i>
-                <h2>Nome da Instituição<h2>
+                <h3 class="donateModal"></h2>
             </section>
             
             <section id="modalContent">
@@ -87,7 +92,9 @@
                             <!-- <p>Ou digite a chave PIX: 45.302.593/0001-89</p> -->
                     </section>
                     <p style="border-top:1px solid;">Em caso de doações materiais como alimentos, roupas ou brinquedos, entre em contato com a instituição para agendar sua visita! <a href="/chat">
-					<button type="button" id="buttonTop" class="btn btn-info btnHome">
+					<button type="button" id="buttonTop" class="btn btn-info btnHome" href="/chat/conversar?user_id=<?= $startChat ?>">
+
+                       
 						Chat
 						<img class="arrow" src="app/style/img/imgArrowRight.png">
 					</button>
