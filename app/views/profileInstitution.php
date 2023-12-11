@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app\style\css\profileInstitution.css">
+    <script src="app/javaScript/jQuery.js"></script>
+    <script src="app/javaScript/profileInstitution.js"></script>
     <title>Solaria/Perfil Instituição</title>
 </head>
 <body>
@@ -11,25 +13,11 @@
 		<?php
 			include('header.php');
 		?>
-
-        <?php
-            use app\models\Institution;
-
-            $TESTE = $_GET['user'];
-
-            // echo($TESTE);
-
-            
-
-            $user = (new Institution)->fullFind($_GET['user']);
-
-            echo($user['userName']);
-        ?>
 	</header>
 
     <section class="containerProfile">
         <section class="profile">
-            <img src="caminho/para/imagem.jpg" alt="Foto de Perfil" class="photoProfile">
+            <img src="" alt="Foto de Perfil" class="photoProfile">
             <section class="profile-info">
                 <h2>Nome do Usuário</h2>
                 <p>Descrição curta do usuário.</p>

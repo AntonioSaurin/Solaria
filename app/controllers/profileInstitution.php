@@ -6,13 +6,13 @@ if (session_status() == PHP_SESSION_NONE) {
 
 require_once ($_SERVER['DOCUMENT_ROOT'].'\vendor\autoload.php');
 
-if(!isset($_GET['user'])) {
+if(!isset($_POST['id'])) {
     echo json_encode(false);
     die;
-}
+}   
 
 $institutions = new Institution;
 
-$data = $institutions->fullFind();
+$data = $institutions->fullFind2($_POST['id']);
 
 echo json_encode($data);
