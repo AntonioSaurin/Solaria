@@ -11,6 +11,20 @@
 		<?php
 			include('header.php');
 		?>
+
+        <?php
+            use app\models\Institution;
+
+            $TESTE = $_GET['user'];
+
+            // echo($TESTE);
+
+            
+
+            $user = (new Institution)->fullFind($_GET['user']);
+
+            echo($user['userName']);
+        ?>
 	</header>
 
     <section class="containerProfile">

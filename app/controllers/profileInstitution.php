@@ -13,6 +13,6 @@ if(!isset($_GET['user'])) {
 
 $institutions = new Institution;
 
-$data = $institutions->fullFind2();
+$data = $institutions->fullFind();
 
 echo json_encode($data);
