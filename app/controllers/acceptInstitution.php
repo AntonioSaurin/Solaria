@@ -23,13 +23,9 @@ if (!$conn) {
 
 $query = "UPDATE institution SET state = '{$state}' WHERE accountID = '{$id}';";
 
-error_log($query);
-
 $result = mysqli_query($conn, $query);
 
-
 if ($result === false) {
-    error_log("Erro na execução da query: " . mysqli_error($conn));
     die("Erro na execução da query: " . mysqli_error($conn));
     return false;
 } else {
