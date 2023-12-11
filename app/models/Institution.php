@@ -112,7 +112,7 @@ class  Institution extends Model
             INNER JOIN photo ON userAccount.userPhoto = photo.id
             INNER JOIN city ON adress.city = city.id
             INNER JOIN state ON city.state = state.id
-            WHERE institution.id = {$id};";
+            WHERE userAccount.id = {$id};";
         $list = $this->connection->prepare($sql);
         $list->execute();
 
