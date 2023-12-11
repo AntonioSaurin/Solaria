@@ -96,6 +96,8 @@ if (session_status() == PHP_SESSION_NONE) {
             </section>
         </nav>
     </header>
+    <script src="./app/javaScript/popper.min.js"></script>
+    <script src="./app/javaScript/bootstrap.min.js"></script>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

@@ -7,11 +7,17 @@
      header("location: /chat");
    }
 
+   use app\models\User;
+      
+
+    $user = (new User)->fullFind($_SESSION['id']);
+        ?>
+
   
-?>
+
 <?php include_once "chatHeader.php"; ?>
 <body>
-
+   
 
   <div class="wrapper" style="margin-top:4%";>
     <section class="chat-area">
@@ -28,7 +34,9 @@
           }
         ?>
         <a href="/chat" class="back-icon"><i class="fas fa-arrow-left"></i></a>
-        <!-- <img src="php/images/<php /*echo $row['img'];*/ ?>" alt=""> -->
+  
+        
+    
         <img src="../app/style/img/defaultProfile.png" alt="">
         <div class="details">
           <span><?php echo $row['userName'] ?></span>

@@ -7,29 +7,11 @@ $(document).ready(function () {
         data: { status: 1 },
         dataType: 'json'
     }).done(function (result) {
-        var html ='';
+        console.log('oi');
 
-        result.forEach(function (institution, index) {
-
-            html += '<section class="institutionBox current-item" id="card-institution' + result[index].id+ '">';
-            html += '<section class="intitution-images-area">';
-            html += '<img src="' + result[index].photoPath+ '" alt="img insti ' +result[index].id + '">';
-            html += '</section>';
-            html += '<section class="institutionInfo">';
-            html += '<a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>';
-            html += '<a href="/perfilInstituicoes" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a>';
-            html += '<h2 class="institution-Name">' + result[index].userName + '</h2>';
-            html += '<p><u>Necessita:</u> ' + result[index].needs.join(', ') + '.</p>';
-            html += '</section>';
-            html += '<section class="cardFooter">';
-            html += '<i class="fa-solid fa-location-crosshairs fa-lg locatioIcon" style="color: #ffffff;"></i>';
-            html += '<p>' + result[index].city +'-'+ result[index].state + '</p>';
-            html += '</section>';
-            html += '</section>';
-        });
-
-        
-        $('#gallery').html(html);
+        for (var i = 0; i < result.length; i++){
+            $('#gallery').prepend('<section class="institutionBox current-item" id="card-institution' + result[i].id+ '"> <section class="intitution-images-area"> <img src="app/style/img/imagem_slide2.jpg" alt="img insti 1"> </section> <section class="institutionInfo"> <a href="#" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a> <a href="/perfilInstituicoes?user_id="' + result[i].id+ '" class="donateButton"><img class="arrowImage" src="app/style/img/imgArrowRight.png"></a> <h2 class="institution-Name">' + result[i].userName + '</h2> <p><u>Necessita:</u> ' + result[i].needs + '.</p> </section> <section class="cardFooter"> <i class="fa-solid fa-location-crosshairs fa-lg locatioIcon" style="color: #ffffff;"></i> <p>' + result[i].city +' - '+ result[i].state + '</p> </section> </section>');
+        }
     });
        
     });

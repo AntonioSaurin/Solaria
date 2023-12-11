@@ -1,126 +1,130 @@
-*{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-  }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
 
-  #color:hover {
-    text-decoration: overline;
-  }
-  
-  #admin {
-    margin-top: 0.2em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  #bemvenido { 
-    margin-left: 0;
-    text-align: center;
-    color: #333;
-  }
+#color:hover {
+  text-decoration: overline;
+}
 
-  a{
-    text-decoration: none;
-  }
-  
-  .admin-container-wrapped {
-    display: flex;
-    justify-content: center;
-  }
+#admin {
+  margin-top: 0.2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
-  .admin-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: 0.3s;
-      margin-right: 20em;
-  }
+#bemvenido {
+  margin-left: 0;
+  text-align: center;
+  color: #333;
+}
 
-  .admin-container:hover {
-      padding-right: 0.5em;
-      transition: 0.3s;
-      cursor: pointer;
-  }
+a {
+  text-decoration: none;
+}
 
-  .admin-card {
-      width: 30em;
-      margin: 1em;
-      background-color: #fff;
-      border-radius: 1em;
-      padding: 1.4em;
-      box-shadow: 0 0.3em 0.3em #0000001a;
-      position: relative;
-  }
-  
-  .admin-card .img_icon {
-    width: 4em;
-    height: 4em;
-    color: #333;
-    margin-right: 0.8em;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    float: left;
-  }
-  
-  .admin-card h2 {
-    font-size: 1.60em;
-    color: #333;
-    margin: 0;
-  }
-  
-  .admin-card .subtitle {
-    font-size: 1.09em;
-    color: #777;
-    margin-bottom: 0.4em;
-  }
-  
-  .arrow {
-    position: absolute;
-    top: 1.2em;
-    right: 0.2em;
-    font-size: 1.5em;
-    color: #333;
-  }
+.admin-container-wrapped {
+  display: flex;
+  justify-content: center;
+}
 
-  .arrowImage{
-    height: 1.2em;
-    width: 1.2em;
-  }
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  margin-right: 20em;
+}
 
-.modal-container{
+.admin-container:hover {
+  padding-right: 0.5em;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.admin-card {
+  width: 30em;
+  margin: 1em;
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 1.4em;
+  box-shadow: 0 0.3em 0.3em #0000001a;
+  position: relative;
+}
+
+.admin-card .img_icon {
+  width: 4em;
+  height: 4em;
+  color: #333;
+  margin-right: 0.8em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  float: left;
+}
+
+.admin-card h2 {
+  font-size: 1.60em;
+  color: #333;
+  margin: 0;
+}
+
+.admin-card .subtitle {
+  font-size: 1.09em;
+  color: #777;
+  margin-bottom: 0.4em;
+}
+
+.arrow {
+  position: absolute;
+  top: 1.2em;
+  right: 0.2em;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.arrowImage {
+  height: 1.2em;
+  width: 1.2em;
+}
+
+.modal-container {
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2000;
-  display: none;
   justify-content: center;
   align-items: center;
-    background: #ffffff52;
-    box-shadow: 0 0.7em 1em #0000001a;
-    backdrop-filter: blur(0.3em);
-    -webkit-backdrop-filter: blur(0.3em);
-    border: 0.2em solid #ffffff80;
+  background: #ffffff52;
+  box-shadow: 0 0.7em 1em #0000001a;
+  backdrop-filter: blur(0.3em);
+  -webkit-backdrop-filter: blur(0.3em);
+  border: 0.2em solid #ffffff80;
+}
 
+#modalApprove, #modalInstitutions, #modalUsers{
+  display: none;
 }
 
 .modal1 {
   display: flex;
   flex-direction: column;
-  width: 40em; 
+  width: 40em;
   height: 30em;
   border: 0;
   border-radius: 1em;
   overflow: hidden;
+  margin: auto;
+  box-shadow: 0 0.7em 1em #0000001a;
 }
 
 .modalUsersContent {
@@ -142,86 +146,127 @@
   padding: 1em;
 }
 
-.modalTop{
-  border-top-right-radius:1em;
-  border-top-left-radius:1em;
+.modalTop {
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
   flex: 0.3;
   background-color: #ffffff;
   text-align: center;
   border: 0.2em solid #0000001a;
 }
 
-#topUser{
+#topUser {
   background-color: #ffa22d;
 }
 
-#topInstituition{
+#topInstituition {
   background-color: #2778ad;
   color: #ffffff;
 }
 
-#topApprove{
+#topApprove {
   background-color: #00b8a9;
   color: #ffffff;
 }
 
-.modal-container .mostrar{
+.modal-container .mostrar {
   display: flex;
 }
 
-@keyframes modal{
-  from{
+@keyframes modal {
+  from {
       opacity: 0;
-      transform: translate3d(0,-30em,0);
+      transform: translate3d(0, -30em, 0);
   }
-  to{
+
+  to {
       opacity: 1;
-      transform: translate3d(0,0,0);
-
+      transform: translate3d(0, 0, 0);
   }
 }
-.mostrar .modal1{
-  animation: modal .4s;
+
+.mostrar .modal1 {
+  animation: modal 0.4s;
 }
 
-#modifyFooter{
+#modifyFooter {
   margin-bottom: 10em;
 }
 
-.cardUser{
-  height: 5em;
+.cardUser {
+  height: auto;
   border: 0.2em solid #0000001a;
   border-radius: 1em;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+  margin-bottom: 1em;
   cursor: pointer;
 }
 
-.infoUser{
-  display: inline-flex;
+.infoUserTop {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 1em;
+  margin-bottom: 0.5em;
 }
 
-.imgCardUser{
+.infoUserBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0.5em;
+}
+
+.imgCardUser {
   height: 4em;
   width: 4em;
 }
 
-.nameCardUser{
+.nameCardUser {
   font-size: 1.4em;
   margin-left: 0.6em;
   margin-top: 0.2em;
 }
 
-.imgControlUser{
+.imgControlUser {
   height: 2.5em;
   width: 2.5em;
   margin: 0.6em;
 }
 
-.btnExitIcon:hover{
+.btnExitIcon:hover {
   cursor: pointer;
 }
 
-/*end modal*/
+.deleteContent .btnmodal {
+  background-color: #e3286a;
+  color: #fff;
+  border: none;
+  padding: 2em 5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.deleteContent {
+  justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+#modalDelete{
+  z-index: 3000;
+}
+
+#topDelete {
+  background-color: #e3286a;
+  color: #fff;
+}
+
+#btnDelete:hover,
+.btnCancel:hover {
+  opacity: 0.8;
+}

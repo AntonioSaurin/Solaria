@@ -172,23 +172,24 @@ header {
 
 .contentTextHome {
     margin: 0%;
+    width: 70%;
 }
 
 #btnHowToAdopt{
-    width: 85%;
+    width: 35%;
     height: 35%;
     position: relative;
-    margin-top: 32%;
+    margin-top: 25%;
     background-color: #e3286a;
     font-size: 100%;
     color: #fdfdfd;
 }
 
 #btnInstitution{
-    width: 85%;
+    width: 35%;
     height: 35%;
     position: relative;
-    margin-top: 32%;
+    margin-top: 25%;
     background-color: #2278AD;
     font-size: 100%;
     color: #fdfdfd;
