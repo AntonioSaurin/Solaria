@@ -2,7 +2,7 @@ $(document).ready(function () {
     var institutionId;
     var donatorsId;
     var idUser;
-    var institution = null;
+    var institution = '';
 
     $('#usersManage').click(function () {
         $('#modalUsers').css('display', 'flex');
@@ -83,14 +83,16 @@ $(document).ready(function () {
             console.log(2);
 
             if(institutionId != null){
-                institution = true;
+                institution = 'true';
                 idUser = institutionId;
             }else if(donatorsId != null){
-                institution = false;
+                institution = 'false';
                 idUser = donatorsId;
             }else{
                 alert('Erro!');
             }
+
+            console.log(institution + " - " +idUser);
         
             $.ajax({
                 url: 'http://localhost:8000/app/controllers/deleteUser.php',

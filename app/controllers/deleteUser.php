@@ -8,12 +8,10 @@ use app\models\Phone;
 use app\models\Photo;
 use app\models\User;
 
-require_once 'vendor/autoload.php';
+require_once ($_SERVER['DOCUMENT_ROOT'].'\vendor\autoload.php');
 
-$institution = filter_input(INPUT_POST, 'institution', FILTER_VALidATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
+$institution = filter_input(INPUT_POST, 'institution', FILTER_SANITIZE_STRING);
 $id = filter_input(INPUT_POST, 'idUser', FILTER_SANITIZE_NUMBER_INT);
-
-error_log('id: '.$id.'- Intituição: '.$institution);
 
 $user = (new User)->find('id', $id);
 
@@ -21,13 +19,19 @@ $user = (new User)->find('id', $id);
 
 (new Donation)->delete('donator', $user['ID']);
 
-if($institution == true){
- (new Institution)->delete('accountID', $user['ID']);
+if (is_bool($institution)) {
+ if($institution === 'true'){
+  (new Institution)->delete('accountID', $user['ID']);
+ }
+
+ if($institution === 'false'){
+     (new Donator)->delete('accountID', $user['ID']);
+ }
+} elseif (is_null($institution)) {
+ 
 }
 
-if($institution == false){
-    (new Donator)->delete('accountID', $user['ID']);
-}
+error_log('id: '.$id.'- Intituição: '.$institution);
 
 (new User)->delete('id', $user['id']);
 
