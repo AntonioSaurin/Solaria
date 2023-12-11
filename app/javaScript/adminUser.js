@@ -1,11 +1,12 @@
 $(document).ready(function () {
-    var institutionId;
+    var institutionIdApproved;
     var donatorsId;
     var idUser;
     var institution = '';
 
     $('#usersManage').click(function () {
         $('#modalUsers').css('display', 'flex');
+
         console.log(1);
         $.ajax({
             url: 'http://localhost:8000/app/controllers/listDonators.php',
@@ -17,7 +18,6 @@ $(document).ready(function () {
             $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <section class="infoTop"><img class="imgCardUser" src="app/style/img/imgUsers.png"><br> <input type="text" id="user'+result[i].ID+'" style="display:none" value="' + result[i].ID + '"> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <br> <section class="infoBottom"> <p><b> Email </b>'+ result[i].userEmail +' </p>  <p><b> CPF </b> '+ result[i].CPF +'</p>  <p><b> Tel: </b> ('+ result[i].DDD +') '+ result[i].phoneNumber +'</p></section> <section class="infoUser"> <a href="#"> <img class="imgControlUser deleteUser"  data-id="' + result[i].ID +'" src="app/style/img/imgRemove.png"> </a> </section> </section> </section>')
             donatorsId = $('#user'+result[i].ID).val();
            }
-          
         })
     })
 
@@ -33,9 +33,7 @@ $(document).ready(function () {
             console.log(result);
            for (var i = 0; i < result.length; i++){
             $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <section class="infoTop"><img class="imgCardUser" src="app/style/img/imgUsers.png"><br><input type="text" id="institution'+result[i].ID+'" style="display:none" value="' + result[i].ID + '"> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <br> <section class="infoBottom">  <p><b> Email </b> '+ result[i].userEmail +' </p>  <p><b> CNPJ </b>'+ result[i].CNPJ +'</p>  <p><b> Diretor </b> '+ result[i].director +'</p>  <p><b> CPF </b> '+ result[i].directorCPF +'</p>  <p><b> Tel </b> ('+ result[i].DDD +') '+ result[i].phoneNumber +'</p></section> <section class="infoUser"> <a href="#"> <img class="imgControlUser deleteUser" data-id="' + result[i].ID +'" src="app/style/img/imgRemove.png"> </a> </section> </section>  </section>')
-
-            institutionId = $('#institution'+result[i].ID).val();
-            
+            institutionIdApproved = $('#institution'+result[i].ID).val();
            }
         })
     })
@@ -58,6 +56,7 @@ $(document).ready(function () {
             $('.accept').off('click').on('click', function () {
                 console.log(2);
                 var accept = 'approved';
+                var institutionId = $(this).find('img').data('id');
                 var removeCard = "#card" + institutionId;
                 
                 $.ajax({
@@ -82,9 +81,9 @@ $(document).ready(function () {
         $('.btnDeleteUser').click(function (){
             console.log(2);
 
-            if(institutionId != null){
+            if(institutionIdApproved != null){
                 institution = 'true';
-                idUser = institutionId;
+                idUser = institutionIdApproved;
             }else if(donatorsId != null){
                 institution = 'false';
                 idUser = donatorsId;
