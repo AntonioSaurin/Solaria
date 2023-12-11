@@ -6,7 +6,7 @@ class Message extends Model {
     protected $table = "messages";
 
     public function delUserMessage($id){
-        $credentials = require 'app\config\database.php';
+        $credentials = require $_SERVER['DOCUMENT_ROOT'].'\app\config\database.php';
 
         $sql = "delete from {$credentials['dbname']}.{$this->table} where incomingMsgID = :value or outgoingMsgID = :value";
         $delete = $this->connection->prepare($sql);

@@ -1,5 +1,4 @@
 <?php
-use app\classes\Logged;
 use app\models\Donation;
 use app\models\Donator;
 use app\models\Institution;
@@ -15,25 +14,21 @@ $id = filter_input(INPUT_POST, 'idUser', FILTER_SANITIZE_NUMBER_INT);
 
 $user = (new User)->find('id', $id);
 
+if (!$user) {
+    return false;
+}
+
 (new Message)->delUserMessage($user['ID']);
 
 (new Donation)->delete('donator', $user['ID']);
 
-if (is_bool($institution)) {
- if($institution === 'true'){
-  (new Institution)->delete('accountID', $user['ID']);
- }
-
- if($institution === 'false'){
-     (new Donator)->delete('accountID', $user['ID']);
- }
-} elseif (is_null($institution)) {
- 
+if ($institution === 'true') {
+    (new Institution)->delete('accountID', $user['ID']);
+} elseif ($institution === 'false') {
+    (new Donator)->delete('accountID', $user['ID']);
 }
 
-error_log('id: '.$id.'- Intituição: '.$institution);
-
-(new User)->delete('id', $user['id']);
+(new User)->delete('ID', $user['ID']);
 
 if ($user['userPhoto'] != 1) {
     (new Photo)->delete('id', $user['userPhoto']);
