@@ -1,11 +1,11 @@
 $(document).ready(function () {
+    var institutionId;
+    var donatorsId;
     var idUser;
     var institution = null;
 
     $('#usersManage').click(function () {
         $('#modalUsers').css('display', 'flex');
-
-        institution = false;
         console.log(1);
         $.ajax({
             url: 'http://localhost:8000/app/controllers/listDonators.php',
@@ -14,15 +14,15 @@ $(document).ready(function () {
         }).done(function (result) {
             console.log(result);
            for (var i = 0; i < result.length; i++){
-            $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <section class="infoTop"><img class="imgCardUser" src="app/style/img/imgUsers.png"><br> <input type="text" id="user'+result[i].id+'" style="display:none" value="' + result[i].ID + '"> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <br> <section class="infoBottom"> <p><b> Email </b>'+ result[i].userEmail +' </p>  <p><b> CPF </b> '+ result[i].CPF +'</p>  <p><b> Tel: </b> ('+ result[i].DDD +') '+ result[i].phoneNumber +'</p></section> <section class="infoUser"> <a href="#"> <img class="imgControlUser deleteUser"  data-id="' + result[i].ID +'" src="app/style/img/imgRemove.png"> </a> </section> </section> </section>')
+            $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <section class="infoTop"><img class="imgCardUser" src="app/style/img/imgUsers.png"><br> <input type="text" id="user'+result[i].ID+'" style="display:none" value="' + result[i].ID + '"> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <br> <section class="infoBottom"> <p><b> Email </b>'+ result[i].userEmail +' </p>  <p><b> CPF </b> '+ result[i].CPF +'</p>  <p><b> Tel: </b> ('+ result[i].DDD +') '+ result[i].phoneNumber +'</p></section> <section class="infoUser"> <a href="#"> <img class="imgControlUser deleteUser"  data-id="' + result[i].ID +'" src="app/style/img/imgRemove.png"> </a> </section> </section> </section>')
+            donatorsId = $('#user'+result[i].ID).val();
            }
+          
         })
     })
 
     $('#institutionManage').click(function () {
         $('#modalInstitutions').css('display', 'flex')
-
-        institution = true;
 
         console.log(1);
         $.ajax({
@@ -32,8 +32,10 @@ $(document).ready(function () {
         }).done(function (result) {
             console.log(result);
            for (var i = 0; i < result.length; i++){
-            $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <section class="infoTop"><img class="imgCardUser" src="app/style/img/imgUsers.png"><br><input type="text" id="institution'+result[i].id+'" style="display:none" value="' + result[i].ID + '"> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <br> <section class="infoBottom">  <p><b> Email </b> '+ result[i].userEmail +' </p>  <p><b> CNPJ </b>'+ result[i].CNPJ +'</p>  <p><b> Diretor </b> '+ result[i].director +'</p>  <p><b> CPF </b> '+ result[i].directorCPF +'</p>  <p><b> Tel </b> ('+ result[i].DDD +') '+ result[i].phoneNumber +'</p></section> <section class="infoUser"> <a href="#"> <img class="imgControlUser deleteUser" data-id="' + result[i].ID +'" src="app/style/img/imgRemove.png"> </a> </section> </section>  </section>')
+            $('.modalUsersContent').prepend('<section class="cardUser"> <section class="infoUser"> <section class="infoTop"><img class="imgCardUser" src="app/style/img/imgUsers.png"><br><input type="text" id="institution'+result[i].ID+'" style="display:none" value="' + result[i].ID + '"> <h5 class="nameCardUser">'+ result[i].userName +'</h5> </section> <br> <section class="infoBottom">  <p><b> Email </b> '+ result[i].userEmail +' </p>  <p><b> CNPJ </b>'+ result[i].CNPJ +'</p>  <p><b> Diretor </b> '+ result[i].director +'</p>  <p><b> CPF </b> '+ result[i].directorCPF +'</p>  <p><b> Tel </b> ('+ result[i].DDD +') '+ result[i].phoneNumber +'</p></section> <section class="infoUser"> <a href="#"> <img class="imgControlUser deleteUser" data-id="' + result[i].ID +'" src="app/style/img/imgRemove.png"> </a> </section> </section>  </section>')
 
+            institutionId = $('#institution'+result[i].ID).val();
+            
            }
         })
     })
@@ -56,7 +58,6 @@ $(document).ready(function () {
             $('.accept').off('click').on('click', function () {
                 console.log(2);
                 var accept = 'approved';
-                var institutionId = $(this).find('img').data('id');
                 var removeCard = "#card" + institutionId;
                 
                 $.ajax({
@@ -73,18 +74,23 @@ $(document).ready(function () {
 
     $(document).on('click', '.deleteUser', function () {
         console.log('Código está sendo executado.');
-        
-        if ($('#modalDelete').length === 0) {
             $('.modalUsersContent').prepend('<section id="modalDelete" class="modal-container"><section class="modal1"><section class="modalTop" id="topDelete"><i class="btnExitDelete fa-solid fa-rectangle-xmark fa-xl"></i><h4>Deseja mesmo excluir esta conta??</h4></section><section class="modalUsersContent deleteContent"><button class="btnmodal btnDeleteUser" id="Delete"> Excluir </button><button class="btnExitDelete btnmodal btnCancel">Cancelar</button></section></section></section>');
 
             console.log('Modal criado:', $('#modalDelete').length);
             $('#modalDelete').css('display', 'flex');
-        }
 
         $('.btnDeleteUser').click(function (){
             console.log(2);
 
-            idUser = $(this).find('img').data('id');
+            if(institutionId != null){
+                institution = true;
+                idUser = institutionId;
+            }else if(donatorsId != null){
+                institution = false;
+                idUser = donatorsId;
+            }else{
+                alert('Erro!');
+            }
         
             $.ajax({
                 url: 'http://localhost:8000/app/controllers/deleteUser.php',
