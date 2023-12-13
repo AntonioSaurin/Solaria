@@ -47,4 +47,31 @@ $('document').ready(function () {
             }
         })
     })
+    $('#email').blur('input', function () {
+        var validate = validateEmail($('#email').val())
+        if(!validate) {
+            console.log('invalid');
+            return;
+        }
+
+        var data = {
+            action: 'email',
+            email: $('#email').val()
+        }
+
+        $.ajax({
+            url: 'http://localhost:8000/app/controllers/createUser.php',
+            method: 'POST',
+            data: data,
+            dataType: 'json'
+        }).done(function (result) {
+            console.log(result);
+        })
+
+    })
 });
+
+function validateEmail(email) {
+    var re = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+    return re.test(email);
+}
