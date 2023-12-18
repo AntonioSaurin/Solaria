@@ -1,113 +1,46 @@
-<?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-?>
-
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <script src="app/javaScript/fontAwesome.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solario | Header</title>
+
     <link rel="stylesheet" href="app/style/css/bootstrap.css">
-    <link rel="stylesheet" href="app/style/css/headerStyle.css">
-    <title>header</title>
+    <link rel="stylesheet" href="app/style/css/header2.css">
+    
 </head>
 
 <body>
-    <header id="navBar">
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <section class="container">
-                <section id="brandImg">
-                    <a href="/">
-                        <img src="app/style/img/Brand.png" width="8%">
-
-                        <section id="color">
-                            <p id="brandText" class="d-inline ml-3 ">Solaria</p>
-                        </section>
-                    </a>
-                </section>
-
-                <button class="navbar-toggler" data-togle="collapse" data-target="#nav-pricipal">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <section class="link-Area">
-                    <ul class="navbar-nav ml-auto">
-
-                        <li class="nav-item mr-4">
-                            <a href="/" class="  nav-link link-Header aling" id="color">Home</a>
-                        </li>
-                        <li class="nav-item mr-4">
-                            <a href="/instituicoes" class="nav-link link-Header aling2" id="color">Instituições</a>
-                        </li>
-                        <li class="nav-item mr-4">
-                            <a href="/como-adotar" class="nav-link link-Header aling2" id="color">Como adotar</a>
-                        </li>
-                        <li class="nav-item mr-4">
-                            <a href="/sobre-nos" class="nav-link link-Header aling3" id="color">Sobre nós</a>
-                        </li>
-
-
-                        <li class="nav-item dropdown ml-4 " id="accountIcon">
-                            <?php
-
-                            if (isset($_SESSION['id'])) {
-                                    
-                                $credentials = require $_SERVER['DOCUMENT_ROOT'].'/app/config/database.php';
-
-                                $conn = mysqli_connect($credentials['host'], $credentials['username'], $credentials['password'], $credentials['dbname']);
-
-                                $status = "Disponível";
-                                mysqli_query($conn, "UPDATE userAccount SET userStatus = '{$status}' WHERE ID = {$_SESSION['id']}");
-
-                                echo ('
-                                        <a href="#" id="accountIcon"class="fa-solid fa-user-group fa-xl nav-link  mt-2" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#db628d "></a>
-
-                                        <section id="headerMenu"class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">');
-                                if (!isset($_SESSION['institution'])) {
-                                    echo ('<a class="dropdown-item" href="/infoUser">Conta</a>');
-                                } else if (isset($_SESSION['institution'])) {
-                                    echo ('<a class="dropdown-item" href="/infoInstituicoes">Conta</a>');
-                                }
-
-
-                                echo ('<a class="dropdown-item" href="/chat">Chat</a>');
-
-                                if (isset($_SESSION['admin'])) {
-                                    echo ('<a href="/admin" class="dropdown-item">Admin</a>');
-                                }
-                                echo ('<a class="dropdown-item" href="../app/views/logout.php">Sair</a>
-                                    </section>  ');
-                            } else if (!isset($_SESSION['id'])) {
-                                echo ('
-                                        <a href="\login" class="nav-link mr-6" id="color">Login</a>
-                                    ');
-                            }
-
-                            ?>
-
-                        </li>
-                    </ul>
-                </section>
-            </section>
+    <header class="header" id="header">
+        <button class="btnIconHeader" onclick="changeSideBar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
+        <section class="headerIcon">
+            <img src="app/style/img/Brand.png" alt="Logo da Solaria" id="brand">
+        </section>
+        <nav class="headerNav" id="headerNav">
+            <button class="btnIconHeader" onclick="changeSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </button>
+            <a href="/">Home</a>
+            <a href="/instituicoes">Intitutições</a>
+            <a href="/como-adotar">Como adotar</a>
+            <a href="/sobre-nos">Sobre nós</a>
         </nav>
     </header>
-    <script src="./app/javaScript/popper.min.js"></script>
-    <script src="./app/javaScript/bootstrap.min.js"></script>
-
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script> -->
 </body>
+<script src="app/javaScript/popper.min.js"></script>
+<script src="app/javaScript/bootstrap.min.js"></script>
+<script src="app/javaScript/header2.js"></script>
+
 
 </html>

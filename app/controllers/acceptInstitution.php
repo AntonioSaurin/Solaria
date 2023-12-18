@@ -27,7 +27,6 @@ $result = mysqli_query($conn, $query);
 
 if ($result === false) {
     die("Erro na execução da query: " . mysqli_error($conn));
-    return false;
 } else {
     echo "Atualização bem-sucedida!";
     return true;

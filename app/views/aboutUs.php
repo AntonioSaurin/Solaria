@@ -39,7 +39,7 @@
             class="video"
         ></iframe>
       </section>
-      <section id="brand">
+      <section id="brandText">
           <img src="app/style/img/Brand.png">
           <section id="description">
             <h2>Solaria</h2>

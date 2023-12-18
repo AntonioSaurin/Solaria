@@ -9,7 +9,7 @@ return [
     '/sobre-nos' => 'views/aboutUs.php',
     '/como-adotar' => 'views/howToAdopt.php',
     '/teste' => 'views/teste.php',
-    '/header' => 'views/header.php',
+    '/header' => 'views/header2.php',
     '/admin' => 'views/adminMenu.php',
     '/chat' => 'views/chat/chatUsers.php',
     '/chat/conversar' => 'views/chat/chatMain.php',

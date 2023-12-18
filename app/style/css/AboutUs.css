@@ -130,14 +130,14 @@ header {
   height: 98vh;
 }
 
-#brand{
+#brandText{
   background-color: #e3286a;
   display: flex;
   flex-direction: row;
   padding-right: 5%;
 }
 
-#brand img{
+#brandText img{
   width: 75%;
   margin-top: -10.5%;
   margin-left: -20%;

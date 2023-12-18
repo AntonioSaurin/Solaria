@@ -1,0 +1,128 @@
+:root {
+    --color-invisible: rgba(255, 255, 255, 0);
+    --color-grey: #808080;
+    --color-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+}
+
+#brand {
+    width: 45px;
+}
+
+.header,
+.headerNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.432);
+    box-shadow: 1px 1px 4px var(--color-grey);
+    height: 3.5em;
+    justify-content: space-between;
+    padding: 0 3% 0 1.5%;
+}
+
+.headerNav {
+    gap: 2.5em;
+    z-index: 2;
+}
+
+.headerNav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-weight: light;
+}
+
+.headerNav #headerMenu a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.headerNav a:hover {
+    color: var(--color-grey);
+    text-decoration: overline;
+}
+
+.headerNav #headerMenu a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    background-color: var(--color-grey);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btnIconHeader {
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-item,
+.dropdown,
+.ml-4 {
+    color: black;
+    list-style: none;
+}
+
+.userMenu {
+    color: black;
+}
+
+#headerMenu {
+    position: absolute;
+    transform: translate3d(744px, 44px, 0px);
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+}
+
+#accountIcon {
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .btnIconHeader {
+        display: block;
+    }
+
+    .headerNav {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: var(--color-grey);
+        height: 100%;
+        width: 35vw;
+        padding: 0.8em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+}
+
+@keyframes showSideBar {
+    from {
+        margin-left: -100vw;
+    }
+
+    to {
+        margin-left: -10vw;
+    }
+}

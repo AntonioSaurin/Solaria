@@ -11,8 +11,6 @@ $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
 $user = new User;
 
-
-
 $action = $user->login($email, $password);
 
 echo json_encode($action);
