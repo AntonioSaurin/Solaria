@@ -2,8 +2,6 @@
 
 use app\models\User;
 
-$user = new User;
+$user = (new User)->find('userEmail', 'antonio20@gmail.com');
 
-$busca = $user->fullFind('1');
-
-echo "{$busca['userPassword']}";
+var_dump($user);
