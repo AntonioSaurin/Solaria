@@ -372,3 +372,5 @@ function validationPhone() {
     phoneError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     return true;
 }
+
+//comentario teste
